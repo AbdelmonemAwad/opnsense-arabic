@@ -11,6 +11,10 @@ than the 13,010 strings in the current `OPNsense.pot`.
 Terminology follows the Arabic interfaces of Microsoft, Arabic Wikipedia and ESET where they
 agree; [GLOSSARY.md](GLOSSARY.md) (in Arabic) lists the decisions and their sources.
 
+![Arabic GUI](docs/gui-settings-ar.png)
+
+*The Arabic GUI together with the right-to-left layout from opnsense-rtl.*
+
 ## Files
 
 | File | Purpose |
