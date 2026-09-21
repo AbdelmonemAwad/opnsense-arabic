@@ -1,0 +1,9 @@
+# Files whose text belongs to an upstream project and must stay exactly as it is.
+#
+# ar_SA.po carries OPNsense's own strings as its msgids, and those strings contain
+# OPNsense's own example addresses and MAC addresses - things like an Elasticsearch
+# URL in a help sentence. Rewriting them would break the translation: gettext matches
+# on the English, so a changed msgid simply stops being found and the GUI falls back
+# to English for that string. They are the upstream project's examples, not this
+# machine's network.
+ar_SA.po
