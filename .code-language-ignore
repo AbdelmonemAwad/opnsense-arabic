@@ -1,0 +1,21 @@
+# Files that carry Arabic on purpose, each with the reason on its line.
+#
+# The rule is that Arabic lives in the translation files and nowhere else. This
+# repository IS the translation, so three things in it are Arabic by their nature and
+# would be wrong in English. Anything not named here is still held to the rule.
+
+# The glossary of the terms this translation uses, and the arguments for choosing each
+# one over the alternatives. Its whole subject is which Arabic word to use; writing it
+# in English would leave nothing to read.
+GLOSSARY.md
+
+# The summary for Arabic readers, at the end of an otherwise English README. Somebody
+# looking for an Arabic translation of OPNsense should be able to tell, in Arabic, that
+# this is one.
+README.md
+
+# One line: $locales['ar_SA'] = the language name in its own script. A language's name is written in that
+# language - OPNsense's own list says Deutsch and Francais, not German and French - so
+# this string cannot be in English and cannot be translated, because it is the entry a
+# translation would be selected by.
+install.sh
