@@ -28,6 +28,7 @@ DEST=/usr/local/share/locale/ar_SA/LC_MESSAGES
 INC=/usr/local/etc/inc/system.inc
 HOOK=/usr/local/etc/rc.syshook.d/start/59-opnsense-arabic
 TRIGGER=/usr/local/share/pkg/triggers/opnsense-arabic.ucl
+CRON=/usr/local/etc/cron.d/opnsense-arabic-update
 ANCHOR="\$locales['en_US'] = gettext('English');"
 
 REAPPLY=
@@ -111,6 +112,23 @@ if [ "${HERE}" != "${KEEP}" ]; then
     install -m 0755 "${HERE}/59-opnsense-arabic" "${HOOK}"
     mkdir -p "$(dirname "${TRIGGER}")"
     install -m 0644 "${HERE}/opnsense-arabic.ucl" "${TRIGGER}"
+    install -m 0755 "${HERE}/self-update.py" "${KEEP}/self-update.py"
+    install -m 0644 "${HERE}/opnsense-arabic.cron" "${CRON}"
+    # What this install is, for the daily self-update: the commit, from a git checkout, or from the
+    # .source-commit stamp that an xgs-image-builder image or the self-update leaves in the tree.
+    # Without either it is recorded as unknown, and the self-update takes the latest release once.
+    REV=; RDATE=; RSRC=unknown
+    if [ -e "${HERE}/.git" ] && REV=$(git -C "${HERE}" rev-parse HEAD 2>/dev/null); then
+        RDATE=$(git -C "${HERE}" log -1 --format=%cI 2>/dev/null); RSRC=git
+    elif [ -s "${HERE}/.source-commit" ]; then
+        read -r REV RDATE _ < "${HERE}/.source-commit"; RSRC=stamp
+    else
+        REV=
+    fi
+    case ${REV} in *[!0-9a-f]*) REV=; RDATE=; RSRC=unknown ;; esac
+    install -d -m 0755 "${KEEP}"
+    printf '{"commit": "%s", "date": "%s", "source": "%s", "installed_at": %s}\n' \
+        "${REV}" "${RDATE}" "${RSRC}" "$(date +%s)" > "${KEEP}"/installed.json
 fi
 
 add_to_list || true
@@ -119,3 +137,4 @@ merge_plugins
 restart_gui
 echo "Arabic translation installed: $(stat -f %z "${DEST}/OPNsense.mo") bytes"
 echo "kept across updates by ${TRIGGER} and ${HOOK}"
+echo "updated to each new release by ${CRON}"

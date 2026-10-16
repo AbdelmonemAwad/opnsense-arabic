@@ -1,11 +1,12 @@
 #!/bin/sh
 # Copyright (C) 2026 Abdelmonem Awad <eg2@live.com>. BSD 2-Clause License, see LICENSE.
 #
-# Remove the Arabic translation. The package trigger and the boot hook go first, so nothing puts
-# it back, then the language list entry and the catalog. A GUI left set to Arabic falls back to
-# the untranslated English strings.
+# Remove the Arabic translation. The self-update, the package trigger and the boot hook go first,
+# so nothing puts it back, then the language list entry and the catalog. A GUI left set to Arabic
+# falls back to the untranslated English strings.
 INC=/usr/local/etc/inc/system.inc
 
+rm -f /usr/local/etc/cron.d/opnsense-arabic-update
 rm -f /usr/local/share/pkg/triggers/opnsense-arabic.ucl
 rm -f /usr/local/etc/rc.syshook.d/start/59-opnsense-arabic
 
