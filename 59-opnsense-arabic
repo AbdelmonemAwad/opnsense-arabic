@@ -1,0 +1,13 @@
+#!/bin/sh
+# Copyright (C) 2026 Abdelmonem Awad <eg2@live.com>. BSD 2-Clause License, see LICENSE.
+#
+# Core updates replace system.inc, which holds the GUI language list: put Arabic back in it, and
+# the catalog too if anything removed it. The package trigger does the same the moment pkg writes
+# the file; this covers whatever else replaced it before a boot.
+#
+# 59: the plugins that add their own Arabic strings to this catalog run at 60 and above
+# (60-netreport, 61-opnsense-rtl, 62-linkhealth, 63-frontpanel), and the catalog has to be in
+# place before they can add to it.
+[ -f /usr/local/share/opnsense-arabic/install.sh ] || exit 0
+/bin/sh /usr/local/share/opnsense-arabic/install.sh --reapply > /dev/null 2>&1
+exit 0

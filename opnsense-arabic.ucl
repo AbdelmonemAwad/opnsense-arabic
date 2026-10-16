@@ -1,0 +1,19 @@
+# Copyright (C) 2026 Abdelmonem Awad <eg2@live.com>. BSD 2-Clause License, see LICENSE.
+#
+# pkg runs this when a package it installs or upgrades writes into the directory that holds
+# system.inc - the opnsense package does on every update. That replaces the GUI language list, and
+# an update that only installs packages does not reboot: without this, Arabic would be missing from
+# the list until the next boot. The web GUI is restarted by the update itself once pkg is done, so
+# this does not restart it.
+#
+# pkg matches a trigger against the DIRECTORIES a package writes into, not against its files -
+# measured: a trigger naming a file never ran, the same trigger naming its directory did. So this
+# runs whenever any package writes into the directory, and what it runs only adds what is missing.
+path: [ "/usr/local/etc/inc" ]
+trigger: {
+	type: lua
+	sandbox: false
+	script: <<EOS
+pkg.exec({"/bin/sh", "-c", "[ -f /usr/local/share/opnsense-arabic/install.sh ] && /bin/sh /usr/local/share/opnsense-arabic/install.sh --reapply --no-restart; exit 0"})
+EOS
+}
