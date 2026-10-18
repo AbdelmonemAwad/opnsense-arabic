@@ -1,0 +1,33 @@
+#-
+# SPDX-License-Identifier: BSD-2-Clause
+# Copyright (c) 2026 Abdelmonem Awad <eg2@live.com>
+#
+name: A wrong or missing translation
+description: A string in the GUI that reads wrong in Arabic, or is still in English.
+labels: ["translation"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The menu path or the address after the host, e.g. /ui/firewall/alias
+    validations:
+      required: true
+  - type: textarea
+    id: english
+    attributes:
+      label: The English text
+      description: Exactly as OPNsense shows it in English.
+    validations:
+      required: true
+  - type: textarea
+    id: now
+    attributes:
+      label: What the Arabic says now
+  - type: textarea
+    id: better
+    attributes:
+      label: What it should say
+      description: And why, if the reason is not obvious - a term in GLOSSARY.md, a meaning the current text misses.
+    validations:
+      required: true
