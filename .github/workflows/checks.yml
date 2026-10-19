@@ -20,7 +20,7 @@ jobs:
     name: catalogue
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: gettext
         run: sudo apt-get update -qq && sudo apt-get install -y -qq gettext
@@ -54,7 +54,7 @@ jobs:
     name: nothing private
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: No real addresses, hardware identifiers or credentials
         run: python3 tools/check-private-data.py .
 
