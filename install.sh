@@ -113,8 +113,11 @@ if [ "${HERE}" != "${KEEP}" ]; then
     mkdir -p "$(dirname "${TRIGGER}")"
     install -m 0644 "${HERE}/opnsense-arabic.ucl" "${TRIGGER}"
     install -m 0755 "${HERE}/self-update.py" "${KEEP}/self-update.py"
-    install -m 0644 "${HERE}/opnsense-arabic.cron" "${CRON}"
-    # What this install is, for the daily self-update: the commit, from a git checkout, or from the
+    # No daily self-update since 2026-10-20: a release is installed from XGS: Updates
+    # (its Plugins tab, in os-xgs-npu) or by hand with self-update.py. An older
+    # install's cron entry goes.
+    rm -f "${CRON}"
+    # What this install is, for the self-update: the commit, from a git checkout, or from the
     # .source-commit stamp that an xgs-image-builder image or the self-update leaves in the tree.
     # Without either it is recorded as unknown, and the self-update takes the latest release once.
     REV=; RDATE=; RSRC=unknown
@@ -137,4 +140,4 @@ merge_plugins
 restart_gui
 echo "Arabic translation installed: $(stat -f %z "${DEST}/OPNsense.mo") bytes"
 echo "kept across updates by ${TRIGGER} and ${HOOK}"
-echo "updated to each new release by ${CRON}"
+echo "a new release: XGS: Updates, Plugins - or ${KEEP}/self-update.py by hand"
