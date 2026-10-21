@@ -15,12 +15,13 @@
 # WHEN IT COMES BACK. An update that only installs packages does not reboot, so a boot hook on its
 # own would leave Arabic out of the list until the next reboot, however long that is. pkg runs the
 # trigger (opnsense-arabic.ucl) the moment it writes system.inc, and the boot hook
-# (59-opnsense-arabic) covers whatever else replaced the file. 59 because the plugins that add
-# their own Arabic strings to this catalog run at 60 and above, and the catalog has to be there
-# before they can add to it.
+# (59-opnsense-arabic) covers whatever else replaced the file. 59 because the plugins that added
+# their own Arabic strings to this catalog ran at 60 and above, and the catalog had to be there
+# before they could add to it. Since 2026-10-22 the Sophos XGS plugins' Arabic is in this catalog
+# itself and their new releases merge nothing; a plugin of an older release still does.
 #
-# Both call this with --reapply, which installs the catalog only if it is missing: the plugins'
-# strings live in the installed copy, and putting the pristine one over it would remove them.
+# Both call this with --reapply, which installs the catalog only if it is missing: an older
+# plugin's strings live in the installed copy, and putting the pristine one over it would remove them.
 
 HERE=$(cd "$(dirname "$0")" && pwd)
 KEEP=/usr/local/share/opnsense-arabic

@@ -1,8 +1,9 @@
 # Arabic translation of the OPNsense GUI
 
-A complete Arabic (`ar_SA`) translation of the OPNsense web interface: 14,467 strings, which
-covers the core GUI of OPNsense 26.7, the plugins that ship with it and the menus, forms, help
-texts, validation messages and dashboard widgets.
+A complete Arabic (`ar_SA`) translation of the OPNsense web interface: ~~14,467 strings~~ 15,721
+strings, which covers the core GUI of OPNsense 26.7, the plugins that ship with it and the menus,
+forms, help texts, validation messages and dashboard widgets - and, since 2026-10-22, the pages of
+the Sophos XGS plugins too (below).
 
 The upstream translation template lags behind the released GUI, so the strings were taken
 from the running 26.7 interface as well as from the template. That is why the count is higher
@@ -48,11 +49,38 @@ things behind so that nothing has to be run again after an update:
   package writes `system.inc`. An update that only installs packages does not reboot, so this is
   the part that keeps Arabic in the list straight after one;
 - a **boot hook**, `/usr/local/etc/rc.syshook.d/start/59-opnsense-arabic`, which does the same at every
-  boot, and puts the catalog back if anything removed it. It runs before the plugins that add their
-  own Arabic strings to the catalog.
+  boot, and puts the catalog back if anything removed it. ~~It runs before the plugins that add their
+  own Arabic strings to the catalog.~~ Since 2026-10-22 those strings are in the catalog itself.
 
 Both run `install.sh --reapply` from the copy kept in `/usr/local/share/opnsense-arabic`. It adds only
-what is missing: a catalog already in place is left alone, because the plugins' strings are in it.
+what is missing: a catalog already in place is left alone.
+
+## The Sophos XGS plugins
+
+Since 2026-10-22 the Arabic of the plugins' pages is here, in `ar_SA.po`, with the rest of the GUI
+([issue 5](https://github.com/AbdelmonemAwad/opnsense-arabic/issues/5)): 1,254 strings added from
+their own tables, each marked with the plugin it came from (`#: os-xgs-npu`, and so on). Until then
+each plugin kept its own table and merged it into the installed catalog at install, at every boot
+and from a pkg trigger; those tables and merges are gone from the plugins' new releases.
+
+| plugin | its strings | added here | already translated here |
+|---|---|---|---|
+| [os-xgs-npu](https://github.com/AbdelmonemAwad/os-xgs-npu) | 566 | 490 | 76 |
+| [os-fanctl](https://github.com/AbdelmonemAwad/os-fanctl) | 242 | 221 | 21 |
+| [os-linkhealth](https://github.com/AbdelmonemAwad/os-linkhealth) | 389 | 350 | 39 |
+| [os-frontpanel](https://github.com/AbdelmonemAwad/os-frontpanel) | 221 | 184 | 37 |
+| [os-netreport](https://github.com/AbdelmonemAwad/os-netreport) | 106 | 9 | 97 |
+
+- **A string this catalog already translated kept its Arabic here**, as each plugin's merge always
+  left it; 28 plugin strings had other words for it.
+- **A string two plugins translated differently** gets one Arabic here; the appliances had shown
+  whichever plugin merged first. Two were chosen by meaning (*Chip* - الشريحة; "The settings were
+  saved, but the service did not take them." - ... لم تأخذ بها), the rest kept the first plugin's.
+- **A string added to a plugin's page needs its Arabic here first.** Each plugin's checks read this
+  catalog from `main` and fail a page string without Arabic in it.
+- os-netreport's reports are written in its own language files, and its GUI in the languages other
+  than Arabic is still merged by it; only the GUI's Arabic moved here.
+- os-linkhealth's terminology notes moved here too: `i18n/glossary-os-linkhealth.json`.
 
 To remove everything: `sh /usr/local/share/opnsense-arabic/uninstall.sh`.
 
