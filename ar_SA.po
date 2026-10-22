@@ -59422,8 +59422,9 @@ msgid "The tachometer could not be read at all this time."
 msgstr "تعذّرت قراءة مقياس الدوران هذه المرة."
 
 #: os-fanctl
+#: os-frontpanel
 msgid "turned off"
-msgstr "مطفأة"
+msgstr "مُطفأ"
 
 #: os-fanctl
 msgid "{n} s"
@@ -62262,3 +62263,15 @@ msgstr "لم يفشل أي منها"
 #: os-netreport
 msgid "not set"
 msgstr "غير مضبوط"
+
+# ---- os-frontpanel: the keys card says whether the buttons beside the screen are being read.
+# Its own two strings, because "read" and "not read" mean "was read" and "has not been read"
+# elsewhere (os-xgs-npu, os-fanctl), and one msgid has one Arabic.
+
+#: os-frontpanel
+msgid "being read"
+msgstr "تُقرأ"
+
+#: os-frontpanel
+msgid "not being read"
+msgstr "لا تُقرأ"

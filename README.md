@@ -74,8 +74,13 @@ and from a pkg trigger; those tables and merges are gone from the plugins' new r
 - **A string this catalog already translated kept its Arabic here**, as each plugin's merge always
   left it; 28 plugin strings had other words for it.
 - **A string two plugins translated differently** gets one Arabic here; the appliances had shown
-  whichever plugin merged first. Two were chosen by meaning (*Chip* - الشريحة; "The settings were
-  saved, but the service did not take them." - ... لم تأخذ بها), the rest kept the first plugin's.
+  whichever plugin merged first. Each was read where it is used and given the most exact word:
+  *Chip* - الشريحة; "The settings were saved, but the service did not take them." - ... لم تأخذ بها;
+  *turned off*, a service's state beside *stopped* (متوقف), - مُطفأ; *up*, *down* and *no link* - متصل،
+  منقطع، غير متصل, as this catalogue's *Connected* and *Disconnected*; *not recorded* - غير مسجّل.
+  *read* and *not read* meant "was read" in os-xgs-npu and os-fanctl and "are being read" on
+  os-frontpanel's keys card, so os-frontpanel has its own two strings now, *being read* - تُقرأ and
+  *not being read* - لا تُقرأ (2026-10-22).
 - **A string added to a plugin's page needs its Arabic here first.** Each plugin's checks read this
   catalog from `main` and fail a page string without Arabic in it.
 - os-netreport's reports are written in its own language files, and its GUI in the languages other
