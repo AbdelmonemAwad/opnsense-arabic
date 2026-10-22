@@ -58056,6 +58056,30 @@ msgid "Arm the host's own watchdog timer at every boot. If the host stops workin
 msgstr "تفعيل مؤقّت المراقبة العتادي في المضيف عند كل إقلاع. إذا توقف المضيف عن العمل أكثر من دقيقتين - تعليق لا يستطيع أي شيء آخر التعافي منه - يعيد المؤقّت تشغيل الجهاز بنفسه بدل انتظار أن يفصل أحدٌ الكهرباء. ويُعطَّل عند كل إيقاف، فيبقى الجهاز مطفأً إذا أُطفئ."
 
 #: os-xgs-npu
+msgid "When the fast path stops"
+msgstr "عند توقف المسار السريع"
+
+#: os-xgs-npu
+msgid "The host asks the coprocessor's fast path every five seconds whether it is there, and takes it as stopped after 30 seconds without an answer. Every frame through the front ports goes through the fast path, so while it is stopped nothing passes. Either way it is written in the system log and, unless problem reporting is off, reported. A restart comes once the fast path has gone that long without answering, the report collected first, and never more than three times a day, so an appliance whose coprocessor does not come back stays up for somebody to look at. On the XGS 136 the fast path does not answer the heartbeat, so it is not asked and nothing here acts."
+msgstr "يسأل المضيفُ المسارَ السريع في المعالج المساعد كل خمس ثوانٍ إن كان موجوداً، ويعدّه متوقفاً بعد 30 ثانية بلا رد. كل إطار يمر عبر المنافذ الأمامية يمر عبر المسار السريع، فلا يمر شيء ما دام متوقفاً. وفي الحالتين يُكتب ذلك في سجل النظام ويُبلَّغ عنه، ما لم تكن تقارير المشاكل متوقفة. وإعادة التشغيل تأتي حين يمضي المسار السريع تلك المدة بلا رد، بعد جمع التقرير أولاً، ولا تتجاوز ثلاث مرات في اليوم، حتى يبقى الجهاز الذي لا يعود معالجه المساعد قائماً لمن يفحصه. وعلى XGS 136 لا يجيب المسار السريع على النبض، فلا يُسأل ولا يُتخذ هنا أي إجراء."
+
+#: os-xgs-npu
+msgid "Say so, and nothing more"
+msgstr "الإبلاغ فقط، دون أي إجراء آخر"
+
+#: os-xgs-npu
+msgid "Restart the appliance after 2 minutes"
+msgstr "إعادة تشغيل الجهاز بعد دقيقتين"
+
+#: os-xgs-npu
+msgid "Restart the appliance after 5 minutes"
+msgstr "إعادة تشغيل الجهاز بعد 5 دقائق"
+
+#: os-xgs-npu
+msgid "Restart the appliance after 10 minutes"
+msgstr "إعادة تشغيل الجهاز بعد 10 دقائق"
+
+#: os-xgs-npu
 msgid "answering"
 msgstr "يستجيب"
 
@@ -59082,6 +59106,34 @@ msgstr "قُرئ"
 #: os-xgs-npu
 msgid "Its own Linux"
 msgstr "نظام Linux الخاص به"
+
+#: os-xgs-npu
+msgid "Fast path"
+msgstr "المسار السريع"
+
+#: os-xgs-npu
+msgid "not asked"
+msgstr "لا يُسأل"
+
+#: os-xgs-npu
+msgid "asked, no answer yet"
+msgstr "سُئل، ولا رد بعد"
+
+#: os-xgs-npu
+msgid "no answer for"
+msgstr "لا رد منذ"
+
+#: os-xgs-npu
+msgid "taken as stopped"
+msgstr "يُعدّ متوقفاً"
+
+#: os-xgs-npu
+msgid "times taken as stopped since boot"
+msgstr "مرات عُدّ فيها متوقفاً منذ الإقلاع"
+
+#: os-xgs-npu
+msgid "its fast path is not answering"
+msgstr "مساره السريع لا يجيب"
 
 #: os-xgs-npu
 msgid "bad checksum"
