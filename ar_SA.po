@@ -62362,3 +62362,7 @@ msgstr "اختر كلًّا منهما في XGS: تقارير المشاكل"
 #: os-xgs-npu
 msgid "Nothing leaves this appliance unless you choose: its problem reports wait for you to send them, and it is not counted. XGS: Overview asks once; XGS: Problem Reports is where to change it."
 msgstr "لا يغادر هذا الجهازَ شيءٌ إلا باختيارك: تقارير مشاكله تنتظر أن ترسلها، ولا يُحتسب. صفحة XGS: نظرة عامة تسأل مرة واحدة، وXGS: تقارير المشاكل هي حيث تغيّر ذلك."
+
+#: os-xgs-npu
+msgid "Help it get better: one report from this appliance can fix a problem for everyone who runs the same model."
+msgstr "ساهم في تطويره: تقرير واحد من هذا الجهاز قد يُصلح مشكلة لكل من يشغّل الطراز نفسه."
