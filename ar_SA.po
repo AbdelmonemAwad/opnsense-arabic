@@ -62443,3 +62443,10 @@ msgstr "يُعاد تشغيل واجهة الويب؛ وتتابع هذه الص
 #: os-xgs-npu
 msgid "Each plugin follows the latest release of its own repository on GitHub and installs it with the installer that release carries. Nothing is installed on its own: a plugin is updated when Update is pressed here. Its installer restarts the web GUI; this page follows the update through it."
 msgstr "تتبع كل إضافة أحدث إصدار من مستودعها على GitHub وتثبّته بالمثبّت الذي يحمله ذلك الإصدار. لا يُثبَّت شيء من تلقاء نفسه: تُحدَّث الإضافة عند الضغط على «تحديث» هنا. يعيد مثبّتها تشغيل واجهة الويب، وتتابع هذه الصفحة التحديث خلال ذلك."
+
+# ---- os-xgs-npu: the flow maker's help on XGS: Settings, no longer saying that Suricata's inline IPS
+# and the offload are one or the other - "Inspect, then hardware" has them work together.
+
+#: os-xgs-npu
+msgid "The flow maker: the driver puts established connections in hardware on its own (dp.auto on the XGS 3300, flow.auto on the XGS 136, which also opens its ports to the coprocessor's flow table). Nothing leaves the firewall's path while this is off, even with offloading on. Applied when you save and at every boot. Suricata sees how a connection in hardware starts and, with Inspect, then hardware on the Security tab, its first megabyte; what it must see in full goes in Never offloaded below, or this stays off."
+msgstr "صانع التدفقات: يضع برنامج التشغيل الاتصالات القائمة في العتاد من تلقاء نفسه (dp.auto على XGS 3300، وflow.auto على XGS 136، الذي يفتح أيضًا منافذه لجدول تدفقات المعالج المساعد). لا يخرج شيء من مسار جدار الحماية ما دام هذا معطّلًا، حتى مع تفعيل التفريغ. يُطبَّق عند الحفظ وعند كل إقلاع. يرى Suricata كيف يبدأ الاتصال الذي في العتاد، ومع «الفحص ثم العتاد» في تبويب الأمان يرى أول ميغابايت منه؛ وما يجب أن يراه كاملًا يوضع في «لا تُفرَّغ أبدًا» أدناه، أو يبقى هذا معطّلًا."
