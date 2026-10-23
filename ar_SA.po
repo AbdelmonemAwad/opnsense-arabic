@@ -62377,3 +62377,69 @@ msgstr "القطع في العتاد"
 #: os-xgs-npu
 msgid "A connection that a watched block list or a listed TLS fingerprint cuts is dropped on the coprocessor at once, both ways, before its pf state is killed as always - and kept there while its sender goes on sending, so those frames never reach this firewall. For that, connections are made in hardware with the coprocessor asking each one's verdict for every frame, which was measured to cost nothing. Off, they are made to forward without asking, as before 2026-10-23: a cut takes the connection out of hardware and pf drops what follows here. Tunnel connections are made the second way either way. Applied when you save, to the connections made from then on, and at every boot."
 msgstr "الاتصال الذي تقطعه قائمة حظر مراقَبة أو بصمة TLS مُدرجة يُسقَط على المعالج المساعد فوراً، في الاتجاهين، قبل أن تُقتل حالته في pf كالمعتاد - ويبقى هناك ما دام مرسله يواصل الإرسال، فلا تصل تلك الإطارات إلى جدار الحماية هذا أبداً. ولذلك تُبنى الاتصالات في العتاد بحيث يسأل المعالج المساعد عن حكم كلٍّ منها في كل إطار، وقد قيس ذلك فلم تظهر له كلفة. عند الإيقاف تُبنى لتُمرَّر دون سؤال، كما كانت قبل 2026-10-23: يُخرج القطعُ الاتصالَ من العتاد ويُسقط pf ما يتبعه هنا. واتصالات الأنفاق تُبنى بالطريقة الثانية في الحالتين. يُطبَّق عند الحفظ، على الاتصالات التي تُبنى بعده، وعند كل إقلاع."
+
+# ---- os-xgs-npu: inspection, then hardware (discovery 4) - each new connection inspected by the
+# Intrusion Detection on oxips0 before the coprocessor carries the rest, set on XGS: Settings.
+
+#: os-xgs-npu
+msgid "Inspect, then hardware"
+msgstr "الفحص ثم العتاد"
+
+#: os-xgs-npu
+msgid "Each new connection the coprocessor carries is inspected by the Intrusion Detection first: every frame of it goes to Suricata through oxips0, the coprocessor's inspector interface, until Suricata has let its first megabyte through - its own stream depth - and the rest then runs in hardware. What Suricata drops never reaches its destination. It needs the Intrusion Detection on in IPS mode (Services: Intrusion Detection: Administration), on any interface: oxips0 is added to the interfaces it inspects without being assigned, and Suricata takes up a connection whose first frames it did not see. It needs \"Cut in hardware\" on as well. Turned on, the coprocessor's inspector function is made at the next reboot; after that, a save applies it to the connections made from then on, and so does every boot. A connection's first frames, before it is in hardware, cross this firewall and are inspected only where the Intrusion Detection inspects the interface they arrive on. An experiment, measured on the XGS 3300 and the XGS 136."
+msgstr "يفحص كشفُ التسلل أولاً كلَّ اتصال جديد يحمله المعالج المساعد: يذهب كل إطار منه إلى Suricata عبر oxips0، واجهة الفاحص في المعالج المساعد، حتى يُمرّر Suricata أول ميغابايت منه - وهو عمق التدفق لديه - ثم يجري باقيه في العتاد. وما يُسقطه Suricata لا يصل إلى وجهته أبداً. يحتاج ذلك كشفَ التسلل مُفعَّلاً في وضع IPS (الخدمات: كشف التسلل: الإدارة)، على أي واجهة: تُضاف oxips0 إلى الواجهات التي يفحصها دون أن تُعيَّن، ويلتقط Suricata الاتصالَ الذي لم يرَ إطاراته الأولى. ويحتاج «القطع في العتاد» مُفعَّلاً كذلك. عند التفعيل تُبنى وظيفة الفاحص في المعالج المساعد عند إعادة التشغيل التالية؛ وبعدها يُطبِّقه الحفظ على الاتصالات التي تُبنى من حينه، وكذلك كل إقلاع. أما الإطارات الأولى للاتصال، قبل أن يدخل العتاد، فتعبر جدار الحماية هذا ولا تُفحص إلا حيث يفحص كشفُ التسلل الواجهةَ التي تصل منها. تجربة، قيست على XGS 3300 وXGS 136."
+
+# ---- os-xgs-npu: XGS: Updates, the Plugins tab - each plugin's update with its own progress bar and
+# steps, "Update all" one after the other, and the page carrying on while the web GUI restarts.
+
+#: os-xgs-npu
+msgid "Queued"
+msgstr "في الانتظار"
+
+#: os-xgs-npu
+msgid "Ask GitHub"
+msgstr "سؤال GitHub"
+
+#: os-xgs-npu
+msgid "Waiting for its turn"
+msgstr "ينتظر دوره"
+
+#: os-xgs-npu
+msgid "Running its installer"
+msgstr "جارٍ تشغيل مثبّتها"
+
+#: os-xgs-npu
+msgid "Updated to %1 in %2."
+msgstr "حُدِّثت إلى %1 في %2."
+
+#: os-xgs-npu
+msgid "Already the latest release."
+msgstr "هي أحدث إصدار أصلاً."
+
+#: os-xgs-npu
+msgid "%1 KB so far"
+msgstr "%1 كيلوبايت حتى الآن"
+
+#: os-xgs-npu
+msgid "Updating %1 of %2: %3"
+msgstr "جارٍ تحديث %1 من %2: %3"
+
+#: os-xgs-npu
+msgid "Updated %1 of %2 in %3."
+msgstr "حُدِّثت %1 من %2 في %3."
+
+#: os-xgs-npu
+msgid "Update all"
+msgstr "تحديث الكل"
+
+#: os-xgs-npu
+msgid "This installs the latest release of every plugin the last check offered, one after the other, each with the installer it carries. The web GUI restarts while they run."
+msgstr "يثبّت هذا أحدث إصدار لكل إضافة عرضها آخر تحقق، واحدة تلو الأخرى، كلٌّ بالمثبّت الذي يحمله. تُعاد واجهة الويب أثناء ذلك."
+
+#: os-xgs-npu
+msgid "The web GUI is restarting; this page carries on when it is back."
+msgstr "يُعاد تشغيل واجهة الويب؛ وتتابع هذه الصفحة حين تعود."
+
+#: os-xgs-npu
+msgid "Each plugin follows the latest release of its own repository on GitHub and installs it with the installer that release carries. Nothing is installed on its own: a plugin is updated when Update is pressed here. Its installer restarts the web GUI; this page follows the update through it."
+msgstr "تتبع كل إضافة أحدث إصدار من مستودعها على GitHub وتثبّته بالمثبّت الذي يحمله ذلك الإصدار. لا يُثبَّت شيء من تلقاء نفسه: تُحدَّث الإضافة عند الضغط على «تحديث» هنا. يعيد مثبّتها تشغيل واجهة الويب، وتتابع هذه الصفحة التحديث خلال ذلك."
