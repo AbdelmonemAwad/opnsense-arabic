@@ -57280,8 +57280,8 @@ msgid "Accelerate connections automatically"
 msgstr "تسريع الاتصالات تلقائيًا"
 
 #: os-xgs-npu
-msgid "The flow maker: the driver puts established connections in hardware on its own (dp.auto on the XGS 3300, flow.auto on the XGS 136, which also opens its ports to the coprocessor's flow table). Nothing leaves the firewall's path while this is off, even with offloading on. Applied when you save and at every boot."
-msgstr "صانع التدفقات: يضع برنامج التشغيل الاتصالات القائمة في العتاد من تلقاء نفسه (dp.auto على XGS 3300، وflow.auto على XGS 136، الذي يفتح أيضًا منافذه لجدول تدفقات المعالج المساعد). لا يخرج شيء من مسار جدار الحماية ما دام هذا معطّلًا، حتى مع تفعيل التفريغ. يُطبَّق عند الحفظ وعند كل إقلاع."
+msgid "The flow maker: the driver puts established connections in hardware on its own (dp.auto on the XGS 3300, flow.auto on the XGS 136, which also opens its ports to the coprocessor's flow table). Nothing leaves the firewall's path while this is off, even with offloading on. Applied when you save and at every boot. Suricata sees only how a connection in hardware starts, so its inline IPS and this are, for now, one or the other: what it must see in full goes in Never offloaded below, or this stays off."
+msgstr "صانع التدفقات: يضع برنامج التشغيل الاتصالات القائمة في العتاد من تلقاء نفسه (dp.auto على XGS 3300، وflow.auto على XGS 136، الذي يفتح أيضًا منافذه لجدول تدفقات المعالج المساعد). لا يخرج شيء من مسار جدار الحماية ما دام هذا معطّلًا، حتى مع تفعيل التفريغ. يُطبَّق عند الحفظ وعند كل إقلاع. لا يرى Suricata من الاتصال الذي في العتاد إلا بدايته، فوضع IPS المضمَّن فيه وهذا الخيار، حتى الآن، إما هذا وإما ذاك: ما يجب أن يراه كاملًا يوضع في «لا تُفرَّغ أبدًا» أدناه، أو يبقى هذا معطّلًا."
 
 #: os-xgs-npu
 msgid "IPsec in the coprocessor's engine"
@@ -57756,8 +57756,8 @@ msgid "Problem reports"
 msgstr "تقارير المشاكل"
 
 #: os-xgs-npu
-msgid "What this appliance does when something goes wrong in the coprocessor's drivers, their kernel follower, an update, or one of the installed appliance plugins: it writes a report, takes every address, serial and name out of it, and files it as an issue in the repository of the part it belongs to, so it can be fixed. Automatic sends each report as it is found - a new one at once, a repeat at most once a day. Manual keeps each one here until you press its Send. Off looks for nothing. The reports below show exactly what is sent, and nobody needs a GitHub account: the project's relay files them."
-msgstr "ما يفعله هذا الجهاز حين يحدث خطأ في برامج تشغيل المعالج المساعد، أو في مُلاحِق النواة لها، أو في تحديث، أو في إحدى إضافات الجهاز المثبّتة: يكتب تقريراً، ويحذف منه كل عنوان ورقم تسلسلي واسم، ويسجّله Issue في مستودع الجزء الذي ينتمي إليه ليُصلَح. التلقائي يرسل كل تقرير فور اكتشافه - الجديد فوراً، والمتكرر مرة في اليوم على الأكثر. اليدوي يُبقي كل تقرير هنا حتى تضغط «إرسال». الإيقاف لا يبحث عن شيء. التقارير أدناه تعرض ما يُرسل حرفياً، ولا يحتاج أحد إلى حساب GitHub: وسيط المشروع هو من يسجّلها."
+msgid "What this appliance does when something goes wrong in the coprocessor's drivers, their kernel follower, an update, or one of the installed appliance plugins: it writes a report, takes every address, serial and name out of it, and files it as an issue in the repository of the part it belongs to, so it can be fixed. Manual, the default, keeps each one here until you press its Send. Automatic sends each report as it is found - a new one at once, a repeat at most once a day. Off looks for nothing. The reports below show exactly what is sent, and nobody needs a GitHub account: the project's relay files them."
+msgstr "ما يفعله هذا الجهاز حين يحدث خطأ في برامج تشغيل المعالج المساعد، أو في مُلاحِق النواة لها، أو في تحديث، أو في إحدى إضافات الجهاز المثبّتة: يكتب تقريراً، ويحذف منه كل عنوان ورقم تسلسلي واسم، ويسجّله Issue في مستودع الجزء الذي ينتمي إليه ليُصلَح. اليدوي، وهو الافتراضي، يُبقي كل تقرير هنا حتى تضغط «إرسال». التلقائي يرسل كل تقرير فور اكتشافه - الجديد فوراً، والمتكرر مرة في اليوم على الأكثر. الإيقاف لا يبحث عن شيء. التقارير أدناه تعرض ما يُرسل حرفياً، ولا يحتاج أحد إلى حساب GitHub: وسيط المشروع هو من يسجّلها."
 
 #: os-xgs-npu
 msgid "Sent through"
@@ -58748,8 +58748,8 @@ msgid "Count this appliance"
 msgstr "احتسب هذا الجهاز"
 
 #: os-xgs-npu
-msgid "Once a day this appliance tells npuforge.org it is there, so the site can show how many appliances run the project. It sends three things: a random identifier it made for itself (nothing read from the hardware), its model, and the release installed. The site counts it once however often it sends and does not keep the address it came from. Off, nothing is sent."
-msgstr "مرة في اليوم يُعلم هذا الجهاز موقع npuforge.org بوجوده، ليعرض الموقع عدد الأجهزة التي تشغّل المشروع. يرسل ثلاثة أشياء فقط: معرّفًا عشوائيًا صنعه لنفسه (لا يُقرأ شيء منه من العتاد)، وطرازه، والإصدار المثبّت. يحتسبه الموقع مرة واحدة مهما تكرر الإرسال، ولا يحتفظ بالعنوان الذي جاء منه. عند الإيقاف لا يُرسل شيء."
+msgid "Off unless you turn it on. On, once a day this appliance tells npuforge.org it is there, so the site can show how many appliances run the project. It sends three things: a random identifier it made for itself (nothing read from the hardware), its model, and the release installed. The site counts it once however often it sends and does not keep the address it came from."
+msgstr "معطّل ما لم تشغّله. وحين يعمل، يُعلم هذا الجهاز موقع npuforge.org مرة في اليوم بوجوده، ليعرض الموقع عدد الأجهزة التي تشغّل المشروع. يرسل ثلاثة أشياء فقط: معرّفًا عشوائيًا صنعه لنفسه (لا يُقرأ شيء منه من العتاد)، وطرازه، والإصدار المثبّت. يحتسبه الموقع مرة واحدة مهما تكرر الإرسال، ولا يحتفظ بالعنوان الذي جاء منه."
 
 #: os-xgs-npu
 msgid "module"
@@ -62327,3 +62327,38 @@ msgstr "تُقرأ"
 #: os-frontpanel
 msgid "not being read"
 msgstr "لا تُقرأ"
+
+# ---- os-xgs-npu: nothing leaves an appliance unless its owner chooses - problem reports wait to be
+# sent and the appliance is not counted until the owner says so; XGS: Overview asks once.
+
+#: os-xgs-npu
+msgid "Nothing leaves this appliance unless you choose"
+msgstr "لا يغادر هذا الجهازَ شيءٌ إلا باختيارك"
+
+#: os-xgs-npu
+msgid "Its problem reports - what goes wrong here, with every address, serial and name taken out - wait on XGS: Problem Reports until you send them, and npuforge.org does not count it. Both can be turned on here, once, or there at any time."
+msgstr "تقارير مشاكله - ما يخطئ هنا، بعد حذف كل عنوان ورقم تسلسلي واسم منه - تنتظر في XGS: تقارير المشاكل حتى ترسلها أنت، ولا يحتسبه npuforge.org. يمكن تشغيل الأمرين من هنا مرة واحدة، أو من هناك في أي وقت."
+
+#: os-xgs-npu
+msgid "%s has never been run by the project: what breaks on it reaches the project only through its reports."
+msgstr "لم يُجرَّب %s في المشروع قط: ما يتعطل فيه لا يصل إلى المشروع إلا عبر تقاريره."
+
+#: os-xgs-npu
+msgid "%s is a model the project is built and measured on."
+msgstr "%s طراز يُبنى عليه المشروع ويُقاس."
+
+#: os-xgs-npu
+msgid "Send reports and count this appliance"
+msgstr "أرسل التقارير واحتسب هذا الجهاز"
+
+#: os-xgs-npu
+msgid "Keep everything here"
+msgstr "أبقِ كل شيء هنا"
+
+#: os-xgs-npu
+msgid "Choose each one on XGS: Problem Reports"
+msgstr "اختر كلًّا منهما في XGS: تقارير المشاكل"
+
+#: os-xgs-npu
+msgid "Nothing leaves this appliance unless you choose: its problem reports wait for you to send them, and it is not counted. XGS: Overview asks once; XGS: Problem Reports is where to change it."
+msgstr "لا يغادر هذا الجهازَ شيءٌ إلا باختيارك: تقارير مشاكله تنتظر أن ترسلها، ولا يُحتسب. صفحة XGS: نظرة عامة تسأل مرة واحدة، وXGS: تقارير المشاكل هي حيث تغيّر ذلك."
