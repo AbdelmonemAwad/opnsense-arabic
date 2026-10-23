@@ -62366,3 +62366,14 @@ msgstr "لا يغادر هذا الجهازَ شيءٌ إلا باختيارك: 
 #: os-xgs-npu
 msgid "Help it get better: one report from this appliance can fix a problem for everyone who runs the same model."
 msgstr "ساهم في تطويره: تقرير واحد من هذا الجهاز قد يُصلح مشكلة لكل من يشغّل الطراز نفسه."
+
+# ---- os-xgs-npu: a connection a cut names, dropped on the coprocessor itself by its verdict
+# (discovery 3), set on XGS: Settings.
+
+#: os-xgs-npu
+msgid "Cut in hardware"
+msgstr "القطع في العتاد"
+
+#: os-xgs-npu
+msgid "A connection that a watched block list or a listed TLS fingerprint cuts is dropped on the coprocessor at once, both ways, before its pf state is killed as always - and kept there while its sender goes on sending, so those frames never reach this firewall. For that, connections are made in hardware with the coprocessor asking each one's verdict for every frame, which was measured to cost nothing. Off, they are made to forward without asking, as before 2026-10-23: a cut takes the connection out of hardware and pf drops what follows here. Tunnel connections are made the second way either way. Applied when you save, to the connections made from then on, and at every boot."
+msgstr "الاتصال الذي تقطعه قائمة حظر مراقَبة أو بصمة TLS مُدرجة يُسقَط على المعالج المساعد فوراً، في الاتجاهين، قبل أن تُقتل حالته في pf كالمعتاد - ويبقى هناك ما دام مرسله يواصل الإرسال، فلا تصل تلك الإطارات إلى جدار الحماية هذا أبداً. ولذلك تُبنى الاتصالات في العتاد بحيث يسأل المعالج المساعد عن حكم كلٍّ منها في كل إطار، وقد قيس ذلك فلم تظهر له كلفة. عند الإيقاف تُبنى لتُمرَّر دون سؤال، كما كانت قبل 2026-10-23: يُخرج القطعُ الاتصالَ من العتاد ويُسقط pf ما يتبعه هنا. واتصالات الأنفاق تُبنى بالطريقة الثانية في الحالتين. يُطبَّق عند الحفظ، على الاتصالات التي تُبنى بعده، وعند كل إقلاع."
