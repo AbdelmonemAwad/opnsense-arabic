@@ -62551,3 +62551,15 @@ msgstr "يحمله جسر: تحتفظ إطاراته بعناوين MAC الخا
 #: os-xgs-npu
 msgid "By a VLAN: the coprocessor writes its tag - adds, replaces or takes it off."
 msgstr "عبر شبكة VLAN: يكتب المعالج المساعد وسمها - يضيفه أو يستبدله أو ينزعه."
+
+# ---- os-xgs-npu: the switch's frame limit on the XGS 136 (issue 706) - its driver gives each port's MTU
+# to the network agent, which sets the switch port's limit from it; XGS: Status and Ports say so, and the
+# setting's help says the setting has no effect there.
+
+#: os-xgs-npu
+msgid "Follows the MTU"
+msgstr "يتبع MTU المنفذ"
+
+#: os-xgs-npu
+msgid "Port1 to Port8 and the two cages beside them take their frame limit from the switch chip, which the coprocessor leaves at 2,048 bytes at every boot. On, each port is set to 10,240 bytes at the end of every boot, so an MTU above 2,000 on those ports works. Off, the next boot leaves them at 2,048. On the XGS 136 the network agent sets each port's limit from its MTU instead, and this has no effect there."
+msgstr "تأخذ Port1 إلى Port8 والفتحتان المجاورتان لها حدّ حجم الإطار من رقاقة المبدّل، التي يتركها المعالج المساعد على 2,048 بايت عند كل إقلاع. عند التفعيل يُضبط كل منفذ على 10,240 بايت في نهاية كل إقلاع، فيعمل MTU أكبر من 2,000 على تلك المنافذ. عند التعطيل يتركها الإقلاع التالي على 2,048. على XGS 136 يضبط وكيل الشبكة حدّ كل منفذ من MTU الخاص به بدلًا من ذلك، فلا أثر لهذا الإعداد هناك."
