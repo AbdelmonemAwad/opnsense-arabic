@@ -62532,3 +62532,14 @@ msgstr "العملاء الآن: %s"
 #: os-xgs-npu
 msgid "With the firewall"
 msgstr "مع جدار الحماية"
+
+# ---- os-xgs-npu: bridged flows (discovery 9) - XGS: Flows, the Connection column: a connection a
+# bridge carries is made in hardware with its frames left as they are, and is marked so.
+
+#: os-xgs-npu
+msgid "bridged"
+msgstr "عبر جسر"
+
+#: os-xgs-npu
+msgid "Carried by a bridge: its frames keep their own MACs and TTL."
+msgstr "يحمله جسر: تحتفظ إطاراته بعناوين MAC الخاصة بها وبقيمة TTL."
