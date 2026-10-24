@@ -62473,3 +62473,62 @@ msgstr "«الفحص ثم العتاد»، في تبويب الأمان من XGS
 #: os-xgs-npu
 msgid "For Suricata to see every frame, list what it must see under Never offloaded, or turn Accelerate connections automatically off: this firewall then carries it, at its own speed."
 msgstr "ولكي يرى Suricata كل إطار، ضع ما يجب أن يراه في «لا تُفرَّغ أبدًا»، أو عطّل «تسريع الاتصالات تلقائيًا»: فيحمله جدار الحماية هذا عندئذ، بسرعته هو."
+
+# ---- os-xgs-npu: Captive Portal clients in hardware (discovery 5) - XGS: Settings, the Acceleration
+# tab: the setting, and where each zone runs now and why.
+
+#: os-xgs-npu
+msgid "Captive Portal clients in hardware"
+msgstr "عملاء بوابة الدخول في العتاد"
+
+#: os-xgs-npu
+msgid "The Captive Portal lets a client through and stops it again in the firewall, where a connection the coprocessor forwards no longer passes, so every enabled zone is kept with the firewall as if it were listed under Never offloaded. With this on, each client that logs in is given to the coprocessor as a live user of its own, within two seconds of its login; its connections are put in hardware with it, and when its session ends - a logout, a timeout, a disconnect - the coprocessor gives all of them back at once and they are not made again. The idle timeout and RADIUS accounting read what the firewall counted for each client, which misses what the coprocessor carries: a zone with either runs in hardware only where the coprocessor's counts are added to the portal's own, by a change to one of the portal's files that is made only on the versions of it this plugin knows. Any other zone stays with the firewall, and the row below says why."
+msgstr "تسمح بوابة الدخول للعميل بالمرور وتوقفه من جديد داخل جدار الحماية، حيث لا يمرّ الاتصال الذي يمرّره المعالج المساعد، لذلك تبقى كل منطقة مفعّلة مع جدار الحماية كأنها مدرجة في «لا تُفرَّغ أبدًا». مع تفعيل هذا، يُعطى كل عميل يسجّل دخوله للمعالج المساعد مستخدمًا حيًّا خاصًّا به، خلال ثانيتين من دخوله؛ وتوضع اتصالاته في العتاد معه، وحين تنتهي جلسته - بخروج أو انتهاء مهلة أو قطع - يعيدها المعالج المساعد كلها دفعة واحدة ولا تُصنع من جديد. مهلة الخمول ومحاسبة RADIUS تقرآن ما عدّه جدار الحماية لكل عميل، وهذا يفوته ما يحمله المعالج المساعد: فالمنطقة التي فيها إحداهما لا تعمل في العتاد إلا حيث تُضاف عدّادات المعالج المساعد إلى عدّادات البوابة نفسها، بتعديل على أحد ملفات البوابة لا يُجرى إلا على إصداراته التي تعرفها هذه الإضافة. وأي منطقة أخرى تبقى مع جدار الحماية، والسطر أدناه يقول السبب."
+
+#: os-xgs-npu
+msgid "Captive Portal zones now"
+msgstr "مناطق بوابة الدخول الآن"
+
+#: os-xgs-npu
+msgid "Where each enabled zone runs now, and why, as the watcher last decided it - every two seconds while the setting is on."
+msgstr "أين تعمل كل منطقة مفعّلة الآن، ولماذا، كما قرّر المراقب آخر مرة - كل ثانيتين ما دام الإعداد مفعّلًا."
+
+#: os-xgs-npu
+msgid "Not decided yet: the watcher has not run since the plugin was installed."
+msgstr "لم يُقرَّر بعد: لم يعمل المراقب منذ تثبيت الإضافة."
+
+#: os-xgs-npu
+msgid "No Captive Portal zone is enabled."
+msgstr "لا توجد منطقة مفعّلة في بوابة الدخول."
+
+#: os-xgs-npu
+msgid "the change to the portal's accounting file is not applied."
+msgstr "التعديل على ملف المحاسبة في البوابة غير مطبَّق."
+
+#: os-xgs-npu
+msgid "the portal's accounting file is a version this plugin was not written for, so it was left as it is."
+msgstr "ملف المحاسبة في البوابة إصدار لم تُكتب له هذه الإضافة، فتُرك كما هو."
+
+#: os-xgs-npu
+msgid "the portal's accounting file was not found."
+msgstr "لم يوجد ملف المحاسبة في البوابة."
+
+#: os-xgs-npu
+msgid "Captive Portal clients in hardware is off."
+msgstr "«عملاء بوابة الدخول في العتاد» معطّل."
+
+#: os-xgs-npu
+msgid "Its idle timeout or RADIUS accounting needs what the coprocessor carries counted, and that cannot reach the portal:"
+msgstr "مهلة الخمول فيها أو محاسبة RADIUS تحتاج أن يُعدّ ما يحمله المعالج المساعد، وهذا العدّ لا يمكن أن يصل إلى البوابة:"
+
+#: os-xgs-npu
+msgid "Its idle timeout or RADIUS accounting is given what the coprocessor carries."
+msgstr "مهلة الخمول فيها أو محاسبة RADIUS تُعطى ما يحمله المعالج المساعد."
+
+#: os-xgs-npu
+msgid "Clients now: %s"
+msgstr "العملاء الآن: %s"
+
+#: os-xgs-npu
+msgid "With the firewall"
+msgstr "مع جدار الحماية"
