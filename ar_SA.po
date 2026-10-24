@@ -62543,3 +62543,11 @@ msgstr "عبر جسر"
 #: os-xgs-npu
 msgid "Carried by a bridge: its frames keep their own MACs and TTL."
 msgstr "يحمله جسر: تحتفظ إطاراته بعناوين MAC الخاصة بها وبقيمة TTL."
+
+# ---- os-xgs-npu: VLAN connections (discovery 10) - XGS: Flows, the Connection column: a connection
+# routed by a VLAN subinterface is made in hardware, its tag written by the coprocessor, and is marked
+# so. The mark itself is "VLAN", OPNsense's own string above.
+
+#: os-xgs-npu
+msgid "By a VLAN: the coprocessor writes its tag - adds, replaces or takes it off."
+msgstr "عبر شبكة VLAN: يكتب المعالج المساعد وسمها - يضيفه أو يستبدله أو ينزعه."
