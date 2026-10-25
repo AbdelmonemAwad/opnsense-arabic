@@ -62574,3 +62574,166 @@ msgstr "يتبع MTU المنفذ"
 #: os-xgs-npu
 msgid "Port1 to Port8 and the two cages beside them take their frame limit from the switch chip, which the coprocessor leaves at 2,048 bytes at every boot. On, each port is set to 10,240 bytes at the end of every boot, so an MTU above 2,000 on those ports works. Off, the next boot leaves them at 2,048. On the XGS 136 the network agent sets each port's limit from its MTU instead, and this has no effect there."
 msgstr "تأخذ Port1 إلى Port8 والفتحتان المجاورتان لها حدّ حجم الإطار من رقاقة المبدّل، التي يتركها المعالج المساعد على 2,048 بايت عند كل إقلاع. عند التفعيل يُضبط كل منفذ على 10,240 بايت في نهاية كل إقلاع، فيعمل MTU أكبر من 2,000 على تلك المنافذ. عند التعطيل يتركها الإقلاع التالي على 2,048. على XGS 136 يضبط وكيل الشبكة حدّ كل منفذ من MTU الخاص به بدلًا من ذلك، فلا أثر لهذا الإعداد هناك."
+
+# ---- os-xgs-npu: XGS: Overview, the Coprocessor tab - the coprocessor's software and versions, its
+# chips, its flash and its eMMC with what each partition holds, read-only (2026-10-25).
+
+#: os-xgs-npu
+msgid "The system the coprocessor runs, read-only"
+msgstr "النظام الذي يعمل به المعالج المساعد، للقراءة فقط"
+
+#: os-xgs-npu
+msgid "The other copy of its system: the one an update writes, holding the build before or the same"
+msgstr "النسخة الأخرى من نظامه: التي يكتبها التحديث، وفيها الإصدار السابق أو الإصدار نفسه"
+
+#: os-xgs-npu
+msgid "Its persistent partition, read-write: what is kept across its restarts"
+msgstr "قسمه الدائم، للقراءة والكتابة: ما يبقى محفوظاً عبر إعادات تشغيله"
+
+#: os-xgs-npu
+msgid "A Linux of the board maker with no SFOS build: by the look of it, the factory or recovery system"
+msgstr "نظام لينكس من صانع اللوحة بلا إصدار SFOS: يبدو أنه نظام المصنع أو الاسترداد"
+
+#: os-xgs-npu
+msgid "This host"
+msgstr "هذا المضيف"
+
+#: os-xgs-npu
+msgid "The coprocessor"
+msgstr "المعالج المساعد"
+
+#: os-xgs-npu
+msgid "The switch"
+msgstr "المبدّل"
+
+#: os-xgs-npu
+msgid "The PHY"
+msgstr "شريحة الطبقة المادية PHY"
+
+#: os-xgs-npu
+msgid "The CPLD"
+msgstr "شريحة CPLD"
+
+#: os-xgs-npu
+msgid "read on this host"
+msgstr "مقروء على هذا المضيف"
+
+#: os-xgs-npu
+msgid "the vendor board file, and what the coprocessor reports"
+msgstr "ملف اللوحة عند الشركة، وما يعلنه المعالج المساعد"
+
+#: os-xgs-npu
+msgid "photographed on this model and matched to the vendor board file"
+msgstr "مصوَّر على هذا الطراز ومطابق لملف اللوحة عند الشركة"
+
+#: os-xgs-npu
+msgid "photographed on another model of the family, not checked on this one"
+msgstr "مصوَّر على طراز آخر من العائلة، ولم يُتحقق منه على هذا الطراز"
+
+#: os-xgs-npu
+msgid "not read: the coprocessor started with the host, before its console was kept"
+msgstr "لم يُقرأ: بدأ المعالج المساعد مع المضيف قبل أن تُحفظ شاشته"
+
+#: os-xgs-npu
+msgid "It could not be read - over its management link nor its console."
+msgstr "تعذّرت قراءته - لا عبر قناة إدارته ولا عبر شاشته."
+
+#: os-xgs-npu
+msgid "Not read yet: press Read now."
+msgstr "لم يُقرأ بعد: اضغط اقرأ الآن."
+
+#: os-xgs-npu
+msgid "SFOS build on the coprocessor"
+msgstr "إصدار SFOS على المعالج المساعد"
+
+#: os-xgs-npu
+msgid "Generation the driver found"
+msgstr "الجيل الذي وجده التعريف"
+
+#: os-xgs-npu
+msgid "commands from 36 one higher"
+msgstr "الأوامر من 36 فما فوق أعلى بواحد"
+
+#: os-xgs-npu
+msgid "Linux on the coprocessor"
+msgstr "لينكس على المعالج المساعد"
+
+#: os-xgs-npu
+msgid "Its system"
+msgstr "نظامه"
+
+#: os-xgs-npu
+msgid "ARM Trusted Firmware"
+msgstr "البرنامج الثابت ARM Trusted Firmware"
+
+#: os-xgs-npu
+msgid "Its memory controller PHY firmware"
+msgstr "البرنامج الثابت لطبقة الذاكرة المادية"
+
+#: os-xgs-npu
+msgid "of memory to its Linux"
+msgstr "من الذاكرة للينكس الخاص به"
+
+#: os-xgs-npu
+msgid "beside it, its boot areas"
+msgstr "وبجانبه مناطق الإقلاع"
+
+#: os-xgs-npu
+msgid "read-write"
+msgstr "للقراءة والكتابة"
+
+#: os-xgs-npu
+msgid "Read"
+msgstr "قُرئ"
+
+#: os-xgs-npu
+msgid "the closed partitions looked inside"
+msgstr "فُتحت الأقسام المغلقة للقراءة"
+
+#: os-xgs-npu
+msgid "Its software"
+msgstr "برمجياته"
+
+#: os-xgs-npu
+msgid "Opens each partition nothing has mounted, read-only, for a moment"
+msgstr "يفتح كل قسم غير مركَّب للقراءة فقط، للحظة"
+
+#: os-xgs-npu
+msgid "Look inside the closed partitions"
+msgstr "انظر داخل الأقسام المغلقة"
+
+#: os-xgs-npu
+msgid "Chips"
+msgstr "الشرائح"
+
+#: os-xgs-npu
+msgid "Flash"
+msgstr "الذاكرة الوميضية"
+
+#: os-xgs-npu
+msgid "eMMC"
+msgstr "eMMC"
+
+#: os-xgs-npu
+msgid "Partition"
+msgstr "القسم"
+
+#: os-xgs-npu
+msgid "What it is"
+msgstr "ما هو"
+
+#: os-xgs-npu
+msgid "Mounted"
+msgstr "مركَّب"
+
+#: os-xgs-npu
+msgid "What it holds"
+msgstr "ما يحويه"
+
+#: os-xgs-npu
+msgid "What can be done from here"
+msgstr "ما يمكن فعله من هنا"
+
+#: os-xgs-npu
+msgid "Nothing on this tab changes the coprocessor: it reads, and that is all it does. The few things that could be changed are left alone on purpose. Which copy of its system it starts is set in its U-Boot environment, and a mistake there is a coprocessor that does not start, so nothing in this project writes it. Restarting the coprocessor on its own stops the host of an XGS 3300 until the host is restarted too (issue 768). And writing to its flash or its eMMC can leave it unable to start. What can safely be changed has a page of its own: power on the PoE ports on XGS: Ports, a port found by its light on the Link Health page."
+msgstr "لا شيء في هذا التبويب يغيّر المعالج المساعد: إنه يقرأ فقط. والأشياء القليلة التي يمكن تغييرها متروكة عمداً. فأي نسختَي نظامه يُقلع منها يُحدَّد في إعدادات U-Boot، والخطأ فيها يعني معالجاً مساعداً لا يُقلع، فلا شيء في هذا المشروع يكتبها. وإعادة تشغيل المعالج المساعد وحده توقف مضيف XGS 3300 حتى يُعاد تشغيل المضيف أيضاً (المشكلة 768). والكتابة في ذاكرته الوميضية أو في eMMC قد تتركه عاجزاً عن الإقلاع. أما ما يمكن تغييره بأمان فله صفحته: الطاقة على منافذ PoE في XGS: Ports، والعثور على منفذ بضوئه في صفحة Link Health."
