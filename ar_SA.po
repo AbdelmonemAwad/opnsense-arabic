@@ -62938,3 +62938,690 @@ msgstr "عدّادات المسار السريع"
 #: os-xgs-npu
 msgid "Zero them on the coprocessor?"
 msgstr "تصفيرها على المعالج المساعد؟"
+
+# ---- os-watchdog: System: Hardware Watchdog - the timer, who arms it, and why the host last reset.
+# The reset causes are the bits of the AMD chipset's record, as reset_reason.py names them; the
+# card's short words (a reboot, the reset pin ...) are os-xgs-npu's and already above.
+
+#: os-watchdog
+msgid "Hardware Watchdog"
+msgstr "المراقب العتادي"
+
+#: os-watchdog
+msgid "System: Hardware Watchdog"
+msgstr "النظام: المراقب العتادي"
+
+#: os-watchdog
+msgid "Allow access to the hardware watchdog: its settings, arming and disarming it, and the last reset"
+msgstr "السماح بالوصول إلى المراقب العتادي: إعداداته، وتفعيله وتعطيله، وآخر إعادة تشغيل"
+
+#: os-watchdog
+msgid "Arm the host's own watchdog timer at every boot. If the host stops working for longer than the timeout - a hang nothing else can recover from - the timer resets the machine by itself instead of waiting for somebody to pull the power. It is disarmed at every shutdown, so turning the machine off stays off."
+msgstr "تفعيل مؤقّت المراقبة العتادي في المضيف عند كل إقلاع. إذا توقف المضيف عن العمل أطول من المهلة - تعليق لا يستطيع أي شيء آخر التعافي منه - يعيد المؤقّت تشغيل الجهاز بنفسه بدل انتظار أن يفصل أحدٌ الكهرباء. ويُعطَّل عند كل إيقاف، فيبقى الجهاز مطفأً إذا أُطفئ."
+
+#: os-watchdog
+msgid "Timeout (seconds)"
+msgstr "المهلة (بالثواني)"
+
+#: os-watchdog
+msgid "How long the host may stop before the timer resets it. watchdogd asks for this at every pat, once a second; 128 is what has run on the Sophos XGS 136 and 3300."
+msgstr "المدة التي يمكن أن يتوقف فيها المضيف قبل أن يعيد المؤقّت تشغيله. يطلبها watchdogd في كل نبضة، مرة كل ثانية؛ والقيمة 128 هي ما عمل على Sophos XGS 136 و3300."
+
+#: os-watchdog
+msgid "armed"
+msgstr "مُفعَّل"
+
+#: os-watchdog
+msgid "not armed"
+msgstr "غير مُفعَّل"
+
+#: os-watchdog
+msgid "by this plugin"
+msgstr "بهذه الإضافة"
+
+#: os-watchdog
+msgid "by os-xgs-npu"
+msgstr "بواسطة os-xgs-npu"
+
+#: os-watchdog
+msgid "by another watchdogd"
+msgstr "بعملية watchdogd أخرى"
+
+#: os-watchdog
+msgid "on in the settings"
+msgstr "مُشغَّل في الإعدادات"
+
+#: os-watchdog
+msgid "off in the settings"
+msgstr "مُطفأ في الإعدادات"
+
+#: os-watchdog
+msgid "Timer"
+msgstr "المؤقّت"
+
+#: os-watchdog
+msgid "Apply loads its driver"
+msgstr "يحمّل «تطبيق» برنامج تشغيله"
+
+#: os-watchdog
+msgid "The status could not be read."
+msgstr "تعذّرت قراءة الحالة."
+
+#: os-watchdog
+msgid "os-xgs-npu arms the watchdog of this host, by its own setting in XGS: Settings. This plugin leaves the timer to it and only shows it; the settings below take over once os-xgs-npu no longer arms it."
+msgstr "يفعّل os-xgs-npu مراقب هذا المضيف بإعداده الخاص في XGS: الإعدادات. تترك هذه الإضافة المؤقّت له وتكتفي بعرضه؛ وتتولى الإعدادات أدناه الأمر عندما يتوقف os-xgs-npu عن تفعيله."
+
+#: os-watchdog
+msgid "Why the host last reset, as its chipset recorded it: one bit for each cause, read early in every boot and cleared for the next. Only on AMD processors of family 17h or later."
+msgstr "سبب آخر إعادة تشغيل للمضيف كما سجّلته شريحته: بت لكل سبب، يُقرأ مبكرًا في كل إقلاع ويُمسح للإقلاع التالي. فقط على معالجات AMD من العائلة 17h وما بعدها."
+
+#: os-watchdog
+msgid "Bit"
+msgstr "البت"
+
+#: os-watchdog
+msgid "Cause"
+msgstr "السبب"
+
+#: os-watchdog
+msgid "Value read"
+msgstr "القيمة المقروءة"
+
+#: os-watchdog
+msgid "Read by"
+msgstr "قرأها"
+
+#: os-watchdog
+msgid "No cause recorded at this boot."
+msgstr "لم يُسجَّل سبب في هذا الإقلاع."
+
+#: os-watchdog
+msgid "os-xgs-npu reads the record on this host and kept none for this boot."
+msgstr "يقرأ os-xgs-npu السجل على هذا المضيف، ولم يحفظ شيئًا لهذا الإقلاع."
+
+#: os-watchdog
+msgid "no published meaning"
+msgstr "لا معنى منشور له"
+
+#: os-watchdog
+msgid "the thermal trip pin"
+msgstr "خط الفصل الحراري"
+
+#: os-watchdog
+msgid "the power button held for four seconds"
+msgstr "الضغط على زر الطاقة أربع ثوانٍ"
+
+#: os-watchdog
+msgid "the shutdown pin"
+msgstr "خط الإيقاف"
+
+#: os-watchdog
+msgid "a remote power-off (ASF)"
+msgstr "إطفاء عن بُعد (ASF)"
+
+#: os-watchdog
+msgid "the processor thermal limit"
+msgstr "حد الحرارة في المعالج"
+
+#: os-watchdog
+msgid "the system reset pin"
+msgstr "خط إعادة ضبط النظام"
+
+#: os-watchdog
+msgid "a software PCI reset"
+msgstr "إعادة ضبط PCI برمجية"
+
+#: os-watchdog
+msgid "software wrote 0x4 to port 0xCF9"
+msgstr "كتب برنامج القيمة 0x4 في المنفذ 0xCF9"
+
+#: os-watchdog
+msgid "software wrote 0x6 to port 0xCF9, as a reboot does"
+msgstr "كتب برنامج القيمة 0x6 في المنفذ 0xCF9، كما تفعل إعادة التشغيل"
+
+#: os-watchdog
+msgid "software wrote 0xE to port 0xCF9"
+msgstr "كتب برنامج القيمة 0xE في المنفذ 0xCF9"
+
+#: os-watchdog
+msgid "a sleep-state transition (ACPI)"
+msgstr "انتقال إلى حالة سكون (ACPI)"
+
+#: os-watchdog
+msgid "the keyboard reset pin"
+msgstr "خط إعادة الضبط من لوحة المفاتيح"
+
+#: os-watchdog
+msgid "the processor shut down, as after a triple fault"
+msgstr "توقف المعالج، كما بعد خطأ ثلاثي"
+
+#: os-watchdog
+msgid "the boot failed before its timer ran out"
+msgstr "فشل الإقلاع قبل انتهاء مؤقّته"
+
+#: os-watchdog
+msgid "the hardware watchdog expired"
+msgstr "انتهت مهلة المراقب العتادي"
+
+#: os-watchdog
+msgid "a remote reset (ASF)"
+msgstr "إعادة ضبط عن بُعد (ASF)"
+
+#: os-watchdog
+msgid "a sync flood after an uncorrected error"
+msgstr "فيض تزامن بعد خطأ غير مصحَّح"
+
+#: os-watchdog
+msgid "the chipset and the processor power controller failed the warm-reset handshake"
+msgstr "فشلت المصافحة بين الشريحة ومتحكم الطاقة في المعالج عند إعادة الضبط الدافئة"
+
+#: os-watchdog
+msgid "a parity error"
+msgstr "خطأ تكافؤ"
+
+#: os-watchdog
+msgid "a sync flood asked for by software"
+msgstr "فيض تزامن طلبه برنامج"
+
+# ---- os-kernelfollow: System: Kernel Follower - out-of-tree modules rebuilt for the kernel the next
+# boot will use. "Follow" is تتبّع throughout: the module follows the kernel.
+
+#: os-kernelfollow
+msgid "Kernel Follower"
+msgstr "متتبّع النواة"
+
+#: os-kernelfollow
+msgid "System: Kernel Follower"
+msgstr "النظام: متتبّع النواة"
+
+#: os-kernelfollow
+msgid "Allow access to the kernel follower: its settings, the registered modules, and rebuilding them now"
+msgstr "السماح بالوصول إلى متتبّع النواة: إعداداته، والوحدات المسجّلة، وإعادة بنائها الآن"
+
+#: os-kernelfollow
+msgid "Follow the kernel"
+msgstr "تتبّع النواة"
+
+#: os-kernelfollow
+msgid "Rebuild every registered module for the kernel the next boot will use, every five minutes, when an update runs, and at every orderly reboot. Off, nothing is rebuilt by itself; Follow now still works."
+msgstr "إعادة بناء كل وحدة مسجّلة للنواة التي سيستخدمها الإقلاع التالي، كل خمس دقائق، وعند كل تحديث، وعند كل إعادة تشغيل منظّمة. عند إطفائه لا يُعاد بناء شيء من تلقاء نفسه، ويبقى «تتبّع الآن» يعمل."
+
+#: os-kernelfollow
+msgid "Fetch kernel sources"
+msgstr "جلب مصادر النواة"
+
+#: os-kernelfollow
+msgid "Download the sources of the kernel to follow from github.com/opnsense/src when they are not on the machine already - about 350 MB, of which only sys/ is kept. Off, a module is built only from sources already here or carried in the pool."
+msgstr "تنزيل مصادر النواة المتتبَّعة من github.com/opnsense/src إذا لم تكن على الجهاز - نحو 350 ميغابايت، لا يُحفظ منها إلا sys/. عند إطفائه تُبنى الوحدة فقط من مصادر موجودة هنا أو محمولة في المستودع المحلي."
+
+#: os-kernelfollow
+msgid "Remove old kernel sources"
+msgstr "حذف مصادر النوى القديمة"
+
+#: os-kernelfollow
+msgid "Once the new kernel has run for the time below, with every module matching it, remove the sources of kernels this machine no longer runs. The running kernel's sources always stay."
+msgstr "بعد أن تعمل النواة الجديدة المدة أدناه وكل وحدة مطابقة لها، تُحذف مصادر النوى التي لم يعد هذا الجهاز يشغّلها. أما مصادر النواة العاملة فتبقى دائمًا."
+
+#: os-kernelfollow
+msgid "Settle time (hours)"
+msgstr "مدة الاستقرار (بالساعات)"
+
+#: os-kernelfollow
+msgid "How long a new kernel must have run before the sources of the old one are removed."
+msgstr "المدة التي يجب أن تعملها النواة الجديدة قبل حذف مصادر القديمة."
+
+#: os-kernelfollow
+msgid "Kernel running"
+msgstr "النواة العاملة"
+
+#: os-kernelfollow
+msgid "Next boot"
+msgstr "الإقلاع التالي"
+
+#: os-kernelfollow
+msgid "the same kernel"
+msgstr "النواة نفسها"
+
+#: os-kernelfollow
+msgid "staged by an update, not applied yet"
+msgstr "جهّزها تحديث ولم تُطبَّق بعد"
+
+#: os-kernelfollow
+msgid "installed, not booted yet"
+msgstr "مثبّتة ولم يُقلَع بها بعد"
+
+#: os-kernelfollow
+msgid "none registered"
+msgstr "لا شيء مسجّل"
+
+#: os-kernelfollow
+msgid "to rebuild"
+msgstr "تحتاج إعادة بناء"
+
+#: os-kernelfollow
+msgid "all match the next boot"
+msgstr "كلها مطابقة للإقلاع التالي"
+
+#: os-kernelfollow
+msgid "archives"
+msgstr "أرشيفات"
+
+#: os-kernelfollow
+msgid "no archives carried"
+msgstr "لا أرشيفات محمولة"
+
+#: os-kernelfollow
+msgid "os-xgs-npu follows its own two modules on this host with its own follower. This plugin leaves them to it and only shows them, and leaves the old kernel sources in /usr/src for it to remove."
+msgstr "يتتبّع os-xgs-npu وحدتيه على هذا المضيف بمتتبّعه الخاص. تتركهما هذه الإضافة له وتكتفي بعرضهما، وتترك له حذف مصادر النوى القديمة في /usr/src."
+
+#: os-kernelfollow
+msgid "A module the network needs could not be rebuilt, so the next boot takes the previous kernel, which it matches. The next run that rebuilds it cancels this."
+msgstr "تعذّرت إعادة بناء وحدة تحتاجها الشبكة، فيأخذ الإقلاع التالي النواة السابقة التي تطابقها. وأول تشغيل يعيد بناءها يلغي ذلك."
+
+#: os-kernelfollow
+msgid "matches"
+msgstr "مطابقة"
+
+#: os-kernelfollow
+msgid "No module is registered. A plugin that installs one registers it in /usr/local/etc/kernelfollow.d."
+msgstr "لا توجد وحدة مسجّلة. الإضافة التي تثبّت وحدة تسجّلها في /usr/local/etc/kernelfollow.d."
+
+#: os-kernelfollow
+msgid "Registered by"
+msgstr "سجّلها"
+
+#: os-kernelfollow
+msgid "Built for"
+msgstr "مبنية لـ"
+
+#: os-kernelfollow
+msgid "Followed by"
+msgstr "يتتبّعها"
+
+#: os-kernelfollow
+msgid "Last run"
+msgstr "آخر تشغيل"
+
+#: os-kernelfollow
+msgid "Kernel sources on disk"
+msgstr "مصادر النوى على القرص"
+
+#: os-kernelfollow
+msgid "Check"
+msgstr "فحص"
+
+#: os-kernelfollow
+msgid "Follow now"
+msgstr "تتبّع الآن"
+
+#: os-kernelfollow
+msgid "Every registered module that does not match the kernel the next boot will use is rebuilt now: its sources fetched if they are not here, built, and installed beside the old one. It takes minutes; the page follows it."
+msgstr "كل وحدة مسجّلة لا تطابق النواة التي سيستخدمها الإقلاع التالي يُعاد بناؤها الآن: تُجلب مصادرها إن لم تكن هنا، وتُبنى، وتُثبَّت بجانب القديمة. يستغرق ذلك دقائق، والصفحة تتابعه."
+
+# ---- os-blocklists: Firewall: Block Lists - address lists, countries, the DNS lists of Unbound and
+# JA4 fingerprints in one page. "List" is قائمة, "block" حظر, "cut" (a connection) قطع.
+
+#: os-blocklists
+msgid "Block Lists"
+msgstr "قوائم الحظر"
+
+#: os-blocklists
+msgid "Firewall: Block Lists"
+msgstr "الجدار الناري: قوائم الحظر"
+
+#: os-blocklists
+msgid "Allow access to the block lists: choosing lists and countries, the firewall aliases and rules they make, and cutting connections"
+msgstr "السماح بالوصول إلى قوائم الحظر: اختيار القوائم والدول، والأسماء المستعارة والقواعد التي تنشئها في الجدار الناري، وقطع الاتصالات"
+
+#: os-blocklists
+msgid "Block what the lists below name. Off, the rules are gone at the next filter reload and nothing is cut; the lists stay chosen."
+msgstr "حظر ما تذكره القوائم أدناه. عند إطفائه تزول القواعد عند إعادة تحميل الجدار الناري التالية ولا يُقطع شيء، وتبقى القوائم مختارة."
+
+#: os-blocklists
+msgid "Address lists"
+msgstr "قوائم العناوين"
+
+#: os-blocklists
+msgid "Public lists of addresses to block, each fetched by the firewall once a day into an alias of its own (blocklists_...). The Lists tab says what each one is and whose terms it comes under."
+msgstr "قوائم عامة بعناوين يُراد حظرها، يجلب الجدار الناري كلًّا منها مرة في اليوم إلى اسم مستعار خاص بها (blocklists_...). يبيّن تبويب «القوائم» ما هي كل قائمة وتحت شروط من تأتي."
+
+#: os-blocklists
+msgid "Block every address registered to these countries, in a GeoIP alias. It needs a GeoIP source set in Firewall: Aliases: GeoIP settings; without one the alias stays empty."
+msgstr "حظر كل عنوان مسجّل لهذه الدول، في اسم مستعار من نوع GeoIP. يحتاج مصدر GeoIP مضبوطًا في الجدار الناري: الأسماء المستعارة: إعدادات GeoIP؛ وبدونه يبقى الاسم المستعار فارغًا."
+
+#: os-blocklists
+msgid "Inbound only"
+msgstr "الوارد فقط"
+
+#: os-blocklists
+msgid "Both ways"
+msgstr "في الاتجاهين"
+
+#: os-blocklists
+msgid "Inbound only: nothing from a listed address gets in. Both ways: nothing inside can reach one either."
+msgstr "الوارد فقط: لا يدخل شيء من عنوان مُدرج. في الاتجاهين: ولا يستطيع شيء في الداخل الوصول إليه أيضًا."
+
+#: os-blocklists
+msgid "Log blocked packets"
+msgstr "تسجيل الحزم المحظورة"
+
+#: os-blocklists
+msgid "Write every packet the rules block to the firewall log. A long list blocks a lot."
+msgstr "كتابة كل حزمة تحظرها القواعد في سجل الجدار الناري. القائمة الطويلة تحظر كثيرًا."
+
+#: os-blocklists
+msgid "Cut open connections"
+msgstr "قطع الاتصالات المفتوحة"
+
+#: os-blocklists
+msgid "A block rule stops new connections only. With this on, a connection already open to or from an address a list has just gained is cut within a minute, and on a Sophos XGS taken out of the coprocessor with it."
+msgstr "قاعدة الحظر توقف الاتصالات الجديدة فقط. عند تشغيل هذا يُقطع خلال دقيقة كل اتصال مفتوح من أو إلى عنوان أُضيف للتو إلى قائمة، وعلى Sophos XGS يُخرج من المعالج المساعد معه."
+
+#: os-blocklists
+msgid "TLS fingerprints (JA4)"
+msgstr "بصمات TLS (JA4)"
+
+#: os-blocklists
+msgid "Cut every TLS connection whose client shows one of these JA4 fingerprints, separated by commas - it names the program, whatever server it goes to. Read from the Intrusion Detection's TLS log, which must carry the ja4 field; the JA4 tab says what is missing and which fingerprints are seen."
+msgstr "قطع كل اتصال TLS يُظهر عميله إحدى بصمات JA4 هذه، مفصولة بفواصل - فهي تسمّي البرنامج أيًّا كان الخادم الذي يذهب إليه. تُقرأ من سجل TLS في كشف التسلل، ويجب أن يحمل حقل ja4؛ ويبيّن تبويب JA4 ما الناقص وأي البصمات تُرى."
+
+#: os-blocklists
+msgid "Lists"
+msgstr "القوائم"
+
+#: os-blocklists
+msgid "lists"
+msgstr "قوائم"
+
+#: os-blocklists
+msgid "addresses and networks"
+msgstr "عناوين وشبكات"
+
+#: os-blocklists
+msgid "packets since the tables were loaded"
+msgstr "حزمة منذ تحميل الجداول"
+
+#: os-blocklists
+msgid "no GeoIP source set"
+msgstr "لا مصدر GeoIP مضبوط"
+
+#: os-blocklists
+msgid "DNS lists"
+msgstr "قوائم DNS"
+
+#: os-blocklists
+msgid "in Unbound DNS"
+msgstr "في Unbound DNS"
+
+#: os-blocklists
+msgid "Unbound DNS is off"
+msgstr "Unbound DNS مُطفأ"
+
+#: os-blocklists
+msgid "JA4"
+msgstr "JA4"
+
+#: os-blocklists
+msgid "os-xgs-npu also cuts connections on this host, for the lists and fingerprints XGS: Settings names. A list or fingerprint named there is left to it here, so nothing is cut twice."
+msgstr "يقطع os-xgs-npu الاتصالات أيضًا على هذا المضيف، للقوائم والبصمات التي يذكرها XGS: الإعدادات. القائمة أو البصمة المذكورة هناك تُترك له هنا، فلا يُقطع شيء مرتين."
+
+#: os-blocklists
+msgid "List"
+msgstr "القائمة"
+
+#: os-blocklists
+msgid "Entries"
+msgstr "المدخلات"
+
+#: os-blocklists
+msgid "Blocked in"
+msgstr "محظور واردًا"
+
+#: os-blocklists
+msgid "Blocked out"
+msgstr "محظور صادرًا"
+
+#: os-blocklists
+msgid "not loaded"
+msgstr "غير محمّلة"
+
+#: os-blocklists
+msgid "No list is chosen. Choose lists and countries in Settings, then Apply."
+msgstr "لم تُختر أي قائمة. اختر القوائم والدول في «الإعدادات» ثم «تطبيق»."
+
+#: os-blocklists
+msgid "Open connections"
+msgstr "الاتصالات المفتوحة"
+
+#: os-blocklists
+msgid "not run yet"
+msgstr "لم يعمل بعد"
+
+#: os-blocklists
+msgid "Cutting open connections is off."
+msgstr "قطع الاتصالات المفتوحة مُطفأ."
+
+#: os-blocklists
+msgid "DNS block lists are kept by OPNsense itself, in Services: Unbound DNS: Blocklists; they are shown here so every list is in one place."
+msgstr "قوائم حظر DNS يحفظها OPNsense نفسه في الخدمات: Unbound DNS: قوائم الحظر؛ وتُعرض هنا لتكون كل القوائم في مكان واحد."
+
+#: os-blocklists
+msgid "No DNS block list is set in Unbound DNS."
+msgstr "لا توجد قائمة حظر DNS مضبوطة في Unbound DNS."
+
+#: os-blocklists
+msgid "Open Unbound DNS: Blocklists"
+msgstr "فتح Unbound DNS: قوائم الحظر"
+
+#: os-blocklists
+msgid "Listed"
+msgstr "المُدرجة"
+
+#: os-blocklists
+msgid "Show the fingerprints seen"
+msgstr "عرض البصمات المرئية"
+
+#: os-blocklists
+msgid "Last connection"
+msgstr "آخر اتصال"
+
+#: os-blocklists
+msgid "Nothing to change."
+msgstr "لا شيء للتغيير."
+
+# ---- os-portguard: Firewall: Port Guard - devices inside the network blocked by their MAC address.
+
+#: os-portguard
+msgid "Port Guard"
+msgstr "حارس المنافذ"
+
+#: os-portguard
+msgid "Firewall: Port Guard"
+msgstr "الجدار الناري: حارس المنافذ"
+
+#: os-portguard
+msgid "Allow access to the port guard: the devices blocked by their MAC address, the devices seen, and the alias and rules it makes"
+msgstr "السماح بالوصول إلى حارس المنافذ: الأجهزة المحظورة بعنوان MAC، والأجهزة المرئية، والاسم المستعار والقواعد التي ينشئها"
+
+#: os-portguard
+msgid "Block the devices listed. Off, the rules are gone at the next filter reload; the list stays."
+msgstr "حظر الأجهزة المُدرجة. عند إطفائه تزول القواعد عند إعادة تحميل الجدار الناري التالية، وتبقى القائمة."
+
+#: os-portguard
+msgid "Write every packet the rules block to the firewall log."
+msgstr "كتابة كل حزمة تحظرها القواعد في سجل الجدار الناري."
+
+#: os-portguard
+msgid "The device's MAC address, 02:00:00:aa:bb:cc - or its first three to five bytes, to block every device of one maker. A device that changes its address (private Wi-Fi addresses do) is blocked only under the one listed."
+msgstr "عنوان MAC للجهاز، 02:00:00:aa:bb:cc - أو أول ثلاثة إلى خمسة بايتات منه لحظر كل أجهزة صانع واحد. الجهاز الذي يغيّر عنوانه (كما تفعل عناوين Wi-Fi الخاصة) لا يُحظر إلا تحت العنوان المُدرج."
+
+#: os-portguard
+msgid "A listed device is stopped at the firewall: nothing it sends passes through it, and nothing reaches it through it. Two devices behind the same switch still reach each other - their frames never come to the firewall."
+msgstr "الجهاز المُدرج يُوقف عند الجدار الناري: لا يمر عبره شيء يرسله، ولا يصله عبره شيء. أما جهازان خلف المبدّل نفسه فيبقيان يصلان إلى بعضهما - فإطاراتهما لا تأتي إلى الجدار الناري أصلًا."
+
+#: os-portguard
+msgid "Devices listed"
+msgstr "الأجهزة المُدرجة"
+
+#: os-portguard
+msgid "of them seen now"
+msgstr "منها مرئية الآن"
+
+#: os-portguard
+msgid "Addresses blocked now"
+msgstr "العناوين المحظورة الآن"
+
+#: os-portguard
+msgid "packets since the table was loaded"
+msgstr "حزمة منذ تحميل الجدول"
+
+#: os-portguard
+msgid "Devices seen"
+msgstr "الأجهزة المرئية"
+
+#: os-portguard
+msgid "from host discovery"
+msgstr "من اكتشاف الأجهزة"
+
+#: os-portguard
+msgid "from the ARP and NDP tables"
+msgstr "من جدولي ARP وNDP"
+
+#: os-portguard
+msgid "blocked"
+msgstr "محظور"
+
+#: os-portguard
+msgid "Block this device"
+msgstr "حظر هذا الجهاز"
+
+#: os-portguard
+msgid "Nothing will pass the firewall to or from it once applied - this page included, if it is the device you are using now."
+msgstr "بعد التطبيق لن يمر عبر الجدار الناري شيء منه أو إليه - وهذه الصفحة أيضًا، إن كان هو الجهاز الذي تستخدمه الآن."
+
+#: os-portguard
+msgid "No device seen."
+msgstr "لا يُرى أي جهاز."
+
+#: os-portguard
+msgid "Blocked devices"
+msgstr "الأجهزة المحظورة"
+
+#: os-portguard
+msgid "Maker"
+msgstr "الصانع"
+
+#: os-portguard
+msgid "The list has changed; Apply puts it into the firewall."
+msgstr "تغيّرت القائمة؛ «تطبيق» يضعها في الجدار الناري."
+
+#: os-portguard
+msgid "Edit device"
+msgstr "تعديل الجهاز"
+
+# ---- os-fallbackcrypto: VPN: IPsec: Fallback Crypto - the host's kernel crypto provider for the IPsec
+# tunnels the coprocessor does not take. The drivers' names (aesni, ossl) stay as they are.
+
+#: os-fallbackcrypto
+msgid "Fallback Crypto"
+msgstr "التشفير الاحتياطي"
+
+#: os-fallbackcrypto
+msgid "VPN: IPsec: Fallback Crypto"
+msgstr "الشبكة الافتراضية: IPsec: التشفير الاحتياطي"
+
+#: os-fallbackcrypto
+msgid "Allow access to the choice of the host's crypto provider for IPsec, which loads a kernel module and writes a loader tunable"
+msgstr "السماح بالوصول إلى اختيار مزوّد التشفير في المضيف لـ IPsec، وهو يحمّل وحدة نواة ويكتب متغيّر إقلاع"
+
+#: os-fallbackcrypto
+msgid "Crypto provider for IPsec"
+msgstr "مزوّد التشفير لـ IPsec"
+
+#: os-fallbackcrypto
+msgid "Which of the kernel's crypto drivers encrypts the IPsec tunnels the host carries itself - on a Sophos XGS, those the coprocessor does not take. aesni is what OPNsense ships with. ossl uses OpenSSL's own AES-GCM code, which on a processor with AVX, PCLMULQDQ and MOVBE processes several blocks at once. Beside aesni, the kernel shares new sessions between the two; ossl only takes effect fully after a reboot. An open tunnel keeps its provider until its SAs are made again."
+msgstr "أي برامج تشغيل التشفير في النواة يشفّر أنفاق IPsec التي يحملها المضيف بنفسه - على Sophos XGS تلك التي لا يأخذها المعالج المساعد. aesni هو ما يأتي مع OPNsense. ويستخدم ossl شيفرة AES-GCM الخاصة بـ OpenSSL، التي تعالج عدة كتل معًا على معالج فيه AVX وPCLMULQDQ وMOVBE. بجانب aesni تقسم النواة الجلسات الجديدة بينهما، ولا يعمل «ossl فقط» كاملًا إلا بعد إعادة التشغيل. والنفق المفتوح يبقى على مزوّده حتى تُنشأ اتفاقياته الأمنية من جديد."
+
+#: os-fallbackcrypto
+msgid "aesni only, as OPNsense ships"
+msgstr "aesni فقط، كما يأتي OPNsense"
+
+#: os-fallbackcrypto
+msgid "ossl beside aesni"
+msgstr "ossl بجانب aesni"
+
+#: os-fallbackcrypto
+msgid "ossl only (aesni off from the next boot)"
+msgstr "ossl فقط (aesni مُطفأ من الإقلاع التالي)"
+
+#: os-fallbackcrypto
+msgid "ossl only"
+msgstr "ossl فقط"
+
+#: os-fallbackcrypto
+msgid "aesni only"
+msgstr "aesni فقط"
+
+#: os-fallbackcrypto
+msgid "Processor"
+msgstr "المعالج"
+
+#: os-fallbackcrypto
+msgid "ossl: AES-GCM with AVX-512 and VAES"
+msgstr "ossl: ‏AES-GCM بـ AVX-512 وVAES"
+
+#: os-fallbackcrypto
+msgid "ossl: AES-GCM with AVX, PCLMULQDQ and MOVBE"
+msgstr "ossl: ‏AES-GCM بـ AVX وPCLMULQDQ وMOVBE"
+
+#: os-fallbackcrypto
+msgid "ossl has no fast AES-GCM on this processor"
+msgstr "لا يملك ossl شيفرة AES-GCM سريعة على هذا المعالج"
+
+#: os-fallbackcrypto
+msgid "Crypto providers"
+msgstr "مزوّدو التشفير"
+
+#: os-fallbackcrypto
+msgid "IPsec held to software providers"
+msgstr "IPsec مقصور على المزوّدين البرمجيين"
+
+#: os-fallbackcrypto
+msgid "IPsec SAs in the kernel"
+msgstr "اتفاقيات IPsec الأمنية في النواة"
+
+#: os-fallbackcrypto
+msgid "a reboot is needed for the rest"
+msgstr "يلزم إعادة تشغيل للباقي"
+
+#: os-fallbackcrypto
+msgid "as it runs now"
+msgstr "كما يعمل الآن"
+
+#: os-fallbackcrypto
+msgid "This kernel has no ossl module, so only aesni can be used."
+msgstr "لا توجد وحدة ossl في هذه النواة، فلا يمكن استخدام غير aesni."
+
+#: os-fallbackcrypto
+msgid "The rest takes effect at the next reboot (Power: Reboot)."
+msgstr "يسري الباقي عند إعادة التشغيل التالية (الطاقة: إعادة التشغيل)."
+
+#: os-fallbackcrypto
+msgid "SA"
+msgstr "الاتفاقية الأمنية"
+
+#: os-fallbackcrypto
+msgid "The kernel holds no IPsec SA now."
+msgstr "لا تحمل النواة أي اتفاقية IPsec أمنية الآن."
+
+#: os-fallbackcrypto
+msgid "Processor feature"
+msgstr "ميزة المعالج"
+
+#: os-fallbackcrypto
+msgid "Present"
+msgstr "موجودة"
+
+#: os-fallbackcrypto
+msgid "On a Sophos XGS the coprocessor encrypts the SAs it has taken, whatever is chosen here; XGS: IPsec says which those are."
+msgstr "على Sophos XGS يشفّر المعالج المساعد الاتفاقيات الأمنية التي أخذها أيًّا كان الاختيار هنا؛ وتبيّن صفحة XGS: IPsec أيّها."
