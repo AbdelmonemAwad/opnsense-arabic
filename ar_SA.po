@@ -62737,3 +62737,41 @@ msgstr "ما يمكن فعله من هنا"
 #: os-xgs-npu
 msgid "Nothing on this tab changes the coprocessor: it reads, and that is all it does. The few things that could be changed are left alone on purpose. Which copy of its system it starts is set in its U-Boot environment, and a mistake there is a coprocessor that does not start, so nothing in this project writes it. Restarting the coprocessor on its own stops the host of an XGS 3300 until the host is restarted too (issue 768). And writing to its flash or its eMMC can leave it unable to start. What can safely be changed has a page of its own: power on the PoE ports on XGS: Ports, a port found by its light on the Link Health page."
 msgstr "لا شيء في هذا التبويب يغيّر المعالج المساعد: إنه يقرأ فقط. والأشياء القليلة التي يمكن تغييرها متروكة عمداً. فأي نسختَي نظامه يُقلع منها يُحدَّد في إعدادات U-Boot، والخطأ فيها يعني معالجاً مساعداً لا يُقلع، فلا شيء في هذا المشروع يكتبها. وإعادة تشغيل المعالج المساعد وحده توقف مضيف XGS 3300 حتى يُعاد تشغيل المضيف أيضاً (المشكلة 768). والكتابة في ذاكرته الوميضية أو في eMMC قد تتركه عاجزاً عن الإقلاع. أما ما يمكن تغييره بأمان فله صفحته: الطاقة على منافذ PoE في XGS: Ports، والعثور على منفذ بضوئه في صفحة Link Health."
+
+# ---- os-xgs-npu: XGS: Overview, the Coprocessor tab's summary cards (2026-10-25).
+
+#: os-xgs-npu
+msgid "Vendor build"
+msgstr "إصدار برنامج المورّد"
+
+#: os-xgs-npu
+msgid "Running copy"
+msgstr "النسخة العاملة"
+
+#: os-xgs-npu
+msgid "The other copy holds"
+msgstr "النسخة الأخرى تحمل"
+
+#: os-xgs-npu
+msgid "not looked inside yet"
+msgstr "لم يُنظر داخلها بعد"
+
+#: os-xgs-npu
+msgid "Persistent partition"
+msgstr "القسم الدائم"
+
+#: os-xgs-npu
+msgid "Boot firmware"
+msgstr "برامج الإقلاع"
+
+#: os-xgs-npu
+msgid "U-Boot not read"
+msgstr "لم يُقرأ U-Boot"
+
+#: os-xgs-npu
+msgid "The vendor build on the coprocessor"
+msgstr "إصدار برنامج المورّد على المعالج المساعد"
+
+#: os-xgs-npu
+msgid "A Linux of the board maker with no vendor build: by the look of it, the factory or recovery system"
+msgstr "نظام لينكس من صانع اللوحة بلا إصدار من برنامج المورّد: يبدو أنه نظام المصنع أو الاسترداد"
