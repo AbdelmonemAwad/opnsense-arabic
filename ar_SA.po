@@ -62875,3 +62875,66 @@ msgstr "المحتوى"
 #: os-xgs-npu
 msgid "Read-only. Not offered: choosing the boot copy (U-Boot environment, a mistake leaves the coprocessor unbootable), restarting the coprocessor alone (stops an XGS 3300 host, issue 768), writing its flash or eMMC. Safe changes have their own pages: PoE on XGS: Ports, port identify on Link Health."
 msgstr "للقراءة فقط. غير متاح: اختيار نسخة الإقلاع (إعدادات U-Boot، والخطأ فيها يمنع المعالج المساعد من الإقلاع)، وإعادة تشغيل المعالج المساعد وحده (توقف مضيف XGS 3300، المشكلة 768)، والكتابة في ذاكرته الوميضية أو eMMC. التغييرات الآمنة لها صفحاتها: PoE في XGS: Ports، وتعريف المنفذ في Link Health."
+
+# ---- os-xgs-npu: XGS: Overview and IPsec - the coprocessor console page, its fast-path counters,
+# watchdog and memory errors, PCIe ordering, and each association counts (2026-10-25).
+
+#: os-xgs-npu
+msgid "Coprocessor Console"
+msgstr "شاشة المعالج المساعد"
+
+#: os-xgs-npu
+msgid "packets"
+msgstr "حزمة"
+
+#: os-xgs-npu
+msgid "coprocessor"
+msgstr "المعالج المساعد"
+
+#: os-xgs-npu
+msgid "Counted"
+msgstr "المحسوب"
+
+#: os-xgs-npu
+msgid "PCIe ordering"
+msgstr "ترتيب PCIe"
+
+#: os-xgs-npu
+msgid "Watchdog"
+msgstr "المراقب"
+
+#: os-xgs-npu
+msgid "fed every"
+msgstr "يُغذّى كل"
+
+#: os-xgs-npu
+msgid "not fed"
+msgstr "لا يُغذّى"
+
+#: os-xgs-npu
+msgid "Memory errors"
+msgstr "أخطاء الذاكرة"
+
+#: os-xgs-npu
+msgid "corrected / uncorrected"
+msgstr "مصحّحة / غير مصحّحة"
+
+#: os-xgs-npu
+msgid "no EDAC"
+msgstr "لا EDAC"
+
+#: os-xgs-npu
+msgid "All zero"
+msgstr "كلها صفر"
+
+#: os-xgs-npu
+msgid "cleared first"
+msgstr "بعد التصفير"
+
+#: os-xgs-npu
+msgid "Fast-path counters"
+msgstr "عدّادات المسار السريع"
+
+#: os-xgs-npu
+msgid "Zero them on the coprocessor?"
+msgstr "تصفيرها على المعالج المساعد؟"
