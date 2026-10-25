@@ -57588,6 +57588,10 @@ msgid "An update is installed and waits for a reboot to load the new driver."
 msgstr "ثُبِّت تحديث وينتظر إعادة تشغيل لتحميل برنامج التشغيل الجديد."
 
 #: os-xgs-npu
+msgid "An update is installed and waits for a reboot to run its new boot steps."
+msgstr "ثُبِّت تحديث وينتظر إعادة تشغيل لتنفيذ خطوات الإقلاع الجديدة."
+
+#: os-xgs-npu
 msgid "Latest"
 msgstr "الأحدث"
 
