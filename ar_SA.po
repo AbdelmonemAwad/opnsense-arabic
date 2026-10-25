@@ -62463,6 +62463,14 @@ msgstr "يُعاد تشغيل واجهة الويب؛ وتتابع هذه الص
 msgid "Each plugin follows the latest release of its own repository on GitHub and installs it with the installer that release carries. Nothing is installed on its own: a plugin is updated when Update is pressed here. Its installer restarts the web GUI; this page follows the update through it."
 msgstr "تتبع كل إضافة أحدث إصدار من مستودعها على GitHub وتثبّته بالمثبّت الذي يحمله ذلك الإصدار. لا يُثبَّت شيء من تلقاء نفسه: تُحدَّث الإضافة عند الضغط على «تحديث» هنا. يعيد مثبّتها تشغيل واجهة الويب، وتتابع هذه الصفحة التحديث خلال ذلك."
 
+#: os-xgs-npu
+msgid "Each plugin follows the latest release of its own repository on GitHub and installs it with the installer that release carries. An update of the project brings them along; here a plugin is updated or installed when its button is pressed. Its installer restarts the web GUI; this page follows the update through it."
+msgstr "تتبع كل إضافة أحدث إصدار من مستودعها على GitHub وتثبّته بالمثبّت الذي يحمله ذلك الإصدار. يأتي بها تحديثُ المشروع معه، وهنا تُحدَّث الإضافة أو تُثبَّت عند الضغط على زرّها. يعيد مثبّتها تشغيل واجهة الويب، وتتابع هذه الصفحة التحديث خلال ذلك."
+
+#: os-xgs-npu
+msgid "Checking for updates..."
+msgstr "جارٍ التحقق من وجود تحديثات..."
+
 # ---- os-xgs-npu: the flow maker's help on XGS: Settings, no longer saying that Suricata's inline IPS
 # and the offload are one or the other - "Inspect, then hardware" has them work together.
 
