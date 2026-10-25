@@ -57548,6 +57548,10 @@ msgid "Installed. The driver it built is the one running, so nothing waits for a
 msgstr "ثُبّت. المشغّل الذي بناه هو العامل الآن، فلا شيء ينتظر إعادة تشغيل."
 
 #: os-xgs-npu
+msgid "Installed. The driver is the one running, but its boot steps changed: they take effect at the next boot."
+msgstr "ثُبِّت. المشغّل هو العامل الآن، لكن خطوات الإقلاع تغيّرت، وتسري عند الإقلاع التالي."
+
+#: os-xgs-npu
 msgid "The installed version was built from a branch that this history does not hold - a test build, or one whose change was later merged as a single commit - so it is not ahead and not behind; this is the version to install."
 msgstr "النسخة المثبّتة بُنيت من فرع لا يحويه هذا التاريخ - نسخة تجربة، أو نسخة دُمج تغييرها لاحقًا في إيداع واحد - فليست متقدمة ولا متأخرة؛ هذه هي النسخة التي تُثبَّت."
 
