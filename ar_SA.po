@@ -58076,6 +58076,14 @@ msgid "Say so, and nothing more"
 msgstr "الإبلاغ فقط، دون أي إجراء آخر"
 
 #: os-xgs-npu
+msgid "Take it up again, or restart"
+msgstr "استعادته في مكانه، أو إعادة التشغيل"
+
+#: os-xgs-npu
+msgid "The host asks the coprocessor's fast path every five seconds whether it is there, and takes it as stopped after 30 seconds without an answer. Every frame through the front ports goes through the fast path, so while it is stopped nothing passes. Either way it is written in the system log and, unless problem reporting is off, reported. Take it up again, the default: the driver stops reading the coprocessor, which restarts by itself or is restarted, and is brought up again with the host running - every port back in about four minutes, nothing of the host's lost; if that does not bring the fast path back, the appliance is restarted. A restart comes once the fast path has gone that long without answering, the report collected first, and never more than three times a day, so an appliance whose coprocessor does not come back stays up for somebody to look at. On the XGS 136, whose fast path does not answer the heartbeat message, the answer is the message being taken off the host's queue by the fast path."
+msgstr "يسأل المضيفُ المسارَ السريع في المعالج المساعد كل خمس ثوانٍ إن كان موجوداً، ويعدّه متوقفاً بعد 30 ثانية بلا رد. كل إطار يمر عبر المنافذ الأمامية يمر عبر المسار السريع، فلا يمر شيء ما دام متوقفاً. وفي الحالتين يُكتب ذلك في سجل النظام ويُبلَّغ عنه، ما لم تكن تقارير المشاكل متوقفة. والخيار الافتراضي هو الاستعادة في المكان: يكفّ التعريف عن القراءة من المعالج المساعد، فيعيد تشغيل نفسه أو يُعاد تشغيله، ثم يُشغَّل من جديد والمضيف قائم - فتعود المنافذ كلها في نحو أربع دقائق دون أن يضيع شيء مما في المضيف؛ فإن لم يعد المسار السريع بذلك أُعيد تشغيل الجهاز. وإعادة التشغيل تأتي حين يمضي المسار السريع تلك المدة بلا رد، بعد جمع التقرير أولاً، ولا تتجاوز ثلاث مرات في اليوم، حتى يبقى الجهاز الذي لا يعود معالجه المساعد قائماً لمن يفحصه. وعلى XGS 136، الذي لا يجيب مساره السريع على رسالة النبض، تكون الإجابة أن يأخذ المسار السريع الرسالة من طابور المضيف."
+
+#: os-xgs-npu
 msgid "Restart the appliance after 2 minutes"
 msgstr "إعادة تشغيل الجهاز بعد دقيقتين"
 
