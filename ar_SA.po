@@ -62877,6 +62877,19 @@ msgid "commands 36+ shifted by one"
 msgstr "الأوامر من 36 مزاحة بواحد"
 
 #: os-xgs-npu
+msgid "not recognised"
+msgstr "لم يُتعرَّف عليه"
+
+#: os-xgs-npu
+msgid "commands 36+ not sent"
+msgstr "الأوامر من 36 لا تُرسَل"
+
+#: os-xgs-npu
+#, php-format
+msgid "commands 36+ shifted by %s"
+msgstr "الأوامر من 36 مزاحة بمقدار %s"
+
+#: os-xgs-npu
 msgid "Linux"
 msgstr "لينكس"
 
