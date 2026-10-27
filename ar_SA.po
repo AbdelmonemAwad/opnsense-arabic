@@ -56932,6 +56932,14 @@ msgstr ""
 "الحالية."
 
 #: os-netreport/controllers/OPNsense/NetReport/forms/general.xml
+msgid ""
+"Sign in to the SMTP server with the username and password below. Turn this "
+"off for a server that accepts mail without signing in."
+msgstr ""
+"يسجّل الدخول إلى خادم SMTP باسم المستخدم وكلمة المرور أدناه. عطّل هذا الخيار "
+"إن كان الخادم يقبل البريد دون تسجيل الدخول."
+
+#: os-netreport/controllers/OPNsense/NetReport/forms/general.xml
 msgid "Used for internet volume and the monthly data cap."
 msgstr "يُستخدم لحساب استهلاك الإنترنت والحد الشهري للبيانات."
 
