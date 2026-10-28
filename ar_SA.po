@@ -63000,6 +63000,70 @@ msgstr "عدّادات المسار السريع"
 msgid "Zero them on the coprocessor?"
 msgstr "تصفيرها على المعالج المساعد؟"
 
+#: os-xgs-npu
+msgid "Appliance health"
+msgstr "صحة الجهاز"
+
+#: os-xgs-npu
+msgid "Coprocessor memory"
+msgstr "ذاكرة المعالج المساعد"
+
+#: os-xgs-npu
+msgid "Fan %s"
+msgstr "مروحة %s"
+
+#: os-xgs-npu
+msgid "Internal supply"
+msgstr "مزوّد الطاقة الداخلي"
+
+#: os-xgs-npu
+msgid "External supply"
+msgstr "مزوّد الطاقة الخارجي"
+
+#: os-xgs-npu
+msgid "good"
+msgstr "سليم"
+
+#: os-xgs-npu
+msgid "not good"
+msgstr "غير سليم"
+
+#: os-xgs-npu
+msgid "not good or absent"
+msgstr "غير سليم أو غير موجود"
+
+#: os-xgs-npu
+msgid "under speed"
+msgstr "دون السرعة"
+
+#: os-xgs-npu
+msgid "Reset button"
+msgstr "زر إعادة الضبط"
+
+#: os-xgs-npu
+msgid "pressed"
+msgstr "ضُغط"
+
+#: os-xgs-npu
+msgid "not pressed"
+msgstr "لم يُضغط"
+
+#: os-xgs-npu
+msgid "Reset flag 1"
+msgstr "علم إعادة الضبط 1"
+
+#: os-xgs-npu
+msgid "raised"
+msgstr "مرفوع"
+
+#: os-xgs-npu
+msgid "U-Boot built"
+msgstr "تاريخ بناء U-Boot"
+
+#: os-xgs-npu
+msgid "Boot image built"
+msgstr "تاريخ بناء صورة الإقلاع"
+
 # ---- os-watchdog: System: Hardware Watchdog - the timer, who arms it, and why the host last reset.
 # The reset causes are the bits of the AMD chipset's record, as reset_reason.py names them; the
 # card's short words (a reboot, the reset pin ...) are os-xgs-npu's and already above.
