@@ -60115,6 +60115,10 @@ msgid "Scale ends at the panic point, %s; the mark is the limit, %s"
 msgstr "ينتهي المقياس عند نقطة الطوارئ، %s؛ والعلامة هي الحد، %s"
 
 #: os-fanctl
+msgid "Scale ends a quarter above the fastest this fan has been seen turning, %s"
+msgstr "ينتهي المقياس بربعٍ فوق أعلى سرعة سُجّلت لهذه المروحة، %s"
+
+#: os-fanctl
 msgid "No fan or temperature readings yet."
 msgstr "لا قراءات للمراوح أو الحرارة بعد."
 
