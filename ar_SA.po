@@ -63072,6 +63072,12 @@ msgstr "PHY المنفذين F1 وF2"
 msgid "Module PHY"
 msgstr "PHY الوحدة الإضافية"
 
+# ---- os-xgs-npu: the coprocessor's own log, received over the management link (2026-10-28).
+
+#: os-xgs-npu
+msgid "Coprocessor Log"
+msgstr "سجل المعالج المساعد"
+
 # ---- os-watchdog: System: Hardware Watchdog - the timer, who arms it, and why the host last reset.
 # The reset causes are the bits of the AMD chipset's record, as reset_reason.py names them; the
 # card's short words (a reboot, the reset pin ...) are os-xgs-npu's and already above.
