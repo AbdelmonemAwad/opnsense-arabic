@@ -63064,6 +63064,14 @@ msgstr "تاريخ بناء U-Boot"
 msgid "Boot image built"
 msgstr "تاريخ بناء صورة الإقلاع"
 
+#: os-xgs-npu
+msgid "F1/F2 PHY"
+msgstr "PHY المنفذين F1 وF2"
+
+#: os-xgs-npu
+msgid "Module PHY"
+msgstr "PHY الوحدة الإضافية"
+
 # ---- os-watchdog: System: Hardware Watchdog - the timer, who arms it, and why the host last reset.
 # The reset causes are the bits of the AMD chipset's record, as reset_reason.py names them; the
 # card's short words (a reboot, the reset pin ...) are os-xgs-npu's and already above.
