@@ -59895,6 +59895,14 @@ msgid "port PHYs"
 msgstr "شرائح PHY للمنافذ"
 
 #: os-fanctl
+msgid "coprocessor dies"
+msgstr "رقاقات المعالج المساعد"
+
+#: os-fanctl
+msgid "board inputs"
+msgstr "مداخل اللوحة"
+
+#: os-fanctl
 msgid "watched only"
 msgstr "مراقَبة فقط"
 
