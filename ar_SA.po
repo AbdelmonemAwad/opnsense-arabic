@@ -58852,6 +58852,34 @@ msgid "Read from the PoE controller when the page opens. A port switched off sta
 msgstr "تُقرأ من متحكم PoE عند فتح الصفحة. المنفذ المُطفأ يبقى مُطفأً بعد إعادة التشغيل؛ أما الإطفاء ثم التشغيل فلا يُحفظ. متحكم هذه الوحدة لا يقبل أولوية ولا حدًّا للقدرة."
 
 #: os-xgs-npu
+msgid "Read from the PoE controller when the page opens. A port switched off, or limited to 15.4 W, stays so after a reboot; a power cycle is not kept. The controller on this module takes no priority."
+msgstr "تُقرأ من متحكم PoE عند فتح الصفحة. المنفذ المُطفأ أو المحدود بـ15.4 واط يبقى كذلك بعد إعادة التشغيل؛ أما الإطفاء ثم التشغيل فلا يُحفظ. متحكم هذه الوحدة لا يقبل أولوية."
+
+#: os-xgs-npu
+msgid "Limit to 15.4 W"
+msgstr "تحديد بـ15.4 واط"
+
+#: os-xgs-npu
+msgid "Allow 30 W"
+msgstr "السماح بـ30 واط"
+
+#: os-xgs-npu
+msgid "30 W (AT)"
+msgstr "30 واط (AT)"
+
+#: os-xgs-npu
+msgid "15.4 W (AF)"
+msgstr "15.4 واط (AF)"
+
+#: os-xgs-npu
+msgid "Limit this port to 15.4 W (IEEE 802.3af)? A device that needs more loses its power, and the limit stays, also after a reboot, until it is lifted here."
+msgstr "تحديد هذا المنفذ بـ15.4 واط (IEEE 802.3af)؟ الجهاز الذي يحتاج أكثر يفقد تغذيته، ويبقى الحد، حتى بعد إعادة التشغيل، إلى أن يُرفع من هنا."
+
+#: os-xgs-npu
+msgid "a port label, and on, off, cycle, af or at"
+msgstr "رقم منفذ، ومعه on أو off أو cycle أو af أو at"
+
+#: os-xgs-npu
 msgid "Not taken"
 msgstr "لم تُؤخذ"
 
