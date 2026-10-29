@@ -63084,6 +63084,21 @@ msgstr "سجل المعالج المساعد"
 msgid "Fast path build"
 msgstr "بناء المسار السريع"
 
+# ---- os-xgs-npu: XGS: Overview's Coprocessor tab - whether U-Boot and each system copy come from one
+# SDK (2026-10-29).
+
+#: os-xgs-npu
+msgid "U-Boot and system SDK"
+msgstr "SDK في U-Boot والنظام"
+
+#: os-xgs-npu
+msgid "the same"
+msgstr "متطابقان"
+
+#: os-xgs-npu
+msgid "not the same on"
+msgstr "غير متطابق في"
+
 # ---- os-watchdog: System: Hardware Watchdog - the timer, who arms it, and why the host last reset.
 # The reset causes are the bits of the AMD chipset's record, as reset_reason.py names them; the
 # card's short words (a reboot, the reset pin ...) are os-xgs-npu's and already above.
