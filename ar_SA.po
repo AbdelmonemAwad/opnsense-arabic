@@ -58872,8 +58872,12 @@ msgid "15.4 W (AF)"
 msgstr "15.4 واط (AF)"
 
 #: os-xgs-npu
-msgid "Limit this port to 15.4 W (IEEE 802.3af)? A device that needs more loses its power, and the limit stays, also after a reboot, until it is lifted here."
-msgstr "تحديد هذا المنفذ بـ15.4 واط (IEEE 802.3af)؟ الجهاز الذي يحتاج أكثر يفقد تغذيته، ويبقى الحد، حتى بعد إعادة التشغيل، إلى أن يُرفع من هنا."
+msgid "Limit this port to 15.4 W (IEEE 802.3af)? A device it powers restarts, one that needs more stays without power, and the limit stays, also after a reboot, until it is lifted here."
+msgstr "تحديد هذا المنفذ بـ15.4 واط (IEEE 802.3af)؟ يُعاد تشغيل الجهاز الذي يتغذّى منه، ويبقى بلا تغذية الجهاز الذي يحتاج أكثر، ويبقى الحد، حتى بعد إعادة التشغيل، إلى أن يُرفع من هنا."
+
+#: os-xgs-npu
+msgid "Allow this port 30 W (IEEE 802.3at)? A device it powers restarts."
+msgstr "السماح لهذا المنفذ بـ30 واط (IEEE 802.3at)؟ يُعاد تشغيل الجهاز الذي يتغذّى منه."
 
 #: os-xgs-npu
 msgid "a port label, and on, off, cycle, af or at"
