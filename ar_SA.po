@@ -63315,6 +63315,90 @@ msgstr "خطأ تكافؤ"
 msgid "a sync flood asked for by software"
 msgstr "فيض تزامن طلبه برنامج"
 
+#: os-watchdog
+msgid "processor shutdown"
+msgstr "توقّف المعالج"
+
+#: os-watchdog
+msgid "hardware watchdog"
+msgstr "المراقب العتادي"
+
+#: os-watchdog
+msgid "reset pin"
+msgstr "خط إعادة الضبط"
+
+#: os-watchdog
+msgid "power button"
+msgstr "زر الطاقة"
+
+#: os-watchdog
+msgid "thermal trip pin"
+msgstr "خط الفصل الحراري"
+
+#: os-watchdog
+msgid "power button held for four seconds"
+msgstr "الضغط على زر الطاقة أربع ثوانٍ"
+
+#: os-watchdog
+msgid "shutdown pin"
+msgstr "خط الإيقاف"
+
+#: os-watchdog
+msgid "processor thermal limit"
+msgstr "حد الحرارة في المعالج"
+
+#: os-watchdog
+msgid "system reset pin"
+msgstr "خط إعادة ضبط النظام"
+
+#: os-watchdog
+msgid "keyboard reset pin"
+msgstr "خط إعادة الضبط من لوحة المفاتيح"
+
+#: os-watchdog
+msgid "processor shutdown, as after a triple fault"
+msgstr "توقف المعالج، كما بعد خطأ ثلاثي"
+
+#: os-watchdog
+msgid "boot failed before its timer ran out"
+msgstr "فشل الإقلاع قبل انتهاء مؤقّته"
+
+#: os-watchdog
+msgid "hardware watchdog expired"
+msgstr "انتهت مهلة المراقب العتادي"
+
+#: os-watchdog
+msgid "chipset and processor power controller failed the warm-reset handshake"
+msgstr "فشلت المصافحة بين الشريحة ومتحكم الطاقة في المعالج عند إعادة الضبط الدافئة"
+
+#: os-watchdog
+msgid "128"
+msgstr "128"
+
+#: os-watchdog
+msgid "256"
+msgstr "256"
+
+#: os-watchdog
+msgid "not available"
+msgstr "غير متاح"
+
+#: os-watchdog
+msgid "Not available on this host."
+msgstr "غير متاح على هذا المضيف."
+
+#: os-watchdog
+msgid "os-xgs-npu arms the watchdog of this host, by its own setting in XGS: Settings. While its watchdog script is installed this plugin leaves the timer to it and only shows it; the settings below take over once that script is removed."
+msgstr "يفعّل os-xgs-npu مراقب هذا المضيف بإعداده الخاص في XGS: الإعدادات. وما دام سكربت المراقب الخاص به مثبّتًا تترك هذه الإضافة المؤقّت له وتكتفي بعرضه؛ وتتولى الإعدادات أدناه الأمر عندما يُزال ذلك السكربت."
+
+#: os-watchdog
+msgid "os-xgs-npu has its watchdog switched off in XGS: Settings. While its watchdog script is installed this plugin does not arm the timer either, so nothing arms it; the settings below take over once that script is removed."
+msgstr "المراقب في os-xgs-npu مُطفأ في XGS: الإعدادات. وما دام سكربت المراقب الخاص به مثبّتًا لا تفعّل هذه الإضافة المؤقّت هي أيضًا، فلا شيء يفعّله؛ وتتولى الإعدادات أدناه الأمر عندما يُزال ذلك السكربت."
+
+#: os-watchdog
+msgid "Why the host last reset, as its chipset recorded it: one bit for each cause, read early in every boot and cleared for the next. Only on AMD processors of family 17h or later, and not in a virtual machine."
+msgstr "سبب آخر إعادة تشغيل للمضيف كما سجّلته شريحته: بت لكل سبب، يُقرأ مبكرًا في كل إقلاع ويُمسح للإقلاع التالي. فقط على معالجات AMD من العائلة 17h وما بعدها، ولا في آلة افتراضية."
+
 # ---- os-kernelfollow: System: Kernel Follower - out-of-tree modules rebuilt for the kernel the next
 # boot will use. "Follow" is تتبّع throughout: the module follows the kernel.
 
@@ -63449,6 +63533,18 @@ msgstr "تتبّع الآن"
 #: os-kernelfollow
 msgid "Every registered module that does not match the kernel the next boot will use is rebuilt now: its sources fetched if they are not here, built, and installed beside the old one. It takes minutes; the page follows it."
 msgstr "كل وحدة مسجّلة لا تطابق النواة التي سيستخدمها الإقلاع التالي يُعاد بناؤها الآن: تُجلب مصادرها إن لم تكن هنا، وتُبنى، وتُثبَّت بجانب القديمة. يستغرق ذلك دقائق، والصفحة تتابعه."
+
+#: os-kernelfollow
+msgid "Between 1 and 720 hours."
+msgstr "بين 1 و720 ساعة."
+
+#: os-kernelfollow
+msgid "rebuilt"
+msgstr "أُعيد بناؤها"
+
+#: os-kernelfollow
+msgid "skipped"
+msgstr "تُخطّيت"
 
 # ---- os-blocklists: Firewall: Block Lists - address lists, countries, the DNS lists of Unbound and
 # JA4 fingerprints in one page. "List" is قائمة, "block" حظر, "cut" (a connection) قطع.
@@ -63621,6 +63717,46 @@ msgstr "آخر اتصال"
 msgid "Nothing to change."
 msgstr "لا شيء للتغيير."
 
+#: os-blocklists
+msgid "Spamhaus DROP (IPv4)"
+msgstr "Spamhaus DROP (IPv4)"
+
+#: os-blocklists
+msgid "Spamhaus DROP (IPv6)"
+msgstr "Spamhaus DROP (IPv6)"
+
+#: os-blocklists
+msgid "abuse.ch Feodo Tracker"
+msgstr "abuse.ch Feodo Tracker"
+
+#: os-blocklists
+msgid "Emerging Threats compromised hosts"
+msgstr "مضيفات مخترقة من Emerging Threats"
+
+#: os-blocklists
+msgid "CINS Army"
+msgstr "CINS Army"
+
+#: os-blocklists
+msgid "blocklist.de (all)"
+msgstr "blocklist.de (الكل)"
+
+#: os-blocklists
+msgid "Each fingerprint looks like t13d1516h2_8daaf6152771_02713d6af862, separated by commas."
+msgstr "تبدو كل بصمة هكذا: t13d1516h2_8daaf6152771_02713d6af862، وتُفصل البصمات بفواصل."
+
+#: os-blocklists
+msgid "Status could not be read."
+msgstr "تعذّرت قراءة الحالة."
+
+#: os-blocklists
+msgid "packets since tables loaded"
+msgstr "حزمة منذ تحميل الجداول"
+
+#: os-blocklists
+msgid "Show fingerprints seen"
+msgstr "عرض البصمات المرئية"
+
 # ---- os-portguard: Firewall: Port Guard - devices inside the network blocked by their MAC address.
 
 #: os-portguard
@@ -63710,6 +63846,26 @@ msgstr "تغيّرت القائمة؛ «تطبيق» يضعها في الجدا�
 #: os-portguard
 msgid "Edit device"
 msgstr "تعديل الجهاز"
+
+#: os-portguard
+msgid "A whole MAC address, 02:00:00:aa:bb:cc - or its first three to five bytes, to block every device of one maker. A device that changes its address (private Wi-Fi addresses do) is blocked only under the one listed."
+msgstr "عنوان MAC كامل، مثل 02:00:00:aa:bb:cc - أو بايتاته الثلاثة إلى الخمسة الأولى، لحجب كل أجهزة صانع واحد. والجهاز الذي يغيّر عنوانه (كما تفعل عناوين Wi-Fi الخاصة) لا يُحجب إلا تحت العنوان المُدرج."
+
+#: os-portguard
+msgid "A MAC address, 02:00:00:aa:bb:cc, or its first three to five bytes for every device of one maker."
+msgstr "عنوان MAC، مثل 02:00:00:aa:bb:cc، أو بايتاته الثلاثة إلى الخمسة الأولى لكل أجهزة صانع واحد."
+
+#: os-portguard
+msgid "This address is listed already."
+msgstr "هذا العنوان مُدرج بالفعل."
+
+#: os-portguard
+msgid "packets since table loaded"
+msgstr "حزمة منذ تحميل الجدول"
+
+#: os-portguard
+msgid "List changed; Apply puts it into the firewall."
+msgstr "تغيّرت القائمة؛ زر تطبيق يضعها في الجدار الناري."
 
 # ---- os-fallbackcrypto: VPN: IPsec: Fallback Crypto - the host's kernel crypto provider for the IPsec
 # tunnels the coprocessor does not take. The drivers' names (aesni, ossl) stay as they are.
@@ -63817,3 +63973,94 @@ msgstr "موجودة"
 #: os-fallbackcrypto
 msgid "On a Sophos XGS the coprocessor encrypts the SAs it has taken, whatever is chosen here; XGS: IPsec says which those are."
 msgstr "على Sophos XGS يشفّر المعالج المساعد الاتفاقيات الأمنية التي أخذها أيًّا كان الاختيار هنا؛ وتبيّن صفحة XGS: IPsec أيّها."
+#: os-fallbackcrypto
+msgid "No answer could be read."
+msgstr "تعذّرت قراءة الإجابة."
+
+#: os-fallbackcrypto
+msgid "Which of the kernel's crypto drivers encrypts the IPsec tunnels the host carries itself - on a Sophos XGS, those the coprocessor does not take. aesni is what OPNsense ships with. ossl uses OpenSSL's own AES-GCM code, which on a processor with AVX, PCLMULQDQ and MOVBE processes several blocks at once; without those, or without AES-NI, ossl has no AES-GCM at all, and ossl only is refused. Beside aesni, the kernel shares new sessions between the two; ossl only takes effect fully after a reboot. ossl only switches aesni off for every user of the kernel's crypto, not IPsec alone: ossl takes AES-CBC, AES-GCM and ChaCha20 only, so AES-XTS (GELI), AES-CCM and AES-CTR then run in plain software. ossl also takes ChaCha20-Poly1305, which aesni does not (read in ossl.c, not measured). An open tunnel keeps its provider until its SAs are made again."
+msgstr "أيُّ مشغّلات التشفير في النواة يشفّر أنفاق IPsec التي يحملها المضيف بنفسه، وهي على Sophos XGS الأنفاق التي لا يأخذها المعالج المساعد. aesni هو ما يأتي مع OPNsense. ويستعمل ossl شيفرة AES-GCM الخاصة بـOpenSSL، وهي تعالج عدة كتل معًا على معالج فيه AVX وPCLMULQDQ وMOVBE؛ وبدونها، أو بدون AES-NI، لا يملك ossl أي AES-GCM، ويُرفض خيار ossl فقط. وإلى جانب aesni تتقاسم النواة الجلسات الجديدة بينهما؛ أما ossl فقط فلا يكتمل أثره إلا بعد إعادة التشغيل. ويُطفئ خيار ossl فقط مشغّل aesni عن كل مستخدمي التشفير في النواة لا عن IPsec وحده: فـossl لا يأخذ إلا AES-CBC وAES-GCM وChaCha20، فتعمل عندها AES-XTS (GELI) وAES-CCM وAES-CTR برمجيًّا صرفًا. ويأخذ ossl كذلك ChaCha20-Poly1305 الذي لا يأخذه aesni (مقروء في ossl.c، غير مقيس). ويحتفظ النفق المفتوح بمزوّده حتى تُنشأ اتفاقياته الأمنية من جديد."
+
+#: os-fallbackcrypto
+msgid "ossl has no AES-GCM on this processor (it needs AES-NI with AVX, PCLMULQDQ and MOVBE), so it cannot replace aesni."
+msgstr "لا يملك ossl أي AES-GCM على هذا المعالج (يحتاج AES-NI مع AVX وPCLMULQDQ وMOVBE)، فلا يمكنه أن يحلّ محلّ aesni."
+
+#: os-fallbackcrypto
+msgid "aesni only (default)"
+msgstr "aesni فقط (الافتراضي)"
+
+#: os-fallbackcrypto
+msgid "ossl only (after reboot)"
+msgstr "ossl فقط (بعد إعادة التشغيل)"
+
+#: os-fallbackcrypto
+msgid "ossl: no AES-GCM here"
+msgstr "ossl: لا AES-GCM هنا"
+
+#: os-fallbackcrypto
+msgid "Features unknown"
+msgstr "الميزات غير معروفة"
+
+#: os-fallbackcrypto
+msgid "No ossl module in this kernel"
+msgstr "لا وحدة ossl في هذه النواة"
+
+#: os-fallbackcrypto
+msgid "ossl loaded"
+msgstr "حُمّل ossl"
+
+#: os-fallbackcrypto
+msgid "ossl could not be loaded"
+msgstr "تعذّر تحميل ossl"
+
+#: os-fallbackcrypto
+msgid "ossl stays loaded until next boot"
+msgstr "يبقى ossl محمّلًا حتى الإقلاع التالي"
+
+#: os-fallbackcrypto
+msgid "hint.aesni.0.disabled=1: aesni off from next boot"
+msgstr "hint.aesni.0.disabled=1: يُطفأ aesni من الإقلاع التالي"
+
+#: os-fallbackcrypto
+msgid "hint.aesni.0.disabled removed: aesni back at next boot"
+msgstr "أُزيل hint.aesni.0.disabled: يعود aesni في الإقلاع التالي"
+
+#: os-fallbackcrypto
+msgid "Tunable refused"
+msgstr "رُفض المتغير القابل للضبط"
+
+#: os-fallbackcrypto
+msgid "loader.conf written"
+msgstr "كُتب loader.conf"
+
+#: os-fallbackcrypto
+msgid "Status unreadable"
+msgstr "تعذّرت قراءة الحالة"
+
+#: os-fallbackcrypto
+msgid "No AES-NI"
+msgstr "لا AES-NI"
+
+#: os-fallbackcrypto
+msgid "IPsec SAs"
+msgstr "اتفاقيات IPsec الأمنية"
+
+#: os-fallbackcrypto
+msgid "Apply needed"
+msgstr "يلزم التطبيق"
+
+#: os-fallbackcrypto
+msgid "Reboot needed"
+msgstr "تلزم إعادة التشغيل"
+
+#: os-fallbackcrypto
+msgid "In effect"
+msgstr "سارٍ"
+
+#: os-fallbackcrypto
+msgid "No IPsec SAs"
+msgstr "لا اتفاقيات IPsec أمنية"
+
+#: os-fallbackcrypto
+msgid "Reboot to finish (Power: Reboot)"
+msgstr "أعد التشغيل للإتمام (الطاقة: إعادة تشغيل النظام)"
