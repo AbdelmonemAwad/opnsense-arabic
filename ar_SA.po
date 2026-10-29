@@ -63078,6 +63078,12 @@ msgstr "PHY الوحدة الإضافية"
 msgid "Coprocessor Log"
 msgstr "سجل المعالج المساعد"
 
+# ---- os-xgs-npu: XGS: Overview's Coprocessor tab - the build its fast path carries (2026-10-29).
+
+#: os-xgs-npu
+msgid "Fast path build"
+msgstr "بناء المسار السريع"
+
 # ---- os-watchdog: System: Hardware Watchdog - the timer, who arms it, and why the host last reset.
 # The reset causes are the bits of the AMD chipset's record, as reset_reason.py names them; the
 # card's short words (a reboot, the reset pin ...) are os-xgs-npu's and already above.
