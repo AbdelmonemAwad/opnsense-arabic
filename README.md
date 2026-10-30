@@ -1,3 +1,17 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/readme/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/readme/banner-light.svg">
+  <img src="docs/images/readme/banner-light.svg" alt="opnsense-arabic - A complete Arabic translation of the OPNsense web interface" width="100%">
+</picture>
+
+<p align="center">
+  <a href="https://github.com/AbdelmonemAwad/opnsense-arabic/releases/latest"><img alt="the newest release" src="https://img.shields.io/github/v/release/AbdelmonemAwad/opnsense-arabic?sort=semver&amp;style=flat-square&amp;label=release&amp;color=8250df"></a>
+  <a href="https://github.com/AbdelmonemAwad/opnsense-arabic/actions/workflows/checks.yml"><img alt="checks on main" src="https://img.shields.io/github/actions/workflow/status/AbdelmonemAwad/opnsense-arabic/checks.yml?branch=main&amp;style=flat-square&amp;label=checks"></a>
+  <a href="LICENSE"><img alt="licence: BSD-2-Clause" src="https://img.shields.io/badge/licence-BSD--2--Clause-blue.svg?style=flat-square"></a>
+  <a href="#arabic-translation-of-the-opnsense-gui"><img alt="OPNsense 26.7" src="https://img.shields.io/badge/OPNsense-26.7-d94f00.svg?style=flat-square"></a>
+  <a href="#in-the-xgs-image"><img alt="in the XGS image" src="https://img.shields.io/badge/XGS%20image-included-9a6700.svg?style=flat-square"></a>
+</p>
+
 # Arabic translation of the OPNsense GUI
 
 A complete Arabic (`ar_SA`) translation of the OPNsense web interface: ~~14,467 strings~~ 15,721
@@ -12,9 +26,11 @@ than the 13,010 strings in the current `OPNsense.pot`.
 Terminology follows the Arabic interfaces of Microsoft, Arabic Wikipedia and ESET where they
 agree; [GLOSSARY.md](GLOSSARY.md) (in Arabic) lists the decisions and their sources.
 
-![Arabic GUI](docs/gui-settings-ar.png)
+![Arabic GUI](docs/images/gui-settings-ar.png)
 
 *The Arabic GUI together with the right-to-left layout from opnsense-rtl.*
+
+<p align="center"><b>Contents:</b> <a href="#files">Files</a> &middot; <a href="#installation">Installation</a> &middot; <a href="#the-sophos-xgs-plugins">The Sophos XGS plugins</a> &middot; <a href="#status-and-plans">Status and plans</a> &middot; <a href="#in-the-xgs-image">In the XGS image</a> &middot; <a href="#updates">Updates</a> &middot; <a href="#ترجمة-عربية-لواجهة-opnsense">ترجمة عربية لواجهة OPNsense</a> &middot; <a href="#license">License</a></p>
 
 ## Files
 
