@@ -60207,6 +60207,30 @@ msgid "An independent project, not affiliated with Deciso B.V."
 msgstr "مشروع مستقل لا يتبع Deciso B.V."
 
 #: os-fanctl
+msgid "the board drives its fans itself; its curve is chosen on the Settings tab"
+msgstr "اللوحة تقود مراوحها بنفسها؛ ويُختار منحناها من تبويب الإعدادات"
+
+#: os-fanctl
+msgid "the standard curve"
+msgstr "المنحنى العادي"
+
+#: os-fanctl
+msgid "the standard curve, held while the coprocessor is hot"
+msgstr "المنحنى العادي، مُبقًى ما دام المعالج المساعد ساخنًا"
+
+#: os-fanctl
+msgid "the quiet curve"
+msgstr "المنحنى الهادئ"
+
+#: os-fanctl
+msgid "This board drives its fans itself: only Enabled and Board fan curve apply to it. Everything else on this tab is for a fan on a chip this plugin can drive."
+msgstr "هذه اللوحة تقود مراوحها بنفسها: لا يسري عليها من هذا التبويب إلا «مفعل» و«منحنى مراوح اللوحة»، وكل ما سواهما فيه لمروحة على رقاقة يستطيع هذا المكوّن الإضافي قيادتها."
+
+#: os-fanctl
+msgid "This board drives its fans itself, so there is no duty here for a floor to be measured against."
+msgstr "هذه اللوحة تقود مراوحها بنفسها، فلا نسبة تشغيل هنا يُقاس عليها قاع."
+
+#: os-fanctl
 msgid "Fan {name}"
 msgstr "المروحة {name}"
 
