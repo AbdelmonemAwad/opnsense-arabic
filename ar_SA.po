@@ -60206,6 +60206,22 @@ msgstr "الأعلى"
 msgid "An independent project, not affiliated with Deciso B.V."
 msgstr "مشروع مستقل لا يتبع Deciso B.V."
 
+#: os-fanctl
+msgid "Fan {name}"
+msgstr "المروحة {name}"
+
+#: os-fanctl
+msgid "Board fan curve"
+msgstr "منحنى مراوح اللوحة"
+
+#: os-fanctl
+msgid "Only on a board that drives its fans itself and has two curves to choose from - today the AMDA0202 board of the XGS 2100, 2300, 3100 and 3300 - and only while Enabled is on; anywhere else it does nothing. On that board the fans follow the CPU's temperature with no duty anybody can write: measured on an XGS 3300, about 7,200 rpm at rest and 13,500 under full load. Quiet selects the lower curve the vendor uses on the 2100 and 2300, through the coprocessor's GPIO 48: about 5,400 rpm at rest, and still rising with heat. It is set again within a minute whenever the coprocessor restarts, and the standard curve comes back while the coprocessor reads 85 C or more, until it is below 78 C. Standard leaves the board's own choice alone."
+msgstr "على لوحة تقود مراوحها بنفسها ولها منحنيان يُختار بينهما فقط - اليوم لوحة AMDA0202 في XGS 2100 و2300 و3100 و3300 - وفقط ما دام «مفعل» قيد التشغيل؛ وفي أي مكان آخر لا يفعل شيئًا. على تلك اللوحة تتبع المراوح حرارة المعالج دون نسبة تشغيل يستطيع أحد كتابتها: قيست على XGS 3300 بنحو 7,200 دورة في الدقيقة في السكون و13,500 تحت الحمل الكامل. يختار Quiet المنحنى الأدنى الذي يستعمله المورّد على 2100 و2300، عبر المنفذ GPIO 48 في المعالج المساعد: نحو 5,400 دورة في الدقيقة في السكون، ويبقى يرتفع مع الحرارة. ويُعاد ضبطه خلال دقيقة كلما أُعيد تشغيل المعالج المساعد، ويعود المنحنى العادي ما دام المعالج المساعد يقرأ 85 درجة أو أكثر، حتى ينزل تحت 78 درجة. أما Standard فيترك اختيار اللوحة نفسها على حاله."
+
+#: os-fanctl
+msgid "top speed {rpm} rpm, measured"
+msgstr "السرعة القصوى {rpm} rpm، مقيسة"
+
 # ---- os-linkhealth: its GUI strings, moved here from its own table (2026-10-22)
 
 #: os-linkhealth
