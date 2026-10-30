@@ -62048,7 +62048,7 @@ msgstr "لوحة Sophos XGS الأمامية (SMBIOS XGS / 17، أي XGS 3300)"
 
 #: os-frontpanel
 msgid "Speed=9600 is required. ConnectionType=ezio on its own fixes the line at 2400, which is right for the XG 330 rev 2 and wrong here: at 2400 this panel draws scattered x-with-a-bar characters - HD44780 code 0xF8 - which is the signature of bytes arriving at a quarter of the receiver's rate. A long start bit fills the low three bits with zeros and the next long bit fills the rest with ones."
-msgstr "Speed=9600 ضرورية. فـ ConnectionType=ezio وحده يُثبّت الخط عند 2400، وهو الصحيح لـ XG 330 المراجعة 2 والخطأ هنا: عند 2400 ترسم هذه اللوحة محارف متناظرة من الطراز x بشرطة — رمز HD44780 رقم 0xF8 — وهو توقيع بايتات تصل بربع معدل المُستقبِل. فبتة بداية طويلة تملأ البتات الثلاث الدنيا أصفارًا، والبتة الطويلة التالية تملأ الباقي واحدات."
+msgstr "Speed=9600 ضرورية. فـ ConnectionType=ezio وحده يُثبّت الخط عند 2400، وهو الصحيح لـ XG 330 المراجعة 2 والخطأ هنا: عند 2400 ترسم هذه اللوحة محارف متناثرة من الطراز x بشرطة — رمز HD44780 رقم 0xF8 — وهو توقيع بايتات تصل بربع معدل المُستقبِل. فبتة بداية طويلة تملأ البتات الثلاث الدنيا أصفارًا، والبتة الطويلة التالية تملأ الباقي واحدات."
 
 #: os-frontpanel
 msgid "The vendor's own daemon sets the port with `stty ispeed 2400`. That sets only the INPUT speed, and a 16550-class UART has a single divisor, so on the vendor's system the line stays at the 9600 default. Reading the vendor's line setting literally is what kept this panel garbled for a week."
@@ -62065,6 +62065,14 @@ msgstr "نبضة الحياة تبقى مُعطّلة، كما في XG 330: لا
 #: os-frontpanel
 msgid "Sophos XGS front panel (the XGS 3300: SMBIOS XGS, board 17 / system 3300r1)"
 msgstr "اللوحة الأمامية لجهاز Sophos XGS (طراز XGS 3300: SMBIOS XGS، اللوحة 17 / النظام 3300r1)"
+
+#: os-frontpanel
+msgid "Sophos XGS front panel (the XGS 2100, 2300 and 3100: the XGS 3300's board, AMDA0202)"
+msgstr "اللوحة الأمامية لجهاز Sophos XGS (الطرز XGS 2100 و2300 و3100: اللوحة الأم نفسها التي في XGS 3300، AMDA0202)"
+
+#: os-frontpanel
+msgid "Proposed from the board: these models are built on the XGS 3300's board, AMDA0202, on which this panel was confirmed at 9600, and an XGS 3100's owner saw the 2400 signature - scattered x-with-a-bar characters - under the general entry. Press Test after applying: two lines of text read right on the panel confirm it."
+msgstr "مقترحة من اللوحة الأم: هذه الطرز مبنية على اللوحة الأم التي في XGS 3300، أي AMDA0202، وعليها تأكدت هذه اللوحة الأمامية على 9600، ورأى مالك XGS 3100 توقيع 2400 - محارف x بشرطة متناثرة - تحت المُدخل العام. اضغط Test بعد التطبيق: سطران من النص يُقرآن صحيحين على اللوحة يؤكدان ذلك."
 
 #: os-frontpanel
 msgid "Front panel (LCDd and the screen client)"
