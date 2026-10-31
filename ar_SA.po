@@ -63191,6 +63191,22 @@ msgstr "متطابقان"
 msgid "not the same on"
 msgstr "غير متطابق في"
 
+#: os-xgs-npu
+msgid "Interfaces sharing a subnet"
+msgstr "واجهات تتشارك نطاقًا واحدًا"
+
+#: os-xgs-npu
+msgid "Two interfaces in one subnet share one route, and the one applied last loses it, cable in or not: it answers nothing from that subnet. Give each interface a subnet of its own, or take the address off the one you do not use."
+msgstr "الواجهتان في نطاق واحد تتشاركان مسارًا واحدًا، والتي تُطبَّق أخيرًا تفقده، موصولة كانت أم لا: فلا تجيب على شيء من ذلك النطاق. أعطِ كل واجهة نطاقًا خاصًا بها، أو أزل العنوان من الواجهة التي لا تستعملها."
+
+#: os-xgs-npu
+msgid "holds the route"
+msgstr "تملك المسار"
+
+#: os-xgs-npu
+msgid "answers nothing from %s: its replies leave by %s"
+msgstr "لا تجيب على شيء من %s: ردودها تخرج من %s"
+
 # ---- os-watchdog: System: Hardware Watchdog - the timer, who arms it, and why the host last reset.
 # The reset causes are the bits of the AMD chipset's record, as reset_reason.py names them; the
 # card's short words (a reboot, the reset pin ...) are os-xgs-npu's and already above.
