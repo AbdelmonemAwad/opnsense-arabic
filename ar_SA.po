@@ -62115,6 +62115,18 @@ msgid "Proposed from the board: these models are built on the XGS 3300's board, 
 msgstr "مقترحة من اللوحة الأم: هذه الطرز مبنية على اللوحة الأم التي في XGS 3300، أي AMDA0202، وعليها تأكدت هذه اللوحة الأمامية على 9600، ورأى مالك XGS 3100 توقيع 2400 - محارف x بشرطة متناثرة - تحت المُدخل العام. اضغط Test بعد التطبيق: سطران من النص يُقرآن صحيحين على اللوحة يؤكدان ذلك."
 
 #: os-frontpanel
+msgid "Sophos XGS (panel not confirmed on this model)"
+msgstr "Sophos XGS (اللوحة غير مؤكَّدة على هذا الطراز)"
+
+#: os-frontpanel
+msgid "Nobody has confirmed this model yet. XGS panels confirmed so far - on an XGS 3300 and an XGS 3100 - are 20 characters by 2 lines, so 20x2 is proposed here; older XG models keep 16x2. Press Test after applying: two lines of text read right on the panel confirm it. The key map is copied from XG 330 rev 2 and is a guess here: measure it with the key test before you trust which button is which."
+msgstr "لم يؤكّد أحد هذا الطراز بعد. لوحات XGS المؤكَّدة حتى الآن - على XGS 3300 وعلى XGS 3100 - من 20 محرفًا في سطرين، لذا يُقترح هنا 20x2؛ وتبقى طرز XG الأقدم على 16x2. اضغط اختبار بعد التطبيق: سطران من النص يُقرآن صحيحين على اللوحة يؤكدان ذلك. وخريطة المفاتيح منقولة عن XG 330 rev 2 وهي تخمين هنا: قِسها باختبار المفاتيح قبل أن تثق بأنّ هذا الزرّ هو ذاك."
+
+#: os-frontpanel
+msgid "Text starts at offset 24: an XGS 3100's ruler came up with its G in the top left corner (os-xgs-npu issue 901). If the text sits elsewhere on yours, Align the text, on the Buttons tab, sets it."
+msgstr "يبدأ النص عند الإزاحة 24: فقد ظهرت مسطرة XGS 3100 وحرفها G في الزاوية العليا اليسرى (القضية 901 في os-xgs-npu). وإن جاء النص في موضع آخر على جهازك، فإن «محاذاة النص» في تبويب الأزرار تضبطه."
+
+#: os-frontpanel
 msgid "Front panel (LCDd and the screen client)"
 msgstr "اللوحة الأمامية (LCDd وعميل الشاشة)"
 
