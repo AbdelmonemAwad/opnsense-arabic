@@ -63211,6 +63211,22 @@ msgstr "تملك المسار"
 msgid "answers nothing from %s: its replies leave by %s"
 msgstr "لا تجيب على شيء من %s: ردودها تخرج من %s"
 
+#: os-xgs-npu
+msgid "The management port mixed with the ports of the coprocessor"
+msgstr "منفذ الإدارة مخلوط بمنافذ المعالج المساعد"
+
+#: os-xgs-npu
+msgid "MGMT is a port of the host itself, not of the coprocessor. Never give it an address in a subnet the ports of the coprocessor use, and never put it in a bridge with them: the host then has two ways into one network, keeps one route for it, and one of the two answers nothing. Give MGMT a subnet of its own, such as its default 192.168.100.1/24."
+msgstr "منفذ MGMT منفذ للمضيف نفسه، وليس من منافذ المعالج المساعد. لا تعطه أبدًا عنوانًا في نطاق تستعمله منافذ المعالج المساعد، ولا تضعه أبدًا في جسر معها: فيصير للمضيف طريقان إلى شبكة واحدة، ويُبقي لها مسارًا واحدًا، فلا يجيب أحد الطريقين على شيء. أعطِ MGMT نطاقًا خاصًا به، كنطاقه الافتراضي 192.168.100.1/24."
+
+#: os-xgs-npu
+msgid "%s is in a bridge with ports of the coprocessor: %s"
+msgstr "%s في جسر مع منافذ للمعالج المساعد: %s"
+
+#: os-xgs-npu
+msgid "%s shares a subnet with ports of the coprocessor: %s"
+msgstr "%s يتشارك نطاقًا مع منافذ للمعالج المساعد: %s"
+
 # ---- os-watchdog: System: Hardware Watchdog - the timer, who arms it, and why the host last reset.
 # The reset causes are the bits of the AMD chipset's record, as reset_reason.py names them; the
 # card's short words (a reboot, the reset pin ...) are os-xgs-npu's and already above.
