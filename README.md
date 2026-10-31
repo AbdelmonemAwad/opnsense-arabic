@@ -14,8 +14,8 @@
 
 # Arabic translation of the OPNsense GUI
 
-A complete Arabic (`ar_SA`) translation of the OPNsense web interface: ~~14,467 strings~~ 15,721
-strings, which covers the core GUI of OPNsense 26.7, the plugins that ship with it and the menus,
+A complete Arabic (`ar_SA`) translation of the OPNsense web interface: ~~14,467 strings~~ ~~15,721 strings~~ 16,177
+strings (2026-10-31), which covers the core GUI of OPNsense 26.7, the plugins that ship with it and the menus,
 forms, help texts, validation messages and dashboard widgets - and, since 2026-10-22, the pages of
 the Sophos XGS plugins too (below).
 
@@ -146,7 +146,7 @@ nothing, and the uninstaller removes the updater, its cron entry and the stamp.
 
 ## ترجمة عربية لواجهة OPNsense
 
-ترجمة كاملة لواجهة OPNsense إلى العربية (14,467 نصًا) لإصدار 26.7. التثبيت بالأوامر أعلاه، ثم
+ترجمة كاملة لواجهة OPNsense إلى العربية (~~14,467 نصًا~~ 16,177 نصًا في 2026-10-31) لإصدار 26.7. التثبيت بالأوامر أعلاه، ثم
 اختيار «العربية» من **النظام ← الإعدادات ← عام ← اللغة**. الملاحظات والتصحيحات مرحّب بها عبر
 Issues أو Pull Requests.
 
