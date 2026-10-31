@@ -61341,6 +61341,10 @@ msgid "The two cages on the coprocessor's own MAC (BGX2), 10G. Transceiver data 
 msgstr "القفصان على MAC المعالج المساعد نفسه (BGX2)، بسرعة 10G. بيانات وحدة الإرسال والاستقبال تأتي من PHY طراز 88X5113 على جانب المعالج المساعد ولا يستطيع هذا المضيف قراءتها بعد، لذا يُبلّغ هذان عن الوصلة والعدّادات فقط."
 
 #: os-linkhealth
+msgid "The two cages on the coprocessor's own MAC (BGX2), 10G. Their modules are read on the coprocessor, and XGS: Transceivers shows what they report; here, link and counters."
+msgstr "القفصان على MAC المعالج المساعد نفسه (BGX2)، بسرعة 10G. تُقرأ وحداتهما على المعالج المساعد، وتعرض صفحة XGS: Transceivers ما تُبلّغ عنه؛ وهنا الوصلة والعدّادات."
+
+#: os-linkhealth
 msgid "The cage lights are the PHY's and nothing on the host drives them."
 msgstr "أضواء القفصين تابعة لـ PHY ولا شيء على المضيف يقودها."
 
