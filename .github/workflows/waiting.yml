@@ -1,0 +1,36 @@
+#-
+# SPDX-License-Identifier: BSD-2-Clause
+# Copyright (c) 2026 Abdelmonem Awad <eg2@live.com>
+#
+name: waiting for Arabic
+
+# The strings the plugins' pages show with no Arabic here yet, as one issue, "Strings waiting for
+# Arabic": tools/waiting.py runs each plugin's own check against this repository's ar_SA.po. Weekly,
+# on every push to main - an Arabic just added takes its line off - and by hand.
+
+on:
+  schedule:
+    - cron: '23 6 * * 1'
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  waiting:
+    name: strings waiting for Arabic
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Each plugin's check against this catalogue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/waiting.py
