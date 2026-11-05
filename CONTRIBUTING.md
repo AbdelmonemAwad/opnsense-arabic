@@ -12,6 +12,10 @@ It is one part of the [os-xgs-npu](https://github.com/AbdelmonemAwad/os-xgs-npu)
   says plainly what was not. "Should work" is not a state this project records.
 - **Withdraw a wrong claim in the change that disproves it**: struck through, with the correction
   after it, so the reasoning that led to it stays readable.
+- **Strings waiting for Arabic.** A plugin's pull request may come without the Arabic of its page
+  strings, from a contributor who does not write it. Those strings are listed in the issue "Strings
+  waiting for Arabic", kept by `tools/waiting.py`, and a pull request here that gives them their Arabic
+  takes them off it.
 
 ## Copyright, and what a contribution agrees to
 
