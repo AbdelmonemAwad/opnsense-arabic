@@ -61955,12 +61955,28 @@ msgid "Which screens are shown, and in which order: drag them into the order the
 msgstr "أيّ الشاشات تُعرض، وبأي ترتيب: اسحبها إلى الترتيب الذي ينبغي أن تعرضها اللوحة به. وتقرأ شاشة صحة المنافذ المستندَ الذي يكتبه os-linkhealth، وتُتخطّى حيث لا يكون ذلك المكوّن مثبّتًا - وهي الشاشة الوحيدة التي تعتمد على شيء خارج هذا المكوّن، ولا يتغيّر شيء آخر عند غيابه. وأي شاشة ليس لديها ما تقوله تُتخطّى بالطريقة نفسها، وتذكر المعاينة أيّها ولماذا."
 
 #: os-frontpanel
-msgid "The line the message screen shows, for a rack somebody else walks past. Anything longer than the display is wide is wrapped onto the second row, and what still does not fit is cut - the preview shows exactly where. A character panel has no glyph for most of the world's alphabets, so text that is not plain Latin is folded to the nearest thing it can draw, and the preview shows what the owner typed beside what the panel would make of it."
-msgstr "السطر الذي تعرضه شاشة الرسالة، من أجل رفٍّ يمرّ به شخص آخر. وكل ما كان أطول من عرض الشاشة يُلفّ إلى الصف الثاني، وما لا يتّسع بعدُ يُقصّ - وتُظهر المعاينة أين بالضبط. والشاشة الحرفية لا تملك رسمًا لمعظم أبجديات العالم، فالنص الذي ليس لاتينيًا عاديًا يُبدَل بأقرب ما تستطيع رسمه، وتُظهر المعاينة ما كتبه المالك إلى جانب ما ستصنعه اللوحة منه."
+msgid "Message, first line"
+msgstr "الرسالة، السطر الأول"
 
 #: os-frontpanel
-msgid "Ask Abdelmonem before unplugging"
-msgstr "اسأل عبد المنعم قبل فصل الكهرباء"
+msgid "The first row of the message screen, for a rack somebody else walks past. Each line has a row of the display to itself: anything longer than the display is wide is cut, not carried onto the next row - the preview shows exactly where. A character panel has no glyph for most of the world's alphabets, so text that is not plain Latin is folded to the nearest thing it can draw, and the preview shows what the owner typed beside what the panel would make of it."
+msgstr "الصف الأول من شاشة الرسالة، من أجل رفٍّ يمرّ به شخص آخر. ولكل سطر صفٌّ من الشاشة خاصّ به: فكل ما كان أطول من عرض الشاشة يُقصّ، ولا يُنقل إلى الصف التالي - وتُظهر المعاينة أين بالضبط. والشاشة الحرفية لا تملك رسمًا لمعظم أبجديات العالم، فالنص الذي ليس لاتينيًا عاديًا يُبدَل بأقرب ما تستطيع رسمه، وتُظهر المعاينة ما كتبه المالك إلى جانب ما ستصنعه اللوحة منه."
+
+#: os-frontpanel
+msgid "Ask Abdelmonem"
+msgstr "اسأل عبد المنعم"
+
+#: os-frontpanel
+msgid "Message, second line"
+msgstr "الرسالة، السطر الثاني"
+
+#: os-frontpanel
+msgid "The second row of the message screen, cut at the width of the display as the first is, and folded the same way. Empty both lines and the message screen has nothing to say, so the rotation skips it."
+msgstr "الصف الثاني من شاشة الرسالة، يُقصّ عند عرض الشاشة كما يُقصّ الأول، ويُبدَل بالطريقة نفسها. وإن أُفرغ السطران كلاهما لم يبقَ لشاشة الرسالة ما تقوله، فيتخطّاها التناوب."
+
+#: os-frontpanel
+msgid "before unplugging"
+msgstr "قبل فصل الكهرباء"
 
 #: os-frontpanel
 msgid "Throughput interface"
