@@ -114,6 +114,11 @@ if [ "${HERE}" != "${KEEP}" ]; then
     mkdir -p "$(dirname "${TRIGGER}")"
     install -m 0644 "${HERE}/opnsense-arabic.ucl" "${TRIGGER}"
     install -m 0755 "${HERE}/self-update.py" "${KEEP}/self-update.py"
+    # The public keys a release must be signed with for self-update.py to install it (its SIGNED
+    # RELEASES): the set this tree holds and no other - a key the tree dropped goes with this install.
+    rm -rf "${KEEP}/release-keys"
+    install -d -m 0755 "${KEEP}/release-keys"
+    install -m 0644 "${HERE}"/release-keys/*.pub "${KEEP}/release-keys/"
     # No daily self-update since 2026-10-20: a release is installed from XGS: Updates
     # (its Plugins tab, in os-xgs-npu) or by hand with self-update.py. An older
     # install's cron entry goes.
