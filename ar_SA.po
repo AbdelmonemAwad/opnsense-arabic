@@ -63243,6 +63243,25 @@ msgstr "%s في جسر مع منافذ للمعالج المساعد: %s"
 msgid "%s shares a subnet with ports of the coprocessor: %s"
 msgstr "%s يتشارك نطاقًا مع منافذ للمعالج المساعد: %s"
 
+# ---- os-xgs-npu: XGS: Overview says what the Hardware offloading card's Off means - both settings are
+# off after an install, and until both are on no connection runs in hardware.
+
+#: os-xgs-npu
+msgid "Connections run on this firewall"
+msgstr "الاتصالات تجري على جدار الحماية هذا"
+
+#: os-xgs-npu
+msgid "Hardware offloading is off: the coprocessor passes every frame to this firewall and runs no connection itself."
+msgstr "التفريغ إلى العتاد معطّل: فالمعالج المساعد يمرّر كل إطار إلى جدار الحماية هذا، ولا يُجري أي اتصال بنفسه."
+
+#: os-xgs-npu
+msgid "Hardware offloading is on, but Accelerate connections automatically is off, so no connection is put in hardware."
+msgstr "التفريغ إلى العتاد مفعّل، لكن «تسريع الاتصالات تلقائيًا» معطّل، فلا يوضع أي اتصال في العتاد."
+
+#: os-xgs-npu
+msgid "Both are on the Acceleration tab of XGS: Settings."
+msgstr "كلاهما في تبويب التسريع من XGS: الإعدادات."
+
 # ---- os-watchdog: System: Hardware Watchdog - the timer, who arms it, and why the host last reset.
 # The reset causes are the bits of the AMD chipset's record, as reset_reason.py names them; the
 # card's short words (a reboot, the reset pin ...) are os-xgs-npu's and already above.
