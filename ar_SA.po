@@ -64238,6 +64238,533 @@ msgstr "في وضع IPS يقرأ Suricata المنفذ عبر netmap، فيُق�
 msgid "Set the MTU of the ports the Intrusion Detection inspects to 1500, or, on the XGS 136, use the native adapter: hw.npuep.netmap at 1 and dev.netmap.buf_size at 9216 in System: Settings: Tunables, then reboot."
 msgstr "اضبط MTU المنافذ التي يفحصها كشف التسلل على 1500، أو استعمل على XGS 136 المحوّلَ الأصلي: hw.npuep.netmap على 1 وdev.netmap.buf_size على 9216 في النظام: الإعدادات: المتغيرات القابلة للضبط، ثم أعد التشغيل."
 
+# ---- os-xgs-npu: phase 1 - the recommended settings and their Overview card, the IPsec page, the
+# Overview graphs, Offloaded Flows, Ports, Transceivers, Updates, memory errors, the ping and remote syslog.
+
+#: os-xgs-npu
+msgid "Let the coprocessor forward traffic it recognises without handing it to the firewall. A frame the coprocessor handles does not reach pf - that is what offloading means. On in a new install, with Accelerate connections automatically: a connection on a port the Intrusion Detection reads in IPS mode stays with this firewall whatever this says, so Suricata sees all of it. It is applied to the hardware when you save, and again at every boot, because the coprocessor forgets it: it comes up with offloading off whatever this page says."
+msgstr "اسمح للمعالج المساعد بتمرير الحركة التي يتعرّف عليها دون أن يسلّمها لجدار الحماية. الإطار الذي يعالجه المعالج المساعد لا يصل إلى pf - هذا هو معنى التفريغ. مفعّل في التثبيت الجديد، مع «تسريع الاتصالات تلقائيًا»: الاتصال على منفذ يقرؤه كشف التسلل في وضع IPS يبقى مع جدار الحماية هذا أيًّا كان هذا الإعداد، فيرى Suricata الاتصال كله. يُطبَّق على العتاد عند الحفظ، ثم من جديد عند كل إقلاع، لأن المعالج المساعد ينساه: يبدأ والتفريغ معطّل أيًّا كان ما تقوله هذه الصفحة."
+
+#: os-xgs-npu
+msgid "The flow maker: the driver puts established connections in hardware on its own (dp.auto on the XGS 3300, flow.auto on the XGS 136, which also opens its ports to the coprocessor's flow table). Nothing leaves the firewall's path while this is off, even with offloading on. On in a new install. A connection on a port the Intrusion Detection reads in IPS mode is never put in hardware. Applied when you save and at every boot. Suricata sees how a connection in hardware starts and, with Inspect, then hardware on the Security tab, its first megabyte; what it must see in full goes in Never offloaded below, or this stays off."
+msgstr "صانع التدفقات: يضع برنامج التشغيل الاتصالات القائمة في العتاد من تلقاء نفسه (dp.auto على XGS 3300، وflow.auto على XGS 136، الذي يفتح أيضًا منافذه لجدول تدفقات المعالج المساعد). لا يخرج شيء من مسار جدار الحماية ما دام هذا معطّلًا، حتى مع تفعيل التفريغ. مفعّل في التثبيت الجديد. الاتصال على منفذ يقرؤه كشف التسلل في وضع IPS لا يوضع في العتاد أبدًا. يُطبَّق عند الحفظ وعند كل إقلاع. يرى Suricata بداية الاتصال الذي في العتاد، ومع «الفحص ثم العتاد» في تبويب الأمان يرى أول ميغابايت منه؛ وما يجب أن يراه كاملًا يوضع في «لا تُفرَّغ أبدًا» أدناه، وإلا يبقى هذا معطّلًا."
+
+#: os-xgs-npu
+msgid "A firewall rule with \"Max new connections\" (advanced options) puts a source that opens connections faster than it allows in a table - virusprot, or the rule's own overload table - and the firewall blocks it and cuts its connections at once. With this on, those tables are watched like a block list under Cut open connections when listed: what such a source still has in the coprocessor is dropped there as well, both ways, with Cut in hardware on. The limits are the rules' own; this sets none. Checked every minute. On in a new install."
+msgstr "قاعدة جدار الحماية التي فيها «الحد الأقصى للاتصالات الجديدة» (الخيارات المتقدمة) تضع المصدر الذي يفتح اتصالات أسرع مما تسمح به في جدول - virusprot، أو جدول التجاوز الخاص بالقاعدة - فيحظره جدار الحماية ويقطع اتصالاته في الحال. مع تفعيل هذا تُراقَب تلك الجداول كما تُراقَب قائمة الحظر في «قطع الاتصالات المفتوحة عند الإدراج»: ما بقي لهذا المصدر في المعالج المساعد يُسقَط هناك أيضًا، في الاتجاهين، مع تفعيل «القطع في العتاد». الحدود هي حدود القواعد نفسها؛ وهذا لا يضبط شيئًا منها. يُفحص كل دقيقة. مفعّل في التثبيت الجديد."
+
+#: os-xgs-npu
+msgid "With Inspect, then hardware on, a new connection the coprocessor carries goes to the Intrusion Detection first. While Suricata does not read it - stopped, restarting, or exited - its frames are dropped with this on, so no connection runs in hardware uninspected; off, they pass and the connection runs in hardware without inspection, as before. It does nothing while the Intrusion Detection is off or in IDS mode, or while Inspect, then hardware is off, so a new install, whose Intrusion Detection is off, drops nothing. Followed within two seconds when the Intrusion Detection is turned on or off. On in a new install."
+msgstr "مع تفعيل «الفحص ثم العتاد» يذهب كل اتصال جديد يحمله المعالج المساعد إلى كشف التسلل أولًا. وما دام Suricata لا يقرؤه - متوقفًا، أو يُعاد تشغيله، أو خرج - تُسقَط إطاراته مع تفعيل هذا، فلا يجري اتصال في العتاد دون فحص؛ ومع تعطيله تمر، ويجري الاتصال في العتاد دون فحص، كما كان من قبل. لا أثر له ما دام كشف التسلل معطّلًا أو في وضع IDS، أو ما دام «الفحص ثم العتاد» معطّلًا، فالتثبيت الجديد - وكشف التسلل فيه معطّل - لا يُسقط شيئًا. يتبع تفعيل كشف التسلل أو تعطيله خلال ثانيتين. مفعّل في التثبيت الجديد."
+
+#: os-xgs-npu
+msgid "Encrypt and decrypt the tunnels configured under VPN: IPsec in the coprocessor's crypto engine instead of the host's CPU (AES-GCM, and AES-CBC with an HMAC). Written as a loader tunable through System: Settings: Tunables, because the driver has to have it before the tunnels come up: it takes effect at the next reboot. On in a new install, from the first Apply of this page and the reboot after it."
+msgstr "تشفير الأنفاق المضبوطة في VPN: IPsec وفك تشفيرها في محرك التشفير الخاص بالمعالج المساعد بدلًا من معالج المضيف (AES-GCM، وAES-CBC مع HMAC). يُكتب كمتغيّر إقلاع عبر النظام: الإعدادات: المتغيرات القابلة للضبط، لأن برنامج التشغيل يحتاجه قبل أن تقوم الأنفاق: يسري عند إعادة التشغيل التالية. مفعّل في التثبيت الجديد، بدءًا من أول «تطبيق» لهذه الصفحة وإعادة التشغيل التي تليه."
+
+#: os-xgs-npu
+msgid "The direction of a tunnel's connections that leaves encrypted is forwarded by the coprocessor itself, with its association named in the flow; the direction that arrives as ESP still crosses the host. Needs IPsec in the engine. Takes effect at the next reboot. On in a new install, as IPsec in the engine is. The XGS 3300's driver has a third mode, both directions, never offered here: it also forwards clear text that arrives on the tunnel's port and matches a connection, past the policy that says it must have come through the tunnel."
+msgstr "يمرّر المعالج المساعد بنفسه الاتجاه الذي يخرج مشفّرًا من اتصالات النفق، والارتباط مسمّى في التدفق؛ أما الاتجاه الذي يصل بصيغة ESP فما زال يمرّ عبر المضيف. يتطلّب IPsec في المحرك. يسري عند إعادة التشغيل التالية. مفعّل في التثبيت الجديد، كما هو IPsec في المحرك. لبرنامج تشغيل XGS 3300 وضع ثالث، أي الاتجاهين معًا، لا يُعرض هنا أبدًا: فهو يمرّر أيضًا نصًا غير مشفّر يصل إلى منفذ النفق ويطابق اتصالًا قائمًا، متجاوزًا السياسة التي تشترط أن يكون قد جاء عبر النفق."
+
+#: os-xgs-npu
+msgid "The Captive Portal lets a client through and stops it again in the firewall, where a connection the coprocessor forwards no longer passes, so every enabled zone is kept with the firewall as if it were listed under Never offloaded. With this on, each client that logs in is given to the coprocessor as a live user of its own, within two seconds of its login; its connections are put in hardware with it, and when its session ends - a logout, a timeout, a disconnect - the coprocessor gives all of them back at once and they are not made again. The idle timeout and RADIUS accounting read what the firewall counted for each client, which misses what the coprocessor carries: a zone with either runs in hardware only where the coprocessor's counts are added to the portal's own, by a change to one of the portal's files that is made only on the versions of it this plugin knows. Any other zone stays with the firewall, and the row below says why. On in a new install."
+msgstr "تسمح بوابة الدخول للعميل بالمرور وتوقفه من جديد داخل جدار الحماية، حيث لا يمرّ الاتصال الذي يمرّره المعالج المساعد، لذلك تبقى كل منطقة مفعّلة مع جدار الحماية كأنها مدرجة في «لا تُفرَّغ أبدًا». مع تفعيل هذا، يُعطى كل عميل يسجّل دخوله للمعالج المساعد مستخدمًا حيًّا خاصًّا به، خلال ثانيتين من دخوله؛ وتوضع اتصالاته في العتاد معه، وحين تنتهي جلسته - بخروج أو انتهاء مهلة أو قطع - يعيدها المعالج المساعد كلها دفعة واحدة ولا تُصنع من جديد. مهلة الخمول ومحاسبة RADIUS تقرآن ما عدّه جدار الحماية لكل عميل، وهذا يفوته ما يحمله المعالج المساعد: فالمنطقة التي فيها إحداهما لا تعمل في العتاد إلا حيث تُضاف عدّادات المعالج المساعد إلى عدّادات البوابة نفسها، بتعديل على أحد ملفات البوابة لا يُجرى إلا على إصداراته التي تعرفها هذه الإضافة. وأي منطقة أخرى تبقى مع جدار الحماية، والسطر أدناه يقول السبب. مفعّل في التثبيت الجديد."
+
+#: os-xgs-npu
+msgid "Report, in the XGS log, what no normal day looks like - never block it. Every minute the firewall's connections are read every ten seconds, and for each host that opened any: a port scan (one host trying 100 ports or more on one address within a minute) and a sweep (one host reaching 256 new addresses or more) are reported at once; and a host that sends, receives or opens far more than it usually does - six spreads above its own moving mean, and above a floor of 200 MB sent, 1 GB received or 500 connections a minute - is reported once it has an hour of history. The same host is reported for the same thing at most once in ten minutes. On the XGS 3300 the volumes include what the coprocessor forwarded when \"Count hardware traffic in pf\" is on; on the XGS 136 a connection in hardware stops adding to them, so there the patterns are what is complete. Each check reads the whole state table six times a minute: on a firewall with hundreds of thousands of connections, that is work to weigh. Each report is also kept for os-netreport to send. On in a new install."
+msgstr "يبلّغ في سجل XGS عمّا لا يشبه يومًا عاديًا - ولا يحجبه أبدًا. كل دقيقة تُقرأ اتصالات الجدار الناري كل عشر ثوانٍ، ولكل مضيف فتح أي اتصال: يُبلَّغ فورًا عن فحص المنافذ (مضيف يجرّب 100 منفذ أو أكثر على عنوان واحد خلال دقيقة) وعن المسح (مضيف يصل إلى 256 عنوانًا جديدًا أو أكثر)؛ ويُبلَّغ عن المضيف الذي يرسل أو يستقبل أو يفتح أكثر بكثير مما اعتاد - ستة انحرافات فوق متوسطه المتحرك، وفوق حد أدنى قدره 200 MB مرسلة أو 1 GB مستقبلة أو 500 اتصال في الدقيقة - متى صار له تاريخ ساعة. لا يُبلَّغ عن المضيف نفسه للأمر نفسه أكثر من مرة كل عشر دقائق. على XGS 3300 تشمل الأحجام ما مرّره المعالج المساعد متى كان «عدّ حركة العتاد في pf» مفعّلًا؛ وعلى XGS 136 يتوقف الاتصال الذي في العتاد عن الإضافة إليها، فالأنماط هناك هي المكتملة. كل فحص يقرأ جدول الحالات كله ست مرات في الدقيقة: على جدار ناري بمئات الآلاف من الاتصالات، هذا عمل يُحسب حسابه. ويُحفظ كل تنبيه أيضًا ليرسله os-netreport. مفعّل في التثبيت الجديد."
+
+#: os-xgs-npu
+msgid "Each new connection the coprocessor carries is inspected by the Intrusion Detection first: every frame of it goes to Suricata through oxips0, the coprocessor's inspector interface, until Suricata has let a quarter more than its own stream depth through (1 MiB by default; a save sets the coprocessor's depth to it, so Suricata reaches its own and stops following the connection first), and the rest then runs in hardware. What Suricata drops never reaches its destination. It needs the Intrusion Detection on in IPS mode (Services: Intrusion Detection: Administration), on any interface: oxips0 is added to the interfaces it inspects without being assigned, and Suricata takes up a connection whose first frames it did not see. It does nothing while the Intrusion Detection is off or in IDS mode: connections then run in hardware as without it. On in a new install. It needs \"Cut in hardware\" on as well. Turned on, the coprocessor's inspector function is made at the next reboot; after that, a save applies it to the connections made from then on, and so does every boot. A connection's first frames, before it is in hardware, cross this firewall and are inspected only where the Intrusion Detection inspects the interface they arrive on. An experiment, measured on the XGS 3300 and the XGS 136."
+msgstr "يفحص كشفُ التسلل أولاً كلَّ اتصال جديد يحمله المعالج المساعد: يذهب كل إطار منه إلى Suricata عبر oxips0، واجهة الفاحص في المعالج المساعد، حتى يُمرّر Suricata منه ما يزيد بمقدار الربع على عمق التدفق لديه (1 ميغابايت افتراضاً؛ ويضبط الحفظُ عمقَ المعالج المساعد على ذلك، فيبلغ Suricata عمقه ويتوقف عن متابعة الاتصال أولاً)، ثم يجري باقيه في العتاد. وما يُسقطه Suricata لا يصل إلى وجهته أبداً. يحتاج ذلك كشفَ التسلل مُفعَّلاً في وضع IPS (الخدمات: كشف التسلل: الإدارة)، على أي واجهة: تُضاف oxips0 إلى الواجهات التي يفحصها دون أن تُعيَّن، ويلتقط Suricata الاتصالَ الذي لم يرَ إطاراته الأولى. ولا أثر له ما دام كشف التسلل معطّلًا أو في وضع IDS: تجري الاتصالات حينها في العتاد كما تجري بدونه. مفعّل في التثبيت الجديد. ويحتاج «القطع في العتاد» مُفعَّلاً كذلك. عند التفعيل تُبنى وظيفة الفاحص في المعالج المساعد عند إعادة التشغيل التالية؛ وبعدها يُطبِّقه الحفظ على الاتصالات التي تُبنى من حينه، وكذلك كل إقلاع. أما الإطارات الأولى للاتصال، قبل أن يدخل العتاد، فتعبر جدار الحماية هذا ولا تُفحص إلا حيث يفحص كشفُ التسلل الواجهةَ التي تصل منها. تجربة، قيست على XGS 3300 وXGS 136."
+
+#: os-xgs-npu
+msgid "the settings did not validate"
+msgstr "لم تجتز الإعدادات التحقق"
+
+#: os-xgs-npu
+msgid "the settings were not saved"
+msgstr "لم تُحفظ الإعدادات"
+
+#: os-xgs-npu
+msgid "a port the Intrusion Detection reads in IPS mode stays with this firewall"
+msgstr "المنفذ الذي يقرؤه كشف التسلل في وضع IPS يبقى مع جدار الحماية هذا"
+
+#: os-xgs-npu
+msgid "with Hardware offloading, on the same condition"
+msgstr "مع «التفريغ إلى العتاد»، وبالشرط نفسه"
+
+#: os-xgs-npu
+msgid "the limits are the rules' own"
+msgstr "الحدود هي حدود القواعد نفسها"
+
+#: os-xgs-npu
+msgid "reports, never blocks"
+msgstr "يبلّغ، ولا يحظر أبدًا"
+
+#: os-xgs-npu
+msgid "does nothing while the Intrusion Detection is off"
+msgstr "لا أثر له ما دام كشف التسلل معطّلًا"
+
+#: os-xgs-npu
+msgid "acts only while the Intrusion Detection runs in IPS mode"
+msgstr "لا يعمل إلا ما دام كشف التسلل يعمل في وضع IPS"
+
+#: os-xgs-npu
+msgid "takes effect after a reboot"
+msgstr "يسري بعد إعادة التشغيل"
+
+#: os-xgs-npu
+msgid "The recommended settings are on in new installs"
+msgstr "الإعدادات الموصى بها مفعّلة في التثبيتات الجديدة"
+
+#: os-xgs-npu
+msgid "This appliance keeps what it saved. These differ here, and Apply recommended turns on exactly these:"
+msgstr "يحتفظ هذا الجهاز بما حفظه. هذه تختلف هنا، و«تطبيق الموصى به» يفعّل هذه بالضبط:"
+
+#: os-xgs-npu
+msgid "Apply recommended"
+msgstr "تطبيق الموصى به"
+
+#: os-xgs-npu
+msgid "Choose each one on XGS: Settings"
+msgstr "اختر كلًّا منها في XGS: الإعدادات"
+
+#: os-xgs-npu
+msgid "Turned on and applied:"
+msgstr "فُعِّلت وطُبِّقت:"
+
+#: os-xgs-npu
+msgid "Reboot to finish: the settings marked so take effect after it."
+msgstr "أعد التشغيل للإتمام: الإعدادات المعلَّمة بذلك تسري بعده."
+
+#: os-xgs-npu
+msgid "Nothing was changed."
+msgstr "لم يتغيّر شيء."
+
+#: os-xgs-npu
+msgid "Cut floods by the firewall's own limits"
+msgstr "قطع الفيضان بحدود جدار الحماية نفسه"
+
+#: os-xgs-npu
+msgid "Drop when the inspection stops"
+msgstr "الإسقاط عند توقف الفحص"
+
+#: os-xgs-npu
+msgid "Never offloaded, as set on XGS: Settings"
+msgstr "لا تُفرَّغ أبدًا، كما ضُبط في XGS: الإعدادات"
+
+#: os-xgs-npu
+msgid "On a port the Intrusion Detection reads in IPS mode"
+msgstr "على منفذ يقرؤه كشف التسلل في وضع IPS"
+
+#: os-xgs-npu
+msgid "Inspected, on a port the Intrusion Detection reads in IPS mode"
+msgstr "مفحوص، على منفذ يقرؤه كشف التسلل في وضع IPS"
+
+#: os-xgs-npu
+msgid "IPv6 that pf translates"
+msgstr "IPv6 يترجمه pf"
+
+#: os-xgs-npu
+msgid "Covered by an IPsec policy"
+msgstr "تشمله سياسة IPsec"
+
+#: os-xgs-npu
+msgid "Bridged, and not a pair the coprocessor can bridge"
+msgstr "مجسور، وليس زوجًا يستطيع المعالج المساعد جسره"
+
+#: os-xgs-npu
+msgid "On a VLAN the coprocessor does not carry"
+msgstr "على شبكة VLAN لا يحملها المعالج المساعد"
+
+#: os-xgs-npu
+msgid "A DSCP mark the coprocessor cannot write"
+msgstr "علامة DSCP لا يستطيع المعالج المساعد كتابتها"
+
+#: os-xgs-npu
+msgid "The flow table was full"
+msgstr "كان جدول التدفقات ممتلئًا"
+
+#: os-xgs-npu
+msgid "The next-hop table was full"
+msgstr "كان جدول القفزات التالية ممتلئًا"
+
+#: os-xgs-npu
+msgid "Given back soon after it was made, held a while"
+msgstr "أُعيد بعد صنعه بقليل، فأُمسك مدة"
+
+#: os-xgs-npu
+msgid "Refused by the coprocessor"
+msgstr "رفضه المعالج المساعد"
+
+#: os-xgs-npu
+msgid "Fast path share"
+msgstr "نصيب المسار السريع"
+
+#: os-xgs-npu
+msgid "nothing counted yet"
+msgstr "لم يُعدّ شيء بعد"
+
+#: os-xgs-npu
+msgid "of the frames since the driver started"
+msgstr "من الإطارات منذ بدء برنامج التشغيل"
+
+#: os-xgs-npu
+msgid "Frames the coprocessor forwarded itself"
+msgstr "الإطارات التي مرّرها المعالج المساعد بنفسه"
+
+#: os-xgs-npu
+msgid "Frames handed to this firewall"
+msgstr "الإطارات المسلَّمة إلى جدار الحماية هذا"
+
+#: os-xgs-npu
+msgid "connections"
+msgstr "اتصالات"
+
+#: os-xgs-npu
+msgid "attempts"
+msgstr "محاولات"
+
+#: os-xgs-npu
+msgid "The fast path, and what stayed with this firewall"
+msgstr "المسار السريع، وما بقي مع جدار الحماية هذا"
+
+#: os-xgs-npu
+msgid "IPsec in the engine is turned on in Settings and takes effect at the next reboot."
+msgstr "شُغّل IPsec في المحرّك من الإعدادات، ويسري عند إعادة التشغيل التالية."
+
+#: os-xgs-npu
+msgid "IPsec in the engine is turned off in Settings and takes effect at the next reboot."
+msgstr "أُطفئ IPsec في المحرّك من الإعدادات، ويسري ذلك عند إعادة التشغيل التالية."
+
+#: os-xgs-npu
+msgid "hardware"
+msgstr "العتاد"
+
+#: os-xgs-npu
+msgid "kernel"
+msgstr "النواة"
+
+#: os-xgs-npu
+msgid "IPsec in the engine is off"
+msgstr "IPsec في المحرّك مطفأ"
+
+#: os-xgs-npu
+msgid "protocol %s: the engine takes ESP only"
+msgstr "البروتوكول %s: لا يأخذ المحرّك إلا ESP"
+
+#: os-xgs-npu
+msgid "mode %s: the engine takes tunnel mode only"
+msgstr "الوضع %s: لا يأخذ المحرّك إلا وضع النفق"
+
+#: os-xgs-npu
+msgid "cipher %s: the engine takes AES-GCM-16 and AES-CBC"
+msgstr "خوارزمية التشفير %s: يأخذ المحرّك AES-GCM-16 وAES-CBC"
+
+#: os-xgs-npu
+msgid "HMAC %s: the engine takes SHA-1, SHA-256, SHA-384 and SHA-512"
+msgstr "HMAC %s: يأخذ المحرّك SHA-1 وSHA-256 وSHA-384 وSHA-512"
+
+#: os-xgs-npu
+msgid "a key of %s bits: the engine takes 128, 192 and 256"
+msgstr "مفتاح من %s بت: يأخذ المحرّك 128 و192 و256"
+
+#: os-xgs-npu
+msgid "not offered to a front port: the tunnel does not use one"
+msgstr "لم يُعرض على منفذ أمامي: النفق لا يستعمل منفذاً أمامياً"
+
+#: os-xgs-npu
+msgid "extended sequence numbers inbound, left to the kernel"
+msgstr "أرقام تسلسل ممتدة في الاتجاه الوارد، تُركت للنواة"
+
+#: os-xgs-npu
+msgid "replay window %s: not a power of two, or above 4096"
+msgstr "نافذة منع الإعادة %s: ليست قوة للعدد 2، أو أكبر من 4096"
+
+#: os-xgs-npu
+msgid "the engine refused it"
+msgstr "رفضه المحرّك"
+
+#: os-xgs-npu
+msgid "allowed by the rules; not taken for a reason the counters show (a route by another interface, a VLAN, the coprocessor not ready)"
+msgstr "تسمح به القواعد، ولم يُؤخذ لسبب تُظهره العدّادات (مسار عبر واجهة أخرى، أو VLAN، أو معالج مساعد غير جاهز)"
+
+#: os-xgs-npu
+msgid "depends on the peer"
+msgstr "بحسب النظير"
+
+#: os-xgs-npu
+msgid "Encryption profile"
+msgstr "ملف التشفير"
+
+#: os-xgs-npu
+msgid "Why in the kernel"
+msgstr "سبب بقائه في النواة"
+
+#: os-xgs-npu
+msgid "Child"
+msgstr "الفرع"
+
+#: os-xgs-npu
+msgid "IKE proposals"
+msgstr "مقترحات IKE"
+
+#: os-xgs-npu
+msgid "Rekey"
+msgstr "إعادة توليد المفتاح"
+
+#: os-xgs-npu
+msgid "The proposals, Diffie-Hellman groups (PFS), dead peer detection and rekeying are set under VPN: IPsec; this shows them and what the engine makes of each ESP proposal. The engine takes ESP in tunnel mode with AES-GCM-16, or AES-CBC with HMAC SHA-1, SHA-256, SHA-384 or SHA-512, keys of 128, 192 or 256 bits; the Diffie-Hellman group does not change it. Every other association is encrypted by the kernel."
+msgstr "المقترحات ومجموعات Diffie-Hellman (PFS) واكتشاف النظير الميت وإعادة توليد المفتاح تُضبط في VPN: IPsec؛ وهنا تُعرض مع ما يفعله المحرّك بكل مقترح ESP. يأخذ المحرّك ESP في وضع النفق مع AES-GCM-16، أو AES-CBC مع HMAC SHA-1 أو SHA-256 أو SHA-384 أو SHA-512، بمفاتيح 128 أو 192 أو 256 بت؛ ولا تغيّر مجموعة Diffie-Hellman ذلك. وكل ارتباط غير ذلك تشفّره النواة."
+
+#: os-xgs-npu
+msgid "Coprocessor load"
+msgstr "حمل المعالج المساعد"
+
+#: os-xgs-npu
+msgid "Coprocessor memory in use"
+msgstr "ذاكرة المعالج المساعد المستعملة"
+
+#: os-xgs-npu
+msgid "Nothing kept yet: the first reading comes within five minutes."
+msgstr "لم يُحفظ شيء بعد: تأتي القراءة الأولى خلال خمس دقائق."
+
+#: os-xgs-npu
+msgid "Read every five minutes and kept for seven days. The same figures go to Reporting: Health, under System, while its collection is on (Reporting: Settings)."
+msgstr "تُقرأ كل خمس دقائق وتُحفظ سبعة أيام. وتذهب الأرقام نفسها إلى التقارير: الصحة، تحت النظام، ما دام جمعها مفعّلاً (التقارير: الإعدادات)."
+
+#: os-xgs-npu
+msgid "on %s cores"
+msgstr "على %s أنوية"
+
+#: os-xgs-npu
+msgid "Next hop"
+msgstr "القفزة التالية"
+
+#: os-xgs-npu
+msgid "In pf"
+msgstr "في pf"
+
+#: os-xgs-npu
+msgid "counted in pf"
+msgstr "محسوب في pf"
+
+#: os-xgs-npu
+msgid "not given to pf"
+msgstr "لا يُعطى لـ pf"
+
+#: os-xgs-npu
+msgid "before"
+msgstr "قبل"
+
+#: os-xgs-npu
+msgid "its pf state is gone: closed, killed or expired"
+msgstr "زالت حالته في pf: أُغلق أو أُنهي أو انتهت مدته"
+
+#: os-xgs-npu
+msgid "pf still has its state: the host carries it"
+msgstr "حالته ما زالت في pf: يمرّره المضيف"
+
+#: os-xgs-npu
+msgid "Left hardware"
+msgstr "خرجت من العتاد"
+
+#: os-xgs-npu
+msgid "Left between"
+msgstr "خرج بين"
+
+#: os-xgs-npu
+msgid "Why, as pf tells it now"
+msgstr "السبب، كما يقوله pf الآن"
+
+#: os-xgs-npu
+msgid "The drivers count why connections leave hardware but keep no record of each, so this page keeps one: a connection in its last reading and not in this one left between the two. A killed state leaves hardware within two seconds. The last 100 are kept; none are told while the table lists only part of what is in hardware."
+msgstr "يعدّ برنامجا التشغيل أسباب خروج الاتصالات من العتاد ولا يحفظان سجلاً لكل اتصال، فتحفظ هذه الصفحة سجلاً: الاتصال الذي كان في قراءتها السابقة وليس في هذه خرج بين القراءتين. والحالة التي تُنهى تخرج من العتاد خلال ثانيتين. يُحفظ آخر 100 اتصال، ولا يُذكر شيء ما دام الجدول لا يسرد إلا جزءاً مما في العتاد."
+
+#: os-xgs-npu
+msgid "VLANs"
+msgstr "شبكات VLAN"
+
+#: os-xgs-npu
+msgid "VLANs in hardware"
+msgstr "شبكات VLAN في العتاد"
+
+#: os-xgs-npu
+msgid "more stay with the host"
+msgstr "أخرى تبقى مع المضيف"
+
+#: os-xgs-npu
+msgid "VLAN interfaces on the front ports"
+msgstr "واجهات VLAN على المنافذ الأمامية"
+
+#: os-xgs-npu
+msgid "Fail-to-wire"
+msgstr "تمرير الأسلاك عند العطل"
+
+#: os-xgs-npu
+msgid "Port1 and Port2 behind relays that join them when the appliance fails, if armed."
+msgstr "المنفذان Port1 وPort2 خلف مرحّلات تصل بينهما حين يتعطل الجهاز، إن كانت مُفعَّلة."
+
+#: os-xgs-npu
+msgid "Read the relay"
+msgstr "قراءة المرحّل"
+
+#: os-xgs-npu
+msgid "bypass: the two ports are joined"
+msgstr "تمرير: المنفذان موصولان ببعضهما"
+
+#: os-xgs-npu
+msgid "Interfaces, VLANs and bridges are set in OPNsense (Interfaces: Assignments, Interfaces: Devices); this page shows them on each front port. The coprocessor carries the VLAN interfaces of up to 64 front-port VLANs, not those in a bridge; the host forwards the rest."
+msgstr "الواجهات وشبكات VLAN والجسور تُضبط في OPNsense (الواجهات: التعيينات، الواجهات: الأجهزة)؛ وتعرضها هذه الصفحة على كل منفذ أمامي. يحمل المعالج المساعد واجهات ما يصل إلى 64 شبكة VLAN على المنافذ الأمامية، ما عدا التي في جسر؛ ويمرّر المضيف الباقي."
+
+#: os-xgs-npu
+msgid "Forward error correction (FEC) is shown read only, and is not read yet: the coprocessor's network agent keeps it, and asking the agent for it once stopped the agent until the coprocessor restarted, so neither driver asks. Nothing on this page sets it."
+msgstr "يُعرض تصحيح الأخطاء الأمامي (FEC) للقراءة فقط، ولم يُقرأ بعد: يحفظه وكيل الشبكة في المعالج المساعد، وسؤال الوكيل عنه مرة واحدة أوقف الوكيل حتى أُعيد تشغيل المعالج المساعد، فلا يسأل عنه أيّ من برنامجي التشغيل. ولا شيء في هذه الصفحة يضبطه."
+
+#: os-xgs-npu
+msgid "In OPNsense's LAGG settings (Interfaces: Devices: LAGG), the protocol \"fec\" is Fast EtherChannel, a way of bundling ports - not forward error correction."
+msgstr "في إعدادات LAGG في OPNsense (الواجهات: الأجهزة: LAGG)، البروتوكول «fec» هو Fast EtherChannel، أي طريقة لتجميع المنافذ، وليس تصحيح الأخطاء الأمامي."
+
+#: os-xgs-npu
+msgid "Memory error alert"
+msgstr "تنبيه أخطاء الذاكرة"
+
+#: os-xgs-npu
+msgid "The coprocessor's memory corrects single-bit errors by itself (ECC) and counts them. When this many corrected errors have been counted since the last alert, or since the coprocessor started, an alert is written in the system log and handed to os-netreport to send. An error the memory could not correct always raises one. 0: no alert for corrected errors. Read every five minutes; XGS: Overview shows the counts. Only the XGS 3300 has these counters: on the XGS 136 nothing is read."
+msgstr "تصحّح ذاكرة المعالج المساعد أخطاء البت الواحد بنفسها (ECC) وتعدّها. حين يبلغ عدد الأخطاء المصحّحة هذا الرقم منذ آخر تنبيه، أو منذ بدء المعالج المساعد، يُكتب تنبيه في سجل النظام ويُسلَّم إلى os-netreport ليرسله. والخطأ الذي لم تستطع الذاكرة تصحيحه يرفع تنبيهاً دائماً. 0: لا تنبيه للأخطاء المصحّحة. تُقرأ كل خمس دقائق، وتعرض XGS: Overview الأعداد. هذه العدّادات في XGS 3300 وحده، ولا يُقرأ شيء على XGS 136."
+
+#: os-xgs-npu
+msgid "Memory errors (ECC)"
+msgstr "أخطاء الذاكرة (ECC)"
+
+#: os-xgs-npu
+msgid "not read on this model"
+msgstr "لا تُقرأ في هذا الطراز"
+
+#: os-xgs-npu
+msgid "corrected / uncorrected; alert at %s corrected"
+msgstr "مصحّحة / غير مصحّحة؛ التنبيه عند %s مصحّحة"
+
+#: os-xgs-npu
+msgid "corrected / uncorrected; no alert for corrected errors"
+msgstr "مصحّحة / غير مصحّحة؛ لا تنبيه للأخطاء المصحّحة"
+
+#: os-xgs-npu
+msgid "last alert"
+msgstr "آخر تنبيه"
+
+#: os-xgs-npu
+msgid "Matches: built from the SDK of the system copy it runs"
+msgstr "متطابق: مبني من SDK نسخة النظام التي يشغّلها"
+
+#: os-xgs-npu
+msgid "Does not match: built from another SDK than the system copy it runs"
+msgstr "غير متطابق: مبني من SDK غير الذي بُنيت منه نسخة النظام التي يشغّلها"
+
+#: os-xgs-npu
+msgid "The flash was written since the coprocessor last booted: its next start boots another U-Boot"
+msgstr "كُتبت الذاكرة الوميضية منذ آخر إقلاع للمعالج المساعد: سيُقلع في بدئه التالي بـ U-Boot آخر"
+
+#: os-xgs-npu
+msgid "Not judged: a version without its SDK"
+msgstr "لم يُحكم عليه: إصدار لا يذكر SDK الخاص به"
+
+#: os-xgs-npu
+msgid "Not read"
+msgstr "لم يُقرأ"
+
+#: os-xgs-npu
+msgid "Not read: the coprocessor did not answer"
+msgstr "لم يُقرأ: لم يُجب المعالج المساعد"
+
+#: os-xgs-npu
+msgid "Its Linux kernel"
+msgstr "نواة Linux فيه"
+
+#: os-xgs-npu
+msgid "U-Boot in the flash"
+msgstr "U-Boot في الذاكرة الوميضية"
+
+#: os-xgs-npu
+msgid "U-Boot at its last boot"
+msgstr "U-Boot في آخر إقلاع له"
+
+#: os-xgs-npu
+msgid "not seen: the console logger did not see that boot"
+msgstr "لم يُرَ: لم يشهد تسجيل الشاشة ذلك الإقلاع"
+
+#: os-xgs-npu
+msgid "Expected U-Boot SDK"
+msgstr "SDK المتوقع لـ U-Boot"
+
+#: os-xgs-npu
+msgid "U-Boot match"
+msgstr "تطابق U-Boot"
+
+#: os-xgs-npu
+msgid "Writing U-Boot"
+msgstr "كتابة U-Boot"
+
+#: os-xgs-npu
+msgid "Not offered: this plugin has no path to write the coprocessor's flash. The check only reads."
+msgstr "غير متاح: لا طريق في هذا المكوّن الإضافي لكتابة الذاكرة الوميضية للمعالج المساعد. الفحص يقرأ فقط."
+
+#: os-xgs-npu
+msgid "The coprocessor's software"
+msgstr "برامج المعالج المساعد"
+
+#: os-xgs-npu
+msgid "reading the coprocessor..."
+msgstr "تجري قراءة المعالج المساعد..."
+
+#: os-xgs-npu
+msgid "Read at every boot and on Read now, read-only. The expected U-Boot is the one built from the SDK of the system copy the coprocessor runs; a U-Boot that does not match, or a flash written since the coprocessor last booted, is also said in the system log. The coprocessor's software comes with its vendor install, not with this project's updates."
+msgstr "يُقرأ عند كل إقلاع وعند «اقرأ الآن»، للقراءة فقط. U-Boot المتوقع هو المبني من SDK نسخة النظام التي يشغّلها المعالج المساعد؛ وU-Boot غير المتطابق، أو ذاكرة وميضية كُتبت منذ آخر إقلاع للمعالج المساعد، يُذكر أيضاً في سجل النظام. برامج المعالج المساعد تأتي مع تثبيت المورّد، لا مع تحديثات هذا المشروع."
+
+#: os-xgs-npu
+msgid "Not an address or a host name."
+msgstr "ليس عنواناً ولا اسم مضيف."
+
+#: os-xgs-npu
+msgid "A count is 1 to 10."
+msgstr "العدد من 1 إلى 10."
+
+#: os-xgs-npu
+msgid "XGS: Overview, Ports, Transceivers, IPsec, Offloaded Flows and Coprocessor Ping"
+msgstr "XGS: نظرة عامة والمنافذ والوحدات الضوئية وIPsec والتدفقات المُفرَّغة وPing من المعالج المساعد"
+
+#: os-xgs-npu
+msgid "Coprocessor Ping"
+msgstr "Ping من المعالج المساعد"
+
+#: os-xgs-npu
+msgid "The coprocessor could not be asked."
+msgstr "تعذّر سؤال المعالج المساعد."
+
+#: os-xgs-npu
+msgid "The coprocessor printed nothing: the management link may be down."
+msgstr "لم يطبع المعالج المساعد شيئاً: قد تكون وصلة الإدارة متوقفة."
+
+#: os-xgs-npu
+msgid "Ping from the coprocessor"
+msgstr "Ping من المعالج المساعد"
+
+#: os-xgs-npu
+msgid "Address or host name"
+msgstr "العنوان أو اسم المضيف"
+
+#: os-xgs-npu
+msgid "Sent by the coprocessor's own Linux over the management link, so it tells what the coprocessor reaches from its own ports, not what this firewall reaches. A name is resolved by the coprocessor."
+msgstr "يرسله نظام Linux في المعالج المساعد عبر وصلة الإدارة، فيبيّن ما يبلغه المعالج المساعد من منافذه هو، لا ما يبلغه جدار الحماية هذا. والاسم يحلّه المعالج المساعد."
+
+#: os-xgs-npu
+msgid "Cut what the IPS drops"
+msgstr "قطع ما يُسقطه IPS"
+
+#: os-xgs-npu
+msgid "Suricata drops only the frames it sees. A connection the coprocessor already carries, or put in hardware after the inspector's depth, goes on there. On, every alert the Intrusion Detection logs as blocked cuts its connection as a listed fingerprint does: its states are killed, and with Cut in hardware on it is dropped on the coprocessor first. Read every two seconds. It acts only while the Intrusion Detection runs in IPS mode: in IDS mode nothing is logged as blocked. The XGS log says what was cut."
+msgstr "لا يُسقط Suricata إلا الإطارات التي يراها. والاتصال الذي يحمله المعالج المساعد أصلاً، أو الذي وُضع في العتاد بعد عمق الفاحص، يستمر هناك. عند التفعيل، كل تنبيه يسجّله كشف التسلل محجوباً يقطع اتصاله كما تفعل البصمة المدرجة: تُلغى حالاته، ومع تفعيل «القطع في العتاد» يُسقَط على المعالج المساعد أولاً. يُقرأ كل ثانيتين. ولا يعمل إلا وكشف التسلل في وضع IPS: في وضع IDS لا يُسجَّل شيء محجوباً. ويذكر سجل XGS ما قُطع."
+
 # ---- os-fanctl: the default sensors taken from the model's fans (os-fanctl #57); the XGS appliances'
 # network coprocessor die is a group of its own on the page.
 
