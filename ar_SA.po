@@ -64766,8 +64766,8 @@ msgid "Address or host name"
 msgstr "العنوان أو اسم المضيف"
 
 #: os-xgs-npu
-msgid "Sent by the coprocessor's own Linux over the management link, so it tells what the coprocessor reaches from its own ports, not what this firewall reaches. A name is resolved by the coprocessor."
-msgstr "يرسله نظام Linux في المعالج المساعد عبر وصلة الإدارة، فيبيّن ما يبلغه المعالج المساعد من منافذه هو، لا ما يبلغه جدار الحماية هذا. والاسم يحلّه المعالج المساعد."
+msgid "Sent by the coprocessor's own Linux. Its one network is the management link, 169.254.254.0/30, with no route beyond it: it reaches this firewall's end, 169.254.254.1, and any other address answers \"Network is unreachable\". The front ports carry traffic in its data path, not in its Linux. So this tests the link and the coprocessor's network stack."
+msgstr "يرسله نظام Linux في المعالج المساعد. شبكته الوحيدة وصلة الإدارة 169.254.254.0/30، ولا مسار له بعدها: يبلغ طرف جدار الحماية هذا، 169.254.254.1، وأي عنوان آخر يجيب «Network is unreachable». فالمنافذ الأمامية تحمل الحركة في مسار بياناته، لا في نظام Linux فيه. لذلك يختبر هذا الوصلةَ ومكدّس الشبكة في المعالج المساعد."
 
 #: os-xgs-npu
 msgid "Cut what the IPS drops"
