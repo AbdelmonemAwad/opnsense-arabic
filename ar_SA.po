@@ -64783,3 +64783,18 @@ msgstr "لا يُسقط Suricata إلا الإطارات التي يراها. و
 #: os-fanctl
 msgid "network coprocessor"
 msgstr "المعالج المساعد للشبكة"
+
+# ---- os-xgs-npu: phase 2 - a connection out of a PPP link (PPPoE, PPTP, L2TP) stays with the host, and
+# Offloaded Flows and the Overview say why. "Link" here is رابط.
+
+#: os-xgs-npu
+msgid "PPP links"
+msgstr "روابط PPP"
+
+#: os-xgs-npu
+msgid "a connection out of PPPoE stays with the host: the coprocessor has no field for its header"
+msgstr "الاتصال الخارج عبر PPPoE يبقى لدى المضيف: لا حقل لدى المعالج المساعد لترويسته"
+
+#: os-xgs-npu
+msgid "Out of a PPP link, such as PPPoE"
+msgstr "خارج عبر رابط PPP، مثل PPPoE"
