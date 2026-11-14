@@ -64798,3 +64798,14 @@ msgstr "الاتصال الخارج عبر PPPoE يبقى لدى المضيف: �
 #: os-xgs-npu
 msgid "Out of a PPP link, such as PPPoE"
 msgstr "خارج عبر رابط PPP، مثل PPPoE"
+
+# ---- os-xgs-npu: phase 2 - XGS: Ports says when a switch socket runs at half duplex, and when its speed
+# was fixed on the interface's page rather than negotiated. "Full duplex" is مزدوج كامل here already.
+
+#: os-xgs-npu
+msgid "half duplex"
+msgstr "نصف مزدوج"
+
+#: os-xgs-npu
+msgid "fixed"
+msgstr "مثبّتة"
