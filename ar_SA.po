@@ -64209,3 +64209,38 @@ msgstr "لا اتفاقيات IPsec أمنية"
 #: os-fallbackcrypto
 msgid "Reboot to finish (Power: Reboot)"
 msgstr "أعد التشغيل للإتمام (الطاقة: إعادة تشغيل النظام)"
+
+# ---- os-xgs-npu: XGS: Overview warns of a port the Intrusion Detection inspects in IPS mode at an MTU
+# its netmap adapter cuts (the emulated adapter carries one 2,048-byte buffer a frame).
+
+#: os-xgs-npu
+msgid "native netmap adapter"
+msgstr "محوّل netmap الأصلي"
+
+#: os-xgs-npu
+msgid "emulated netmap adapter"
+msgstr "محوّل netmap المحاكى"
+
+#: os-xgs-npu
+#, php-format
+msgid "%s (%s): MTU %s, the largest its %s carries is %s"
+msgstr "%s (%s): MTU %s، وأكبر ما يحمله %s فيه هو %s"
+
+#: os-xgs-npu
+msgid "Intrusion Detection cuts large frames on these ports"
+msgstr "كشف التسلل يقصّ الإطارات الكبيرة على هذه المنافذ"
+
+#: os-xgs-npu
+msgid "In IPS mode Suricata reads a port through netmap, and a frame larger than its adapter carries is cut; Suricata may not start at all."
+msgstr "في وضع IPS يقرأ Suricata المنفذ عبر netmap، فيُقصّ كل إطار أكبر مما يحمله محوّله، وقد لا يبدأ Suricata أصلاً."
+
+#: os-xgs-npu
+msgid "Set the MTU of the ports the Intrusion Detection inspects to 1500, or, on the XGS 136, use the native adapter: hw.npuep.netmap at 1 and dev.netmap.buf_size at 9216 in System: Settings: Tunables, then reboot."
+msgstr "اضبط MTU المنافذ التي يفحصها كشف التسلل على 1500، أو استعمل على XGS 136 المحوّلَ الأصلي: hw.npuep.netmap على 1 وdev.netmap.buf_size على 9216 في النظام: الإعدادات: المتغيرات القابلة للضبط، ثم أعد التشغيل."
+
+# ---- os-fanctl: the default sensors taken from the model's fans (os-fanctl #57); the XGS appliances'
+# network coprocessor die is a group of its own on the page.
+
+#: os-fanctl
+msgid "network coprocessor"
+msgstr "المعالج المساعد للشبكة"
