@@ -65073,3 +65073,70 @@ msgstr "وقت من اليوم بصيغة HH:MM، من 00:00 إلى 23:59، أو
 #: os-xgs-npu
 msgid "A host and a port, as host:port or [IPv6 address]:port, or empty for none."
 msgstr "مضيف ومنفذ، بصيغة host:port أو [عنوان IPv6]:port، أو فارغ لعدم الفحص."
+
+# ---- os-xgs-npu: phase 3, package 3.10 - TACACS+ as a server type of System: Access: Servers: the type,
+# its fields, their help and their checks. "Shared secret" is السر المشترك, as the RADIUS server has it.
+
+#: os-xgs-npu
+msgid "TACACS+"
+msgstr "TACACS+"
+
+#: os-xgs-npu
+msgid "TACACS+ server"
+msgstr "خادم TACACS+"
+
+#: os-xgs-npu
+msgid "The IPv4 address or host name of the server: the TACACS+ library of FreeBSD reaches a server by IPv4 only."
+msgstr "عنوان IPv4 للخادم أو اسم مضيفه: مكتبة TACACS+ في FreeBSD تصل إلى الخادم عبر IPv4 فقط."
+
+#: os-xgs-npu
+msgid "The TACACS+ server must be an IPv4 address or a host name."
+msgstr "يجب أن يكون خادم TACACS+ عنوان IPv4 أو اسم مضيف."
+
+#: os-xgs-npu
+msgid "TACACS+ port"
+msgstr "منفذ TACACS+"
+
+#: os-xgs-npu
+msgid "The TCP port of the server; 49 is the one TACACS+ uses."
+msgstr "منفذ TCP للخادم؛ و49 هو المنفذ الذي يستعمله TACACS+."
+
+#: os-xgs-npu
+msgid "The TACACS+ port must be a number from 1 to 65535."
+msgstr "يجب أن يكون منفذ TACACS+ رقمًا من 1 إلى 65535."
+
+#: os-xgs-npu
+msgid "TACACS+ shared secret"
+msgstr "السر المشترك لـ TACACS+"
+
+#: os-xgs-npu
+msgid "The key the server shares with this firewall, which encrypts what passes between them. Shown on this page as it is typed, and kept in the configuration as the RADIUS secret is. Empty: nothing encrypted, for a lab only."
+msgstr "المفتاح الذي يتشاركه الخادم مع جدار الحماية هذا، ويُشفَّر به ما يمر بينهما. يظهر في هذه الصفحة كما يُكتب، ويُحفظ في الإعدادات كما يُحفظ سر RADIUS. فارغ: لا يُشفَّر شيء، وذلك للمختبر فقط."
+
+#: os-xgs-npu
+msgid "The TACACS+ shared secret must be on one line."
+msgstr "يجب أن يكون السر المشترك لـ TACACS+ في سطر واحد."
+
+#: os-xgs-npu
+msgid "TACACS+ timeout (s)"
+msgstr "مهلة TACACS+ (ثانية)"
+
+#: os-xgs-npu
+msgid "How long to wait for the server, in seconds."
+msgstr "مدة انتظار الخادم بالثواني."
+
+#: os-xgs-npu
+msgid "The TACACS+ timeout must be a number of seconds from 1 to 60."
+msgstr "يجب أن تكون مهلة TACACS+ عددًا من الثواني من 1 إلى 60."
+
+#: os-xgs-npu
+msgid "TACACS+ method"
+msgstr "طريقة TACACS+"
+
+#: os-xgs-npu
+msgid "How the password is given: PAP sends it, ASCII answers the prompts of the server for the user and the password as a terminal login does, and CHAP sends a response computed from it. Each is encrypted by the shared secret."
+msgstr "كيف تُعطى كلمة المرور: PAP يرسلها، وASCII يجيب الخادم حين يسأل عن المستخدم ثم كلمة المرور كما يفعل الدخول من الطرفية، وCHAP يرسل ردًا محسوبًا منها. وكلها مشفَّرة بالسر المشترك."
+
+#: os-xgs-npu
+msgid "The TACACS+ method must be PAP, ASCII or CHAP."
+msgstr "يجب أن تكون طريقة TACACS+ هي PAP أو ASCII أو CHAP."
