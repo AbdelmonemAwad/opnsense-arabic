@@ -64836,3 +64836,240 @@ msgstr "عدد الخيوط التي يفحص بها كشف التسلل كل م
 #: os-xgs-npu
 msgid "From 1 to 8, or empty for one."
 msgstr "من 1 إلى 8، أو فارغاً لواحد."
+
+# ---- os-xgs-npu: phase 3, packages 3.2 to 3.9 - a rule's tag kept out of hardware, router advertisements
+# only from allowed senders, ready-made service aliases, IPsec rekey margin and IPComp, a daily PPPoE
+# reconnect, gateway quality alerts, read-only privileges, and XGS: Certificate Import. "Certificate
+# authority" is مرجع مصدق, as GLOSSARY.md has it.
+
+#: os-xgs-npu
+msgid "The file could not be read, or is over 1 MB."
+msgstr "تعذّرت قراءة الملف، أو أن حجمه يزيد على 1 ميغابايت."
+
+#: os-xgs-npu
+msgid "The file is empty."
+msgstr "الملف فارغ."
+
+#: os-xgs-npu
+msgid "The private key could not be read: a wrong password, or none given."
+msgstr "تعذّرت قراءة المفتاح الخاص: كلمة مرور خاطئة، أو لم تُعطَ كلمة مرور."
+
+#: os-xgs-npu
+msgid "The PKCS#12 file could not be opened: a wrong password, or not a certificate file."
+msgstr "تعذّر فتح ملف PKCS#12: كلمة مرور خاطئة، أو أنه ليس ملف شهادات."
+
+#: os-xgs-npu
+msgid "No certificate was found in the file."
+msgstr "لم يُعثر على أي شهادة في الملف."
+
+#: os-xgs-npu
+msgid "Never offloaded: a rule's tag"
+msgstr "لا تُفرَّغ أبدًا: وسم قاعدة"
+
+#: os-xgs-npu
+msgid "A tag that a firewall rule sets (Firewall: Rules, a rule's advanced options, \"Set local tag\"): a connection any of whose states carries it is never put in hardware, and passes through the firewall as it would without offloading - on either side of a translated connection. Letters, digits, \"_\", \"-\" and \".\"; empty for none. Applied when you save and at every boot: when it changes, the connections in hardware go back to the firewall and are put in hardware again only if no state of theirs carries it."
+msgstr "وسمٌ تضعه قاعدة من قواعد جدار الحماية (جدار الحماية: القواعد، الخيارات المتقدمة للقاعدة، «تعيين وسم محلي»): الاتصال الذي تحمله أيٌّ من حالاته لا يوضع في العتاد أبدًا، ويمر عبر جدار الحماية كما يمر دون تفريغ، على أي جانب من جانبي الاتصال حين تُترجَم عناوينه. أحرف وأرقام و«_» و«-» و«.»؛ فارغ: لا وسم. يُطبَّق عند الحفظ وعند كل إقلاع: وحين يتغير، تعود الاتصالات التي في العتاد إلى جدار الحماية، ولا توضع في العتاد ثانيةً إلا إذا لم تحمله أيٌّ من حالاتها."
+
+#: os-xgs-npu
+msgid "Router advertisements only from allowed senders, on"
+msgstr "إعلانات الموجّه من المرسلين المسموح بهم فقط، على"
+
+#: os-xgs-npu
+msgid "The interfaces on which an IPv6 router advertisement is let in only from the senders listed below, and blocked - and logged - from any other, so a host on the network cannot make itself the router of the others. None by default. Applied by a firewall reload, which saving here does when this or the list changed."
+msgstr "الواجهات التي لا يُسمح فيها بإعلان موجّه IPv6 إلا من المرسلين المذكورين أدناه، ويُحجب - ويُسجَّل - من أي مرسل آخر، فلا يستطيع جهاز على الشبكة أن يجعل نفسه موجّهًا للآخرين. لا شيء افتراضيًا. يُطبَّق بإعادة تحميل جدار الحماية، ويقوم بها الحفظ هنا حين يتغير هذا أو القائمة."
+
+#: os-xgs-npu
+msgid "Allowed router advertisement senders"
+msgstr "مرسلو إعلانات الموجّه المسموح بهم"
+
+#: os-xgs-npu
+msgid "The link-local addresses (fe80::...) of the routers whose advertisements the interfaces above let in, one per line or separated by commas. By address, since the firewall has no rule on a sender's MAC address. Empty: no advertisement is let in on those interfaces. An address that is not link-local is refused when the page is saved."
+msgstr "عناوين الارتباط المحلي (fe80::...) للموجّهات التي تسمح الواجهات أعلاه بإعلاناتها، واحد في كل سطر أو مفصولة بفواصل. بالعنوان، لأن جدار الحماية ليست له قاعدة على عنوان MAC للمرسل. فارغ: لا يُسمح بأي إعلان على تلك الواجهات. والعنوان الذي ليس عنوان ارتباط محلي يُرفض عند حفظ الصفحة."
+
+#: os-xgs-npu
+msgid "Ready-made service aliases"
+msgstr "أسماء مستعارة جاهزة للخدمات"
+
+#: os-xgs-npu
+msgid "Adds to Firewall: Aliases a port alias for each of the services a rule names most - XGS_WEB (80, 443), XGS_WEB_ALT, XGS_DNS, XGS_MAIL, XGS_SSH, XGS_RDP, XGS_NTP, XGS_FTP, XGS_SMB, XGS_LDAP, XGS_SNMP, XGS_SYSLOG and XGS_VPN - for use in rules as the destination port, the rule saying TCP, UDP or both. Those missing are added when you save; an alias of the same name is kept as it is, and none is changed or taken away when this is turned off, since a rule may use it. Off by default."
+msgstr "يضيف إلى جدار الحماية: الأسماء المستعارة اسمًا مستعارًا للمنافذ لكل خدمة من الخدمات التي تذكرها القواعد أكثر من غيرها - XGS_WEB (80، 443)، XGS_WEB_ALT، XGS_DNS، XGS_MAIL، XGS_SSH، XGS_RDP، XGS_NTP، XGS_FTP، XGS_SMB، XGS_LDAP، XGS_SNMP، XGS_SYSLOG و XGS_VPN - لتُستعمل في القواعد منفذًا للوجهة، على أن تحدد القاعدة TCP أو UDP أو كليهما. يُضاف الناقص منها عند الحفظ؛ ويبقى الاسم المستعار الذي يحمل الاسم نفسه كما هو، ولا يُغيَّر أيٌّ منها ولا يُزال حين يُطفأ هذا، لأن قاعدة قد تستعمله. مطفأ افتراضيًا."
+
+#: os-xgs-npu
+msgid "Random margin off rekey times (s)"
+msgstr "هامش عشوائي يُطرح من أوقات تجديد المفاتيح (ثانية)"
+
+#: os-xgs-npu
+msgid "For the tunnels of VPN: IPsec: Connections: up to this many seconds, chosen at random each time, are taken off when a connection and its children rekey, so tunnels made together do not all rekey at the same moment. Empty: strongSwan's own, the gap between a tunnel's lifetime and its rekey time. Written beside OPNsense's own configuration, which includes it, and applied when you save and each time the IPsec configuration is applied."
+msgstr "لأنفاق VPN: IPsec: الاتصالات: يُطرح عدد عشوائي من الثواني حتى هذا الحد، يُختار في كل مرة، حين يجدّد الاتصال وفروعه مفاتيحها، فلا تجدّد الأنفاق التي أُنشئت معًا مفاتيحها كلها في اللحظة نفسها. فارغ: ما يضعه strongSwan نفسه، وهو الفرق بين عمر النفق ووقت تجديد مفاتيحه. يُكتب بجانب إعدادات OPNsense نفسها التي تُضمّنه، ويُطبَّق عند الحفظ وفي كل مرة تُطبَّق فيها إعدادات IPsec."
+
+#: os-xgs-npu
+msgid "Compress what these tunnels carry (IPComp)"
+msgstr "ضغط ما تحمله هذه الأنفاق (IPComp)"
+
+#: os-xgs-npu
+msgid "The children of VPN: IPsec: Connections whose traffic is compressed (IPComp) before it is encrypted, when the far end agrees. Not while IPsec runs in the coprocessor's engine, above: compression has not been measured there, and nothing is written while that is on. Applied as the margin above is."
+msgstr "فروع VPN: IPsec: الاتصالات التي تُضغط حركتها (IPComp) قبل تشفيرها، إذا وافق الطرف الآخر. لا يكون ذلك ما دام IPsec يعمل في محرك المعالج المساعد، أعلاه: لم يُقَس الضغط هناك، ولا يُكتب شيء ما دام ذلك مشغّلًا. يُطبَّق كما يُطبَّق الهامش أعلاه."
+
+#: os-xgs-npu
+msgid "PPPoE: reconnect every day at"
+msgstr "PPPoE: إعادة الاتصال كل يوم في الساعة"
+
+#: os-xgs-npu
+msgid "A time of day, HH:MM: each enabled PPPoE interface is connected again then, as Interfaces does when it is applied - for a provider that ends a session after a day, at a quiet hour of your choosing instead of its own. Empty: never, as OPNsense has it. OPNsense's own check of a PPPoE link stays as it is: an LCP echo every 10 seconds, and the link taken down after 60 seconds without an answer."
+msgstr "وقت من اليوم بصيغة HH:MM: تُوصَل كل واجهة PPPoE مفعّلة من جديد حينها، كما تفعل الواجهات حين تُطبَّق - لمزوّد ينهي الجلسة بعد يوم، فيكون ذلك في ساعة هادئة تختارها أنت بدل ساعته هو. فارغ: أبدًا، كما في OPNsense. ويبقى فحص OPNsense نفسه لرابط PPPoE كما هو: صدى LCP كل 10 ثوانٍ، ويُقطع الرابط بعد 60 ثانية بلا جواب."
+
+#: os-xgs-npu
+msgid "Gateway jitter alert (ms)"
+msgstr "تنبيه تذبذب البوابة (ملي ثانية)"
+
+#: os-xgs-npu
+msgid "An alert, sent through os-netreport and written in the system log, when a monitored gateway's round-trip time varies by more than this many milliseconds - the standard deviation System: Gateways shows as RTTd - and another when it is back under. Checked every minute. 0: no alert. It decides nothing: whether a gateway is up and which one carries the traffic stays with OPNsense's own monitoring, so two monitors never pull one gateway two ways."
+msgstr "تنبيه يُرسَل عبر os-netreport ويُكتب في سجل النظام، حين يتفاوت زمن الرحلة ذهابًا وإيابًا لبوابة مراقَبة بأكثر من هذا العدد من الملي ثانية - وهو الانحراف المعياري الذي تعرضه صفحة النظام: البوابات باسم «انحراف RTT» - وتنبيه آخر حين يعود دونه. يُفحص كل دقيقة. 0: لا تنبيه. ولا يقرر شيئًا: فكون البوابة تعمل، وأيّ البوابات تحمل الحركة، يبقى لمراقبة OPNsense نفسها، فلا تتجاذب مراقبتان بوابة واحدة في اتجاهين."
+
+#: os-xgs-npu
+msgid "TCP probe"
+msgstr "فحص TCP"
+
+#: os-xgs-npu
+msgid "host:port, or [IPv6 address]:port: each minute the firewall opens a TCP connection to it, through its routing table, and three failures in a row raise an alert through os-netreport, the first success after them another - for a path that answers the gateway monitor's ICMP and drops TCP, or the reverse. Empty: no probe. An alert only, as above."
+msgstr "host:port، أو [عنوان IPv6]:port: كل دقيقة يفتح جدار الحماية اتصال TCP إليه عبر جدول التوجيه، وثلاث محاولات فاشلة متتالية ترفع تنبيهًا عبر os-netreport، وأول نجاح بعدها تنبيهًا آخر - لمسار يجيب ICMP الذي ترسله مراقبة البوابة ويُسقط TCP، أو العكس. فارغ: لا فحص. تنبيه فقط، كما سبق."
+
+#: os-xgs-npu
+msgid "Read only: Firewall: Aliases"
+msgstr "للقراءة فقط: جدار الحماية: الأسماء المستعارة"
+
+#: os-xgs-npu
+msgid "Allow seeing the firewall's aliases and their contents, without changing them (from os-xgs-npu)"
+msgstr "السماح برؤية الأسماء المستعارة في جدار الحماية ومحتواها، دون تغييرها (من os-xgs-npu)"
+
+#: os-xgs-npu
+msgid "Read only: Firewall: Rules [new]"
+msgstr "للقراءة فقط: جدار الحماية: القواعد [جديد]"
+
+#: os-xgs-npu
+msgid "Allow seeing the firewall's rules and their counters, without changing or applying them (from os-xgs-npu)"
+msgstr "السماح برؤية قواعد جدار الحماية وعدّاداتها، دون تغييرها أو تطبيقها (من os-xgs-npu)"
+
+#: os-xgs-npu
+msgid "Read only: System: Trust: Certificates"
+msgstr "للقراءة فقط: النظام: الثقة: الشهادات"
+
+#: os-xgs-npu
+msgid "Allow seeing the certificates and their details, without changing them or downloading a private key (from os-xgs-npu)"
+msgstr "السماح برؤية الشهادات وتفاصيلها، دون تغييرها أو تنزيل مفتاح خاص (من os-xgs-npu)"
+
+#: os-xgs-npu
+msgid "Read only: VPN: IPsec: Connections"
+msgstr "للقراءة فقط: VPN: IPsec: الاتصالات"
+
+#: os-xgs-npu
+msgid "Allow seeing the IPsec connections and pools, without changing them or applying the service (from os-xgs-npu)"
+msgstr "السماح برؤية اتصالات IPsec ومجمّعاتها، دون تغييرها أو تطبيق الخدمة (من os-xgs-npu)"
+
+#: os-xgs-npu
+msgid "Read only: XGS: Settings"
+msgstr "للقراءة فقط: XGS: الإعدادات"
+
+#: os-xgs-npu
+msgid "Allow seeing the XGS coprocessor's settings and status, without changing or applying them"
+msgstr "السماح برؤية إعدادات المعالج المساعد في XGS وحالته، دون تغييرها أو تطبيقها"
+
+#: os-xgs-npu
+msgid "XGS: Certificate Import"
+msgstr "XGS: استيراد الشهادات"
+
+#: os-xgs-npu
+msgid "Allow reading a certificate file in DER, PKCS#7 or PKCS#12 into PEM, for System: Trust to import"
+msgstr "السماح بقراءة ملف شهادات بصيغة DER أو PKCS#7 أو PKCS#12 إلى PEM، لتستورده صفحة النظام: الثقة"
+
+#: os-xgs-npu
+msgid "Certificate Import"
+msgstr "استيراد الشهادات"
+
+#: os-xgs-npu
+msgid "Choose a file first."
+msgstr "اختر ملفًا أولًا."
+
+#: os-xgs-npu
+msgid "The file could not be read."
+msgstr "تعذّرت قراءة الملف."
+
+#: os-xgs-npu
+msgid "an authority"
+msgstr "مرجع مصدق"
+
+#: os-xgs-npu
+msgid "a certificate, with its private key"
+msgstr "شهادة، مع مفتاحها الخاص"
+
+#: os-xgs-npu
+msgid "a certificate"
+msgstr "شهادة"
+
+#: os-xgs-npu
+msgid "Read. Import adds them to System: Trust as listed."
+msgstr "قُرئ الملف. الاستيراد يضيفها إلى النظام: الثقة كما هي مدرجة."
+
+#: os-xgs-npu
+msgid "Added"
+msgstr "أُضيفت"
+
+#: os-xgs-npu
+msgid "Not added"
+msgstr "لم تُضَف"
+
+#: os-xgs-npu
+msgid "A certificate file into System: Trust"
+msgstr "ملف شهادات إلى النظام: الثقة"
+
+#: os-xgs-npu
+msgid "DER (.der, .cer, .crt), PKCS#7 (.p7b, .p7c) or PKCS#12 (.pfx, .p12), or PEM. System: Trust imports PEM text alone; this page reads the others on the firewall into PEM and hands each certificate to Trust, which checks and stores it as any import."
+msgstr "DER (.der، .cer، .crt)، أو PKCS#7 (.p7b، .p7c)، أو PKCS#12 (.pfx، .p12)، أو PEM. صفحة النظام: الثقة تستورد نص PEM وحده؛ وهذه الصفحة تقرأ الصيغ الأخرى على جدار الحماية إلى PEM، وتسلّم كل شهادة إلى الثقة، التي تفحصها وتحفظها كأي استيراد."
+
+#: os-xgs-npu
+msgid "The PKCS#12 file's, or an encrypted PEM key's. Used to open the file and not kept."
+msgstr "كلمة مرور ملف PKCS#12، أو مفتاح PEM مشفَّر. تُستعمل لفتح الملف ولا تُحفظ."
+
+#: os-xgs-npu
+msgid "Put in front of each certificate's name in System: Trust. Empty: its name alone."
+msgstr "يوضع قبل اسم كل شهادة في النظام: الثقة. فارغ: اسمها وحده."
+
+#: os-xgs-npu
+msgid "Read the file"
+msgstr "اقرأ الملف"
+
+#: os-xgs-npu
+msgid "Import into System: Trust"
+msgstr "استورد إلى النظام: الثقة"
+
+#: os-xgs-npu
+msgid "Issued by"
+msgstr "صادرة عن"
+
+#: os-xgs-npu
+msgid "Valid until"
+msgstr "صالحة حتى"
+
+#: os-xgs-npu
+msgid "Imported as"
+msgstr "تُستورد بوصفها"
+
+#: os-xgs-npu
+msgid "A tag name: letters, digits, \"_\", \"-\" and \".\", up to 63."
+msgstr "اسم وسم: أحرف وأرقام و«_» و«-» و«.»، حتى 63 محرفًا."
+
+#: os-xgs-npu
+msgid "Link-local IPv6 addresses (fe80::...), separated by commas or new lines."
+msgstr "عناوين IPv6 للارتباط المحلي (fe80::...)، مفصولة بفواصل أو بأسطر جديدة."
+
+#: os-xgs-npu
+msgid "Seconds, from 0 to 86400, or empty for strongSwan's own."
+msgstr "ثوانٍ، من 0 إلى 86400، أو فارغ لقيمة strongSwan نفسها."
+
+#: os-xgs-npu
+msgid "A time of day as HH:MM, from 00:00 to 23:59, or empty for none."
+msgstr "وقت من اليوم بصيغة HH:MM، من 00:00 إلى 23:59، أو فارغ لعدم الضبط."
+
+#: os-xgs-npu
+msgid "A host and a port, as host:port or [IPv6 address]:port, or empty for none."
+msgstr "مضيف ومنفذ، بصيغة host:port أو [عنوان IPv6]:port، أو فارغ لعدم الفحص."
