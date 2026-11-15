@@ -64821,3 +64821,18 @@ msgstr "العتاد يتبع الجهاز الرئيسي في CARP"
 #: os-xgs-npu
 msgid "With High Availability: an appliance that is no longer master of any virtual address stops putting connections in hardware and empties it, so it does not go on forwarding them without pf; one that becomes master puts them in hardware again, as Accelerate connections automatically asks. A connection's numbers reach the peer through pfsync either way. Off by default: in a planned failover measured with it on, a stream waited about 5 seconds for TCP to resend before the new master carried it."
 msgstr "مع التوفر العالي: الجهاز الذي لم يعد رئيسياً لأي عنوان افتراضي يتوقف عن وضع الاتصالات في العتاد ويفرغه، فلا يظل يمرّرها دون pf؛ والجهاز الذي يصير رئيسياً يعيدها إلى العتاد كما يطلب «تسريع الاتصالات تلقائيًا». وأرقام الاتصال تصل إلى النظير عبر pfsync في الحالين. مطفأ افتراضياً: في انتقال مخطط له قيس وهو مشغّل، انتظر تيار نحو 5 ثوانٍ حتى أعاد TCP الإرسال قبل أن يحمله الرئيسي الجديد."
+
+# ---- os-xgs-npu: phase 3, package 3.1 - Suricata's threads in IPS mode: the netmap rings each port gets, one
+# thread a ring, and the receive queue as each frame's flow id. "Thread" is خيط, as OPNsense's own pages have it.
+
+#: os-xgs-npu
+msgid "Inspection threads per port"
+msgstr "خيوط الفحص لكل منفذ"
+
+#: os-xgs-npu
+msgid "How many threads the Intrusion Detection inspects each of its ports with in IPS mode (Netmap). Each port gets this many netmap rings and Suricata a thread for each, and the coprocessor's driver gives every frame it receives the number of the receive queue the coprocessor put it in, chosen by the connection, so each connection stays with one thread. The coprocessor has 8 receive queues on the XGS 3300 and 4 on the XGS 136: threads beyond those stay idle. Empty: one ring and one thread a port, as before. Saving restarts the Intrusion Detection when it runs in IPS mode, as a port's rings are made when Suricata opens it, and the number is kept for every boot under System: Settings: Tunables (dev.netmap.generic_rings). More threads use more processors and help where one thread was the limit; the inspector's interface, oxips0, keeps one busy thread whatever this says."
+msgstr "عدد الخيوط التي يفحص بها كشف التسلل كل منفذ من منافذه في وضع IPS (Netmap). يأخذ كل منفذ هذا العدد من حلقات netmap، ويأخذ Suricata خيطاً لكل حلقة، ويعطي برنامج تشغيل المعالج المساعد كل إطار يستقبله رقمَ طابور الاستقبال الذي وضعه فيه المعالج المساعد، وهو يختاره بحسب الاتصال، فيبقى كل اتصال مع خيط واحد. للمعالج المساعد 8 طوابير استقبال في XGS 3300 و4 في XGS 136، وما زاد عليها من الخيوط يبقى خاملاً. فارغ: حلقة واحدة وخيط واحد لكل منفذ، كما كان. والحفظ يعيد تشغيل كشف التسلل إذا كان يعمل في وضع IPS، لأن حلقات المنفذ تُصنع حين يفتحه Suricata، ويُحفظ العدد لكل إقلاع في النظام: الإعدادات: المتغيرات القابلة للضبط (dev.netmap.generic_rings). والخيوط الأكثر تستعمل معالجات أكثر، وتفيد حيث كان الخيط الواحد هو الحد؛ أما واجهة الفاحص oxips0 فيبقى فيها خيط واحد مشغول أياً كان هذا العدد."
+
+#: os-xgs-npu
+msgid "From 1 to 8, or empty for one."
+msgstr "من 1 إلى 8، أو فارغاً لواحد."
