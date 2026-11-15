@@ -64809,3 +64809,15 @@ msgstr "نصف مزدوج"
 #: os-xgs-npu
 msgid "fixed"
 msgstr "مثبّتة"
+
+# ---- os-xgs-npu: phase 2 - with High Availability, the coprocessor's hardware follows the CARP master:
+# emptied on an appliance that is master of no virtual address any more, filled again on the new master.
+# "Master" is رئيسي here, as MASTER is رئيسي (MASTER) in OPNsense's own pages.
+
+#: os-xgs-npu
+msgid "Hardware follows the CARP master"
+msgstr "العتاد يتبع الجهاز الرئيسي في CARP"
+
+#: os-xgs-npu
+msgid "With High Availability: an appliance that is no longer master of any virtual address stops putting connections in hardware and empties it, so it does not go on forwarding them without pf; one that becomes master puts them in hardware again, as Accelerate connections automatically asks. A connection's numbers reach the peer through pfsync either way. Off by default: in a planned failover measured with it on, a stream waited about 5 seconds for TCP to resend before the new master carried it."
+msgstr "مع التوفر العالي: الجهاز الذي لم يعد رئيسياً لأي عنوان افتراضي يتوقف عن وضع الاتصالات في العتاد ويفرغه، فلا يظل يمرّرها دون pf؛ والجهاز الذي يصير رئيسياً يعيدها إلى العتاد كما يطلب «تسريع الاتصالات تلقائيًا». وأرقام الاتصال تصل إلى النظير عبر pfsync في الحالين. مطفأ افتراضياً: في انتقال مخطط له قيس وهو مشغّل، انتظر تيار نحو 5 ثوانٍ حتى أعاد TCP الإرسال قبل أن يحمله الرئيسي الجديد."
