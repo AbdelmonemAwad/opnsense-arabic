@@ -62464,6 +62464,166 @@ msgstr "لم يفشل أي منها"
 msgid "not set"
 msgstr "غير مضبوط"
 
+#: os-netreport
+msgid "Send alerts"
+msgstr "إرسال التنبيهات"
+
+#: os-netreport
+msgid "Send the alerts below as they happen, to every channel set here. Turned off, no alert is sent; the scheduled reports go on."
+msgstr "يرسل التنبيهات أدناه فور وقوعها إلى كل قناة مضبوطة هنا. عند تعطيله لا يُرسل أي تنبيه، وتستمر التقارير المجدولة."
+
+#: os-netreport
+msgid "Alerts by mail"
+msgstr "التنبيهات بالبريد"
+
+#: os-netreport
+msgid "Mail the alerts to the default recipients, through the mail server above."
+msgstr "يرسل التنبيهات بالبريد إلى المستلمين الافتراضيين عبر خادم البريد أعلاه."
+
+#: os-netreport
+msgid "Webhook URL"
+msgstr "عنوان Webhook"
+
+#: os-netreport
+msgid "Each alert is posted here as JSON: source, host, kind, at, subject, text and facts. The certificate is checked. Empty: no webhook."
+msgstr "يُرسل كل تنبيه إلى هذا العنوان بصيغة JSON: source وhost وkind وat وsubject وtext وfacts. يُتحقق من الشهادة. فارغ: بلا Webhook."
+
+#: os-netreport
+msgid "Webhook header"
+msgstr "ترويسة Webhook"
+
+#: os-netreport
+msgid "Optional: one header line sent with each post, for example Authorization: Bearer followed by your token. Stored on this firewall only. Leave empty to keep the current header."
+msgstr "اختياري: سطر ترويسة واحد يُرسل مع كل إرسال، مثل Authorization: Bearer متبوعًا بالرمز الخاص بك. يُحفظ على جدار الحماية هذا فقط. اتركه فارغًا للإبقاء على الترويسة الحالية."
+
+#: os-netreport
+msgid "ntfy server"
+msgstr "خادم ntfy"
+
+#: os-netreport
+msgid "The address of an ntfy server, for example https://ntfy.example.com. There is no default: ntfy stays off until a server and a topic are set."
+msgstr "عنوان خادم ntfy، مثل https://ntfy.example.com. لا توجد قيمة افتراضية: يبقى ntfy معطلًا حتى يُضبط خادم وموضوع."
+
+#: os-netreport
+msgid "ntfy topic"
+msgstr "موضوع ntfy"
+
+#: os-netreport
+msgid "The topic the alerts are published to. Anyone who knows the topic of a public server can read it: choose one that is hard to guess, or use an access token."
+msgstr "الموضوع الذي تُنشر فيه التنبيهات. يستطيع كل من يعرف الموضوع على خادم عام قراءته: اختر موضوعًا يصعب تخمينه، أو استخدم رمز وصول."
+
+#: os-netreport
+msgid "ntfy access token"
+msgstr "رمز وصول ntfy"
+
+#: os-netreport
+msgid "Optional, sent as a bearer token. Stored on this firewall only. Leave empty to keep the current token."
+msgstr "اختياري، يُرسل رمزًا من نوع Bearer. يُحفظ على جدار الحماية هذا فقط. اتركه فارغًا للإبقاء على الرمز الحالي."
+
+#: os-netreport
+msgid "Gateway down and back"
+msgstr "توقف البوابة وعودتها"
+
+#: os-netreport
+msgid "Alert when a monitored gateway goes down and when it comes back, once the new state has held on two reads a minute apart. A gateway that changes state more than 3 times in 15 minutes gets one alert, and no more until it holds one state for 15 minutes."
+msgstr "ينبّه عند توقف بوابة مراقَبة وعند عودتها، بعد أن تثبت الحالة الجديدة في قراءتين بينهما دقيقة. البوابة التي تتغير حالتها أكثر من 3 مرات خلال 15 دقيقة يصلها تنبيه واحد، ولا شيء بعده حتى تثبت على حالة واحدة 15 دقيقة."
+
+#: os-netreport
+msgid "Repeated failed logins"
+msgstr "محاولات الدخول الفاشلة المتكررة"
+
+#: os-netreport
+msgid "Alert when one address fails to sign in to the web GUI, the API or SSH this many times within 10 minutes, then nothing more for that address for 30 minutes."
+msgstr "ينبّه عندما يفشل عنوان واحد في الدخول إلى واجهة الويب أو API أو SSH هذا العدد من المرات خلال 10 دقائق، ثم لا شيء آخر عن ذلك العنوان مدة 30 دقيقة."
+
+#: os-netreport
+msgid "Failed logins before an alert"
+msgstr "عدد محاولات الدخول الفاشلة قبل التنبيه"
+
+#: os-netreport
+msgid "Intrusion prevention alerts"
+msgstr "تنبيهات منع التسلل (IPS)"
+
+#: os-netreport
+msgid "Alert on Suricata alerts as they are logged: one alert per signature and source, then nothing more for that pair for 30 minutes."
+msgstr "ينبّه على تنبيهات Suricata فور تسجيلها: تنبيه واحد لكل توقيع ومصدر، ثم لا شيء آخر عن هذا الزوج مدة 30 دقيقة."
+
+#: os-netreport
+msgid "Intrusion alert severity"
+msgstr "خطورة تنبيهات التسلل"
+
+#: os-netreport
+msgid "VPN tunnels down and back"
+msgstr "انقطاع أنفاق VPN وعودتها"
+
+#: os-netreport
+msgid "Alert when an IPsec, WireGuard or OpenVPN connection that has been up goes down, and when it comes back, with the same two reads as the gateways. A WireGuard peer counts as up while its last handshake is less than 3 minutes old."
+msgstr "ينبّه عند انقطاع اتصال IPsec أو WireGuard أو OpenVPN سبق أن كان قائمًا، وعند عودته، بالقراءتين نفسيهما كما في البوابات. يُعد نظير WireGuard متصلًا ما دامت آخر مصافحة له قبل أقل من 3 دقائق."
+
+#: os-netreport
+msgid "Hardware watchdog reset"
+msgstr "إعادة تشغيل بالمراقب العتادي"
+
+#: os-netreport
+msgid "Alert once after a restart that the hardware watchdog caused, as os-watchdog records it."
+msgstr "ينبّه مرة واحدة بعد إعادة تشغيل سببها المراقب العتادي (watchdog)، كما يسجلها os-watchdog."
+
+#: os-netreport
+msgid "Device reaching a command-and-control list"
+msgstr "جهاز يتصل بقائمة خوادم قيادة وتحكم"
+
+#: os-netreport
+msgid "Alert the first time a device of the local networks tries to reach an address on a command-and-control list that os-blocklists blocks with its log on, and list the device in the report."
+msgstr "ينبّه في أول مرة يحاول فيها جهاز من الشبكات المحلية الوصول إلى عنوان في قائمة قيادة وتحكم يحظرها os-blocklists مع تفعيل سجله، ويُدرج الجهاز في التقرير."
+
+#: os-netreport
+msgid "Alerts from other XGS plugins"
+msgstr "تنبيهات إضافات XGS الأخرى"
+
+#: os-netreport
+msgid "Pass on the alerts that os-xgs-npu leaves for this plugin."
+msgstr "يمرّر التنبيهات التي يتركها os-xgs-npu لهذه الإضافة."
+
+#: os-netreport
+msgid "Thresholds"
+msgstr "العتبات"
+
+#: os-netreport
+msgid "Enter an address that starts with https:// or http://."
+msgstr "أدخل عنوانًا يبدأ بـ https:// أو http://."
+
+#: os-netreport
+msgid "Enter one header line as Name: value."
+msgstr "أدخل سطر ترويسة واحدًا بالصيغة Name: value."
+
+#: os-netreport
+msgid "Use letters, digits, - and _ only, at most 64."
+msgstr "استخدم الحروف والأرقام و- و_ فقط، بحد أقصى 64."
+
+#: os-netreport
+msgid "High only"
+msgstr "المرتفعة فقط"
+
+#: os-netreport
+msgid "High and medium"
+msgstr "المرتفعة والمتوسطة"
+
+#: os-netreport
+msgid "Webhook"
+msgstr "Webhook"
+
+#: os-netreport
+msgid "What each alert channel answered:"
+msgstr "ما أجابت به كل قناة تنبيه:"
+
+#: os-netreport
+msgid "Test alert"
+msgstr "تنبيه تجريبي"
+
+#: os-netreport
+msgid "Send a test alert"
+msgstr "إرسال تنبيه تجريبي"
+
 # ---- os-frontpanel: the keys card says whether the buttons beside the screen are being read.
 # Its own two strings, because "read" and "not read" mean "was read" and "has not been read"
 # elsewhere (os-xgs-npu, os-fanctl), and one msgid has one Arabic.
