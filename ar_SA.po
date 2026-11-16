@@ -62533,8 +62533,8 @@ msgid "Repeated failed logins"
 msgstr "محاولات الدخول الفاشلة المتكررة"
 
 #: os-netreport
-msgid "Alert when one address fails to sign in to the web GUI, the API or SSH this many times within 10 minutes, then nothing more for that address for 30 minutes."
-msgstr "ينبّه عندما يفشل عنوان واحد في الدخول إلى واجهة الويب أو API أو SSH هذا العدد من المرات خلال 10 دقائق، ثم لا شيء آخر عن ذلك العنوان مدة 30 دقيقة."
+msgid "Alert when one address fails to sign in to the web GUI, the API or SSH this many times within 10 minutes, then nothing more for that address for 30 minutes. A failed API key is not counted: OPNsense logs no address for it."
+msgstr "ينبّه عندما يفشل عنوان واحد في الدخول إلى واجهة الويب أو API أو SSH هذا العدد من المرات خلال 10 دقائق، ثم لا شيء آخر عن ذلك العنوان مدة 30 دقيقة. لا يُحتسب مفتاح API المرفوض: لا يسجّل OPNsense أي عنوان له."
 
 #: os-netreport
 msgid "Failed logins before an alert"
