@@ -63705,12 +63705,12 @@ msgid "Why the host last reset, as its chipset recorded it: one bit for each cau
 msgstr "سبب آخر إعادة تشغيل للمضيف كما سجّلته شريحته: بت لكل سبب، يُقرأ مبكرًا في كل إقلاع ويُمسح للإقلاع التالي. فقط على معالجات AMD من العائلة 17h وما بعدها، ولا في آلة افتراضية."
 
 #: os-watchdog
-msgid "Coprocessor watchdog"
-msgstr "مراقب المعالج المساعد"
-
-#: os-watchdog
 msgid "os-xgs-npu watches the fast path of the coprocessor and, when it stops answering, does what its setting says. It is set in XGS: Settings; this page only shows it."
 msgstr "يراقب os-xgs-npu المسار السريع في المعالج المساعد، وحين يتوقف عن الرد ينفّذ ما يقوله إعداده. يُضبط في XGS: الإعدادات؛ وهذه الصفحة تعرضه فقط."
+
+#: os-watchdog
+msgid "This host has no fast-path heartbeat: the setting has nothing to watch here."
+msgstr "لا نبض للمسار السريع على هذا المضيف: فليس للإعداد ما يراقبه هنا."
 
 # ---- os-kernelfollow: System: Kernel Follower - out-of-tree modules rebuilt for the kernel the next
 # boot will use. "Follow" is تتبّع throughout: the module follows the kernel.
