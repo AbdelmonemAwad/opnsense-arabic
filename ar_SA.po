@@ -63704,6 +63704,14 @@ msgstr "المراقب في os-xgs-npu مُطفأ في XGS: الإعدادات. 
 msgid "Why the host last reset, as its chipset recorded it: one bit for each cause, read early in every boot and cleared for the next. Only on AMD processors of family 17h or later, and not in a virtual machine."
 msgstr "سبب آخر إعادة تشغيل للمضيف كما سجّلته شريحته: بت لكل سبب، يُقرأ مبكرًا في كل إقلاع ويُمسح للإقلاع التالي. فقط على معالجات AMD من العائلة 17h وما بعدها، ولا في آلة افتراضية."
 
+#: os-watchdog
+msgid "Coprocessor watchdog"
+msgstr "مراقب المعالج المساعد"
+
+#: os-watchdog
+msgid "os-xgs-npu watches the fast path of the coprocessor and, when it stops answering, does what its setting says. It is set in XGS: Settings; this page only shows it."
+msgstr "يراقب os-xgs-npu المسار السريع في المعالج المساعد، وحين يتوقف عن الرد ينفّذ ما يقوله إعداده. يُضبط في XGS: الإعدادات؛ وهذه الصفحة تعرضه فقط."
+
 # ---- os-kernelfollow: System: Kernel Follower - out-of-tree modules rebuilt for the kernel the next
 # boot will use. "Follow" is تتبّع throughout: the module follows the kernel.
 
@@ -64015,6 +64023,7 @@ msgid "Show the fingerprints seen"
 msgstr "عرض البصمات المرئية"
 
 #: os-blocklists
+#: os-portguard
 msgid "Last connection"
 msgstr "آخر اتصال"
 
@@ -64061,6 +64070,38 @@ msgstr "حزمة منذ تحميل الجداول"
 #: os-blocklists
 msgid "Show fingerprints seen"
 msgstr "عرض البصمات المرئية"
+
+#: os-blocklists
+msgid "Write every packet the rules block to the firewall log. A long list blocks a lot. A device inside trying to reach a command-and-control list (Feodo Tracker) is logged whatever this says, by its own address, so it can be found."
+msgstr "كتابة كل حزمة تحظرها القواعد في سجل جدار الحماية. القائمة الطويلة تحظر كثيرًا. أما الجهاز في الداخل الذي يحاول الوصول إلى قائمة قيادة وتحكم (Feodo Tracker) فيُسجَّل أيًّا كان هذا الخيار، بعنوانه هو، ليمكن العثور عليه."
+
+#: os-blocklists
+msgid "Public lists of addresses to block, each fetched by the firewall into an alias of its own (blocklists_...), as often as the next setting says. The Lists tab says what each one is and whose terms it comes under."
+msgstr "قوائم عامة بعناوين يُراد حظرها، يجلب جدار الحماية كلًّا منها إلى اسم مستعار خاص بها (blocklists_...) بالتواتر الذي يحدده الإعداد التالي. يبيّن تبويب «القوائم» ما هي كل قائمة وتحت شروط من تأتي."
+
+#: os-blocklists
+msgid "Fetch the lists"
+msgstr "جلب القوائم"
+
+#: os-blocklists
+msgid "How often the firewall fetches each address list again. A list is never fetched more often than its publisher allows: Spamhaus DROP once a day, as Spamhaus asks, and Emerging Threats and CINS Army, which publish no rule, once a day too. A change reaches the lists at the next Apply."
+msgstr "عدد المرات التي يعيد فيها جدار الحماية جلب كل قائمة عناوين. لا تُجلب أي قائمة أكثر مما يسمح به ناشرها: Spamhaus DROP مرة في اليوم كما تطلب Spamhaus، وEmerging Threats وCINS Army، اللتان لم تنشرا قاعدة لذلك، مرة في اليوم كذلك. يصل التغيير إلى القوائم عند التطبيق التالي."
+
+#: os-blocklists
+msgid "Every 2 hours"
+msgstr "كل ساعتين"
+
+#: os-blocklists
+msgid "Every 6 hours"
+msgstr "كل 6 ساعات"
+
+#: os-blocklists
+msgid "Every 12 hours"
+msgstr "كل 12 ساعة"
+
+#: os-blocklists
+msgid "Once a day"
+msgstr "مرة في اليوم"
 
 # ---- os-portguard: Firewall: Port Guard - devices inside the network blocked by their MAC address.
 
@@ -64171,6 +64212,102 @@ msgstr "حزمة منذ تحميل الجدول"
 #: os-portguard
 msgid "List changed; Apply puts it into the firewall."
 msgstr "تغيّرت القائمة؛ زر تطبيق يضعها في الجدار الناري."
+
+#: os-portguard
+msgid "Isolate devices that reach a command-and-control list"
+msgstr "عزل الأجهزة التي تتصل بقائمة قيادة وتحكم"
+
+#: os-portguard
+msgid "When os-netreport records that a device of your networks tried to reach an address on a command-and-control list that os-blocklists blocks, the device is isolated by its MAC address: nothing it sends passes the firewall and nothing reaches it through the firewall, for the time below, and its open connections are cut. Checked every minute, for connections in the last 10 minutes. Never the firewall itself, its gateways, or an address this page was opened from. A device os-netreport knows no MAC address of is not isolated. Separate from the list of blocked devices and from Enabled above. Off by default."
+msgstr "حين يسجّل os-netreport أن جهازاً من شبكاتك حاول الوصول إلى عنوان في قائمة قيادة وتحكم يحظرها os-blocklists، يُعزل الجهاز بعنوان MAC الخاص به: لا يمر شيء يرسله عبر جدار الحماية ولا يصل إليه شيء عبره، طوال المدة المحددة أدناه، وتُقطع اتصالاته المفتوحة. يُفحص ذلك كل دقيقة، للاتصالات في آخر 10 دقائق. لا يُعزل أبداً جدار الحماية نفسه ولا بواباته ولا عنوان فُتحت منه هذه الصفحة. ولا يُعزل جهاز لا يعرف os-netreport عنوان MAC له. وهذا منفصل عن قائمة الأجهزة المحظورة وعن خيار «مفعل» أعلاه. مطفأ افتراضياً."
+
+#: os-portguard
+msgid "Isolation time (hours)"
+msgstr "مدة العزل (بالساعات)"
+
+#: os-portguard
+msgid "How long a device stays isolated, from 1 to 720 hours. Undo on the Isolated devices tab lets it go at once."
+msgstr "المدة التي يبقى فيها الجهاز معزولاً، من 1 إلى 720 ساعة. زر «تراجع» في تبويب «الأجهزة المعزولة» يفك عزله فوراً."
+
+#: os-portguard
+msgid "From 1 to 720 hours."
+msgstr "من 1 إلى 720 ساعة."
+
+#: os-portguard
+msgid "Isolated devices"
+msgstr "الأجهزة المعزولة"
+
+#: os-portguard
+msgid "A device os-netreport saw reaching a command-and-control list is isolated by its MAC address for the time set under Settings: nothing it sends passes the firewall and nothing reaches it through it. Never the firewall itself, its gateways, or an address this page was opened from."
+msgstr "الجهاز الذي رآه os-netreport يتصل بقائمة قيادة وتحكم يُعزل بعنوان MAC الخاص به طوال المدة المحددة في الإعدادات: لا يمر شيء يرسله عبر جدار الحماية ولا يصل إليه شيء عبره. لا يُعزل أبداً جدار الحماية نفسه ولا بواباته ولا عنوان فُتحت منه هذه الصفحة."
+
+#: os-portguard
+msgid "Automatic isolation is off; it is turned on under Settings."
+msgstr "العزل التلقائي مطفأ؛ يُشغَّل من الإعدادات."
+
+#: os-portguard
+msgid "Reason"
+msgstr "السبب"
+
+#: os-portguard
+msgid "Isolated at"
+msgstr "وقت العزل"
+
+#: os-portguard
+msgid "Until"
+msgstr "حتى"
+
+#: os-portguard
+msgid "Undo"
+msgstr "تراجع"
+
+#: os-portguard
+msgid "No device is isolated."
+msgstr "لا يوجد جهاز معزول."
+
+#: os-portguard
+msgid "reached %s"
+msgstr "اتصل بـ%s"
+
+#: os-portguard
+msgid "Not isolated"
+msgstr "غير معزولة"
+
+#: os-portguard
+msgid "Why not"
+msgstr "سبب عدم العزل"
+
+#: os-portguard
+msgid "not isolated: no MAC"
+msgstr "غير معزول: لا يوجد عنوان MAC"
+
+#: os-portguard
+msgid "not isolated: this firewall"
+msgstr "غير معزول: جدار الحماية هذا"
+
+#: os-portguard
+msgid "not isolated: a gateway"
+msgstr "غير معزول: بوابة"
+
+#: os-portguard
+msgid "not isolated: an address this page was opened from"
+msgstr "غير معزول: عنوان فُتحت منه هذه الصفحة"
+
+#: os-portguard
+msgid "not isolated again: undone, until a newer connection"
+msgstr "لم يُعزل مجدداً: أُلغي عزله، حتى يُسجَّل اتصال أحدث"
+
+#: os-portguard
+msgid "Undo the isolation"
+msgstr "إلغاء العزل"
+
+#: os-portguard
+msgid "The device is let through at once. It is isolated again only when os-netreport records a newer connection of it to a command-and-control list."
+msgstr "يُسمح بمرور الجهاز فوراً. ولا يُعزل مجدداً إلا حين يسجّل os-netreport اتصالاً أحدث منه بقائمة قيادة وتحكم."
+
+#: os-portguard
+msgid "The isolation could not be undone."
+msgstr "تعذّر إلغاء العزل."
 
 # ---- os-fallbackcrypto: VPN: IPsec: Fallback Crypto - the host's kernel crypto provider for the IPsec
 # tunnels the coprocessor does not take. The drivers' names (aesni, ossl) stay as they are.
