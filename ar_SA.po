@@ -63712,6 +63712,22 @@ msgstr "يراقب os-xgs-npu المسار السريع في المعالج ال
 msgid "This host has no fast-path heartbeat: the setting has nothing to watch here."
 msgstr "لا نبض للمسار السريع على هذا المضيف: فليس للإعداد ما يراقبه هنا."
 
+#: os-watchdog
+msgid "Nothing was read from ichwd at this boot."
+msgstr "لم يُقرأ شيء من ichwd في هذا الإقلاع."
+
+#: os-watchdog
+msgid "Why the host last reset, as its chipset recorded it. On AMD processors of family 17h or later: one bit for each cause, read early in every boot and cleared for the next. On Intel: only whether the hardware watchdog caused it, as ichwd says when it attaches - where ichwd knows the chipset and this plugin arms the timer, so the setting is on and neither os-xgs-npu nor another watchdogd holds the timer. Not in a virtual machine."
+msgstr "سبب آخر إعادة تشغيل للمضيف كما سجّلته شريحته. على معالجات AMD من العائلة 17h وما بعدها: بت لكل سبب، يُقرأ مبكرًا في كل إقلاع ويُمسح للإقلاع التالي. وعلى Intel: هل كان المراقب العتادي سببها فقط، كما يقول ichwd عند ارتباطه بالشريحة - حيث يعرف ichwd الشريحة وتفعّل هذه الإضافة المؤقّت، أي أن الإعداد مفعّل ولا يمسك المؤقّتَ os-xgs-npu ولا عملية watchdogd أخرى. ولا في آلة افتراضية."
+
+#: os-watchdog
+msgid "maybe an earlier watchdog reset"
+msgstr "ربما إعادة تشغيل سابقة بالمراقب العتادي"
+
+#: os-watchdog
+msgid "no watchdog timeout seen"
+msgstr "لم يُرَ انتهاء مهلة المراقب"
+
 # ---- os-kernelfollow: System: Kernel Follower - out-of-tree modules rebuilt for the kernel the next
 # boot will use. "Follow" is تتبّع throughout: the module follows the kernel.
 
