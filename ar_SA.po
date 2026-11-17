@@ -63508,6 +63508,60 @@ msgstr "التفريغ إلى العتاد مفعّل، لكن «تسريع ال
 msgid "Both are on the Acceleration tab of XGS: Settings."
 msgstr "كلاهما في تبويب التسريع من XGS: الإعدادات."
 
+# ---- os-xgs-npu: XGS: Updates, the Driver row - built for the kernel the next boot takes, and the kernel follower's last run (2026-11-17).
+
+#: os-xgs-npu
+msgid "Built for the kernel the next boot takes."
+msgstr "مبنيّ للنواة التي يُقلع بها الإقلاع التالي."
+
+#: os-xgs-npu
+msgid "The build kept beside it is built for the kernel the next boot takes, and the boot loads that one."
+msgstr "النسخة المبنية المحفوظة بجانبه مبنيّة للنواة التي يُقلع بها الإقلاع التالي، والإقلاع يحمّل تلك النسخة."
+
+#: os-xgs-npu
+msgid "Not built yet for the newest kernel: the kernel follower has sent the next boot to /boot/kernel.old, which it is built for - one kernel behind, with the front ports up."
+msgstr "لم يُبنَ بعدُ للنواة الأحدث: وجّه متتبّع النواة الإقلاعَ التالي إلى /boot/kernel.old التي بُني لها - متأخرًا نواةً واحدة، والمنافذ الأمامية تعمل."
+
+#: os-xgs-npu
+msgid "Not built for the kernel the next boot takes yet; the kernel follower is building it now."
+msgstr "لم يُبنَ بعدُ للنواة التي يُقلع بها الإقلاع التالي؛ ومتتبّع النواة يبنيه الآن."
+
+#: os-xgs-npu
+msgid "Not built for the kernel the next boot takes."
+msgstr "غير مبنيّ للنواة التي يُقلع بها الإقلاع التالي."
+
+#: os-xgs-npu
+msgid "No kernel stamp beside it, so nothing tells which kernel it is built for."
+msgstr "لا ختم نواة بجانبه، فلا شيء يدلّ على النواة التي بُني لها."
+
+#: os-xgs-npu
+msgid "The kernel the next boot takes could not be read."
+msgstr "تعذّرت قراءة النواة التي يُقلع بها الإقلاع التالي."
+
+#: os-xgs-npu
+msgid "No driver module is installed."
+msgstr "لا وحدة مثبّتة لبرنامج التشغيل."
+
+#: os-xgs-npu
+msgid "Last run of the kernel follower"
+msgstr "آخر تشغيل لمتتبّع النواة"
+
+#: os-xgs-npu
+msgid "running now"
+msgstr "يعمل الآن"
+
+#: os-xgs-npu
+msgid "for another kernel"
+msgstr "لنواة أخرى"
+
+#: os-xgs-npu
+msgid "no run recorded yet"
+msgstr "لا تشغيل مسجّل بعد"
+
+#: os-xgs-npu
+msgid "last built"
+msgstr "آخر بناء"
+
 # ---- os-watchdog: System: Hardware Watchdog - the timer, who arms it, and why the host last reset.
 # The reset causes are the bits of the AMD chipset's record, as reset_reason.py names them; the
 # card's short words (a reboot, the reset pin ...) are os-xgs-npu's and already above.
