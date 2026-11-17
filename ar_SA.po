@@ -64302,6 +64302,10 @@ msgid "not isolated: a MAC address several devices share (a repeater, a router)"
 msgstr "غير معزول: عنوان MAC تشترك فيه أجهزة عدة (مكرر أو موجّه)"
 
 #: os-portguard
+msgid "The firewall does not hold its addresses now."
+msgstr "لا يضم جدار الحماية عناوينه الآن."
+
+#: os-portguard
 msgid "not isolated: an address this page was opened from"
 msgstr "غير معزول: عنوان فُتحت منه هذه الصفحة"
 
