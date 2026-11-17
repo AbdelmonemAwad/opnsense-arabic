@@ -64072,8 +64072,8 @@ msgid "Show fingerprints seen"
 msgstr "عرض البصمات المرئية"
 
 #: os-blocklists
-msgid "Write every packet the rules block to the firewall log. A long list blocks a lot. A device inside trying to reach a command-and-control list (Feodo Tracker) is logged whatever this says, by its own address, so it can be found."
-msgstr "كتابة كل حزمة تحظرها القواعد في سجل جدار الحماية. القائمة الطويلة تحظر كثيرًا. أما الجهاز في الداخل الذي يحاول الوصول إلى قائمة قيادة وتحكم (Feodo Tracker) فيُسجَّل أيًّا كان هذا الخيار، بعنوانه هو، ليمكن العثور عليه."
+msgid "Write every packet the rules block to the firewall log. A long list blocks a lot. With Both ways, a device inside trying to reach a command-and-control list (Feodo Tracker) is logged whatever this says, by its own address, so it can be found."
+msgstr "كتابة كل حزمة تحظرها القواعد في سجل جدار الحماية. القائمة الطويلة تحظر كثيرًا. ومع «في الاتجاهين» يُسجَّل الجهاز في الداخل الذي يحاول الوصول إلى قائمة قيادة وتحكم (Feodo Tracker) أيًّا كان هذا الخيار، بعنوانه هو، ليمكن العثور عليه."
 
 #: os-blocklists
 msgid "Public lists of addresses to block, each fetched by the firewall into an alias of its own (blocklists_...), as often as the next setting says. The Lists tab says what each one is and whose terms it comes under."
@@ -64084,8 +64084,8 @@ msgid "Fetch the lists"
 msgstr "جلب القوائم"
 
 #: os-blocklists
-msgid "How often the firewall fetches each address list again. A list is never fetched more often than its publisher allows: Spamhaus DROP once a day, as Spamhaus asks, and Emerging Threats and CINS Army, which publish no rule, once a day too. A change reaches the lists at the next Apply."
-msgstr "عدد المرات التي يعيد فيها جدار الحماية جلب كل قائمة عناوين. لا تُجلب أي قائمة أكثر مما يسمح به ناشرها: Spamhaus DROP مرة في اليوم كما تطلب Spamhaus، وEmerging Threats وCINS Army، اللتان لم تنشرا قاعدة لذلك، مرة في اليوم كذلك. يصل التغيير إلى القوائم عند التطبيق التالي."
+msgid "How often the firewall fetches each address list again. Each list keeps a floor of its own: Spamhaus DROP once a day, as Spamhaus asks, and Emerging Threats and CINS Army, which publish no rule, once a day too. A list is fetched at once, whatever its floor, when its alias is made again: the list chosen again, or the plugin or the alias switched off and on. A change reaches the lists at the next Apply, and at the plugin's update."
+msgstr "عدد المرات التي يعيد فيها جدار الحماية جلب كل قائمة عناوين. لكل قائمة حد أدنى خاص بها: Spamhaus DROP مرة في اليوم كما تطلب Spamhaus، وEmerging Threats وCINS Army، اللتان لم تنشرا قاعدة لذلك، مرة في اليوم كذلك. وتُجلب القائمة فورًا، أيًّا كان حدها، حين يُنشأ اسمها المستعار من جديد: إذا اختيرت القائمة مرة أخرى، أو أُطفئت الإضافة أو الاسم المستعار ثم شُغّل. يصل التغيير إلى القوائم عند التطبيق التالي، وعند تحديث الإضافة."
 
 #: os-blocklists
 msgid "Every 2 hours"
@@ -64102,6 +64102,14 @@ msgstr "كل 12 ساعة"
 #: os-blocklists
 msgid "Once a day"
 msgstr "مرة في اليوم"
+
+#: os-blocklists
+msgid "A block rule stops new connections only. With this on, a connection already open to or from an address a list has just gained is cut within a minute. On a Sophos XGS with os-xgs-npu's Cut in hardware on, and outbound blocked too, it is also dropped on the coprocessor at once, and kept dropped there while its sender goes on sending: an address that leaves a list does not hand it back (XGS: Offloaded Flows does)."
+msgstr "قاعدة الحظر توقف الاتصالات الجديدة فقط. عند تشغيل هذا يُقطع خلال دقيقة كل اتصال مفتوح من أو إلى عنوان أُضيف للتو إلى قائمة. وعلى Sophos XGS، مع تشغيل «القطع في العتاد» في os-xgs-npu وحظر الصادر أيضًا، يُسقط الاتصال كذلك في المعالج المساعد فورًا ويبقى مُسقطًا فيه ما دام مرسله يواصل الإرسال: العنوان الذي يخرج من القائمة لا يعيده (تعيده صفحة XGS: التدفقات المُفرَّغة)."
+
+#: os-blocklists
+msgid "For a command-and-control list, Blocked in counts the devices inside too: they are blocked where they enter the firewall."
+msgstr "في قائمة قيادة وتحكم، يَعُدّ «محظور واردًا» أجهزة الداخل أيضًا: فهي تُحظر حيث تدخل إلى جدار الحماية."
 
 # ---- os-portguard: Firewall: Port Guard - devices inside the network blocked by their MAC address.
 
