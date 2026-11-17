@@ -64475,6 +64475,38 @@ msgstr "يُسمح بمرور الجهاز فوراً. ولا يُعزل مجد�
 msgid "The isolation could not be undone."
 msgstr "تعذّر إلغاء العزل."
 
+#: os-portguard
+msgid "When os-netreport records that a device of your networks tried to reach an address on a command-and-control list that os-blocklists blocks, the device is isolated by its MAC address for the time below: the firewall blocks the addresses it is seen with, both ways, and cuts their open connections; an address it takes later is blocked from the next check, within a minute. Checked every minute, for connections in the last 10 minutes. The device is the one the ARP or NDP table shows at the address that reached the list, or the one os-netreport names where they show none. Never the firewall itself, its gateways, its HA peer's addresses set under High Availability, an address logged in to its web GUI or SSH, or an address this page was opened from in the last 7 days. A MAC address the ARP table shows with more than one IPv4 address at the time is isolated by the addresses that reached the list only; a router that translates addresses shows one, and is isolated with every device behind it. Isolation is at the firewall: devices on the same switch still reach each other. Separate from the list of blocked devices and from Enabled above. Off by default."
+msgstr "حين يسجّل os-netreport أن جهازاً من شبكاتك حاول الوصول إلى عنوان في قائمة قيادة وتحكم يحظرها os-blocklists، يُعزل الجهاز بعنوان MAC الخاص به طوال المدة المحددة أدناه: يحظر جدار الحماية العناوين التي يُرى بها في الاتجاهين، ويقطع اتصالاتها المفتوحة؛ والعنوان الذي يأخذه لاحقاً يُحظر من الفحص التالي، خلال دقيقة. يُفحص ذلك كل دقيقة، للاتصالات في آخر 10 دقائق. والجهاز هو الذي يُظهره جدول ARP أو NDP عند العنوان الذي وصل إلى القائمة، أو الذي يسمّيه os-netreport حين لا يُظهران أحداً. لا يُعزل أبداً جدار الحماية نفسه ولا بواباته ولا عناوين نظيره في HA المضبوطة في التوفر العالي ولا عنوان مسجّل دخوله إلى واجهة الويب أو SSH فيه ولا عنوان فُتحت منه هذه الصفحة في آخر 7 أيام. وعنوان MAC الذي يُظهره جدول ARP بأكثر من عنوان IPv4 واحد في حينه يُعزل بالعناوين التي وصلت إلى القائمة وحدها؛ والموجّه الذي يترجم العناوين يُظهر عنواناً واحداً، فيُعزل مع كل جهاز خلفه. والعزل عند جدار الحماية: الأجهزة على المبدّل نفسه يصل بعضها إلى بعض. وهو منفصل عن قائمة الأجهزة المحظورة وعن «مفعل» أعلاه. معطّل افتراضياً."
+
+#: os-portguard
+msgid "A device os-netreport saw reaching a command-and-control list is isolated by its MAC address for the time set under Settings: the firewall blocks the addresses it is seen with, both ways - an address it takes later from the next minute. Never the firewall itself, its gateways, its HA peer's addresses set under High Availability, an address logged in to its web GUI or SSH, or an address this page was opened from in the last 7 days."
+msgstr "الجهاز الذي رآه os-netreport يتصل بقائمة قيادة وتحكم يُعزل بعنوان MAC الخاص به طوال المدة المحددة في الإعدادات: يحظر جدار الحماية العناوين التي يُرى بها في الاتجاهين - والعنوان الذي يأخذه لاحقاً من الدقيقة التالية. لا يُعزل أبداً جدار الحماية نفسه ولا بواباته ولا عناوين نظيره في HA المضبوطة في التوفر العالي ولا عنوان مسجّل دخوله إلى واجهة الويب أو SSH فيه ولا عنوان فُتحت منه هذه الصفحة في آخر 7 أيام."
+
+#: os-portguard
+msgid "Its MAC address shows more than one IPv4 address: only the addresses that reached the list, and those it had alone, are held."
+msgstr "عنوان MAC الخاص به يظهر بأكثر من عنوان IPv4 واحد: لا يُحظر إلا العناوين التي وصلت إلى القائمة وتلك التي كانت له وحده."
+
+#: os-portguard
+msgid "No address of it is seen now."
+msgstr "لا يُرى له عنوان الآن."
+
+#: os-portguard
+msgid "not isolated again: its isolation ended, until a newer connection"
+msgstr "لا يُعزل ثانيةً: انتهت مدة عزله، حتى اتصال أحدث"
+
+#: os-portguard
+msgid "not isolated again: let go as a MAC address of this firewall, until a newer connection"
+msgstr "لا يُعزل ثانيةً: أُطلق لأنه عنوان MAC لجدار الحماية هذا، حتى اتصال أحدث"
+
+#: os-portguard
+msgid "not isolated again: let go when automatic isolation was turned off, until a newer connection"
+msgstr "لا يُعزل ثانيةً: أُطلق حين عُطّل العزل التلقائي، حتى اتصال أحدث"
+
+#: os-portguard
+msgid "not isolated: logged in to the web GUI or SSH of this firewall"
+msgstr "لا يُعزل: مسجّل دخوله إلى واجهة الويب أو SSH في جدار الحماية هذا"
+
 # ---- os-fallbackcrypto: VPN: IPsec: Fallback Crypto - the host's kernel crypto provider for the IPsec
 # tunnels the coprocessor does not take. The drivers' names (aesni, ossl) stay as they are.
 
