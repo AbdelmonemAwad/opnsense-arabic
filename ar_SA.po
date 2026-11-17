@@ -60246,6 +60246,78 @@ msgstr "على لوحة تقود مراوحها بنفسها ولها منحني
 msgid "top speed {rpm} rpm, measured"
 msgstr "السرعة القصوى {rpm} rpm، مقيسة"
 
+#: os-fanctl
+msgid "The hottest reading among the groups chosen is what the curve is fed - never an average of them, because one core at 85 C and three at 40 C averages to a number a curve is happy with while the machine still has a core at 85 C. A group chosen here that this machine does not report is not ignored: the fans go back to the hardware, because a decision made from a sensor that is not answering is a guess. Memory modules, port PHYs and network controllers are offered only where this machine reports them, and followed only when chosen here."
+msgstr "أعلى قراءة بين المجموعات المختارة هي ما يُغذّى به المنحنى - لا متوسطها أبدًا، لأن نواة عند 85 C وثلاثًا عند 40 C متوسطها رقم يرضى به المنحنى بينما في الجهاز نواة عند 85 C. المجموعة المختارة هنا ولا يُبلّغ عنها هذا الجهاز لا تُتجاهل: تعود المراوح إلى العتاد، لأن القرار المبني على حسّاس لا يجيب تخمين. وتُعرض وحدات الذاكرة ورقاقات PHY للمنافذ ومتحكمات الشبكة فقط حيث يُبلّغ عنها هذا الجهاز، ولا تُتبع إلا حين تُختار هنا."
+
+#: os-fanctl
+msgid "hottest of {n} port PHYs"
+msgstr "الأسخن بين {n} من رقاقات PHY للمنافذ"
+
+#: os-fanctl
+msgid "hottest of {n} memory modules"
+msgstr "الأسخن بين {n} من وحدات الذاكرة"
+
+#: os-fanctl
+msgid "port PHYs and network controllers"
+msgstr "رقاقات PHY للمنافذ ومتحكمات الشبكة"
+
+#: os-fanctl
+msgid "memory modules"
+msgstr "وحدات الذاكرة"
+
+#: os-fanctl
+msgid "Only on a board that drives its fans itself and has two curves to choose from - today the AMDA0202 board of the XGS 2100, 2300, 3100 and 3300 - and only while Enabled is on; anywhere else it does nothing. On that board the fans follow the CPU's temperature with no duty anybody can write: measured on an XGS 3300, about 7,200 rpm at rest and 13,500 under full load. Quiet selects the lower curve the vendor uses on the 2100 and 2300, through the coprocessor's GPIO 48: about 5,400 rpm at rest, and still rising with heat. It is set again within a minute whenever the coprocessor restarts. The standard curve comes back while the coprocessor reads 85 C or more, its memory 80 C or more or a port PHY 95 C or more, until each is below 78, 75 and 88 C. A reading that cannot be taken changes nothing: it neither brings the standard curve back nor ends it. Standard leaves the board's own choice alone. On the 2100 and 2300 that choice is the lower curve - their coprocessor drives the line low itself - and neither Standard nor a hot reading changes it there."
+msgstr "على لوحة تقود مراوحها بنفسها ولها منحنيان يُختار بينهما فقط - اليوم لوحة AMDA0202 في XGS 2100 و2300 و3100 و3300 - وفقط ما دام «مفعل» قيد التشغيل؛ وفي أي مكان آخر لا يفعل شيئًا. على تلك اللوحة تتبع المراوح حرارة المعالج دون نسبة تشغيل يستطيع أحد كتابتها: قيست على XGS 3300 بنحو 7,200 دورة في الدقيقة في السكون و13,500 تحت الحمل الكامل. يختار Quiet المنحنى الأدنى الذي يستعمله المورّد على 2100 و2300، عبر المنفذ GPIO 48 في المعالج المساعد: نحو 5,400 دورة في الدقيقة في السكون، ويبقى يرتفع مع الحرارة. ويُعاد ضبطه خلال دقيقة كلما أُعيد تشغيل المعالج المساعد. ويعود المنحنى العادي ما دام المعالج المساعد يقرأ 85 درجة أو أكثر، أو ذاكرته 80 درجة أو أكثر، أو رقاقة PHY لمنفذ 95 درجة أو أكثر، حتى تنزل كلٌّ منها تحت 78 و75 و88 درجة. والقراءة التي لا تُؤخذ لا تغيّر شيئًا: لا تعيد المنحنى العادي ولا تنهيه. أما Standard فيترك اختيار اللوحة نفسها على حاله. وعلى 2100 و2300 ذلك الاختيار هو المنحنى الأدنى - إذ يُبقي معالجهما المساعد الخط منخفضًا بنفسه - فلا يغيّره هناك Standard ولا قراءة ساخنة."
+
+#: os-fanctl
+msgid "standard curve"
+msgstr "المنحنى العادي"
+
+#: os-fanctl
+msgid "standard curve, held: coprocessor hot"
+msgstr "المنحنى العادي، مُبقى: المعالج المساعد ساخن"
+
+#: os-fanctl
+msgid "standard curve, held: coprocessor memory hot"
+msgstr "المنحنى العادي، مُبقى: ذاكرة المعالج المساعد ساخنة"
+
+#: os-fanctl
+msgid "standard curve, held: port PHY hot"
+msgstr "المنحنى العادي، مُبقى: رقاقة PHY لمنفذ ساخنة"
+
+#: os-fanctl
+msgid "standard curve, held: not yet below its cool figure"
+msgstr "المنحنى العادي، مُبقى: لم تنزل القراءة بعدُ تحت حدّها البارد"
+
+#: os-fanctl
+msgid "standard curve, held: a temperature not read"
+msgstr "المنحنى العادي، مُبقى: حرارة لم تُقرأ"
+
+#: os-fanctl
+msgid "quiet curve"
+msgstr "المنحنى الهادئ"
+
+#: os-fanctl
+msgid "hottest of %s port PHYs"
+msgstr "الأسخن بين %s من رقاقات PHY للمنافذ"
+
+#: os-fanctl
+msgid "hottest of %s memory modules"
+msgstr "الأسخن بين %s من وحدات الذاكرة"
+
+#: os-fanctl
+msgid "last day %s"
+msgstr "اليوم الأخير %s"
+
+#: os-fanctl
+msgid "last hour %s"
+msgstr "الساعة الأخيرة %s"
+
+#: os-fanctl
+msgid "%s of this window was watched"
+msgstr "رُوقب %s من هذه النافذة"
+
 # ---- os-linkhealth: its GUI strings, moved here from its own table (2026-10-22)
 
 #: os-linkhealth
