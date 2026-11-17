@@ -66031,3 +66031,475 @@ msgstr "الاتصالات الموسومة عند دخولها، كلٌّ مر�
 #: os-trafficpriority
 msgid "os-xgs-npu is installed: it puts a marked IPv4 connection into hardware with its DSCP - measured with these rules on an XGS 3300 - and keeps a marked IPv6 connection with the host. A connection in hardware adds no more packets or bytes here."
 msgstr "os-xgs-npu مثبّت: يضع اتصال IPv4 الموسوم في العتاد بقيمة DSCP الخاصة به - وقد قيس ذلك بهذه القواعد على XGS 3300 - ويُبقي اتصال IPv6 الموسوم لدى المضيف. والاتصال الذي في العتاد لا يضيف هنا حزماً ولا بايتات بعد ذلك."
+
+#: os-appcontrol
+msgid "A table of its own for each application chosen, appcontrol_ and its name, holding servers it was seen with. Every nDPI category has a table without being chosen: appcontrol_cat_ and its name. The list is the installed nDPI's."
+msgstr "لكل تطبيق يُختار جدولٌ خاص به، اسمه appcontrol_ ثم اسم التطبيق، يحفظ الخوادم التي شوهد معها. ولكل فئة من فئات nDPI جدول دون أن تُختار: appcontrol_cat_ ثم اسمها. والقائمة هي قائمة nDPI المثبت."
+
+#: os-appcontrol
+msgid "Address expiry (seconds)"
+msgstr "مدة بقاء العنوان (بالثواني)"
+
+#: os-appcontrol
+msgid "AdultContent"
+msgstr "محتوى للبالغين"
+
+#: os-appcontrol
+msgid "Advertisement"
+msgstr "إعلانات"
+
+#: os-appcontrol
+msgid "Agriculture"
+msgstr "زراعة"
+
+#: os-appcontrol
+msgid "Allow access to application control: applications nDPI names, firewall aliases it fills, and its settings"
+msgstr "السماح بالوصول إلى التحكم في التطبيقات: التطبيقات التي يسمّيها nDPI، والأسماء المستعارة للجدار التي يملؤها، وإعداداته"
+
+#: os-appcontrol
+msgid "Allowed_Site"
+msgstr "موقع مسموح"
+
+#: os-appcontrol
+msgid "Antimalware"
+msgstr "مكافحة البرمجيات الخبيثة"
+
+#: os-appcontrol
+msgid "Application"
+msgstr "التطبيق"
+
+#: os-appcontrol
+msgid "Application Control"
+msgstr "التحكم في التطبيقات"
+
+#: os-appcontrol
+msgid "Application Control classifier"
+msgstr "مصنِّف التحكم في التطبيقات"
+
+#: os-appcontrol
+msgid "Application tables"
+msgstr "جداول التطبيقات"
+
+#: os-appcontrol
+msgid "Art"
+msgstr "فنون"
+
+#: os-appcontrol
+msgid "ArtifIntelligence"
+msgstr "ذكاء اصطناعي"
+
+#: os-appcontrol
+msgid "Banned_Site"
+msgstr "موقع محظور"
+
+#: os-appcontrol
+msgid "Beauty"
+msgstr "تجميل"
+
+#: os-appcontrol
+msgid "Blockchain_Crypto"
+msgstr "سلاسل الكتل والعملات المشفرة"
+
+#: os-appcontrol
+msgid "Blog_Forum"
+msgstr "مدونات ومنتديات"
+
+#: os-appcontrol
+msgid "Books"
+msgstr "كتب"
+
+#: os-appcontrol
+msgid "Bots"
+msgstr "روبوتات"
+
+#: os-appcontrol
+msgid "Business"
+msgstr "أعمال"
+
+#: os-appcontrol
+msgid "CDN_Proxy"
+msgstr "شبكات توصيل المحتوى والوكلاء"
+
+#: os-appcontrol
+msgid "Carried by"
+msgstr "يحمله"
+
+#: os-appcontrol
+msgid "Chat"
+msgstr "دردشة"
+
+#: os-appcontrol
+msgid "Classified"
+msgstr "مصنَّفة"
+
+#: os-appcontrol
+msgid "Classify connections"
+msgstr "تصنيف الاتصالات"
+
+#: os-appcontrol
+msgid "Cloud"
+msgstr "خدمات سحابية"
+
+#: os-appcontrol
+msgid "Collaborative"
+msgstr "عمل تعاوني"
+
+#: os-appcontrol
+msgid "Computer_Science"
+msgstr "علوم الحاسوب"
+
+#: os-appcontrol
+msgid "ConnCheck"
+msgstr "فحص الاتصال"
+
+#: os-appcontrol
+msgid "Connections: named by nDPI from their packets since the classifier started. Guessed: named by port or address only, never put in a table. Each connection counts once, in the window it began in."
+msgstr "الاتصالات: ما سمّاه nDPI من حزمها منذ بدء المصنِّف. المخمَّنة: ما سُمّي بالمنفذ أو العنوان وحده، ولا يدخل جدولًا أبدًا. ويُعدّ كل اتصال مرة واحدة، في النافذة التي بدأ فيها."
+
+#: os-appcontrol
+msgid "Construction"
+msgstr "إنشاءات"
+
+#: os-appcontrol
+msgid "Crypto_Currency"
+msgstr "عملات مشفرة"
+
+#: os-appcontrol
+msgid "Culture"
+msgstr "ثقافة"
+
+#: os-appcontrol
+msgid "Cybersecurity"
+msgstr "أمن سيبراني"
+
+#: os-appcontrol
+msgid "DataTransfer"
+msgstr "نقل البيانات"
+
+#: os-appcontrol
+msgid "Dating"
+msgstr "مواعدة"
+
+#: os-appcontrol
+msgid "Design"
+msgstr "تصميم"
+
+#: os-appcontrol
+msgid "Drugs"
+msgstr "مخدرات"
+
+#: os-appcontrol
+msgid "Each table is an External alias in Firewall: Aliases, for a rule's source or destination: servers nDPI named, each kept until unseen for the address expiry. Nothing is blocked by this plugin yet."
+msgstr "كل جدول اسم مستعار من نوع External في جدار الحماية: الأسماء المستعارة، يصلح مصدرًا لقاعدة أو وجهة لها: خوادم سمّاها nDPI، يبقى كلٌّ منها حتى يغيب مدة بقاء العنوان. ولا تحظر هذه الإضافة شيئًا بعد."
+
+#: os-appcontrol
+msgid "Education"
+msgstr "تعليم"
+
+#: os-appcontrol
+msgid "Employment"
+msgstr "توظيف"
+
+#: os-appcontrol
+msgid "Engineering"
+msgstr "هندسة"
+
+#: os-appcontrol
+msgid "Entertainment"
+msgstr "ترفيه"
+
+#: os-appcontrol
+msgid "Environment"
+msgstr "بيئة"
+
+#: os-appcontrol
+msgid "Environmental_Services"
+msgstr "خدمات بيئية"
+
+#: os-appcontrol
+msgid "Fashion"
+msgstr "أزياء"
+
+#: os-appcontrol
+msgid "FileSharing"
+msgstr "مشاركة الملفات"
+
+#: os-appcontrol
+msgid "Finance"
+msgstr "مال"
+
+#: os-appcontrol
+msgid "Firewall: Application Control"
+msgstr "جدار الحماية: التحكم في التطبيقات"
+
+#: os-appcontrol
+msgid "Food"
+msgstr "طعام"
+
+#: os-appcontrol
+msgid "Game"
+msgstr "ألعاب"
+
+#: os-appcontrol
+msgid "Government"
+msgstr "حكومة"
+
+#: os-appcontrol
+msgid "Guessed"
+msgstr "المخمَّنة"
+
+#: os-appcontrol
+msgid "Hobby"
+msgstr "هوايات"
+
+#: os-appcontrol
+msgid "Hosting"
+msgstr "استضافة"
+
+#: os-appcontrol
+msgid "Housing"
+msgstr "إسكان"
+
+#: os-appcontrol
+msgid "How long an address stays in a table once unseen: the Expire of the tables' aliases, carried out by OPNsense's own cron. Seen again, its time starts again."
+msgstr "المدة التي يبقاها العنوان في الجدول بعد أن يغيب: قيمة الانتهاء في الأسماء المستعارة للجداول، ينفذها cron الخاص بـ OPNsense نفسه. وإن ظهر العنوان من جديد بدأت مدته من جديد."
+
+#: os-appcontrol
+msgid "Hw_Sw"
+msgstr "عتاد وبرمجيات"
+
+#: os-appcontrol
+msgid "IoT-Scada"
+msgstr "إنترنت الأشياء وSCADA"
+
+#: os-appcontrol
+msgid "Last error"
+msgstr "آخر خطأ"
+
+#: os-appcontrol
+msgid "Legal"
+msgstr "قانون"
+
+#: os-appcontrol
+msgid "Lifestyle"
+msgstr "أسلوب حياة"
+
+#: os-appcontrol
+msgid "Login_Portal"
+msgstr "بوابات تسجيل الدخول"
+
+#: os-appcontrol
+msgid "Malware"
+msgstr "برمجيات خبيثة"
+
+#: os-appcontrol
+msgid "Maps_Navigation"
+msgstr "خرائط وملاحة"
+
+#: os-appcontrol
+msgid "Mining"
+msgstr "تعدين"
+
+#: os-appcontrol
+msgid "Music"
+msgstr "موسيقى"
+
+#: os-appcontrol
+msgid "Name each connection's application with nDPI and keep the servers it names in pf tables, aliases in Firewall: Aliases. It reads a copy of what the firewall sees and changes no traffic. Off, the classifier stops and its aliases leave Firewall: Aliases - switched off instead where a rule or a setting still names one."
+msgstr "تسمية تطبيق كل اتصال بواسطة nDPI، وحفظ الخوادم التي يسمّيها في جداول pf، وهي أسماء مستعارة في جدار الحماية: الأسماء المستعارة. يقرأ نسخة مما يراه الجدار ولا يغيّر شيئًا من الحركة. وعند الإيقاف يتوقف المصنِّف وتخرج أسماؤه المستعارة من جدار الحماية: الأسماء المستعارة - وتُعطَّل بدل ذلك حيث ما زالت قاعدة أو إعداد يذكر أحدها."
+
+#: os-appcontrol
+msgid "News"
+msgstr "أخبار"
+
+#: os-appcontrol
+msgid "Not named: nDPI could not say what a connection is. Guessed: named by port or address only. No application: nDPI named its protocol - TLS, QUIC or HTTP - and no application on top. Not named and No application list only connections whose beginning was seen. Server name and JA4 fingerprint are what its client sent first, to tell where it comes from; JA4 is read from TLS over TCP only. Latest 500 of each kind kept."
+msgstr "غير مسمّى: لم يستطع nDPI أن يقول ما الاتصال. مخمَّن: سُمّي بالمنفذ أو العنوان وحده. بلا تطبيق: سمّى nDPI بروتوكوله - TLS أو QUIC أو HTTP - ولا تطبيق فوقه. ولا تعرض «غير مسمّى» و«بلا تطبيق» إلا الاتصالات التي شوهدت بدايتها. واسم الخادم وبصمة JA4 هما ما أرسله العميل أولًا، ليُعرف مصدره؛ ولا تُقرأ JA4 إلا من TLS فوق TCP. ويُحفظ آخر 500 من كل نوع."
+
+#: os-appcontrol
+msgid "Nothing to change in aliases."
+msgstr "لا شيء يتغير في الأسماء المستعارة."
+
+#: os-appcontrol
+msgid "Politics"
+msgstr "سياسة"
+
+#: os-appcontrol
+msgid "Productivity"
+msgstr "إنتاجية"
+
+#: os-appcontrol
+msgid "RPC"
+msgstr "استدعاء الإجراءات عن بُعد (RPC)"
+
+#: os-appcontrol
+msgid "Real_Estate"
+msgstr "عقارات"
+
+#: os-appcontrol
+msgid "Religion"
+msgstr "دين"
+
+#: os-appcontrol
+msgid "RemoteAccess"
+msgstr "الوصول عن بُعد"
+
+#: os-appcontrol
+msgid "Scanners"
+msgstr "ماسحات"
+
+#: os-appcontrol
+msgid "Science"
+msgstr "علوم"
+
+#: os-appcontrol
+msgid "Search_Engine"
+msgstr "محركات البحث"
+
+#: os-appcontrol
+msgid "Seconds, 60 or more."
+msgstr "بالثواني، 60 فأكثر."
+
+#: os-appcontrol
+msgid "Server name"
+msgstr "اسم الخادم"
+
+#: os-appcontrol
+msgid "Shopping"
+msgstr "تسوق"
+
+#: os-appcontrol
+msgid "Site_Unavailable"
+msgstr "موقع غير متاح"
+
+#: os-appcontrol
+msgid "SocialNetwork"
+msgstr "شبكات اجتماعية"
+
+#: os-appcontrol
+msgid "SoftwareUpdate"
+msgstr "تحديث البرمجيات"
+
+#: os-appcontrol
+msgid "Sport"
+msgstr "رياضة"
+
+#: os-appcontrol
+msgid "Streaming"
+msgstr "بث"
+
+#: os-appcontrol
+msgid "Technology"
+msgstr "تقنية"
+
+#: os-appcontrol
+msgid "Telecommunication"
+msgstr "اتصالات"
+
+#: os-appcontrol
+msgid "Transportation"
+msgstr "نقل"
+
+#: os-appcontrol
+msgid "Travel"
+msgstr "سفر"
+
+#: os-appcontrol
+msgid "Vehicles"
+msgstr "مركبات"
+
+#: os-appcontrol
+msgid "Video"
+msgstr "فيديو"
+
+#: os-appcontrol
+msgid "Violence"
+msgstr "عنف"
+
+#: os-appcontrol
+msgid "VoIP"
+msgstr "الصوت عبر IP"
+
+#: os-appcontrol
+msgid "Weapons"
+msgstr "أسلحة"
+
+#: os-appcontrol
+msgid "Weather"
+msgstr "طقس"
+
+#: os-appcontrol
+msgid "Web"
+msgstr "الويب"
+
+#: os-appcontrol
+msgid "Where connections are read. None chosen: every internal interface - one with an address of its own and no gateway. No port is made promiscuous."
+msgstr "حيث تُقرأ الاتصالات. إن لم تُختر واجهة: كل واجهة داخلية - وهي التي لها عنوان خاص بها ولا بوابة لها. ولا يوضع أي منفذ في الوضع المختلط."
+
+#: os-appcontrol
+msgid "addresses in pf"
+msgstr "عنوانًا في pf"
+
+#: os-appcontrol
+msgid "application tables"
+msgstr "جدولًا للتطبيقات"
+
+#: os-appcontrol
+msgid "category tables"
+msgstr "جدولًا للفئات"
+
+#: os-appcontrol
+msgid "chosen, not applied yet"
+msgstr "مختار، ولم يُطبَّق بعد"
+
+#: os-appcontrol
+msgid "classifier not running"
+msgstr "المصنِّف لا يعمل"
+
+#: os-appcontrol
+msgid "classifying is off"
+msgstr "التصنيف متوقف"
+
+#: os-appcontrol
+msgid "guessed"
+msgstr "مخمَّن"
+
+#: os-appcontrol
+msgid "guessed, kept out of tables"
+msgstr "مخمَّن، ويُبعد عن الجداول"
+
+#: os-appcontrol
+msgid "more named by protocol alone"
+msgstr "سُمّيت أيضًا ببروتوكولها وحده"
+
+#: os-appcontrol
+msgid "nDPI"
+msgstr "nDPI"
+
+#: os-appcontrol
+msgid "nDPI is not installed"
+msgstr "nDPI غير مثبت"
+
+#: os-appcontrol
+msgid "nDPI is not installed: package ndpi is needed."
+msgstr "nDPI غير مثبت: يلزم تثبيت الحزمة ndpi."
+
+#: os-appcontrol
+msgid "no application"
+msgstr "بلا تطبيق"
+
+#: os-appcontrol
+msgid "not named"
+msgstr "غير مسمّى"
+
+#: os-appcontrol
+msgid "os-xgs-npu is installed: each connection is classified from its first packets, seen by the host before it moves into hardware."
+msgstr "os-xgs-npu مثبت: يُصنَّف كل اتصال من حزمه الأولى، التي يراها المضيف قبل أن ينتقل الاتصال إلى العتاد."
+
+#: os-appcontrol
+msgid "pf alone holds these tables: without os-xgs-npu no hardware takes part."
+msgstr "يحمل pf وحده هذه الجداول: لا يشارك العتاد في شيء دون os-xgs-npu."
+
+#: os-appcontrol
+msgid "windows cut short: connections past the packets, connections or bytes a window reads were not classified"
+msgstr "نافذة قُطعت قبل تمامها: الاتصالات التي جاوزت ما تقرؤه النافذة من الحزم أو الاتصالات أو البايتات لم تُصنَّف"
