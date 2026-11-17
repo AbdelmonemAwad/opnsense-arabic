@@ -65683,3 +65683,351 @@ msgstr "كيف تُعطى كلمة المرور: PAP يرسلها، وASCII يج
 #: os-xgs-npu
 msgid "The TACACS+ method must be PAP, ASCII or CHAP."
 msgstr "يجب أن تكون طريقة TACACS+ هي PAP أو ASCII أو CHAP."
+
+#: os-trafficpriority
+msgid "A class marks connections that come in on its interfaces and match it with its DSCP, both ways, written by pf. A connection keeps the mark it opened with: a change reaches new connections."
+msgstr "تَسِم الفئةُ الاتصالاتِ التي تدخل من واجهاتها وتطابقها بقيمة DSCP الخاصة بها، في الاتجاهين، ويكتبها pf. ويبقى للاتصال الوسم الذي فُتح به: التغيير يصل إلى الاتصالات الجديدة."
+
+#: os-trafficpriority
+msgid "A description cannot end with a backslash: pf would read the next line of the rules file as part of it."
+msgstr "لا يجوز أن ينتهي الوصف بشرطة مائلة عكسية: سيقرأ pf السطر التالي من ملف القواعد على أنه جزء منه."
+
+#: os-trafficpriority
+msgid "A name for the class, shown after \"Traffic Priority:\" in OPNsense's rules file, /tmp/rules.debug. It cannot end with a backslash."
+msgstr "اسم للفئة، يظهر بعد \"Traffic Priority:\" في ملف قواعد OPNsense، /tmp/rules.debug. ولا يجوز أن ينتهي بشرطة مائلة عكسية."
+
+#: os-trafficpriority
+msgid "A number from 1 to 9999."
+msgstr "رقم من 1 إلى 9999."
+
+#: os-trafficpriority
+msgid "A port can be given only with TCP, UDP or TCP/UDP."
+msgstr "لا يُعطى المنفذ إلا مع TCP أو UDP أو TCP/UDP."
+
+#: os-trafficpriority
+msgid "A port needs TCP, UDP or TCP/UDP."
+msgstr "يحتاج المنفذ إلى TCP أو UDP أو TCP/UDP."
+
+#: os-trafficpriority
+msgid "A port number, a name, an alias of ports or a range."
+msgstr "رقم منفذ، أو اسم، أو اسم مستعار لمنافذ، أو نطاق."
+
+#: os-trafficpriority
+msgid "AF11 (10)"
+msgstr "AF11 (10)"
+
+#: os-trafficpriority
+msgid "AF12 (12)"
+msgstr "AF12 (12)"
+
+#: os-trafficpriority
+msgid "AF13 (14)"
+msgstr "AF13 (14)"
+
+#: os-trafficpriority
+msgid "AF21 (18)"
+msgstr "AF21 (18)"
+
+#: os-trafficpriority
+msgid "AF22 (20)"
+msgstr "AF22 (20)"
+
+#: os-trafficpriority
+msgid "AF23 (22)"
+msgstr "AF23 (22)"
+
+#: os-trafficpriority
+msgid "AF31 (26)"
+msgstr "AF31 (26)"
+
+#: os-trafficpriority
+msgid "AF32 (28)"
+msgstr "AF32 (28)"
+
+#: os-trafficpriority
+msgid "AF33 (30)"
+msgstr "AF33 (30)"
+
+#: os-trafficpriority
+msgid "AF41 (34)"
+msgstr "AF41 (34)"
+
+#: os-trafficpriority
+msgid "AF42 (36)"
+msgstr "AF42 (36)"
+
+#: os-trafficpriority
+msgid "AF43 (38)"
+msgstr "AF43 (38)"
+
+#: os-trafficpriority
+msgid "Allow access to traffic priority: its classes, the DSCP each marks, and firewall rules it registers"
+msgstr "السماح بالوصول إلى أولوية حركة المرور: فئاتها، وقيمة DSCP التي تَسِم بها كل فئة، وقواعد جدار الحماية التي تسجّلها"
+
+#: os-trafficpriority
+msgid "Any cannot be combined with other addresses."
+msgstr "لا يمكن الجمع بين «أي» وعناوين أخرى."
+
+#: os-trafficpriority
+msgid "Applied"
+msgstr "المطبَّق"
+
+#: os-trafficpriority
+msgid "Arriving with DSCP"
+msgstr "الواصل بقيمة DSCP"
+
+#: os-trafficpriority
+msgid "Best Effort (0)"
+msgstr "أفضل جهد (0)"
+
+#: os-trafficpriority
+msgid "CS1 (8)"
+msgstr "CS1 (8)"
+
+#: os-trafficpriority
+msgid "CS2 (16)"
+msgstr "CS2 (16)"
+
+#: os-trafficpriority
+msgid "CS3 (24)"
+msgstr "CS3 (24)"
+
+#: os-trafficpriority
+msgid "CS4 (32)"
+msgstr "CS4 (32)"
+
+#: os-trafficpriority
+msgid "CS5 (40)"
+msgstr "CS5 (40)"
+
+#: os-trafficpriority
+msgid "CS6 (48)"
+msgstr "CS6 (48)"
+
+#: os-trafficpriority
+msgid "CS7 (56)"
+msgstr "CS7 (56)"
+
+#: os-trafficpriority
+msgid "Choose at least one of Interfaces, Source, Destination, a port or Arriving with DSCP: a class without any of them would mark every connection."
+msgstr "اختر واحداً على الأقل من: الواجهات، أو المصدر، أو الوجهة، أو منفذ، أو «الواصل بقيمة DSCP»: الفئة الخالية منها كلها تَسِم كل اتصال."
+
+#: os-trafficpriority
+msgid "Classes"
+msgstr "الفئات"
+
+#: os-trafficpriority
+msgid "DSCP not one of 0 to 63"
+msgstr "قيمة DSCP ليست من 0 إلى 63"
+
+#: os-trafficpriority
+msgid "DSCP pf writes into every packet of this class's connections, both ways, their two ECN bits left as they came. EF (46) is the usual mark for voice. A mark is fixed when a connection opens: a change reaches new connections. Firewall: Shaper probably sees the mark on uploads only, not measured: pf writes it as a packet comes in on the class's interface, and on a reply as it leaves by it, so a download arriving on the WAN still carries the DSCP it came with."
+msgstr "قيمة DSCP التي يكتبها pf في كل حزمة من اتصالات هذه الفئة، في الاتجاهين، مع ترك بتَّي ECN كما وصلتا. وEF (46) هو الوسم المعتاد للصوت. ويثبت الوسم عند فتح الاتصال: التغيير يصل إلى الاتصالات الجديدة. والأرجح أن «جدار الحماية: مُشكّل حركة المرور» يرى الوسم في الرفع وحده، ولم يُقس ذلك: يكتبه pf حين تدخل الحزمة من واجهة الفئة، وفي الرد حين يخرج منها، فالتنزيل الواصل على WAN يبقى بقيمة DSCP التي جاء بها."
+
+#: os-trafficpriority
+msgid "DSCP to match not one pf can match"
+msgstr "قيمة DSCP المطلوب مطابقتها ليست مما يطابقه pf"
+
+#: os-trafficpriority
+msgid "DSCP written; no queue set"
+msgstr "قيمة DSCP مكتوبة؛ ولا طابور معيّن"
+
+#: os-trafficpriority
+msgid "EF (46)"
+msgstr "EF (46)"
+
+#: os-trafficpriority
+msgid "Edit class"
+msgstr "تعديل الفئة"
+
+#: os-trafficpriority
+msgid "Filter reload did not finish."
+msgstr "لم تكتمل إعادة تحميل الجدار الناري."
+
+#: os-trafficpriority
+msgid "Firewall: Traffic Priority"
+msgstr "جدار الحماية: أولوية حركة المرور"
+
+#: os-trafficpriority
+msgid "ID not one the firewall made"
+msgstr "معرّف لم يصنعه جدار الحماية"
+
+#: os-trafficpriority
+msgid "IP version"
+msgstr "إصدار IP"
+
+#: os-trafficpriority
+msgid "IPv4 and IPv6"
+msgstr "IPv4 وIPv6"
+
+#: os-trafficpriority
+msgid "IPv4 by default. On an XGS appliance with os-xgs-npu, a marked IPv6 connection stays with the host - its fast path does not write an IPv6 traffic class - so that connection is not forwarded in hardware."
+msgstr "IPv4 افتراضياً. على جهاز XGS مع os-xgs-npu يبقى اتصال IPv6 الموسوم لدى المضيف - فالمسار السريع فيه لا يكتب فئة حركة IPv6 (traffic class) - فلا يُمرَّر ذلك الاتصال في العتاد."
+
+#: os-trafficpriority
+msgid "Mark connections of classes switched on with their DSCP. Off, their rules are gone at the next filter reload and connections opened after it are not marked; classes stay. Apply puts a change into the firewall."
+msgstr "وسم اتصالات الفئات المفعّلة بقيمة DSCP الخاصة بها. عند إطفائه تزول قواعدها عند إعادة تحميل الجدار الناري التالية، ولا تُوسم الاتصالات المفتوحة بعدها؛ وتبقى الفئات. و«تطبيق» يضع التغيير في الجدار الناري."
+
+#: os-trafficpriority
+msgid "Marked now"
+msgstr "الموسومة الآن"
+
+#: os-trafficpriority
+msgid "Matched now"
+msgstr "المطابَقة الآن"
+
+#: os-trafficpriority
+msgid "Matched since reload"
+msgstr "المطابَقة منذ إعادة التحميل"
+
+#: os-trafficpriority
+msgid "No source and destination here fit the IP version chosen: an IPv4 and an IPv6 address cannot make one rule."
+msgstr "لا يوجد هنا مصدر ووجهة يوافقان إصدار IP المختار: عنوان IPv4 وعنوان IPv6 لا يصنعان قاعدة واحدة."
+
+#: os-trafficpriority
+msgid "Not in pf: class saved and not applied yet, or Traffic Priority off. Written, not loaded: the last filter reload wrote its rules and pf does not hold them. Not placed: OPNsense wrote its rule commented out - an interface not there, an address or a port it could not map."
+msgstr "ليست في pf: فئة محفوظة لم تُطبَّق بعد، أو أولوية حركة المرور مطفأة. مكتوبة، غير محمَّلة: كتبت إعادة تحميل الجدار الناري الأخيرة قواعدها ولا يحملها pf. غير موضوعة: كتب OPNsense قاعدتها معطَّلةً بعلامة تعليق - واجهة غير موجودة، أو عنوان أو منفذ لم يستطع ربطه."
+
+#: os-trafficpriority
+msgid "Only connections whose first packet arrives with this DSCP - a phone or a game that marks its own traffic, say. Any: whatever they carry. Best Effort (0) cannot be told apart from Any in pf."
+msgstr "الاتصالات التي تصل أول حزمة منها بهذه القيمة وحدها - هاتف أو لعبة تَسِم حركتها بنفسها مثلاً. «أي»: أياً كان ما تحمله. ولا يميّز pf «أفضل جهد (0)» من «أي»."
+
+#: os-trafficpriority
+msgid "Port connections come from, mostly left empty: a number, a name, a range (10000-20000) or an alias of ports."
+msgstr "المنفذ الذي تأتي منه الاتصالات، ويُترك فارغاً غالباً: رقم، أو اسم، أو نطاق (10000-20000)، أو اسم مستعار لمنافذ."
+
+#: os-trafficpriority
+msgid "Port connections go to: a number, a name (sip, https), a range (10000-20000) or an alias of ports."
+msgstr "المنفذ الذي تذهب إليه الاتصالات: رقم، أو اسم (sip، https)، أو نطاق (10000-20000)، أو اسم مستعار لمنافذ."
+
+#: os-trafficpriority
+msgid "Set DSCP"
+msgstr "تعيين DSCP"
+
+#: os-trafficpriority
+msgid "Switch queue"
+msgstr "طابور المبدّل"
+
+#: os-trafficpriority
+msgid "Switch queues"
+msgstr "طوابير المبدّل"
+
+#: os-trafficpriority
+msgid "TCP/UDP"
+msgstr "TCP/UDP"
+
+#: os-trafficpriority
+msgid "This OPNsense writes no pf scrub option on a rule, so no class is applied; the system log says so, under Traffic Priority."
+msgstr "إصدار OPNsense هذا لا يكتب خيار scrub من pf على القاعدة، فلا تُطبَّق أي فئة؛ ويقول ذلك سجل النظام، تحت Traffic Priority."
+
+#: os-trafficpriority
+msgid "Traffic Priority"
+msgstr "أولوية حركة المرور"
+
+#: os-trafficpriority
+msgid "When two classes match one connection, the lower number sets its DSCP."
+msgstr "حين تطابق فئتان اتصالاً واحداً، يعيّن الرقمُ الأصغر قيمةَ DSCP له."
+
+#: os-trafficpriority
+msgid "Where connections come from: an address or a network, aliases, interface networks. any: every source."
+msgstr "من أين تأتي الاتصالات: عنوان أو شبكة، أو أسماء مستعارة، أو شبكات الواجهات. «أي»: كل مصدر."
+
+#: os-trafficpriority
+msgid "Where connections come in. None chosen: every interface. Connections a port forward (Firewall: NAT: Destination NAT) lets in with its Firewall rule set to Pass are not marked: pf passes them without reading any filter rule. Set it to Register rule, or to Manual with a rule of your own."
+msgstr "حيث تدخل الاتصالات. إن لم تُختر واجهة: كل واجهة. والاتصالات التي تُدخلها إعادة توجيه منفذ (جدار الحماية: NAT: ‏NAT الوجهة) وقاعدتها في جدار الحماية مضبوطة على «سماح» لا تُوسم: يمررها pf دون أن يقرأ أي قاعدة تصفية. اضبطها على «تسجيل القاعدة»، أو على «يدوي» مع قاعدة من عندك."
+
+#: os-trafficpriority
+msgid "Where connections go: an address or a network, aliases, interface networks or (self), the firewall itself. any: every destination."
+msgstr "إلى أين تذهب الاتصالات: عنوان أو شبكة، أو أسماء مستعارة، أو شبكات الواجهات، أو (self) أي جدار الحماية نفسه. «أي»: كل وجهة."
+
+#: os-trafficpriority
+msgid "address field not readable"
+msgstr "حقل العنوان غير مقروء"
+
+#: os-trafficpriority
+msgid "classes switched on"
+msgstr "الفئات المفعّلة"
+
+#: os-trafficpriority
+msgid "classes with rules loaded"
+msgstr "الفئات المحمَّلة قواعدها"
+
+#: os-trafficpriority
+msgid "description ends in a backslash"
+msgstr "الوصف ينتهي بشرطة مائلة عكسية"
+
+#: os-trafficpriority
+msgid "interface field not readable"
+msgstr "حقل الواجهة غير مقروء"
+
+#: os-trafficpriority
+msgid "last rule set refused by pf"
+msgstr "رفض pf مجموعة القواعد الأخيرة"
+
+#: os-trafficpriority
+msgid "no rule"
+msgstr "لا قاعدة"
+
+#: os-trafficpriority
+msgid "no source and destination of its IP version"
+msgstr "لا مصدر ووجهة من إصدار IP الخاص بها"
+
+#: os-trafficpriority
+msgid "not in pf"
+msgstr "ليست في pf"
+
+#: os-trafficpriority
+msgid "not measured yet"
+msgstr "لم يُقس بعد"
+
+#: os-trafficpriority
+msgid "not placed"
+msgstr "غير موضوعة"
+
+#: os-trafficpriority
+msgid "nothing narrows it: it would mark every connection"
+msgstr "لا شيء يحدّها: ستَسِم كل اتصال"
+
+#: os-trafficpriority
+msgid "pf alone marks connections here: without os-xgs-npu no hardware carries them."
+msgstr "pf وحده يَسِم الاتصالات هنا: دون os-xgs-npu لا عتاد يحملها."
+
+#: os-trafficpriority
+msgid "pf could not be asked"
+msgstr "تعذّر سؤال pf"
+
+#: os-trafficpriority
+msgid "pf refused the rule set of the last filter reload, and OPNsense loaded the one before it again: what pf holds of the classes is from that one. /tmp/rules.error says why."
+msgstr "رفض pf مجموعة القواعد في إعادة تحميل الجدار الناري الأخيرة، فأعاد OPNsense تحميل المجموعة التي قبلها: ما يحمله pf من الفئات هو منها. والسبب في /tmp/rules.error."
+
+#: os-trafficpriority
+msgid "port field not readable"
+msgstr "حقل المنفذ غير مقروء"
+
+#: os-trafficpriority
+msgid "port without TCP or UDP"
+msgstr "منفذ دون TCP أو UDP"
+
+#: os-trafficpriority
+msgid "protocol not known"
+msgstr "بروتوكول غير معروف"
+
+#: os-trafficpriority
+msgid "this OPNsense writes no mark on a rule"
+msgstr "إصدار OPNsense هذا لا يكتب وسماً على القاعدة"
+
+#: os-trafficpriority
+msgid "written, not loaded"
+msgstr "مكتوبة، غير محمَّلة"
+
+#: os-trafficpriority
+msgid "Matched now, Matched since reload, packets and bytes: what pf counted for the rules of each class. Every filter reload, an Apply among them, starts them again from 0 - packets and bytes too, unless the firewall keeps counters - while connections keep their mark; and a connection two classes match is counted under both, keeping the mark of the lower sequence. Marked now, above, counts each connection pf holds with a mark set coming in, once, whenever it opened, while a class marks. pfctl shows that a mark is set, not which one, so a normalization rule of yours setting any mark on connections coming in is counted too."
+msgstr "«المطابَقة الآن» و«المطابَقة منذ إعادة التحميل» والحزم والبايتات: ما عدّه pf لقواعد كل فئة. وكل إعادة تحميل للجدار الناري، ومنها «تطبيق»، تعيدها إلى 0 - والحزم والبايتات أيضاً، إلا إن كان جدار الحماية يحتفظ بالعدادات - بينما تحتفظ الاتصالات بوسمها؛ والاتصال الذي تطابقه فئتان يُعدّ تحت كلتيهما، ويبقى له وسم الفئة ذات التسلسل الأصغر. و«الموسومة الآن» أعلاه تعدّ مرةً واحدة كلَّ اتصال يحمله pf وُضع عليه وسمٌ عند دخوله، أياً كان وقت فتحه، ما دامت فئةٌ تَسِم. ويُظهر pfctl أن وسماً وُضع لا أيَّ وسم هو، فقاعدة تطبيع من عندك تضع أي وسم على الاتصالات الداخلة تُعدّ معها أيضاً."
+
+#: os-trafficpriority
+msgid "connections with a mark set coming in, each once"
+msgstr "الاتصالات الموسومة عند دخولها، كلٌّ مرة واحدة"
+
+#: os-trafficpriority
+msgid "os-xgs-npu is installed: it puts a marked IPv4 connection into hardware with its DSCP - measured with these rules on an XGS 3300 - and keeps a marked IPv6 connection with the host. A connection in hardware adds no more packets or bytes here."
+msgstr "os-xgs-npu مثبّت: يضع اتصال IPv4 الموسوم في العتاد بقيمة DSCP الخاصة به - وقد قيس ذلك بهذه القواعد على XGS 3300 - ويُبقي اتصال IPv6 الموسوم لدى المضيف. والاتصال الذي في العتاد لا يضيف هنا حزماً ولا بايتات بعد ذلك."
