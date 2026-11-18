@@ -62724,6 +62724,46 @@ msgstr "اختياري: رمز يُنشأ في ntopng لواجهته البرم�
 msgid "Enter the token as ntopng shows it."
 msgstr "اكتب الرمز كما يعرضه ntopng."
 
+#: os-netreport
+msgid "No attachment"
+msgstr "بلا مرفق"
+
+#: os-netreport
+msgid "Audit log"
+msgstr "سجل التدقيق"
+
+#: os-netreport
+msgid "One device only"
+msgstr "جهاز واحد فقط"
+
+#: os-netreport
+msgid "Optional: another network whose devices this report covers (devices and their usage). Empty: the Local network set on the Settings tab."
+msgstr "اختياري: شبكة أخرى يغطي هذا التقرير أجهزتها (الأجهزة واستهلاكها). فارغ: الشبكة المحلية المحددة في تبويب الإعدادات."
+
+#: os-netreport
+msgid "Optional: one address. The lists per device - DNS, web activity, devices and their usage, alerts on connections it opened, VPN sessions, the audit log - then show this device alone; the totals stay the network's."
+msgstr "اختياري: عنوان واحد. القوائم الخاصة بكل جهاز - DNS، ونشاط الويب، والأجهزة واستهلاكها، والتنبيهات على الاتصالات التي فتحها، وجلسات VPN، وسجل التدقيق - تعرض عندئذ هذا الجهاز وحده، وتبقى المجاميع للشبكة كلها."
+
+#: os-netreport
+msgid "Also attach the report as a file, handy for keeping or forwarding: HTML as the mail shows it, PDF for printing, or CSV with each table's rows for a spreadsheet. PDF is written with a font that has no Chinese, Japanese or Korean letters: a report in those languages is attached as HTML instead."
+msgstr "إرفاق التقرير أيضًا كملف، وهو مفيد للحفظ أو إعادة التوجيه: HTML كما يظهر في البريد، أو PDF للطباعة، أو CSV بصفوف كل جدول لجداول البيانات. يُكتب PDF بخط ليس فيه حروف صينية أو يابانية أو كورية، فيُرفق التقرير بهذه اللغات بصيغة HTML بدلًا منه."
+
+#: os-netreport
+msgid "Enter one address, for example 192.168.1.20."
+msgstr "أدخل عنوانًا واحدًا، مثل 192.168.1.20."
+
+#: os-netreport
+msgid "The report as a file, with its data as of now:"
+msgstr "التقرير كملف، ببياناته كما هي الآن:"
+
+#: os-netreport
+msgid "The file could not be made."
+msgstr "تعذّر إنشاء الملف."
+
+#: os-netreport
+msgid "Each schedule sends one report. Use the eye button to preview it, the arrow button to download it as HTML, PDF or CSV, and the plane button to send it now."
+msgstr "كل جدول يرسل تقريرًا واحدًا. استخدم زر العين لمعاينته، وزر السهم لتنزيله بصيغة HTML أو PDF أو CSV، وزر الطائرة الورقية لإرساله الآن."
+
 # ---- os-frontpanel: the keys card says whether the buttons beside the screen are being read.
 # Its own two strings, because "read" and "not read" mean "was read" and "has not been read"
 # elsewhere (os-xgs-npu, os-fanctl), and one msgid has one Arabic.
