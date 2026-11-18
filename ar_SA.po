@@ -60246,6 +60246,78 @@ msgstr "على لوحة تقود مراوحها بنفسها ولها منحني
 msgid "top speed {rpm} rpm, measured"
 msgstr "السرعة القصوى {rpm} rpm، مقيسة"
 
+#: os-fanctl
+msgid "The hottest reading among the groups chosen is what the curve is fed - never an average of them, because one core at 85 C and three at 40 C averages to a number a curve is happy with while the machine still has a core at 85 C. A group chosen here that this machine does not report is not ignored: the fans go back to the hardware, because a decision made from a sensor that is not answering is a guess. Memory modules, port PHYs and network controllers are offered only where this machine reports them, and followed only when chosen here."
+msgstr "أعلى قراءة بين المجموعات المختارة هي ما يُغذّى به المنحنى - لا متوسطها أبدًا، لأن نواة عند 85 C وثلاثًا عند 40 C متوسطها رقم يرضى به المنحنى بينما في الجهاز نواة عند 85 C. المجموعة المختارة هنا ولا يُبلّغ عنها هذا الجهاز لا تُتجاهل: تعود المراوح إلى العتاد، لأن القرار المبني على حسّاس لا يجيب تخمين. وتُعرض وحدات الذاكرة ورقاقات PHY للمنافذ ومتحكمات الشبكة فقط حيث يُبلّغ عنها هذا الجهاز، ولا تُتبع إلا حين تُختار هنا."
+
+#: os-fanctl
+msgid "hottest of {n} port PHYs"
+msgstr "الأسخن بين {n} من رقاقات PHY للمنافذ"
+
+#: os-fanctl
+msgid "hottest of {n} memory modules"
+msgstr "الأسخن بين {n} من وحدات الذاكرة"
+
+#: os-fanctl
+msgid "port PHYs and network controllers"
+msgstr "رقاقات PHY للمنافذ ومتحكمات الشبكة"
+
+#: os-fanctl
+msgid "memory modules"
+msgstr "وحدات الذاكرة"
+
+#: os-fanctl
+msgid "Only on a board that drives its fans itself and has two curves to choose from - today the AMDA0202 board of the XGS 2100, 2300, 3100 and 3300 - and only while Enabled is on; anywhere else it does nothing. On that board the fans follow the CPU's temperature with no duty anybody can write: measured on an XGS 3300, about 7,200 rpm at rest and 13,500 under full load. Quiet selects the lower curve the vendor uses on the 2100 and 2300, through the coprocessor's GPIO 48: about 5,400 rpm at rest, and still rising with heat. It is set again within a minute whenever the coprocessor restarts. The standard curve comes back while the coprocessor reads 85 C or more, its memory 80 C or more or a port PHY 95 C or more, until each is below 78, 75 and 88 C. A reading that cannot be taken changes nothing: it neither brings the standard curve back nor ends it. Standard leaves the board's own choice alone. On the 2100 and 2300 that choice is the lower curve - their coprocessor drives the line low itself - and neither Standard nor a hot reading changes it there."
+msgstr "على لوحة تقود مراوحها بنفسها ولها منحنيان يُختار بينهما فقط - اليوم لوحة AMDA0202 في XGS 2100 و2300 و3100 و3300 - وفقط ما دام «مفعل» قيد التشغيل؛ وفي أي مكان آخر لا يفعل شيئًا. على تلك اللوحة تتبع المراوح حرارة المعالج دون نسبة تشغيل يستطيع أحد كتابتها: قيست على XGS 3300 بنحو 7,200 دورة في الدقيقة في السكون و13,500 تحت الحمل الكامل. يختار Quiet المنحنى الأدنى الذي يستعمله المورّد على 2100 و2300، عبر المنفذ GPIO 48 في المعالج المساعد: نحو 5,400 دورة في الدقيقة في السكون، ويبقى يرتفع مع الحرارة. ويُعاد ضبطه خلال دقيقة كلما أُعيد تشغيل المعالج المساعد. ويعود المنحنى العادي ما دام المعالج المساعد يقرأ 85 درجة أو أكثر، أو ذاكرته 80 درجة أو أكثر، أو رقاقة PHY لمنفذ 95 درجة أو أكثر، حتى تنزل كلٌّ منها تحت 78 و75 و88 درجة. والقراءة التي لا تُؤخذ لا تغيّر شيئًا: لا تعيد المنحنى العادي ولا تنهيه. أما Standard فيترك اختيار اللوحة نفسها على حاله. وعلى 2100 و2300 ذلك الاختيار هو المنحنى الأدنى - إذ يُبقي معالجهما المساعد الخط منخفضًا بنفسه - فلا يغيّره هناك Standard ولا قراءة ساخنة."
+
+#: os-fanctl
+msgid "standard curve"
+msgstr "المنحنى العادي"
+
+#: os-fanctl
+msgid "standard curve, held: coprocessor hot"
+msgstr "المنحنى العادي، مُبقى: المعالج المساعد ساخن"
+
+#: os-fanctl
+msgid "standard curve, held: coprocessor memory hot"
+msgstr "المنحنى العادي، مُبقى: ذاكرة المعالج المساعد ساخنة"
+
+#: os-fanctl
+msgid "standard curve, held: port PHY hot"
+msgstr "المنحنى العادي، مُبقى: رقاقة PHY لمنفذ ساخنة"
+
+#: os-fanctl
+msgid "standard curve, held: not yet below its cool figure"
+msgstr "المنحنى العادي، مُبقى: لم تنزل القراءة بعدُ تحت حدّها البارد"
+
+#: os-fanctl
+msgid "standard curve, held: a temperature not read"
+msgstr "المنحنى العادي، مُبقى: حرارة لم تُقرأ"
+
+#: os-fanctl
+msgid "quiet curve"
+msgstr "المنحنى الهادئ"
+
+#: os-fanctl
+msgid "hottest of %s port PHYs"
+msgstr "الأسخن بين %s من رقاقات PHY للمنافذ"
+
+#: os-fanctl
+msgid "hottest of %s memory modules"
+msgstr "الأسخن بين %s من وحدات الذاكرة"
+
+#: os-fanctl
+msgid "last day %s"
+msgstr "اليوم الأخير %s"
+
+#: os-fanctl
+msgid "last hour %s"
+msgstr "الساعة الأخيرة %s"
+
+#: os-fanctl
+msgid "%s of this window was watched"
+msgstr "رُوقب %s من هذه النافذة"
+
 # ---- os-linkhealth: its GUI strings, moved here from its own table (2026-10-22)
 
 #: os-linkhealth
@@ -63436,6 +63508,60 @@ msgstr "التفريغ إلى العتاد مفعّل، لكن «تسريع ال
 msgid "Both are on the Acceleration tab of XGS: Settings."
 msgstr "كلاهما في تبويب التسريع من XGS: الإعدادات."
 
+# ---- os-xgs-npu: XGS: Updates, the Driver row - built for the kernel the next boot takes, and the kernel follower's last run (2026-11-17).
+
+#: os-xgs-npu
+msgid "Built for the kernel the next boot takes."
+msgstr "مبنيّ للنواة التي يُقلع بها الإقلاع التالي."
+
+#: os-xgs-npu
+msgid "The build kept beside it is built for the kernel the next boot takes, and the boot loads that one."
+msgstr "النسخة المبنية المحفوظة بجانبه مبنيّة للنواة التي يُقلع بها الإقلاع التالي، والإقلاع يحمّل تلك النسخة."
+
+#: os-xgs-npu
+msgid "Not built yet for the newest kernel: the kernel follower has sent the next boot to /boot/kernel.old, which it is built for - one kernel behind, with the front ports up."
+msgstr "لم يُبنَ بعدُ للنواة الأحدث: وجّه متتبّع النواة الإقلاعَ التالي إلى /boot/kernel.old التي بُني لها - متأخرًا نواةً واحدة، والمنافذ الأمامية تعمل."
+
+#: os-xgs-npu
+msgid "Not built for the kernel the next boot takes yet; the kernel follower is building it now."
+msgstr "لم يُبنَ بعدُ للنواة التي يُقلع بها الإقلاع التالي؛ ومتتبّع النواة يبنيه الآن."
+
+#: os-xgs-npu
+msgid "Not built for the kernel the next boot takes."
+msgstr "غير مبنيّ للنواة التي يُقلع بها الإقلاع التالي."
+
+#: os-xgs-npu
+msgid "No kernel stamp beside it, so nothing tells which kernel it is built for."
+msgstr "لا ختم نواة بجانبه، فلا شيء يدلّ على النواة التي بُني لها."
+
+#: os-xgs-npu
+msgid "The kernel the next boot takes could not be read."
+msgstr "تعذّرت قراءة النواة التي يُقلع بها الإقلاع التالي."
+
+#: os-xgs-npu
+msgid "No driver module is installed."
+msgstr "لا وحدة مثبّتة لبرنامج التشغيل."
+
+#: os-xgs-npu
+msgid "Last run of the kernel follower"
+msgstr "آخر تشغيل لمتتبّع النواة"
+
+#: os-xgs-npu
+msgid "running now"
+msgstr "يعمل الآن"
+
+#: os-xgs-npu
+msgid "for another kernel"
+msgstr "لنواة أخرى"
+
+#: os-xgs-npu
+msgid "no run recorded yet"
+msgstr "لا تشغيل مسجّل بعد"
+
+#: os-xgs-npu
+msgid "last built"
+msgstr "آخر بناء"
+
 # ---- os-watchdog: System: Hardware Watchdog - the timer, who arms it, and why the host last reset.
 # The reset causes are the bits of the AMD chipset's record, as reset_reason.py names them; the
 # card's short words (a reboot, the reset pin ...) are os-xgs-npu's and already above.
@@ -63703,6 +63829,30 @@ msgstr "المراقب في os-xgs-npu مُطفأ في XGS: الإعدادات. 
 #: os-watchdog
 msgid "Why the host last reset, as its chipset recorded it: one bit for each cause, read early in every boot and cleared for the next. Only on AMD processors of family 17h or later, and not in a virtual machine."
 msgstr "سبب آخر إعادة تشغيل للمضيف كما سجّلته شريحته: بت لكل سبب، يُقرأ مبكرًا في كل إقلاع ويُمسح للإقلاع التالي. فقط على معالجات AMD من العائلة 17h وما بعدها، ولا في آلة افتراضية."
+
+#: os-watchdog
+msgid "os-xgs-npu watches the fast path of the coprocessor and, when it stops answering, does what its setting says. It is set in XGS: Settings; this page only shows it."
+msgstr "يراقب os-xgs-npu المسار السريع في المعالج المساعد، وحين يتوقف عن الرد ينفّذ ما يقوله إعداده. يُضبط في XGS: الإعدادات؛ وهذه الصفحة تعرضه فقط."
+
+#: os-watchdog
+msgid "This host has no fast-path heartbeat: the setting has nothing to watch here."
+msgstr "لا نبض للمسار السريع على هذا المضيف: فليس للإعداد ما يراقبه هنا."
+
+#: os-watchdog
+msgid "Nothing was read from ichwd at this boot."
+msgstr "لم يُقرأ شيء من ichwd في هذا الإقلاع."
+
+#: os-watchdog
+msgid "Why the host last reset, as its chipset recorded it. On AMD processors of family 17h or later: one bit for each cause, read early in every boot and cleared for the next. On Intel: only whether the hardware watchdog caused it, as ichwd says when it attaches - where ichwd knows the chipset and this plugin arms the timer, so the setting is on and neither os-xgs-npu nor another watchdogd holds the timer. Not in a virtual machine."
+msgstr "سبب آخر إعادة تشغيل للمضيف كما سجّلته شريحته. على معالجات AMD من العائلة 17h وما بعدها: بت لكل سبب، يُقرأ مبكرًا في كل إقلاع ويُمسح للإقلاع التالي. وعلى Intel: هل كان المراقب العتادي سببها فقط، كما يقول ichwd عند ارتباطه بالشريحة - حيث يعرف ichwd الشريحة وتفعّل هذه الإضافة المؤقّت، أي أن الإعداد مفعّل ولا يمسك المؤقّتَ os-xgs-npu ولا عملية watchdogd أخرى. ولا في آلة افتراضية."
+
+#: os-watchdog
+msgid "maybe an earlier watchdog reset"
+msgstr "ربما إعادة تشغيل سابقة بالمراقب العتادي"
+
+#: os-watchdog
+msgid "no watchdog timeout seen"
+msgstr "لم يُرَ انتهاء مهلة المراقب"
 
 # ---- os-kernelfollow: System: Kernel Follower - out-of-tree modules rebuilt for the kernel the next
 # boot will use. "Follow" is تتبّع throughout: the module follows the kernel.
@@ -64015,6 +64165,7 @@ msgid "Show the fingerprints seen"
 msgstr "عرض البصمات المرئية"
 
 #: os-blocklists
+#: os-portguard
 msgid "Last connection"
 msgstr "آخر اتصال"
 
@@ -64061,6 +64212,94 @@ msgstr "حزمة منذ تحميل الجداول"
 #: os-blocklists
 msgid "Show fingerprints seen"
 msgstr "عرض البصمات المرئية"
+
+#: os-blocklists
+msgid "Write every packet the rules block to the firewall log. A long list blocks a lot. With Both ways, a device inside trying to reach a command-and-control list (Feodo Tracker) is logged whatever this says, by its own address, so it can be found."
+msgstr "كتابة كل حزمة تحظرها القواعد في سجل جدار الحماية. القائمة الطويلة تحظر كثيرًا. ومع «في الاتجاهين» يُسجَّل الجهاز في الداخل الذي يحاول الوصول إلى قائمة قيادة وتحكم (Feodo Tracker) أيًّا كان هذا الخيار، بعنوانه هو، ليمكن العثور عليه."
+
+#: os-blocklists
+msgid "Public lists of addresses to block, each fetched by the firewall into an alias of its own (blocklists_...), as often as the next setting says. The Lists tab says what each one is and whose terms it comes under."
+msgstr "قوائم عامة بعناوين يُراد حظرها، يجلب جدار الحماية كلًّا منها إلى اسم مستعار خاص بها (blocklists_...) بالتواتر الذي يحدده الإعداد التالي. يبيّن تبويب «القوائم» ما هي كل قائمة وتحت شروط من تأتي."
+
+#: os-blocklists
+msgid "Fetch the lists"
+msgstr "جلب القوائم"
+
+#: os-blocklists
+msgid "How often the firewall fetches each address list again. Each list keeps a floor of its own: Spamhaus DROP once a day, as Spamhaus asks, and Emerging Threats and CINS Army, which publish no rule, once a day too. A list is fetched at once, whatever its floor, when its alias is made again: the list chosen again, or the plugin or the alias switched off and on. A change reaches the lists at the next Apply, and at the plugin's update."
+msgstr "عدد المرات التي يعيد فيها جدار الحماية جلب كل قائمة عناوين. لكل قائمة حد أدنى خاص بها: Spamhaus DROP مرة في اليوم كما تطلب Spamhaus، وEmerging Threats وCINS Army، اللتان لم تنشرا قاعدة لذلك، مرة في اليوم كذلك. وتُجلب القائمة فورًا، أيًّا كان حدها، حين يُنشأ اسمها المستعار من جديد: إذا اختيرت القائمة مرة أخرى، أو أُطفئت الإضافة أو الاسم المستعار ثم شُغّل. يصل التغيير إلى القوائم عند التطبيق التالي، وعند تحديث الإضافة."
+
+#: os-blocklists
+msgid "Every 2 hours"
+msgstr "كل ساعتين"
+
+#: os-blocklists
+msgid "Every 6 hours"
+msgstr "كل 6 ساعات"
+
+#: os-blocklists
+msgid "Every 12 hours"
+msgstr "كل 12 ساعة"
+
+#: os-blocklists
+msgid "Once a day"
+msgstr "مرة في اليوم"
+
+#: os-blocklists
+msgid "A block rule stops new connections only. With this on, a connection already open to or from an address a list has just gained is cut within a minute. On a Sophos XGS with os-xgs-npu's Cut in hardware on, and outbound blocked too, it is also dropped on the coprocessor at once, and kept dropped there while its sender goes on sending: an address that leaves a list does not hand it back (XGS: Offloaded Flows does)."
+msgstr "قاعدة الحظر توقف الاتصالات الجديدة فقط. عند تشغيل هذا يُقطع خلال دقيقة كل اتصال مفتوح من أو إلى عنوان أُضيف للتو إلى قائمة. وعلى Sophos XGS، مع تشغيل «القطع في العتاد» في os-xgs-npu وحظر الصادر أيضًا، يُسقط الاتصال كذلك في المعالج المساعد فورًا ويبقى مُسقطًا فيه ما دام مرسله يواصل الإرسال: العنوان الذي يخرج من القائمة لا يعيده (تعيده صفحة XGS: التدفقات المُفرَّغة)."
+
+#: os-blocklists
+msgid "For a command-and-control list, Blocked in counts the devices inside too: they are blocked where they enter the firewall."
+msgstr "في قائمة قيادة وتحكم، يَعُدّ «محظور واردًا» أجهزة الداخل أيضًا: فهي تُحظر حيث تدخل إلى جدار الحماية."
+
+#: os-blocklists
+msgid "For a command-and-control list, Blocked in also counts the packets of devices inside that tried to reach it: they are blocked where they enter the firewall."
+msgstr "في قائمة قيادة وتحكم، يَعُدّ «محظور واردًا» أيضًا حزم أجهزة الداخل التي حاولت الوصول إليها: فهي تُحظر حيث تدخل إلى جدار الحماية."
+
+#: os-blocklists
+msgid "Remove the key"
+msgstr "إزالة المفتاح"
+
+#: os-blocklists
+msgid "abuse.ch Auth-Key could not be removed."
+msgstr "تعذّرت إزالة مفتاح abuse.ch Auth-Key."
+
+#: os-blocklists
+msgid "abuse.ch Auth-Key removed: nothing more is sent to abuse.ch. Apply removes the ThreatFox list."
+msgstr "أُزيل مفتاح abuse.ch Auth-Key: لا يُرسَل بعد الآن شيء إلى abuse.ch. ويُزيل التطبيقُ قائمة ThreatFox."
+
+#: os-blocklists
+msgid "no abuse.ch Auth-Key saved: nothing is fetched. Enter one in Settings, then Apply."
+msgstr "لا مفتاح abuse.ch Auth-Key محفوظ: لا يُجلب شيء. أدخِل مفتاحًا في الإعدادات، ثم طبّق."
+
+#: os-blocklists
+msgid "saved - leave empty to keep it"
+msgstr "محفوظ - اتركه فارغًا لإبقائه"
+
+#: os-blocklists
+msgid "abuse.ch Auth-Key"
+msgstr "مفتاح abuse.ch Auth-Key"
+
+#: os-blocklists
+msgid "Public lists of addresses to block, each fetched by the firewall into an alias of its own (blocklists_...), as often as Fetch the lists says. ThreatFox: command-and-control addresses is fetched only with an abuse.ch Auth-Key, the next setting. The Lists tab says what each one is and whose terms it comes under."
+msgstr "قوائم عامة بعناوين يُراد حظرها، يجلب جدار الحماية كلًّا منها إلى اسم مستعار خاص بها (blocklists_...) بالتواتر الذي يحدده «جلب القوائم». ولا تُجلب ThreatFox: command-and-control addresses إلا بمفتاح abuse.ch Auth-Key، وهو الإعداد التالي. يبيّن تبويب «القوائم» ما هي كل قائمة وتحت شروط من تأتي."
+
+#: os-blocklists
+msgid "For the list ThreatFox: command-and-control addresses, in Address lists: abuse.ch serves it only with the Auth-Key of an abuse.ch account, free at auth.abuse.ch (in its profile, under Optional). The firewall sends the key to abuse.ch in the address of each download, over HTTPS with the server's certificate checked, as abuse.ch asks, and nothing else of its own - no address of its networks, no log, no setting; abuse.ch sees the request come from its public address, as any server does. The key is kept in the configuration and never shown on this page again: the field says whether one is saved; leave it empty to keep the key, or take it out with Remove the key. ThreatFox's whole export is fetched once a day, as abuse.ch asks, and its recent additions as often as Fetch the lists says. For commercial use abuse.ch may ask for a paid subscription."
+msgstr "للقائمة ThreatFox: command-and-control addresses في «قوائم العناوين»: لا يقدّمها abuse.ch إلا بمفتاح Auth-Key لحساب في abuse.ch، مجاني من auth.abuse.ch (في ملفه الشخصي، تحت Optional). يرسل جدار الحماية المفتاح إلى abuse.ch في عنوان كل تنزيل، عبر HTTPS مع التحقق من شهادة الخادم، كما يطلب abuse.ch، ولا يرسل شيئًا آخر من عنده - لا عنوانًا من شبكاته، ولا سجلًّا، ولا إعدادًا؛ ويرى abuse.ch الطلب آتيًا من عنوانه العام، كما مع أي خادم. يُحفظ المفتاح في الإعدادات ولا يُعرض في هذه الصفحة بعد ذلك: يقول الحقل هل يوجد مفتاح محفوظ؛ اتركه فارغًا لإبقاء المفتاح، أو أزِله بزر «إزالة المفتاح». يُجلب التصدير الكامل لـ ThreatFox مرة في اليوم، كما يطلب abuse.ch، وإضافاته الحديثة بالتواتر الذي يحدده «جلب القوائم». وللاستعمال التجاري قد يطلب abuse.ch اشتراكًا مدفوعًا."
+
+#: os-blocklists
+msgid "How often the firewall fetches each address list again. Each list keeps a floor of its own: Spamhaus DROP once a day, as Spamhaus asks, and Emerging Threats and CINS Army, which publish no rule, once a day too. A list is fetched at once, whatever its floor, when its alias is made again: the list chosen again, or the plugin or the alias switched off and on. ThreatFox is fetched by the plugin itself, as abuse.ch asks: its whole export once a day, whatever this says, and its recent additions as often as this says, an hour apart at the least. A change reaches the lists at the next Apply, and at the plugin's update."
+msgstr "عدد المرات التي يعيد فيها جدار الحماية جلب كل قائمة عناوين. لكل قائمة حد أدنى خاص بها: Spamhaus DROP مرة في اليوم كما تطلب Spamhaus، وEmerging Threats وCINS Army، اللتان لم تنشرا قاعدة لذلك، مرة في اليوم كذلك. وتُجلب القائمة فورًا، أيًّا كان حدها، حين يُنشأ اسمها المستعار من جديد: إذا اختيرت القائمة مرة أخرى، أو أُطفئت الإضافة أو الاسم المستعار ثم شُغّل. وتجلب الإضافة ThreatFox بنفسها، كما يطلب abuse.ch: تصديره الكامل مرة في اليوم أيًّا كان هذا الإعداد، وإضافاته الحديثة بالتواتر الذي يحدده هذا الإعداد، بفاصل ساعة على الأقل. يصل التغيير إلى القوائم عند التطبيق التالي، وعند تحديث الإضافة."
+
+#: os-blocklists
+msgid "Write every packet the rules block to the firewall log. A long list blocks a lot. With Both ways, a device trying to reach a command-and-control list (Feodo Tracker, ThreatFox) is logged whatever this says, by its own address, so it can be found - where it comes in on an inside interface: one with an address of its own, not taken by DHCP, PPPoE or the like, and no gateway on it. Elsewhere (a VPN group, or a LAN with a router behind it set as a gateway) it is blocked all the same, and logged only as this says."
+msgstr "كتابة كل حزمة تحظرها القواعد في سجل جدار الحماية. القائمة الطويلة تحظر كثيرًا. ومع «في الاتجاهين» يُسجَّل الجهاز الذي يحاول الوصول إلى قائمة قيادة وتحكم (Feodo Tracker، ThreatFox) أيًّا كان هذا الخيار، بعنوانه هو، ليمكن العثور عليه - حيث يدخل من واجهة داخلية: واجهة لها عنوان خاص بها، لا يُؤخذ بـ DHCP أو PPPoE أو ما شابه، ولا بوابة عليها. وفي غير ذلك (مجموعة VPN، أو شبكة LAN خلفها موجّه مضبوط بوابةً) يُحظر كذلك، ولا يُسجَّل إلا بحسب هذا الخيار."
+
+#: os-blocklists
+msgid "An abuse.ch Auth-Key is 8 to 128 letters and digits, and may have . _ ~ or -."
+msgstr "مفتاح abuse.ch Auth-Key من 8 إلى 128 حرفًا ورقمًا، وقد يحوي . _ ~ أو -."
 
 # ---- os-portguard: Firewall: Port Guard - devices inside the network blocked by their MAC address.
 
@@ -64171,6 +64410,150 @@ msgstr "حزمة منذ تحميل الجدول"
 #: os-portguard
 msgid "List changed; Apply puts it into the firewall."
 msgstr "تغيّرت القائمة؛ زر تطبيق يضعها في الجدار الناري."
+
+#: os-portguard
+msgid "Isolate devices that reach a command-and-control list"
+msgstr "عزل الأجهزة التي تتصل بقائمة قيادة وتحكم"
+
+#: os-portguard
+msgid "When os-netreport records that a device of your networks tried to reach an address on a command-and-control list that os-blocklists blocks, the device is isolated by its MAC address: nothing it sends passes the firewall and nothing reaches it through the firewall, for the time below, and its open connections are cut. Checked every minute, for connections in the last 10 minutes. Never the firewall itself, its gateways, its HA peer, an address with a connection open to its web GUI or SSH, or an address this page was opened from in the last 7 days; and never a MAC address several devices share (a repeater, a router). A device os-netreport knows no MAC address of is found by its address in the ARP or NDP table. Isolation is at the firewall: devices on the same switch still reach each other. Separate from the list of blocked devices and from Enabled above. Off by default."
+msgstr "حين يسجّل os-netreport أن جهازاً من شبكاتك حاول الوصول إلى عنوان في قائمة قيادة وتحكم يحظرها os-blocklists، يُعزل الجهاز بعنوان MAC الخاص به: لا يمر شيء يرسله عبر جدار الحماية ولا يصل إليه شيء عبره، طوال المدة المحددة أدناه، وتُقطع اتصالاته المفتوحة. يُفحص ذلك كل دقيقة، للاتصالات في آخر 10 دقائق. لا يُعزل أبداً جدار الحماية نفسه ولا بواباته ولا نظيره في HA ولا عنوان له اتصال مفتوح بواجهة الويب أو SSH فيه ولا عنوان فُتحت منه هذه الصفحة في آخر 7 أيام؛ ولا عنوان MAC تشترك فيه أجهزة عدة (مكرر أو موجّه). والجهاز الذي لا يعرف os-netreport عنوان MAC له يُعثر عليه بعنوانه في جدول ARP أو NDP. والعزل عند جدار الحماية: الأجهزة على المبدّل نفسه يصل بعضها إلى بعض. وهذا منفصل عن قائمة الأجهزة المحظورة وعن خيار «مفعل» أعلاه. مطفأ افتراضياً."
+
+#: os-portguard
+msgid "Isolation time (hours)"
+msgstr "مدة العزل (بالساعات)"
+
+#: os-portguard
+msgid "How long a device stays isolated, from 1 to 720 hours; a shorter time set ends the isolations already running sooner. Undo on the Isolated devices tab lets a device go at once, and holds until its isolation would have ended."
+msgstr "المدة التي يبقى فيها الجهاز معزولاً، من 1 إلى 720 ساعة؛ وضبط مدة أقصر يُنهي العزل الجاري أبكر. زر «تراجع» في تبويب «الأجهزة المعزولة» يفك عزل الجهاز فوراً، ويبقى أثره حتى الموعد الذي كان سينتهي فيه عزله."
+
+#: os-portguard
+msgid "From 1 to 720 hours."
+msgstr "من 1 إلى 720 ساعة."
+
+#: os-portguard
+msgid "Isolated devices"
+msgstr "الأجهزة المعزولة"
+
+#: os-portguard
+msgid "A device os-netreport saw reaching a command-and-control list is isolated by its MAC address for the time set under Settings: nothing it sends passes the firewall and nothing reaches it through it. Never the firewall itself, its gateways, or an address this page was opened from."
+msgstr "الجهاز الذي رآه os-netreport يتصل بقائمة قيادة وتحكم يُعزل بعنوان MAC الخاص به طوال المدة المحددة في الإعدادات: لا يمر شيء يرسله عبر جدار الحماية ولا يصل إليه شيء عبره. لا يُعزل أبداً جدار الحماية نفسه ولا بواباته ولا عنوان فُتحت منه هذه الصفحة."
+
+#: os-portguard
+msgid "Automatic isolation is off; it is turned on under Settings."
+msgstr "العزل التلقائي مطفأ؛ يُشغَّل من الإعدادات."
+
+#: os-portguard
+msgid "Reason"
+msgstr "السبب"
+
+#: os-portguard
+msgid "Isolated at"
+msgstr "وقت العزل"
+
+#: os-portguard
+msgid "Until"
+msgstr "حتى"
+
+#: os-portguard
+msgid "Undo"
+msgstr "تراجع"
+
+#: os-portguard
+msgid "No device is isolated."
+msgstr "لا يوجد جهاز معزول."
+
+#: os-portguard
+msgid "reached %s"
+msgstr "اتصل بـ%s"
+
+#: os-portguard
+msgid "Not isolated"
+msgstr "غير معزولة"
+
+#: os-portguard
+msgid "Why not"
+msgstr "سبب عدم العزل"
+
+#: os-portguard
+msgid "not isolated: no MAC"
+msgstr "غير معزول: لا يوجد عنوان MAC"
+
+#: os-portguard
+msgid "not isolated: this firewall"
+msgstr "غير معزول: جدار الحماية هذا"
+
+#: os-portguard
+msgid "not isolated: a gateway"
+msgstr "غير معزول: بوابة"
+
+#: os-portguard
+msgid "not isolated: the HA peer"
+msgstr "غير معزول: نظير HA"
+
+#: os-portguard
+msgid "not isolated: a connection to the web GUI or SSH of this firewall"
+msgstr "غير معزول: اتصال بواجهة الويب أو SSH في جدار الحماية هذا"
+
+#: os-portguard
+msgid "not isolated: a MAC address several devices share (a repeater, a router)"
+msgstr "غير معزول: عنوان MAC تشترك فيه أجهزة عدة (مكرر أو موجّه)"
+
+#: os-portguard
+msgid "The firewall does not hold its addresses now."
+msgstr "لا يضم جدار الحماية عناوينه الآن."
+
+#: os-portguard
+msgid "not isolated: an address this page was opened from"
+msgstr "غير معزول: عنوان فُتحت منه هذه الصفحة"
+
+#: os-portguard
+msgid "not isolated again: undone, until its isolation would have ended and a newer connection"
+msgstr "لم يُعزل مجدداً: أُلغي عزله، حتى الموعد الذي كان سينتهي فيه عزله ويُسجَّل اتصال أحدث"
+
+#: os-portguard
+msgid "Undo the isolation"
+msgstr "إلغاء العزل"
+
+#: os-portguard
+msgid "The device is let through at once. It is not isolated again before its isolation would have ended, and after that only when os-netreport records a newer connection of it to a command-and-control list."
+msgstr "يُسمح بمرور الجهاز فوراً. ولا يُعزل مجدداً قبل الموعد الذي كان سينتهي فيه عزله، ثم لا يُعزل بعده إلا حين يسجّل os-netreport اتصالاً أحدث منه بقائمة قيادة وتحكم."
+
+#: os-portguard
+msgid "The isolation could not be undone."
+msgstr "تعذّر إلغاء العزل."
+
+#: os-portguard
+msgid "When os-netreport records that a device of your networks tried to reach an address on a command-and-control list that os-blocklists blocks, the device is isolated by its MAC address for the time below: the firewall blocks the addresses it is seen with, both ways, and cuts their open connections; an address it takes later is blocked from the next check, within a minute. Checked every minute, for connections in the last 10 minutes. The device is the one the ARP or NDP table shows at the address that reached the list, or the one os-netreport names where they show none. Never the firewall itself, its gateways, its HA peer's addresses set under High Availability, an address logged in to its web GUI or SSH, or an address this page was opened from in the last 7 days. A MAC address the ARP table shows with more than one IPv4 address at the time is isolated by the addresses that reached the list only; a router that translates addresses shows one, and is isolated with every device behind it. Isolation is at the firewall: devices on the same switch still reach each other. Separate from the list of blocked devices and from Enabled above. Off by default."
+msgstr "حين يسجّل os-netreport أن جهازاً من شبكاتك حاول الوصول إلى عنوان في قائمة قيادة وتحكم يحظرها os-blocklists، يُعزل الجهاز بعنوان MAC الخاص به طوال المدة المحددة أدناه: يحظر جدار الحماية العناوين التي يُرى بها في الاتجاهين، ويقطع اتصالاتها المفتوحة؛ والعنوان الذي يأخذه لاحقاً يُحظر من الفحص التالي، خلال دقيقة. يُفحص ذلك كل دقيقة، للاتصالات في آخر 10 دقائق. والجهاز هو الذي يُظهره جدول ARP أو NDP عند العنوان الذي وصل إلى القائمة، أو الذي يسمّيه os-netreport حين لا يُظهران أحداً. لا يُعزل أبداً جدار الحماية نفسه ولا بواباته ولا عناوين نظيره في HA المضبوطة في التوفر العالي ولا عنوان مسجّل دخوله إلى واجهة الويب أو SSH فيه ولا عنوان فُتحت منه هذه الصفحة في آخر 7 أيام. وعنوان MAC الذي يُظهره جدول ARP بأكثر من عنوان IPv4 واحد في حينه يُعزل بالعناوين التي وصلت إلى القائمة وحدها؛ والموجّه الذي يترجم العناوين يُظهر عنواناً واحداً، فيُعزل مع كل جهاز خلفه. والعزل عند جدار الحماية: الأجهزة على المبدّل نفسه يصل بعضها إلى بعض. وهو منفصل عن قائمة الأجهزة المحظورة وعن «مفعل» أعلاه. معطّل افتراضياً."
+
+#: os-portguard
+msgid "A device os-netreport saw reaching a command-and-control list is isolated by its MAC address for the time set under Settings: the firewall blocks the addresses it is seen with, both ways - an address it takes later from the next minute. Never the firewall itself, its gateways, its HA peer's addresses set under High Availability, an address logged in to its web GUI or SSH, or an address this page was opened from in the last 7 days."
+msgstr "الجهاز الذي رآه os-netreport يتصل بقائمة قيادة وتحكم يُعزل بعنوان MAC الخاص به طوال المدة المحددة في الإعدادات: يحظر جدار الحماية العناوين التي يُرى بها في الاتجاهين - والعنوان الذي يأخذه لاحقاً من الدقيقة التالية. لا يُعزل أبداً جدار الحماية نفسه ولا بواباته ولا عناوين نظيره في HA المضبوطة في التوفر العالي ولا عنوان مسجّل دخوله إلى واجهة الويب أو SSH فيه ولا عنوان فُتحت منه هذه الصفحة في آخر 7 أيام."
+
+#: os-portguard
+msgid "Its MAC address shows more than one IPv4 address: only the addresses that reached the list, and those it had alone, are held."
+msgstr "عنوان MAC الخاص به يظهر بأكثر من عنوان IPv4 واحد: لا يُحظر إلا العناوين التي وصلت إلى القائمة وتلك التي كانت له وحده."
+
+#: os-portguard
+msgid "No address of it is seen now."
+msgstr "لا يُرى له عنوان الآن."
+
+#: os-portguard
+msgid "not isolated again: its isolation ended, until a newer connection"
+msgstr "لا يُعزل ثانيةً: انتهت مدة عزله، حتى اتصال أحدث"
+
+#: os-portguard
+msgid "not isolated again: let go as a MAC address of this firewall, until a newer connection"
+msgstr "لا يُعزل ثانيةً: أُطلق لأنه عنوان MAC لجدار الحماية هذا، حتى اتصال أحدث"
+
+#: os-portguard
+msgid "not isolated again: let go when automatic isolation was turned off, until a newer connection"
+msgstr "لا يُعزل ثانيةً: أُطلق حين عُطّل العزل التلقائي، حتى اتصال أحدث"
+
+#: os-portguard
+msgid "not isolated: logged in to the web GUI or SSH of this firewall"
+msgstr "لا يُعزل: مسجّل دخوله إلى واجهة الويب أو SSH في جدار الحماية هذا"
 
 # ---- os-fallbackcrypto: VPN: IPsec: Fallback Crypto - the host's kernel crypto provider for the IPsec
 # tunnels the coprocessor does not take. The drivers' names (aesni, ossl) stay as they are.
@@ -65300,3 +65683,1271 @@ msgstr "كيف تُعطى كلمة المرور: PAP يرسلها، وASCII يج
 #: os-xgs-npu
 msgid "The TACACS+ method must be PAP, ASCII or CHAP."
 msgstr "يجب أن تكون طريقة TACACS+ هي PAP أو ASCII أو CHAP."
+
+#: os-trafficpriority
+msgid "A class marks connections that come in on its interfaces and match it with its DSCP, both ways, written by pf. A connection keeps the mark it opened with: a change reaches new connections."
+msgstr "تَسِم الفئةُ الاتصالاتِ التي تدخل من واجهاتها وتطابقها بقيمة DSCP الخاصة بها، في الاتجاهين، ويكتبها pf. ويبقى للاتصال الوسم الذي فُتح به: التغيير يصل إلى الاتصالات الجديدة."
+
+#: os-trafficpriority
+msgid "A description cannot end with a backslash: pf would read the next line of the rules file as part of it."
+msgstr "لا يجوز أن ينتهي الوصف بشرطة مائلة عكسية: سيقرأ pf السطر التالي من ملف القواعد على أنه جزء منه."
+
+#: os-trafficpriority
+msgid "A name for the class, shown after \"Traffic Priority:\" in OPNsense's rules file, /tmp/rules.debug. It cannot end with a backslash."
+msgstr "اسم للفئة، يظهر بعد \"Traffic Priority:\" في ملف قواعد OPNsense، /tmp/rules.debug. ولا يجوز أن ينتهي بشرطة مائلة عكسية."
+
+#: os-trafficpriority
+msgid "A number from 1 to 9999."
+msgstr "رقم من 1 إلى 9999."
+
+#: os-trafficpriority
+msgid "A port can be given only with TCP, UDP or TCP/UDP."
+msgstr "لا يُعطى المنفذ إلا مع TCP أو UDP أو TCP/UDP."
+
+#: os-trafficpriority
+msgid "A port needs TCP, UDP or TCP/UDP."
+msgstr "يحتاج المنفذ إلى TCP أو UDP أو TCP/UDP."
+
+#: os-trafficpriority
+msgid "A port number, a name, an alias of ports or a range."
+msgstr "رقم منفذ، أو اسم، أو اسم مستعار لمنافذ، أو نطاق."
+
+#: os-trafficpriority
+msgid "AF11 (10)"
+msgstr "AF11 (10)"
+
+#: os-trafficpriority
+msgid "AF12 (12)"
+msgstr "AF12 (12)"
+
+#: os-trafficpriority
+msgid "AF13 (14)"
+msgstr "AF13 (14)"
+
+#: os-trafficpriority
+msgid "AF21 (18)"
+msgstr "AF21 (18)"
+
+#: os-trafficpriority
+msgid "AF22 (20)"
+msgstr "AF22 (20)"
+
+#: os-trafficpriority
+msgid "AF23 (22)"
+msgstr "AF23 (22)"
+
+#: os-trafficpriority
+msgid "AF31 (26)"
+msgstr "AF31 (26)"
+
+#: os-trafficpriority
+msgid "AF32 (28)"
+msgstr "AF32 (28)"
+
+#: os-trafficpriority
+msgid "AF33 (30)"
+msgstr "AF33 (30)"
+
+#: os-trafficpriority
+msgid "AF41 (34)"
+msgstr "AF41 (34)"
+
+#: os-trafficpriority
+msgid "AF42 (36)"
+msgstr "AF42 (36)"
+
+#: os-trafficpriority
+msgid "AF43 (38)"
+msgstr "AF43 (38)"
+
+#: os-trafficpriority
+msgid "Allow access to traffic priority: its classes, the DSCP each marks, and firewall rules it registers"
+msgstr "السماح بالوصول إلى أولوية حركة المرور: فئاتها، وقيمة DSCP التي تَسِم بها كل فئة، وقواعد جدار الحماية التي تسجّلها"
+
+#: os-trafficpriority
+msgid "Any cannot be combined with other addresses."
+msgstr "لا يمكن الجمع بين «أي» وعناوين أخرى."
+
+#: os-trafficpriority
+msgid "Applied"
+msgstr "المطبَّق"
+
+#: os-trafficpriority
+msgid "Arriving with DSCP"
+msgstr "الواصل بقيمة DSCP"
+
+#: os-trafficpriority
+msgid "Best Effort (0)"
+msgstr "أفضل جهد (0)"
+
+#: os-trafficpriority
+msgid "CS1 (8)"
+msgstr "CS1 (8)"
+
+#: os-trafficpriority
+msgid "CS2 (16)"
+msgstr "CS2 (16)"
+
+#: os-trafficpriority
+msgid "CS3 (24)"
+msgstr "CS3 (24)"
+
+#: os-trafficpriority
+msgid "CS4 (32)"
+msgstr "CS4 (32)"
+
+#: os-trafficpriority
+msgid "CS5 (40)"
+msgstr "CS5 (40)"
+
+#: os-trafficpriority
+msgid "CS6 (48)"
+msgstr "CS6 (48)"
+
+#: os-trafficpriority
+msgid "CS7 (56)"
+msgstr "CS7 (56)"
+
+#: os-trafficpriority
+msgid "Choose at least one of Interfaces, Source, Destination, a port or Arriving with DSCP: a class without any of them would mark every connection."
+msgstr "اختر واحداً على الأقل من: الواجهات، أو المصدر، أو الوجهة، أو منفذ، أو «الواصل بقيمة DSCP»: الفئة الخالية منها كلها تَسِم كل اتصال."
+
+#: os-trafficpriority
+msgid "Classes"
+msgstr "الفئات"
+
+#: os-trafficpriority
+msgid "DSCP not one of 0 to 63"
+msgstr "قيمة DSCP ليست من 0 إلى 63"
+
+#: os-trafficpriority
+msgid "DSCP pf writes into every packet of this class's connections, both ways, their two ECN bits left as they came. EF (46) is the usual mark for voice. A mark is fixed when a connection opens: a change reaches new connections. Firewall: Shaper probably sees the mark on uploads only, not measured: pf writes it as a packet comes in on the class's interface, and on a reply as it leaves by it, so a download arriving on the WAN still carries the DSCP it came with."
+msgstr "قيمة DSCP التي يكتبها pf في كل حزمة من اتصالات هذه الفئة، في الاتجاهين، مع ترك بتَّي ECN كما وصلتا. وEF (46) هو الوسم المعتاد للصوت. ويثبت الوسم عند فتح الاتصال: التغيير يصل إلى الاتصالات الجديدة. والأرجح أن «جدار الحماية: مُشكّل حركة المرور» يرى الوسم في الرفع وحده، ولم يُقس ذلك: يكتبه pf حين تدخل الحزمة من واجهة الفئة، وفي الرد حين يخرج منها، فالتنزيل الواصل على WAN يبقى بقيمة DSCP التي جاء بها."
+
+#: os-trafficpriority
+msgid "DSCP to match not one pf can match"
+msgstr "قيمة DSCP المطلوب مطابقتها ليست مما يطابقه pf"
+
+#: os-trafficpriority
+msgid "DSCP written; no queue set"
+msgstr "قيمة DSCP مكتوبة؛ ولا طابور معيّن"
+
+#: os-trafficpriority
+msgid "EF (46)"
+msgstr "EF (46)"
+
+#: os-trafficpriority
+msgid "Edit class"
+msgstr "تعديل الفئة"
+
+#: os-trafficpriority
+msgid "Filter reload did not finish."
+msgstr "لم تكتمل إعادة تحميل الجدار الناري."
+
+#: os-trafficpriority
+msgid "Firewall: Traffic Priority"
+msgstr "جدار الحماية: أولوية حركة المرور"
+
+#: os-trafficpriority
+msgid "ID not one the firewall made"
+msgstr "معرّف لم يصنعه جدار الحماية"
+
+#: os-trafficpriority
+msgid "IP version"
+msgstr "إصدار IP"
+
+#: os-trafficpriority
+msgid "IPv4 and IPv6"
+msgstr "IPv4 وIPv6"
+
+#: os-trafficpriority
+msgid "IPv4 by default. On an XGS appliance with os-xgs-npu, a marked IPv6 connection stays with the host - its fast path does not write an IPv6 traffic class - so that connection is not forwarded in hardware."
+msgstr "IPv4 افتراضياً. على جهاز XGS مع os-xgs-npu يبقى اتصال IPv6 الموسوم لدى المضيف - فالمسار السريع فيه لا يكتب فئة حركة IPv6 (traffic class) - فلا يُمرَّر ذلك الاتصال في العتاد."
+
+#: os-trafficpriority
+msgid "Mark connections of classes switched on with their DSCP. Off, their rules are gone at the next filter reload and connections opened after it are not marked; classes stay. Apply puts a change into the firewall."
+msgstr "وسم اتصالات الفئات المفعّلة بقيمة DSCP الخاصة بها. عند إطفائه تزول قواعدها عند إعادة تحميل الجدار الناري التالية، ولا تُوسم الاتصالات المفتوحة بعدها؛ وتبقى الفئات. و«تطبيق» يضع التغيير في الجدار الناري."
+
+#: os-trafficpriority
+msgid "Marked now"
+msgstr "الموسومة الآن"
+
+#: os-trafficpriority
+msgid "Matched now"
+msgstr "المطابَقة الآن"
+
+#: os-trafficpriority
+msgid "Matched since reload"
+msgstr "المطابَقة منذ إعادة التحميل"
+
+#: os-trafficpriority
+msgid "No source and destination here fit the IP version chosen: an IPv4 and an IPv6 address cannot make one rule."
+msgstr "لا يوجد هنا مصدر ووجهة يوافقان إصدار IP المختار: عنوان IPv4 وعنوان IPv6 لا يصنعان قاعدة واحدة."
+
+#: os-trafficpriority
+msgid "Not in pf: class saved and not applied yet, or Traffic Priority off. Written, not loaded: the last filter reload wrote its rules and pf does not hold them. Not placed: OPNsense wrote its rule commented out - an interface not there, an address or a port it could not map."
+msgstr "ليست في pf: فئة محفوظة لم تُطبَّق بعد، أو أولوية حركة المرور مطفأة. مكتوبة، غير محمَّلة: كتبت إعادة تحميل الجدار الناري الأخيرة قواعدها ولا يحملها pf. غير موضوعة: كتب OPNsense قاعدتها معطَّلةً بعلامة تعليق - واجهة غير موجودة، أو عنوان أو منفذ لم يستطع ربطه."
+
+#: os-trafficpriority
+msgid "Only connections whose first packet arrives with this DSCP - a phone or a game that marks its own traffic, say. Any: whatever they carry. Best Effort (0) cannot be told apart from Any in pf."
+msgstr "الاتصالات التي تصل أول حزمة منها بهذه القيمة وحدها - هاتف أو لعبة تَسِم حركتها بنفسها مثلاً. «أي»: أياً كان ما تحمله. ولا يميّز pf «أفضل جهد (0)» من «أي»."
+
+#: os-trafficpriority
+msgid "Port connections come from, mostly left empty: a number, a name, a range (10000-20000) or an alias of ports."
+msgstr "المنفذ الذي تأتي منه الاتصالات، ويُترك فارغاً غالباً: رقم، أو اسم، أو نطاق (10000-20000)، أو اسم مستعار لمنافذ."
+
+#: os-trafficpriority
+msgid "Port connections go to: a number, a name (sip, https), a range (10000-20000) or an alias of ports."
+msgstr "المنفذ الذي تذهب إليه الاتصالات: رقم، أو اسم (sip، https)، أو نطاق (10000-20000)، أو اسم مستعار لمنافذ."
+
+#: os-trafficpriority
+msgid "Set DSCP"
+msgstr "تعيين DSCP"
+
+#: os-trafficpriority
+msgid "Switch queue"
+msgstr "طابور المبدّل"
+
+#: os-trafficpriority
+msgid "Switch queues"
+msgstr "طوابير المبدّل"
+
+#: os-trafficpriority
+msgid "TCP/UDP"
+msgstr "TCP/UDP"
+
+#: os-trafficpriority
+msgid "This OPNsense writes no pf scrub option on a rule, so no class is applied; the system log says so, under Traffic Priority."
+msgstr "إصدار OPNsense هذا لا يكتب خيار scrub من pf على القاعدة، فلا تُطبَّق أي فئة؛ ويقول ذلك سجل النظام، تحت Traffic Priority."
+
+#: os-trafficpriority
+msgid "Traffic Priority"
+msgstr "أولوية حركة المرور"
+
+#: os-trafficpriority
+msgid "When two classes match one connection, the lower number sets its DSCP."
+msgstr "حين تطابق فئتان اتصالاً واحداً، يعيّن الرقمُ الأصغر قيمةَ DSCP له."
+
+#: os-trafficpriority
+msgid "Where connections come from: an address or a network, aliases, interface networks. any: every source."
+msgstr "من أين تأتي الاتصالات: عنوان أو شبكة، أو أسماء مستعارة، أو شبكات الواجهات. «أي»: كل مصدر."
+
+#: os-trafficpriority
+msgid "Where connections come in. None chosen: every interface. Connections a port forward (Firewall: NAT: Destination NAT) lets in with its Firewall rule set to Pass are not marked: pf passes them without reading any filter rule. Set it to Register rule, or to Manual with a rule of your own."
+msgstr "حيث تدخل الاتصالات. إن لم تُختر واجهة: كل واجهة. والاتصالات التي تُدخلها إعادة توجيه منفذ (جدار الحماية: NAT: ‏NAT الوجهة) وقاعدتها في جدار الحماية مضبوطة على «سماح» لا تُوسم: يمررها pf دون أن يقرأ أي قاعدة تصفية. اضبطها على «تسجيل القاعدة»، أو على «يدوي» مع قاعدة من عندك."
+
+#: os-trafficpriority
+msgid "Where connections go: an address or a network, aliases, interface networks or (self), the firewall itself. any: every destination."
+msgstr "إلى أين تذهب الاتصالات: عنوان أو شبكة، أو أسماء مستعارة، أو شبكات الواجهات، أو (self) أي جدار الحماية نفسه. «أي»: كل وجهة."
+
+#: os-trafficpriority
+msgid "address field not readable"
+msgstr "حقل العنوان غير مقروء"
+
+#: os-trafficpriority
+msgid "classes switched on"
+msgstr "الفئات المفعّلة"
+
+#: os-trafficpriority
+msgid "classes with rules loaded"
+msgstr "الفئات المحمَّلة قواعدها"
+
+#: os-trafficpriority
+msgid "description ends in a backslash"
+msgstr "الوصف ينتهي بشرطة مائلة عكسية"
+
+#: os-trafficpriority
+msgid "interface field not readable"
+msgstr "حقل الواجهة غير مقروء"
+
+#: os-trafficpriority
+msgid "last rule set refused by pf"
+msgstr "رفض pf مجموعة القواعد الأخيرة"
+
+#: os-trafficpriority
+msgid "no rule"
+msgstr "لا قاعدة"
+
+#: os-trafficpriority
+msgid "no source and destination of its IP version"
+msgstr "لا مصدر ووجهة من إصدار IP الخاص بها"
+
+#: os-trafficpriority
+msgid "not in pf"
+msgstr "ليست في pf"
+
+#: os-trafficpriority
+msgid "not measured yet"
+msgstr "لم يُقس بعد"
+
+#: os-trafficpriority
+msgid "not placed"
+msgstr "غير موضوعة"
+
+#: os-trafficpriority
+msgid "nothing narrows it: it would mark every connection"
+msgstr "لا شيء يحدّها: ستَسِم كل اتصال"
+
+#: os-trafficpriority
+msgid "pf alone marks connections here: without os-xgs-npu no hardware carries them."
+msgstr "pf وحده يَسِم الاتصالات هنا: دون os-xgs-npu لا عتاد يحملها."
+
+#: os-trafficpriority
+msgid "pf could not be asked"
+msgstr "تعذّر سؤال pf"
+
+#: os-trafficpriority
+msgid "pf refused the rule set of the last filter reload, and OPNsense loaded the one before it again: what pf holds of the classes is from that one. /tmp/rules.error says why."
+msgstr "رفض pf مجموعة القواعد في إعادة تحميل الجدار الناري الأخيرة، فأعاد OPNsense تحميل المجموعة التي قبلها: ما يحمله pf من الفئات هو منها. والسبب في /tmp/rules.error."
+
+#: os-trafficpriority
+msgid "port field not readable"
+msgstr "حقل المنفذ غير مقروء"
+
+#: os-trafficpriority
+msgid "port without TCP or UDP"
+msgstr "منفذ دون TCP أو UDP"
+
+#: os-trafficpriority
+msgid "protocol not known"
+msgstr "بروتوكول غير معروف"
+
+#: os-trafficpriority
+msgid "this OPNsense writes no mark on a rule"
+msgstr "إصدار OPNsense هذا لا يكتب وسماً على القاعدة"
+
+#: os-trafficpriority
+msgid "written, not loaded"
+msgstr "مكتوبة، غير محمَّلة"
+
+#: os-trafficpriority
+msgid "Matched now, Matched since reload, packets and bytes: what pf counted for the rules of each class. Every filter reload, an Apply among them, starts them again from 0 - packets and bytes too, unless the firewall keeps counters - while connections keep their mark; and a connection two classes match is counted under both, keeping the mark of the lower sequence. Marked now, above, counts each connection pf holds with a mark set coming in, once, whenever it opened, while a class marks. pfctl shows that a mark is set, not which one, so a normalization rule of yours setting any mark on connections coming in is counted too."
+msgstr "«المطابَقة الآن» و«المطابَقة منذ إعادة التحميل» والحزم والبايتات: ما عدّه pf لقواعد كل فئة. وكل إعادة تحميل للجدار الناري، ومنها «تطبيق»، تعيدها إلى 0 - والحزم والبايتات أيضاً، إلا إن كان جدار الحماية يحتفظ بالعدادات - بينما تحتفظ الاتصالات بوسمها؛ والاتصال الذي تطابقه فئتان يُعدّ تحت كلتيهما، ويبقى له وسم الفئة ذات التسلسل الأصغر. و«الموسومة الآن» أعلاه تعدّ مرةً واحدة كلَّ اتصال يحمله pf وُضع عليه وسمٌ عند دخوله، أياً كان وقت فتحه، ما دامت فئةٌ تَسِم. ويُظهر pfctl أن وسماً وُضع لا أيَّ وسم هو، فقاعدة تطبيع من عندك تضع أي وسم على الاتصالات الداخلة تُعدّ معها أيضاً."
+
+#: os-trafficpriority
+msgid "connections with a mark set coming in, each once"
+msgstr "الاتصالات الموسومة عند دخولها، كلٌّ مرة واحدة"
+
+#: os-trafficpriority
+msgid "os-xgs-npu is installed: it puts a marked IPv4 connection into hardware with its DSCP - measured with these rules on an XGS 3300 - and keeps a marked IPv6 connection with the host. A connection in hardware adds no more packets or bytes here."
+msgstr "os-xgs-npu مثبّت: يضع اتصال IPv4 الموسوم في العتاد بقيمة DSCP الخاصة به - وقد قيس ذلك بهذه القواعد على XGS 3300 - ويُبقي اتصال IPv6 الموسوم لدى المضيف. والاتصال الذي في العتاد لا يضيف هنا حزماً ولا بايتات بعد ذلك."
+
+#: os-appcontrol
+msgid "A table of its own for each application chosen, appcontrol_ and its name, holding servers it was seen with. Every nDPI category has a table without being chosen: appcontrol_cat_ and its name. The list is the installed nDPI's."
+msgstr "لكل تطبيق يُختار جدولٌ خاص به، اسمه appcontrol_ ثم اسم التطبيق، يحفظ الخوادم التي شوهد معها. ولكل فئة من فئات nDPI جدول دون أن تُختار: appcontrol_cat_ ثم اسمها. والقائمة هي قائمة nDPI المثبت."
+
+#: os-appcontrol
+msgid "Address expiry (seconds)"
+msgstr "مدة بقاء العنوان (بالثواني)"
+
+#: os-appcontrol
+msgid "AdultContent"
+msgstr "محتوى للبالغين"
+
+#: os-appcontrol
+msgid "Advertisement"
+msgstr "إعلانات"
+
+#: os-appcontrol
+msgid "Agriculture"
+msgstr "زراعة"
+
+#: os-appcontrol
+msgid "Allow access to application control: applications nDPI names, firewall aliases it fills, and its settings"
+msgstr "السماح بالوصول إلى التحكم في التطبيقات: التطبيقات التي يسمّيها nDPI، والأسماء المستعارة للجدار التي يملؤها، وإعداداته"
+
+#: os-appcontrol
+msgid "Allowed_Site"
+msgstr "موقع مسموح"
+
+#: os-appcontrol
+msgid "Antimalware"
+msgstr "مكافحة البرمجيات الخبيثة"
+
+#: os-appcontrol
+msgid "Application"
+msgstr "التطبيق"
+
+#: os-appcontrol
+msgid "Application Control"
+msgstr "التحكم في التطبيقات"
+
+#: os-appcontrol
+msgid "Application Control classifier"
+msgstr "مصنِّف التحكم في التطبيقات"
+
+#: os-appcontrol
+msgid "Application tables"
+msgstr "جداول التطبيقات"
+
+#: os-appcontrol
+msgid "Art"
+msgstr "فنون"
+
+#: os-appcontrol
+msgid "ArtifIntelligence"
+msgstr "ذكاء اصطناعي"
+
+#: os-appcontrol
+msgid "Banned_Site"
+msgstr "موقع محظور"
+
+#: os-appcontrol
+msgid "Beauty"
+msgstr "تجميل"
+
+#: os-appcontrol
+msgid "Blockchain_Crypto"
+msgstr "سلاسل الكتل والعملات المشفرة"
+
+#: os-appcontrol
+msgid "Blog_Forum"
+msgstr "مدونات ومنتديات"
+
+#: os-appcontrol
+msgid "Books"
+msgstr "كتب"
+
+#: os-appcontrol
+msgid "Bots"
+msgstr "روبوتات"
+
+#: os-appcontrol
+msgid "Business"
+msgstr "أعمال"
+
+#: os-appcontrol
+msgid "CDN_Proxy"
+msgstr "شبكات توصيل المحتوى والوكلاء"
+
+#: os-appcontrol
+msgid "Carried by"
+msgstr "يحمله"
+
+#: os-appcontrol
+msgid "Chat"
+msgstr "دردشة"
+
+#: os-appcontrol
+msgid "Classified"
+msgstr "مصنَّفة"
+
+#: os-appcontrol
+msgid "Classify connections"
+msgstr "تصنيف الاتصالات"
+
+#: os-appcontrol
+msgid "Cloud"
+msgstr "خدمات سحابية"
+
+#: os-appcontrol
+msgid "Collaborative"
+msgstr "عمل تعاوني"
+
+#: os-appcontrol
+msgid "Computer_Science"
+msgstr "علوم الحاسوب"
+
+#: os-appcontrol
+msgid "ConnCheck"
+msgstr "فحص الاتصال"
+
+#: os-appcontrol
+msgid "Connections: named by nDPI from their packets since the classifier started. Guessed: named by port or address only, never put in a table. Each connection counts once, in the window it began in."
+msgstr "الاتصالات: ما سمّاه nDPI من حزمها منذ بدء المصنِّف. المخمَّنة: ما سُمّي بالمنفذ أو العنوان وحده، ولا يدخل جدولًا أبدًا. ويُعدّ كل اتصال مرة واحدة، في النافذة التي بدأ فيها."
+
+#: os-appcontrol
+msgid "Construction"
+msgstr "إنشاءات"
+
+#: os-appcontrol
+msgid "Crypto_Currency"
+msgstr "عملات مشفرة"
+
+#: os-appcontrol
+msgid "Culture"
+msgstr "ثقافة"
+
+#: os-appcontrol
+msgid "Cybersecurity"
+msgstr "أمن سيبراني"
+
+#: os-appcontrol
+msgid "DataTransfer"
+msgstr "نقل البيانات"
+
+#: os-appcontrol
+msgid "Dating"
+msgstr "مواعدة"
+
+#: os-appcontrol
+msgid "Design"
+msgstr "تصميم"
+
+#: os-appcontrol
+msgid "Drugs"
+msgstr "مخدرات"
+
+#: os-appcontrol
+msgid "Each table is an External alias in Firewall: Aliases, for a rule's source or destination: servers nDPI named, each kept until unseen for the address expiry. Nothing is blocked by this plugin yet."
+msgstr "كل جدول اسم مستعار من نوع External في جدار الحماية: الأسماء المستعارة، يصلح مصدرًا لقاعدة أو وجهة لها: خوادم سمّاها nDPI، يبقى كلٌّ منها حتى يغيب مدة بقاء العنوان. ولا تحظر هذه الإضافة شيئًا بعد."
+
+#: os-appcontrol
+msgid "Education"
+msgstr "تعليم"
+
+#: os-appcontrol
+msgid "Employment"
+msgstr "توظيف"
+
+#: os-appcontrol
+msgid "Engineering"
+msgstr "هندسة"
+
+#: os-appcontrol
+msgid "Entertainment"
+msgstr "ترفيه"
+
+#: os-appcontrol
+msgid "Environment"
+msgstr "بيئة"
+
+#: os-appcontrol
+msgid "Environmental_Services"
+msgstr "خدمات بيئية"
+
+#: os-appcontrol
+msgid "Fashion"
+msgstr "أزياء"
+
+#: os-appcontrol
+msgid "FileSharing"
+msgstr "مشاركة الملفات"
+
+#: os-appcontrol
+msgid "Finance"
+msgstr "مال"
+
+#: os-appcontrol
+msgid "Firewall: Application Control"
+msgstr "جدار الحماية: التحكم في التطبيقات"
+
+#: os-appcontrol
+msgid "Food"
+msgstr "طعام"
+
+#: os-appcontrol
+msgid "Game"
+msgstr "ألعاب"
+
+#: os-appcontrol
+msgid "Government"
+msgstr "حكومة"
+
+#: os-appcontrol
+msgid "Guessed"
+msgstr "المخمَّنة"
+
+#: os-appcontrol
+msgid "Hobby"
+msgstr "هوايات"
+
+#: os-appcontrol
+msgid "Hosting"
+msgstr "استضافة"
+
+#: os-appcontrol
+msgid "Housing"
+msgstr "إسكان"
+
+#: os-appcontrol
+msgid "How long an address stays in a table once unseen: the Expire of the tables' aliases, carried out by OPNsense's own cron. Seen again, its time starts again."
+msgstr "المدة التي يبقاها العنوان في الجدول بعد أن يغيب: قيمة الانتهاء في الأسماء المستعارة للجداول، ينفذها cron الخاص بـ OPNsense نفسه. وإن ظهر العنوان من جديد بدأت مدته من جديد."
+
+#: os-appcontrol
+msgid "Hw_Sw"
+msgstr "عتاد وبرمجيات"
+
+#: os-appcontrol
+msgid "IoT-Scada"
+msgstr "إنترنت الأشياء وSCADA"
+
+#: os-appcontrol
+msgid "Last error"
+msgstr "آخر خطأ"
+
+#: os-appcontrol
+msgid "Legal"
+msgstr "قانون"
+
+#: os-appcontrol
+msgid "Lifestyle"
+msgstr "أسلوب حياة"
+
+#: os-appcontrol
+msgid "Login_Portal"
+msgstr "بوابات تسجيل الدخول"
+
+#: os-appcontrol
+msgid "Malware"
+msgstr "برمجيات خبيثة"
+
+#: os-appcontrol
+msgid "Maps_Navigation"
+msgstr "خرائط وملاحة"
+
+#: os-appcontrol
+msgid "Mining"
+msgstr "تعدين"
+
+#: os-appcontrol
+msgid "Music"
+msgstr "موسيقى"
+
+#: os-appcontrol
+msgid "Name each connection's application with nDPI and keep the servers it names in pf tables, aliases in Firewall: Aliases. It reads a copy of what the firewall sees and changes no traffic. Off, the classifier stops and its aliases leave Firewall: Aliases - switched off instead where a rule or a setting still names one."
+msgstr "تسمية تطبيق كل اتصال بواسطة nDPI، وحفظ الخوادم التي يسمّيها في جداول pf، وهي أسماء مستعارة في جدار الحماية: الأسماء المستعارة. يقرأ نسخة مما يراه الجدار ولا يغيّر شيئًا من الحركة. وعند الإيقاف يتوقف المصنِّف وتخرج أسماؤه المستعارة من جدار الحماية: الأسماء المستعارة - وتُعطَّل بدل ذلك حيث ما زالت قاعدة أو إعداد يذكر أحدها."
+
+#: os-appcontrol
+msgid "News"
+msgstr "أخبار"
+
+#: os-appcontrol
+msgid "Not named: nDPI could not say what a connection is. Guessed: named by port or address only. No application: nDPI named its protocol - TLS, QUIC or HTTP - and no application on top. Not named and No application list only connections whose beginning was seen. Server name and JA4 fingerprint are what its client sent first, to tell where it comes from; JA4 is read from TLS over TCP only. Latest 500 of each kind kept."
+msgstr "غير مسمّى: لم يستطع nDPI أن يقول ما الاتصال. مخمَّن: سُمّي بالمنفذ أو العنوان وحده. بلا تطبيق: سمّى nDPI بروتوكوله - TLS أو QUIC أو HTTP - ولا تطبيق فوقه. ولا تعرض «غير مسمّى» و«بلا تطبيق» إلا الاتصالات التي شوهدت بدايتها. واسم الخادم وبصمة JA4 هما ما أرسله العميل أولًا، ليُعرف مصدره؛ ولا تُقرأ JA4 إلا من TLS فوق TCP. ويُحفظ آخر 500 من كل نوع."
+
+#: os-appcontrol
+msgid "Nothing to change in aliases."
+msgstr "لا شيء يتغير في الأسماء المستعارة."
+
+#: os-appcontrol
+msgid "Politics"
+msgstr "سياسة"
+
+#: os-appcontrol
+msgid "Productivity"
+msgstr "إنتاجية"
+
+#: os-appcontrol
+msgid "RPC"
+msgstr "استدعاء الإجراءات عن بُعد (RPC)"
+
+#: os-appcontrol
+msgid "Real_Estate"
+msgstr "عقارات"
+
+#: os-appcontrol
+msgid "Religion"
+msgstr "دين"
+
+#: os-appcontrol
+msgid "RemoteAccess"
+msgstr "الوصول عن بُعد"
+
+#: os-appcontrol
+msgid "Scanners"
+msgstr "ماسحات"
+
+#: os-appcontrol
+msgid "Science"
+msgstr "علوم"
+
+#: os-appcontrol
+msgid "Search_Engine"
+msgstr "محركات البحث"
+
+#: os-appcontrol
+msgid "Seconds, 60 or more."
+msgstr "بالثواني، 60 فأكثر."
+
+#: os-appcontrol
+msgid "Server name"
+msgstr "اسم الخادم"
+
+#: os-appcontrol
+msgid "Shopping"
+msgstr "تسوق"
+
+#: os-appcontrol
+msgid "Site_Unavailable"
+msgstr "موقع غير متاح"
+
+#: os-appcontrol
+msgid "SocialNetwork"
+msgstr "شبكات اجتماعية"
+
+#: os-appcontrol
+msgid "SoftwareUpdate"
+msgstr "تحديث البرمجيات"
+
+#: os-appcontrol
+msgid "Sport"
+msgstr "رياضة"
+
+#: os-appcontrol
+msgid "Streaming"
+msgstr "بث"
+
+#: os-appcontrol
+msgid "Technology"
+msgstr "تقنية"
+
+#: os-appcontrol
+msgid "Telecommunication"
+msgstr "اتصالات"
+
+#: os-appcontrol
+msgid "Transportation"
+msgstr "نقل"
+
+#: os-appcontrol
+msgid "Travel"
+msgstr "سفر"
+
+#: os-appcontrol
+msgid "Vehicles"
+msgstr "مركبات"
+
+#: os-appcontrol
+msgid "Video"
+msgstr "فيديو"
+
+#: os-appcontrol
+msgid "Violence"
+msgstr "عنف"
+
+#: os-appcontrol
+msgid "VoIP"
+msgstr "الصوت عبر IP"
+
+#: os-appcontrol
+msgid "Weapons"
+msgstr "أسلحة"
+
+#: os-appcontrol
+msgid "Weather"
+msgstr "طقس"
+
+#: os-appcontrol
+msgid "Web"
+msgstr "الويب"
+
+#: os-appcontrol
+msgid "Where connections are read. None chosen: every internal interface - one with an address of its own and no gateway. No port is made promiscuous."
+msgstr "حيث تُقرأ الاتصالات. إن لم تُختر واجهة: كل واجهة داخلية - وهي التي لها عنوان خاص بها ولا بوابة لها. ولا يوضع أي منفذ في الوضع المختلط."
+
+#: os-appcontrol
+msgid "addresses in pf"
+msgstr "عنوانًا في pf"
+
+#: os-appcontrol
+msgid "application tables"
+msgstr "جدولًا للتطبيقات"
+
+#: os-appcontrol
+msgid "category tables"
+msgstr "جدولًا للفئات"
+
+#: os-appcontrol
+msgid "chosen, not applied yet"
+msgstr "مختار، ولم يُطبَّق بعد"
+
+#: os-appcontrol
+msgid "classifier not running"
+msgstr "المصنِّف لا يعمل"
+
+#: os-appcontrol
+msgid "classifying is off"
+msgstr "التصنيف متوقف"
+
+#: os-appcontrol
+msgid "guessed"
+msgstr "مخمَّن"
+
+#: os-appcontrol
+msgid "guessed, kept out of tables"
+msgstr "مخمَّن، ويُبعد عن الجداول"
+
+#: os-appcontrol
+msgid "more named by protocol alone"
+msgstr "سُمّيت أيضًا ببروتوكولها وحده"
+
+#: os-appcontrol
+msgid "nDPI"
+msgstr "nDPI"
+
+#: os-appcontrol
+msgid "nDPI is not installed"
+msgstr "nDPI غير مثبت"
+
+#: os-appcontrol
+msgid "nDPI is not installed: package ndpi is needed."
+msgstr "nDPI غير مثبت: يلزم تثبيت الحزمة ndpi."
+
+#: os-appcontrol
+msgid "no application"
+msgstr "بلا تطبيق"
+
+#: os-appcontrol
+msgid "not named"
+msgstr "غير مسمّى"
+
+#: os-appcontrol
+msgid "os-xgs-npu is installed: each connection is classified from its first packets, seen by the host before it moves into hardware."
+msgstr "os-xgs-npu مثبت: يُصنَّف كل اتصال من حزمه الأولى، التي يراها المضيف قبل أن ينتقل الاتصال إلى العتاد."
+
+#: os-appcontrol
+msgid "pf alone holds these tables: without os-xgs-npu no hardware takes part."
+msgstr "يحمل pf وحده هذه الجداول: لا يشارك العتاد في شيء دون os-xgs-npu."
+
+#: os-appcontrol
+msgid "windows cut short: connections past the packets, connections or bytes a window reads were not classified"
+msgstr "نافذة قُطعت قبل تمامها: الاتصالات التي جاوزت ما تقرؤه النافذة من الحزم أو الاتصالات أو البايتات لم تُصنَّف"
+
+#: os-useridentity
+msgid "0: no alert. An alert is a file in /var/db/os-useridentity/alerts, in os-xgs-npu's form, for os-netreport to send; the directory failing and an address newly shared are alerted too."
+msgstr "0: لا تنبيه. التنبيه ملف في /var/db/os-useridentity/alerts بصيغة os-xgs-npu، يرسله os-netreport؛ ويُنبَّه أيضاً حين يتعذر سؤال الدليل، وحين يصير عنوان مشتركاً."
+
+#: os-useridentity
+msgid "A group's name or distinguished name, on one line."
+msgstr "اسم المجموعة أو اسمها المميز، في سطر واحد."
+
+#: os-useridentity
+msgid "A port from 1 to 65535."
+msgstr "منفذ من 1 إلى 65535."
+
+#: os-useridentity
+msgid "A port from 1024 to 65535."
+msgstr "منفذ من 1024 إلى 65535."
+
+#: os-useridentity
+msgid "A table for a user"
+msgstr "جدول لمستخدم"
+
+#: os-useridentity
+msgid "A table for each group: the addresses of its users, asked of the directory chosen in Settings when a user is first seen and again after 15 minutes. Each is an External alias in Firewall: Aliases, for a rule's source or destination. Changes here take effect with Apply."
+msgstr "جدول لكل مجموعة: عناوين مستخدميها، ويُسأل عنهم الدليل المختار في الإعدادات حين يُرى المستخدم أول مرة، ثم بعد 15 دقيقة. وكلٌّ منها اسم مستعار خارجي في جدار الحماية: الأسماء المستعارة، يصلح مصدراً لقاعدة أو وجهة لها. والتغييرات هنا تسري عند التطبيق."
+
+#: os-useridentity
+msgid "A user in a group that is inside a chosen group counts as in it: Active Directory is asked by its in-chain rule, one question a group. A server that does not know the rule is asked memberOf alone."
+msgstr "المستخدم الذي في مجموعة داخل مجموعة مختارة يُعدّ فيها: يُسأل Active Directory بقاعدة السلسلة (in-chain)، سؤالاً واحداً لكل مجموعة. والخادم الذي لا يعرف هذه القاعدة يُسأل عن memberOf وحده."
+
+#: os-useridentity
+msgid "A user's logon name, as the domain writes it."
+msgstr "اسم دخول المستخدم كما يكتبه النطاق."
+
+#: os-useridentity
+msgid "Addresses and networks never mapped to a user: terminal servers, NAT inside the network, servers that log on to the domain controllers as a user. The firewall's own addresses and the domain controllers' never are."
+msgstr "عناوين وشبكات لا تُربط بمستخدم أبداً: خوادم الطرفيات، وترجمة العناوين داخل الشبكة، والخوادم التي تدخل إلى متحكمات النطاق باسم مستخدم. أما عناوين الجدار نفسه ومتحكمات النطاق فلا تُربط أبداً."
+
+#: os-useridentity
+msgid "Addresses or networks, one each."
+msgstr "عناوين أو شبكات، كلٌّ منها على حدة."
+
+#: os-useridentity
+msgid "Alert when a domain controller is silent (minutes)"
+msgstr "التنبيه حين يصمت متحكم نطاق (بالدقائق)"
+
+#: os-useridentity
+msgid "Allow access to user identity: the addresses mapped to users from domain logons, the aliases it fills, and its settings"
+msgstr "السماح بالوصول إلى هوية المستخدم: العناوين المربوطة بالمستخدمين من دخولهم إلى النطاق، والأسماء المستعارة التي تملؤها، وإعداداتها"
+
+#: os-useridentity
+msgid "An event older than this when it arrives neither maps nor renews: NXLog CE sends again what it held while stopped. Counted as stale on Sources. The events' times are read in the firewall's time zone: the domain controllers must keep the same zone, and a close clock."
+msgstr "الحدث الذي يصل أقدم من هذا لا يربط ولا يجدّد، فـ NXLog CE يعيد إرسال ما احتفظ به وهو متوقف. ويُعدّ في المصادر قديماً. وتُقرأ أوقات الأحداث بالمنطقة الزمنية للجدار، فعلى متحكمات النطاق أن تكون في المنطقة نفسها، وبساعة قريبة."
+
+#: os-useridentity
+msgid "Another row gives this alias name."
+msgstr "صفٌّ آخر يستعمل هذا الاسم المستعار."
+
+#: os-useridentity
+msgid "Ask the directory about a user"
+msgstr "سؤال الدليل عن مستخدم"
+
+#: os-useridentity
+msgid "integer($EventTime) / 1000000 makes NXLog CE send the time of each event as seconds since 1970, in UTC, so the firewall reads it right whatever the time zone of the domain controller; without it the time is read in the zone of the firewall. delete($Message) leaves out the long text of each event, which nothing here reads, and keeps each line well under what one datagram to the collector can carry."
+msgstr "يجعل integer($EventTime) / 1000000 ‏NXLog CE يرسل وقت كل حدث ثوانيَ منذ 1970 بتوقيت UTC، فيقرؤه الجدار صحيحاً أيّاً كانت المنطقة الزمنية لمتحكم النطاق؛ ودونه يُقرأ الوقت بمنطقة الجدار. ويترك delete($Message) النص الطويل لكل حدث، ولا شيء هنا يقرؤه، فيبقى كل سطر دون ما تحمله حزمة بيانات واحدة إلى المُجمِّع بفارق واسع."
+
+#: os-useridentity
+msgid "Days, from 0 to 365."
+msgstr "أيام، من 0 إلى 365."
+
+#: os-useridentity
+msgid "Domain controller"
+msgstr "متحكم النطاق"
+
+#: os-useridentity
+msgid "Domain controllers"
+msgstr "متحكمات النطاق"
+
+#: os-useridentity
+msgid "Domain controllers heard"
+msgstr "متحكمات النطاق المسموعة"
+
+#: os-useridentity
+msgid "Drop when the address's MAC changes"
+msgstr "إسقاط الربط حين يتغير MAC العنوان"
+
+#: os-useridentity
+msgid "Each address with the user its domain controller last saw logging on from it. The latest logon wins: an address another user logged on from within the lifetime is shown as shared - a terminal server, or a runas on a client while someone sits at its screen. A domain controller says nothing at a logoff: a mapping ends at the end of its lifetime, when another device takes the address, or when forgotten here."
+msgstr "كل عنوان مع المستخدم الذي رآه متحكم النطاق آخر مرة يدخل منه. يفوز الدخول الأحدث: فالعنوان الذي دخل منه مستخدم آخر خلال مدة البقاء يُعرض مشتركاً - كخادم طرفيات، أو runas على جهاز عميل وأمام شاشته شخص آخر. ولا يقول متحكم النطاق شيئاً عند الخروج: فينتهي الربط بانتهاء مدة بقائه، أو حين يأخذ جهاز آخر العنوان، أو حين يُنسى هنا."
+
+#: os-useridentity
+msgid "Each mapping made, changed or ended, kept a file a day in /var/db/os-useridentity/history for this many days. 0: none is kept, only the live map."
+msgstr "كل ربط يُنشأ أو يتغير أو ينتهي يُحفظ في ملف لكل يوم في /var/db/os-useridentity/history هذا العدد من الأيام. 0: لا يُحفظ شيء، إلا الخريطة الحية."
+
+#: os-useridentity
+msgid "Edit user"
+msgstr "تعديل المستخدم"
+
+#: os-useridentity
+msgid "Every address is taken out of the map and of the tables now. The next logon or network logon of each user maps it again."
+msgstr "يخرج كل عنوان الآن من الخريطة ومن الجداول، ثم يربطه من جديد الدخول التالي لكل مستخدم، أو دخوله الشبكي التالي."
+
+#: os-useridentity
+msgid "Every minute, an address whose MAC in the firewall's ARP or neighbour table is not the one it had leaves the map: another device has it. Behind a router the firewall sees no MAC, and only the lifetime ends a mapping."
+msgstr "كل دقيقة يخرج من الخريطة العنوان الذي صار له في جدول ARP أو الجيران في الجدار MAC غير الذي كان له: فقد أخذه جهاز آخر. وخلف موجّه لا يرى الجدار أي MAC، فلا ينهي الربط إلا مدة البقاء."
+
+#: os-useridentity
+msgid "Firewall: User Identity"
+msgstr "جدار الحماية: هوية المستخدم"
+
+#: os-useridentity
+msgid "Forget"
+msgstr "نسيان"
+
+#: os-useridentity
+msgid "Forget every mapping"
+msgstr "نسيان كل ربط"
+
+#: os-useridentity
+msgid "Groups from"
+msgstr "المجموعات من"
+
+#: os-useridentity
+msgid "How long an address stays mapped with no event about it. A domain controller says nothing when a user logs off or locks the screen, so this is what ends a mapping, besides another user's logon from the same address. An idle session renews itself: the network logons it makes keep coming."
+msgstr "المدة التي يبقى فيها العنوان مربوطاً دون أي حدث عنه. فمتحكم النطاق لا يقول شيئاً حين يخرج المستخدم أو يقفل الشاشة، ولذلك هي ما ينهي الربط، إلى جانب دخول مستخدم آخر من العنوان نفسه. والجلسة الخاملة تجدّد نفسها، فحالات الدخول الشبكي التي تُحدثها لا تنقطع."
+
+#: os-useridentity
+msgid "IPv4 addresses of domain controllers, one each."
+msgstr "عناوين IPv4 لمتحكمات النطاق، كلٌّ منها على حدة."
+
+#: os-useridentity
+msgid "Ignore users"
+msgstr "تجاهل المستخدمين"
+
+#: os-useridentity
+msgid "Keep history (days)"
+msgstr "حفظ السجل (بالأيام)"
+
+#: os-useridentity
+msgid "Last line"
+msgstr "آخر سطر"
+
+#: os-useridentity
+msgid "Late"
+msgstr "التأخر"
+
+#: os-useridentity
+msgid "Log user names"
+msgstr "تسجيل أسماء المستخدمين"
+
+#: os-useridentity
+msgid "Map each address to its user from the domain controllers' logon events, and fill the tables of the group and user rows. Off by default: nothing is mapped until domain controllers and groups are named. Off, every mapping is forgotten and the plugin's aliases leave Firewall: Aliases - switched off instead where a rule or a setting still names one."
+msgstr "ربط كل عنوان بمستخدمه من أحداث الدخول في متحكمات النطاق، وملء جداول صفوف المجموعات والمستخدمين. مطفأ افتراضياً: لا يُربط شيء حتى تُسمّى متحكمات النطاق والمجموعات. وحين يُطفأ يُنسى كل ربط، وتخرج الأسماء المستعارة للإضافة من جدار الحماية: الأسماء المستعارة - وتُطفأ بدلاً من ذلك إن كانت قاعدة أو إعداد ما زال يذكرها."
+
+#: os-useridentity
+msgid "Mapped"
+msgstr "مربوط"
+
+#: os-useridentity
+msgid "Mapping lifetime (minutes)"
+msgstr "مدة بقاء الربط (بالدقائق)"
+
+#: os-useridentity
+msgid "Minutes, from 0 to 10080."
+msgstr "دقائق، من 0 إلى 10080."
+
+#: os-useridentity
+msgid "Minutes, from 1 to 1440."
+msgstr "دقائق، من 1 إلى 1440."
+
+#: os-useridentity
+msgid "Minutes, from 5 to 10080."
+msgstr "دقائق، من 5 إلى 10080."
+
+#: os-useridentity
+msgid "NXLog CE on each domain controller"
+msgstr "NXLog CE على كل متحكم نطاق"
+
+#: os-useridentity
+msgid "NXLog Community Edition reads the Security log and sends the two events as JSON over TCP. Its configuration, as phase 0's lab ran it, to put in nxlog.conf on each domain controller named in Settings, then restart its service:"
+msgstr "يقرأ NXLog Community Edition سجل الأمان، ويرسل الحدثين بصيغة JSON عبر TCP. وهذا إعداده كما شغّله مختبر المرحلة 0، يوضع في nxlog.conf على كل متحكم نطاق مسمّى في الإعدادات، ثم يُعاد تشغيل خدمته:"
+
+#: os-useridentity
+msgid "Nested groups (Active Directory)"
+msgstr "المجموعات المتداخلة (Active Directory)"
+
+#: os-useridentity
+msgid "Never map"
+msgstr "لا تُربط أبداً"
+
+#: os-useridentity
+msgid "Not receiving: syslog-ng's source is not written."
+msgstr "لا استقبال: مصدر syslog-ng لم يُكتب."
+
+#: os-useridentity
+msgid "Other events"
+msgstr "أحداث أخرى"
+
+#: os-useridentity
+msgid "Renewed"
+msgstr "جُدّد"
+
+#: os-useridentity
+msgid "Shared"
+msgstr "مشترك"
+
+#: os-useridentity
+msgid "Since"
+msgstr "منذ"
+
+#: os-useridentity
+msgid "Since the collector started: the lines each sender sent, the events taken - a ticket issued (4768) or a logon to the domain controller with an address (4624) - those that mapped an address or renewed one, those older than Stale after when they came, those refused and why, and the other events counted and set aside. Late: how long after it happened the last event came. Lines are counted, never kept."
+msgstr "منذ بدأ المُجمِّع: الأسطر التي أرسلها كل مرسِل، والأحداث المأخوذة - تذكرة صدرت (4768) أو دخول إلى متحكم النطاق بعنوان (4624) - وما ربط منها عنواناً أو جدّده، وما وصل أقدم من «قديم بعد»، وما رُفض ولماذا، والأحداث الأخرى معدودةً ومتروكة. التأخر: كم بعد وقوعه وصل آخر حدث. والأسطر تُعدّ ولا تُحفظ أبداً."
+
+#: os-useridentity
+msgid "Stale after (minutes)"
+msgstr "قديم بعد (بالدقائق)"
+
+#: os-useridentity
+msgid "Taken"
+msgstr "مأخوذة"
+
+#: os-useridentity
+msgid "The IPv4 addresses of the domain controllers that send their logon events, with NXLog CE (Sources shows its configuration). Only these are let in: pf redirects their port to syslog-ng on 127.0.0.1, and a line from any other address is never read."
+msgstr "عناوين IPv4 لمتحكمات النطاق التي ترسل أحداث الدخول عبر NXLog CE (تعرض المصادر إعداده). ولا يُسمح إلا لها: يعيد pf توجيه منفذها إلى syslog-ng على 127.0.0.1، ولا يُقرأ أبداً سطر من أي عنوان آخر."
+
+#: os-useridentity
+msgid "The LDAP entry of System: Access: Servers asked which groups a user is in. Active Directory refuses a bind in the clear: StartTLS or SSL, with the domain's certificate authority in System: Trust and the domain controller named as its certificate names it."
+msgstr "مدخل LDAP في النظام: الوصول: الخوادم الذي يُسأل عن المجموعات التي فيها المستخدم. ويرفض Active Directory الدخول (bind) دون تشفير: فاستعمل StartTLS أو SSL، مع المرجع المصدق للنطاق في النظام: الثقة، ومع تسمية متحكم النطاق كما تسميه شهادته."
+
+#: os-useridentity
+msgid "The TCP port the domain controllers send to, on the firewall's addresses. Not one the firewall itself serves - SSH, DNS, the web GUI on 80, 443 or its own port: the domain controllers would no longer reach that service."
+msgstr "منفذ TCP الذي ترسل إليه متحكمات النطاق على عناوين الجدار. ولا يكون منفذاً يخدمه الجدار نفسه - SSH أو DNS أو واجهة الويب على 80 أو 443 أو منفذها الخاص: وإلا لم تعد متحكمات النطاق تصل إلى تلك الخدمة."
+
+#: os-useridentity
+msgid "The domain controllers keep their audit of Kerberos Authentication Service and of Logon for success, as Windows Server does by default. TLS from the domain controllers is not taken yet: the redirect, from their addresses alone, is what lets a line in."
+msgstr "تُبقي متحكمات النطاق تدقيقها لـ Kerberos Authentication Service ولـ Logon عند النجاح، كما يفعل Windows Server افتراضياً. ولا يُقبل TLS من متحكمات النطاق بعد: فإعادة التوجيه، من عناوينها وحدها، هي ما يُدخل السطر."
+
+#: os-useridentity
+msgid "The firewall itself serves this port (SSH, DNS or the web GUI): the domain controllers would no longer reach that service on it. Choose another, such as 514."
+msgstr "الجدار نفسه يخدم هذا المنفذ (SSH أو DNS أو واجهة الويب)، فلن تصل متحكمات النطاق إلى تلك الخدمة عليه بعد ذلك. اختر غيره، مثل 514."
+
+#: os-useridentity
+msgid "The group's name in the directory, or its distinguished name. A user in it - or, with Nested groups, in a group inside it - has its addresses in this row's table."
+msgstr "اسم المجموعة في الدليل، أو اسمها المميز. والمستخدم الذي فيها - أو، مع المجموعات المتداخلة، في مجموعة داخلها - تكون عناوينه في جدول هذا الصف."
+
+#: os-useridentity
+msgid "The port of syslog-ng's source on 127.0.0.1 that the domain controllers' lines are redirected to; 5140 is os-xgs-npu's. It is written only when no other program holds it: a source that cannot be bound would stop syslog-ng, and every log with it."
+msgstr "منفذ مصدر syslog-ng على 127.0.0.1 الذي يُعاد توجيه أسطر متحكمات النطاق إليه؛ و5140 لـ os-xgs-npu. ولا يُكتب إلا إذا لم يشغله برنامج آخر: فالمصدر الذي لا يستطيع الاستماع على منفذه يوقف syslog-ng، ويوقف معه كل السجلات."
+
+#: os-useridentity
+msgid "The system log says how many addresses were mapped, changed user or left. On, it names each address and its user, and so do the alerts."
+msgstr "يذكر سجل النظام كم عنواناً رُبط، أو تغيّر مستخدمه، أو خرج. وحين يُفعَّل يسمّي كل عنوان ومستخدمه، وكذلك التنبيهات."
+
+#: os-useridentity
+msgid "The table's alias in Firewall: Aliases, for rules: uid_ and letters, digits or _, 31 characters at most. Left empty, one is made from the group's name when saved."
+msgstr "الاسم المستعار للجدول في جدار الحماية: الأسماء المستعارة، للقواعد: uid_ ثم حروف أو أرقام أو _، بحد أقصى 31 حرفاً. وإن تُرك فارغاً صُنع من اسم المجموعة عند الحفظ."
+
+#: os-useridentity
+msgid "The table's alias in Firewall: Aliases, for rules: uid_ and letters, digits or _, 31 characters at most. Left empty, one is made from the user's name when saved."
+msgstr "الاسم المستعار للجدول في جدار الحماية: الأسماء المستعارة، للقواعد: uid_ ثم حروف أو أرقام أو _، بحد أقصى 31 حرفاً. وإن تُرك فارغاً صُنع من اسم المستخدم عند الحفظ."
+
+#: os-useridentity
+msgid "The user's logon name, as the domain controller writes it. Its addresses have a table of their own."
+msgstr "اسم دخول المستخدم كما يكتبه متحكم النطاق. ولعناوينه جدول خاص بها."
+
+#: os-useridentity
+msgid "This group has a row already."
+msgstr "لهذه المجموعة صفٌّ من قبل."
+
+#: os-useridentity
+msgid "This user has a row already."
+msgstr "لهذا المستخدم صفٌّ من قبل."
+
+#: os-useridentity
+msgid "User Identity"
+msgstr "هوية المستخدم"
+
+#: os-useridentity
+msgid "User Identity collector"
+msgstr "مُجمِّع هوية المستخدم"
+
+#: os-useridentity
+msgid "User Identity is off: no address is mapped."
+msgstr "هوية المستخدم مطفأة: لا يُربط أي عنوان."
+
+#: os-useridentity
+msgid "User names, one each, as the domain writes them."
+msgstr "أسماء المستخدمين، كلٌّ منها على حدة، كما يكتبها النطاق."
+
+#: os-useridentity
+msgid "Users never mapped: service accounts, administrators logging on to servers."
+msgstr "مستخدمون لا يُربطون أبداً: حسابات الخدمات، والمسؤولون الذين يدخلون إلى الخوادم."
+
+#: os-useridentity
+msgid "Users present"
+msgstr "المستخدمون الحاضرون"
+
+#: os-useridentity
+msgid "Where the domain controllers' events come in."
+msgstr "حيث تدخل أحداث متحكمات النطاق."
+
+#: os-useridentity
+msgid "Without os-xgs-npu no open connection is cut: an address that joins a table keeps the connections it had, and the rules that name the table apply to its new ones."
+msgstr "دون os-xgs-npu لا يُقطع اتصال مفتوح: فالعنوان الذي يدخل جدولاً يحتفظ بما كان له من اتصالات، وتسري القواعد التي تذكر الجدول على اتصالاته الجديدة."
+
+#: os-useridentity
+msgid "XGS: Settings cuts the open connections of an address that joins it"
+msgstr "XGS: الإعدادات تقطع الاتصالات المفتوحة للعنوان الذي يدخله"
+
+#: os-useridentity
+msgid "addresses"
+msgstr "عناوين"
+
+#: os-useridentity
+msgid "ahead of the clock"
+msgstr "متقدم على الساعة"
+
+#: os-useridentity
+msgid "an address of a domain controller"
+msgstr "عنوان لمتحكم نطاق"
+
+#: os-useridentity
+msgid "an address of the firewall"
+msgstr "عنوان للجدار"
+
+#: os-useridentity
+msgid "an alias of the owner's has this name"
+msgstr "اسم مستعار للمالك يحمل هذا الاسم"
+
+#: os-useridentity
+msgid "collector not running"
+msgstr "المُجمِّع لا يعمل"
+
+#: os-useridentity
+msgid "computer account"
+msgstr "حساب جهاز"
+
+#: os-useridentity
+msgid "in it"
+msgstr "فيها"
+
+#: os-useridentity
+msgid "in it, through a group inside it"
+msgstr "فيها، عبر مجموعة داخلها"
+
+#: os-useridentity
+msgid "nested groups refused"
+msgstr "المجموعات المتداخلة مرفوضة"
+
+#: os-useridentity
+msgid "no address"
+msgstr "بلا عنوان"
+
+#: os-useridentity
+msgid "no directory chosen"
+msgstr "لم يُختر دليل"
+
+#: os-useridentity
+msgid "no event time"
+msgstr "بلا وقت للحدث"
+
+#: os-useridentity
+msgid "no such group"
+msgstr "لا مجموعة بهذا الاسم"
+
+#: os-useridentity
+msgid "not a client address"
+msgstr "ليس عنوان جهاز عميل"
+
+#: os-useridentity
+msgid "not a domain controller named"
+msgstr "ليس متحكم نطاق مسمّى"
+
+#: os-useridentity
+msgid "not a domain user"
+msgstr "ليس مستخدم نطاق"
+
+#: os-useridentity
+msgid "not in it"
+msgstr "ليس فيها"
+
+#: os-useridentity
+msgid "not known yet"
+msgstr "غير معروف بعد"
+
+#: os-useridentity
+msgid "not receiving"
+msgstr "لا يستقبل"
+
+#: os-useridentity
+msgid "os-xgs-npu is installed: when an address joins one of these tables, XGS: Settings cuts the connections it already has open within a minute, in hardware first, so the rules that name the table apply to all of them. Leaving a table cuts nothing."
+msgstr "os-xgs-npu مثبت: حين يدخل عنوان أحد هذه الجداول، تقطع XGS: الإعدادات اتصالاته المفتوحة خلال دقيقة، في العتاد أولاً، فتسري القواعد التي تذكر الجدول عليها كلها. والخروج من جدول لا يقطع شيئاً."
+
+#: os-useridentity
+msgid "receiving on port"
+msgstr "يستقبل على المنفذ"
+
+#: os-useridentity
+msgid "refused"
+msgstr "مرفوض"
+
+#: os-useridentity
+msgid "row switched off"
+msgstr "الصف مطفأ"
+
+#: os-useridentity
+msgid "shared"
+msgstr "مشترك"
+
+#: os-useridentity
+msgid "shared with"
+msgstr "مشترك مع"
+
+#: os-useridentity
+msgid "stale"
+msgstr "قديم"
+
+#: os-useridentity
+msgid "the address of the firewall on the chosen interface"
+msgstr "عنوان الجدار على الواجهة المختارة"
+
+#: os-useridentity
+msgid "the directory answers"
+msgstr "الدليل يجيب"
+
+#: os-useridentity
+msgid "the directory cannot be asked"
+msgstr "يتعذر سؤال الدليل"
+
+#: os-useridentity
+msgid "the directory does not hold this user"
+msgstr "الدليل لا يحوي هذا المستخدم"
+
+#: os-useridentity
+msgid "the directory not asked yet"
+msgstr "لم يُسأل الدليل بعد"
+
+#: os-useridentity
+msgid "ticket not issued"
+msgstr "لم تصدر التذكرة"
+
+#: os-useridentity
+msgid "ticket with no pre-authentication"
+msgstr "تذكرة بلا مصادقة مسبقة"
+
+#: os-useridentity
+msgid "uid_ and letters, digits or _, 31 characters at most."
+msgstr "uid_ ثم حروف أو أرقام أو _، بحد أقصى 31 حرفاً."
