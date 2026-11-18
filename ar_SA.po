@@ -66565,8 +66565,8 @@ msgid "Ask the directory about a user"
 msgstr "سؤال الدليل عن مستخدم"
 
 #: os-useridentity
-msgid "DateFormat makes NXLog CE write the time of each event in UTC with its zone, so the firewall reads it right whatever the time zone of the domain controller; without it the time is read in the zone of the firewall. delete($Message) leaves out the long text of each event, which nothing here reads, and keeps each line well under what one datagram to the collector can carry."
-msgstr "يجعل DateFormat ‏NXLog CE يكتب وقت كل حدث بتوقيت UTC مع منطقته، فيقرؤه الجدار صحيحاً أيّاً كانت المنطقة الزمنية لمتحكم النطاق؛ ودونه يُقرأ الوقت بمنطقة الجدار. ويترك delete($Message) النص الطويل لكل حدث، ولا شيء هنا يقرؤه، فيبقى كل سطر دون ما تحمله حزمة بيانات واحدة إلى المُجمِّع بفارق واسع."
+msgid "integer($EventTime) / 1000000 makes NXLog CE send the time of each event as seconds since 1970, in UTC, so the firewall reads it right whatever the time zone of the domain controller; without it the time is read in the zone of the firewall. delete($Message) leaves out the long text of each event, which nothing here reads, and keeps each line well under what one datagram to the collector can carry."
+msgstr "يجعل integer($EventTime) / 1000000 ‏NXLog CE يرسل وقت كل حدث ثوانيَ منذ 1970 بتوقيت UTC، فيقرؤه الجدار صحيحاً أيّاً كانت المنطقة الزمنية لمتحكم النطاق؛ ودونه يُقرأ الوقت بمنطقة الجدار. ويترك delete($Message) النص الطويل لكل حدث، ولا شيء هنا يقرؤه، فيبقى كل سطر دون ما تحمله حزمة بيانات واحدة إلى المُجمِّع بفارق واسع."
 
 #: os-useridentity
 msgid "Days, from 0 to 365."
