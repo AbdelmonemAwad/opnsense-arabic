@@ -66503,3 +66503,451 @@ msgstr "يحمل pf وحده هذه الجداول: لا يشارك العتاد
 #: os-appcontrol
 msgid "windows cut short: connections past the packets, connections or bytes a window reads were not classified"
 msgstr "نافذة قُطعت قبل تمامها: الاتصالات التي جاوزت ما تقرؤه النافذة من الحزم أو الاتصالات أو البايتات لم تُصنَّف"
+
+#: os-useridentity
+msgid "0: no alert. An alert is a file in /var/db/os-useridentity/alerts, in os-xgs-npu's form, for os-netreport to send; the directory failing and an address newly shared are alerted too."
+msgstr "0: لا تنبيه. التنبيه ملف في /var/db/os-useridentity/alerts بصيغة os-xgs-npu، يرسله os-netreport؛ ويُنبَّه أيضاً حين يتعذر سؤال الدليل، وحين يصير عنوان مشتركاً."
+
+#: os-useridentity
+msgid "A group's name or distinguished name, on one line."
+msgstr "اسم المجموعة أو اسمها المميز، في سطر واحد."
+
+#: os-useridentity
+msgid "A port from 1 to 65535."
+msgstr "منفذ من 1 إلى 65535."
+
+#: os-useridentity
+msgid "A port from 1024 to 65535."
+msgstr "منفذ من 1024 إلى 65535."
+
+#: os-useridentity
+msgid "A table for a user"
+msgstr "جدول لمستخدم"
+
+#: os-useridentity
+msgid "A table for each group: the addresses of its users, asked of the directory chosen in Settings when a user is first seen and again after 15 minutes. Each is an External alias in Firewall: Aliases, for a rule's source or destination. Changes here take effect with Apply."
+msgstr "جدول لكل مجموعة: عناوين مستخدميها، ويُسأل عنهم الدليل المختار في الإعدادات حين يُرى المستخدم أول مرة، ثم بعد 15 دقيقة. وكلٌّ منها اسم مستعار خارجي في جدار الحماية: الأسماء المستعارة، يصلح مصدراً لقاعدة أو وجهة لها. والتغييرات هنا تسري عند التطبيق."
+
+#: os-useridentity
+msgid "A user in a group that is inside a chosen group counts as in it: Active Directory is asked by its in-chain rule, one question a group. A server that does not know the rule is asked memberOf alone."
+msgstr "المستخدم الذي في مجموعة داخل مجموعة مختارة يُعدّ فيها: يُسأل Active Directory بقاعدة السلسلة (in-chain)، سؤالاً واحداً لكل مجموعة. والخادم الذي لا يعرف هذه القاعدة يُسأل عن memberOf وحده."
+
+#: os-useridentity
+msgid "A user's logon name, as the domain writes it."
+msgstr "اسم دخول المستخدم كما يكتبه النطاق."
+
+#: os-useridentity
+msgid "Addresses and networks never mapped to a user: terminal servers, NAT inside the network, servers that log on to the domain controllers as a user. The firewall's own addresses and the domain controllers' never are."
+msgstr "عناوين وشبكات لا تُربط بمستخدم أبداً: خوادم الطرفيات، وترجمة العناوين داخل الشبكة، والخوادم التي تدخل إلى متحكمات النطاق باسم مستخدم. أما عناوين الجدار نفسه ومتحكمات النطاق فلا تُربط أبداً."
+
+#: os-useridentity
+msgid "Addresses or networks, one each."
+msgstr "عناوين أو شبكات، كلٌّ منها على حدة."
+
+#: os-useridentity
+msgid "Alert when a domain controller is silent (minutes)"
+msgstr "التنبيه حين يصمت متحكم نطاق (بالدقائق)"
+
+#: os-useridentity
+msgid "Allow access to user identity: the addresses mapped to users from domain logons, the aliases it fills, and its settings"
+msgstr "السماح بالوصول إلى هوية المستخدم: العناوين المربوطة بالمستخدمين من دخولهم إلى النطاق، والأسماء المستعارة التي تملؤها، وإعداداتها"
+
+#: os-useridentity
+msgid "An event older than this when it arrives neither maps nor renews: NXLog CE sends again what it held while stopped. Counted as stale on Sources. The events' times are read in the firewall's time zone: the domain controllers must keep the same zone, and a close clock."
+msgstr "الحدث الذي يصل أقدم من هذا لا يربط ولا يجدّد، فـ NXLog CE يعيد إرسال ما احتفظ به وهو متوقف. ويُعدّ في المصادر قديماً. وتُقرأ أوقات الأحداث بالمنطقة الزمنية للجدار، فعلى متحكمات النطاق أن تكون في المنطقة نفسها، وبساعة قريبة."
+
+#: os-useridentity
+msgid "Another row gives this alias name."
+msgstr "صفٌّ آخر يستعمل هذا الاسم المستعار."
+
+#: os-useridentity
+msgid "Ask the directory about a user"
+msgstr "سؤال الدليل عن مستخدم"
+
+#: os-useridentity
+msgid "DateFormat makes NXLog CE write the time of each event in UTC with its zone, so the firewall reads it right whatever the time zone of the domain controller; without it the time is read in the zone of the firewall. delete($Message) leaves out the long text of each event, which nothing here reads, and keeps each line well under what one datagram to the collector can carry."
+msgstr "يجعل DateFormat ‏NXLog CE يكتب وقت كل حدث بتوقيت UTC مع منطقته، فيقرؤه الجدار صحيحاً أيّاً كانت المنطقة الزمنية لمتحكم النطاق؛ ودونه يُقرأ الوقت بمنطقة الجدار. ويترك delete($Message) النص الطويل لكل حدث، ولا شيء هنا يقرؤه، فيبقى كل سطر دون ما تحمله حزمة بيانات واحدة إلى المُجمِّع بفارق واسع."
+
+#: os-useridentity
+msgid "Days, from 0 to 365."
+msgstr "أيام، من 0 إلى 365."
+
+#: os-useridentity
+msgid "Domain controller"
+msgstr "متحكم النطاق"
+
+#: os-useridentity
+msgid "Domain controllers"
+msgstr "متحكمات النطاق"
+
+#: os-useridentity
+msgid "Domain controllers heard"
+msgstr "متحكمات النطاق المسموعة"
+
+#: os-useridentity
+msgid "Drop when the address's MAC changes"
+msgstr "إسقاط الربط حين يتغير MAC العنوان"
+
+#: os-useridentity
+msgid "Each address with the user its domain controller last saw logging on from it. The latest logon wins: an address another user logged on from within the lifetime is shown as shared - a terminal server, or a runas on a client while someone sits at its screen. A domain controller says nothing at a logoff: a mapping ends at the end of its lifetime, when another device takes the address, or when forgotten here."
+msgstr "كل عنوان مع المستخدم الذي رآه متحكم النطاق آخر مرة يدخل منه. يفوز الدخول الأحدث: فالعنوان الذي دخل منه مستخدم آخر خلال مدة البقاء يُعرض مشتركاً - كخادم طرفيات، أو runas على جهاز عميل وأمام شاشته شخص آخر. ولا يقول متحكم النطاق شيئاً عند الخروج: فينتهي الربط بانتهاء مدة بقائه، أو حين يأخذ جهاز آخر العنوان، أو حين يُنسى هنا."
+
+#: os-useridentity
+msgid "Each mapping made, changed or ended, kept a file a day in /var/db/os-useridentity/history for this many days. 0: none is kept, only the live map."
+msgstr "كل ربط يُنشأ أو يتغير أو ينتهي يُحفظ في ملف لكل يوم في /var/db/os-useridentity/history هذا العدد من الأيام. 0: لا يُحفظ شيء، إلا الخريطة الحية."
+
+#: os-useridentity
+msgid "Edit user"
+msgstr "تعديل المستخدم"
+
+#: os-useridentity
+msgid "Every address is taken out of the map and of the tables now. The next logon or network logon of each user maps it again."
+msgstr "يخرج كل عنوان الآن من الخريطة ومن الجداول، ثم يربطه من جديد الدخول التالي لكل مستخدم، أو دخوله الشبكي التالي."
+
+#: os-useridentity
+msgid "Every minute, an address whose MAC in the firewall's ARP or neighbour table is not the one it had leaves the map: another device has it. Behind a router the firewall sees no MAC, and only the lifetime ends a mapping."
+msgstr "كل دقيقة يخرج من الخريطة العنوان الذي صار له في جدول ARP أو الجيران في الجدار MAC غير الذي كان له: فقد أخذه جهاز آخر. وخلف موجّه لا يرى الجدار أي MAC، فلا ينهي الربط إلا مدة البقاء."
+
+#: os-useridentity
+msgid "Firewall: User Identity"
+msgstr "جدار الحماية: هوية المستخدم"
+
+#: os-useridentity
+msgid "Forget"
+msgstr "نسيان"
+
+#: os-useridentity
+msgid "Forget every mapping"
+msgstr "نسيان كل ربط"
+
+#: os-useridentity
+msgid "Groups from"
+msgstr "المجموعات من"
+
+#: os-useridentity
+msgid "How long an address stays mapped with no event about it. A domain controller says nothing when a user logs off or locks the screen, so this is what ends a mapping, besides another user's logon from the same address. An idle session renews itself: the network logons it makes keep coming."
+msgstr "المدة التي يبقى فيها العنوان مربوطاً دون أي حدث عنه. فمتحكم النطاق لا يقول شيئاً حين يخرج المستخدم أو يقفل الشاشة، ولذلك هي ما ينهي الربط، إلى جانب دخول مستخدم آخر من العنوان نفسه. والجلسة الخاملة تجدّد نفسها، فحالات الدخول الشبكي التي تُحدثها لا تنقطع."
+
+#: os-useridentity
+msgid "IPv4 addresses of domain controllers, one each."
+msgstr "عناوين IPv4 لمتحكمات النطاق، كلٌّ منها على حدة."
+
+#: os-useridentity
+msgid "Ignore users"
+msgstr "تجاهل المستخدمين"
+
+#: os-useridentity
+msgid "Keep history (days)"
+msgstr "حفظ السجل (بالأيام)"
+
+#: os-useridentity
+msgid "Last line"
+msgstr "آخر سطر"
+
+#: os-useridentity
+msgid "Late"
+msgstr "التأخر"
+
+#: os-useridentity
+msgid "Log user names"
+msgstr "تسجيل أسماء المستخدمين"
+
+#: os-useridentity
+msgid "Map each address to its user from the domain controllers' logon events, and fill the tables of the group and user rows. Off by default: nothing is mapped until domain controllers and groups are named. Off, every mapping is forgotten and the plugin's aliases leave Firewall: Aliases - switched off instead where a rule or a setting still names one."
+msgstr "ربط كل عنوان بمستخدمه من أحداث الدخول في متحكمات النطاق، وملء جداول صفوف المجموعات والمستخدمين. مطفأ افتراضياً: لا يُربط شيء حتى تُسمّى متحكمات النطاق والمجموعات. وحين يُطفأ يُنسى كل ربط، وتخرج الأسماء المستعارة للإضافة من جدار الحماية: الأسماء المستعارة - وتُطفأ بدلاً من ذلك إن كانت قاعدة أو إعداد ما زال يذكرها."
+
+#: os-useridentity
+msgid "Mapped"
+msgstr "مربوط"
+
+#: os-useridentity
+msgid "Mapping lifetime (minutes)"
+msgstr "مدة بقاء الربط (بالدقائق)"
+
+#: os-useridentity
+msgid "Minutes, from 0 to 10080."
+msgstr "دقائق، من 0 إلى 10080."
+
+#: os-useridentity
+msgid "Minutes, from 1 to 1440."
+msgstr "دقائق، من 1 إلى 1440."
+
+#: os-useridentity
+msgid "Minutes, from 5 to 10080."
+msgstr "دقائق، من 5 إلى 10080."
+
+#: os-useridentity
+msgid "NXLog CE on each domain controller"
+msgstr "NXLog CE على كل متحكم نطاق"
+
+#: os-useridentity
+msgid "NXLog Community Edition reads the Security log and sends the two events as JSON over TCP. Its configuration, as phase 0's lab ran it, to put in nxlog.conf on each domain controller named in Settings, then restart its service:"
+msgstr "يقرأ NXLog Community Edition سجل الأمان، ويرسل الحدثين بصيغة JSON عبر TCP. وهذا إعداده كما شغّله مختبر المرحلة 0، يوضع في nxlog.conf على كل متحكم نطاق مسمّى في الإعدادات، ثم يُعاد تشغيل خدمته:"
+
+#: os-useridentity
+msgid "Nested groups (Active Directory)"
+msgstr "المجموعات المتداخلة (Active Directory)"
+
+#: os-useridentity
+msgid "Never map"
+msgstr "لا تُربط أبداً"
+
+#: os-useridentity
+msgid "Not receiving: syslog-ng's source is not written."
+msgstr "لا استقبال: مصدر syslog-ng لم يُكتب."
+
+#: os-useridentity
+msgid "Other events"
+msgstr "أحداث أخرى"
+
+#: os-useridentity
+msgid "Renewed"
+msgstr "جُدّد"
+
+#: os-useridentity
+msgid "Shared"
+msgstr "مشترك"
+
+#: os-useridentity
+msgid "Since"
+msgstr "منذ"
+
+#: os-useridentity
+msgid "Since the collector started: the lines each sender sent, the events taken - a ticket issued (4768) or a logon to the domain controller with an address (4624) - those that mapped an address or renewed one, those older than Stale after when they came, those refused and why, and the other events counted and set aside. Late: how long after it happened the last event came. Lines are counted, never kept."
+msgstr "منذ بدأ المُجمِّع: الأسطر التي أرسلها كل مرسِل، والأحداث المأخوذة - تذكرة صدرت (4768) أو دخول إلى متحكم النطاق بعنوان (4624) - وما ربط منها عنواناً أو جدّده، وما وصل أقدم من «قديم بعد»، وما رُفض ولماذا، والأحداث الأخرى معدودةً ومتروكة. التأخر: كم بعد وقوعه وصل آخر حدث. والأسطر تُعدّ ولا تُحفظ أبداً."
+
+#: os-useridentity
+msgid "Stale after (minutes)"
+msgstr "قديم بعد (بالدقائق)"
+
+#: os-useridentity
+msgid "Taken"
+msgstr "مأخوذة"
+
+#: os-useridentity
+msgid "The IPv4 addresses of the domain controllers that send their logon events, with NXLog CE (Sources shows its configuration). Only these are let in: pf redirects their port to syslog-ng on 127.0.0.1, and a line from any other address is never read."
+msgstr "عناوين IPv4 لمتحكمات النطاق التي ترسل أحداث الدخول عبر NXLog CE (تعرض المصادر إعداده). ولا يُسمح إلا لها: يعيد pf توجيه منفذها إلى syslog-ng على 127.0.0.1، ولا يُقرأ أبداً سطر من أي عنوان آخر."
+
+#: os-useridentity
+msgid "The LDAP entry of System: Access: Servers asked which groups a user is in. Active Directory refuses a bind in the clear: StartTLS or SSL, with the domain's certificate authority in System: Trust and the domain controller named as its certificate names it."
+msgstr "مدخل LDAP في النظام: الوصول: الخوادم الذي يُسأل عن المجموعات التي فيها المستخدم. ويرفض Active Directory الدخول (bind) دون تشفير: فاستعمل StartTLS أو SSL، مع المرجع المصدق للنطاق في النظام: الثقة، ومع تسمية متحكم النطاق كما تسميه شهادته."
+
+#: os-useridentity
+msgid "The TCP port the domain controllers send to, on the firewall's addresses. Not one the firewall itself serves - SSH, DNS, the web GUI on 80, 443 or its own port: the domain controllers would no longer reach that service."
+msgstr "منفذ TCP الذي ترسل إليه متحكمات النطاق على عناوين الجدار. ولا يكون منفذاً يخدمه الجدار نفسه - SSH أو DNS أو واجهة الويب على 80 أو 443 أو منفذها الخاص: وإلا لم تعد متحكمات النطاق تصل إلى تلك الخدمة."
+
+#: os-useridentity
+msgid "The domain controllers keep their audit of Kerberos Authentication Service and of Logon for success, as Windows Server does by default. TLS from the domain controllers is not taken yet: the redirect, from their addresses alone, is what lets a line in."
+msgstr "تُبقي متحكمات النطاق تدقيقها لـ Kerberos Authentication Service ولـ Logon عند النجاح، كما يفعل Windows Server افتراضياً. ولا يُقبل TLS من متحكمات النطاق بعد: فإعادة التوجيه، من عناوينها وحدها، هي ما يُدخل السطر."
+
+#: os-useridentity
+msgid "The firewall itself serves this port (SSH, DNS or the web GUI): the domain controllers would no longer reach that service on it. Choose another, such as 514."
+msgstr "الجدار نفسه يخدم هذا المنفذ (SSH أو DNS أو واجهة الويب)، فلن تصل متحكمات النطاق إلى تلك الخدمة عليه بعد ذلك. اختر غيره، مثل 514."
+
+#: os-useridentity
+msgid "The group's name in the directory, or its distinguished name. A user in it - or, with Nested groups, in a group inside it - has its addresses in this row's table."
+msgstr "اسم المجموعة في الدليل، أو اسمها المميز. والمستخدم الذي فيها - أو، مع المجموعات المتداخلة، في مجموعة داخلها - تكون عناوينه في جدول هذا الصف."
+
+#: os-useridentity
+msgid "The port of syslog-ng's source on 127.0.0.1 that the domain controllers' lines are redirected to; 5140 is os-xgs-npu's. It is written only when no other program holds it: a source that cannot be bound would stop syslog-ng, and every log with it."
+msgstr "منفذ مصدر syslog-ng على 127.0.0.1 الذي يُعاد توجيه أسطر متحكمات النطاق إليه؛ و5140 لـ os-xgs-npu. ولا يُكتب إلا إذا لم يشغله برنامج آخر: فالمصدر الذي لا يستطيع الاستماع على منفذه يوقف syslog-ng، ويوقف معه كل السجلات."
+
+#: os-useridentity
+msgid "The system log says how many addresses were mapped, changed user or left. On, it names each address and its user, and so do the alerts."
+msgstr "يذكر سجل النظام كم عنواناً رُبط، أو تغيّر مستخدمه، أو خرج. وحين يُفعَّل يسمّي كل عنوان ومستخدمه، وكذلك التنبيهات."
+
+#: os-useridentity
+msgid "The table's alias in Firewall: Aliases, for rules: uid_ and letters, digits or _, 31 characters at most. Left empty, one is made from the group's name when saved."
+msgstr "الاسم المستعار للجدول في جدار الحماية: الأسماء المستعارة، للقواعد: uid_ ثم حروف أو أرقام أو _، بحد أقصى 31 حرفاً. وإن تُرك فارغاً صُنع من اسم المجموعة عند الحفظ."
+
+#: os-useridentity
+msgid "The table's alias in Firewall: Aliases, for rules: uid_ and letters, digits or _, 31 characters at most. Left empty, one is made from the user's name when saved."
+msgstr "الاسم المستعار للجدول في جدار الحماية: الأسماء المستعارة، للقواعد: uid_ ثم حروف أو أرقام أو _، بحد أقصى 31 حرفاً. وإن تُرك فارغاً صُنع من اسم المستخدم عند الحفظ."
+
+#: os-useridentity
+msgid "The user's logon name, as the domain controller writes it. Its addresses have a table of their own."
+msgstr "اسم دخول المستخدم كما يكتبه متحكم النطاق. ولعناوينه جدول خاص بها."
+
+#: os-useridentity
+msgid "This group has a row already."
+msgstr "لهذه المجموعة صفٌّ من قبل."
+
+#: os-useridentity
+msgid "This user has a row already."
+msgstr "لهذا المستخدم صفٌّ من قبل."
+
+#: os-useridentity
+msgid "User Identity"
+msgstr "هوية المستخدم"
+
+#: os-useridentity
+msgid "User Identity collector"
+msgstr "مُجمِّع هوية المستخدم"
+
+#: os-useridentity
+msgid "User Identity is off: no address is mapped."
+msgstr "هوية المستخدم مطفأة: لا يُربط أي عنوان."
+
+#: os-useridentity
+msgid "User names, one each, as the domain writes them."
+msgstr "أسماء المستخدمين، كلٌّ منها على حدة، كما يكتبها النطاق."
+
+#: os-useridentity
+msgid "Users never mapped: service accounts, administrators logging on to servers."
+msgstr "مستخدمون لا يُربطون أبداً: حسابات الخدمات، والمسؤولون الذين يدخلون إلى الخوادم."
+
+#: os-useridentity
+msgid "Users present"
+msgstr "المستخدمون الحاضرون"
+
+#: os-useridentity
+msgid "Where the domain controllers' events come in."
+msgstr "حيث تدخل أحداث متحكمات النطاق."
+
+#: os-useridentity
+msgid "Without os-xgs-npu no open connection is cut: an address that joins a table keeps the connections it had, and the rules that name the table apply to its new ones."
+msgstr "دون os-xgs-npu لا يُقطع اتصال مفتوح: فالعنوان الذي يدخل جدولاً يحتفظ بما كان له من اتصالات، وتسري القواعد التي تذكر الجدول على اتصالاته الجديدة."
+
+#: os-useridentity
+msgid "XGS: Settings cuts the open connections of an address that joins it"
+msgstr "XGS: الإعدادات تقطع الاتصالات المفتوحة للعنوان الذي يدخله"
+
+#: os-useridentity
+msgid "addresses"
+msgstr "عناوين"
+
+#: os-useridentity
+msgid "ahead of the clock"
+msgstr "متقدم على الساعة"
+
+#: os-useridentity
+msgid "an address of a domain controller"
+msgstr "عنوان لمتحكم نطاق"
+
+#: os-useridentity
+msgid "an address of the firewall"
+msgstr "عنوان للجدار"
+
+#: os-useridentity
+msgid "an alias of the owner's has this name"
+msgstr "اسم مستعار للمالك يحمل هذا الاسم"
+
+#: os-useridentity
+msgid "collector not running"
+msgstr "المُجمِّع لا يعمل"
+
+#: os-useridentity
+msgid "computer account"
+msgstr "حساب جهاز"
+
+#: os-useridentity
+msgid "in it"
+msgstr "فيها"
+
+#: os-useridentity
+msgid "in it, through a group inside it"
+msgstr "فيها، عبر مجموعة داخلها"
+
+#: os-useridentity
+msgid "nested groups refused"
+msgstr "المجموعات المتداخلة مرفوضة"
+
+#: os-useridentity
+msgid "no address"
+msgstr "بلا عنوان"
+
+#: os-useridentity
+msgid "no directory chosen"
+msgstr "لم يُختر دليل"
+
+#: os-useridentity
+msgid "no event time"
+msgstr "بلا وقت للحدث"
+
+#: os-useridentity
+msgid "no such group"
+msgstr "لا مجموعة بهذا الاسم"
+
+#: os-useridentity
+msgid "not a client address"
+msgstr "ليس عنوان جهاز عميل"
+
+#: os-useridentity
+msgid "not a domain controller named"
+msgstr "ليس متحكم نطاق مسمّى"
+
+#: os-useridentity
+msgid "not a domain user"
+msgstr "ليس مستخدم نطاق"
+
+#: os-useridentity
+msgid "not in it"
+msgstr "ليس فيها"
+
+#: os-useridentity
+msgid "not known yet"
+msgstr "غير معروف بعد"
+
+#: os-useridentity
+msgid "not receiving"
+msgstr "لا يستقبل"
+
+#: os-useridentity
+msgid "os-xgs-npu is installed: when an address joins one of these tables, XGS: Settings cuts the connections it already has open within a minute, in hardware first, so the rules that name the table apply to all of them. Leaving a table cuts nothing."
+msgstr "os-xgs-npu مثبت: حين يدخل عنوان أحد هذه الجداول، تقطع XGS: الإعدادات اتصالاته المفتوحة خلال دقيقة، في العتاد أولاً، فتسري القواعد التي تذكر الجدول عليها كلها. والخروج من جدول لا يقطع شيئاً."
+
+#: os-useridentity
+msgid "receiving on port"
+msgstr "يستقبل على المنفذ"
+
+#: os-useridentity
+msgid "refused"
+msgstr "مرفوض"
+
+#: os-useridentity
+msgid "row switched off"
+msgstr "الصف مطفأ"
+
+#: os-useridentity
+msgid "shared"
+msgstr "مشترك"
+
+#: os-useridentity
+msgid "shared with"
+msgstr "مشترك مع"
+
+#: os-useridentity
+msgid "stale"
+msgstr "قديم"
+
+#: os-useridentity
+msgid "the address of the firewall on the chosen interface"
+msgstr "عنوان الجدار على الواجهة المختارة"
+
+#: os-useridentity
+msgid "the directory answers"
+msgstr "الدليل يجيب"
+
+#: os-useridentity
+msgid "the directory cannot be asked"
+msgstr "يتعذر سؤال الدليل"
+
+#: os-useridentity
+msgid "the directory does not hold this user"
+msgstr "الدليل لا يحوي هذا المستخدم"
+
+#: os-useridentity
+msgid "the directory not asked yet"
+msgstr "لم يُسأل الدليل بعد"
+
+#: os-useridentity
+msgid "ticket not issued"
+msgstr "لم تصدر التذكرة"
+
+#: os-useridentity
+msgid "ticket with no pre-authentication"
+msgstr "تذكرة بلا مصادقة مسبقة"
+
+#: os-useridentity
+msgid "uid_ and letters, digits or _, 31 characters at most."
+msgstr "uid_ ثم حروف أو أرقام أو _، بحد أقصى 31 حرفاً."
