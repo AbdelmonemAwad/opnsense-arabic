@@ -67795,3 +67795,163 @@ msgstr "فئات مواقع الويب من UT1، تُحظر عبر DNS بقائ
 #: os-blocklists
 msgid "Names the web categories let through, each with every name under it: example.com lets www.example.com through, and not example.com.evil.net. They apply to the web categories' policy only, as an allowlist in Unbound DNS: Blocklists applies to its own policy only; to let a name through a blocklist of Unbound DNS, allow it there. This field is the way to let a name of a category through: the Allow and Block buttons of Reporting: Unbound DNS do not work on the web categories' names."
 msgstr "أسماء تمرّرها فئات الويب، كلٌّ منها مع كل اسم تحته: example.com يمرّر www.example.com، ولا يمرّر example.com.evil.net. وتسري على سياسة فئات الويب وحدها، كما تسري قائمة السماح في Unbound DNS: قوائم الحظر على سياستها وحدها؛ ولتمرير اسم من قائمة حظر في Unbound DNS، اسمح به هناك. وهذا الحقل هو طريق تمرير اسم من فئة: زرّا «سماح» و«حظر» في التقارير: Unbound DNS لا يعملان على أسماء فئات الويب."
+
+#: os-blocklists
+msgid "%s addresses held, each for %s minutes after its last drop"
+msgstr "%s عنوان محتجز، كلٌّ منها %s دقيقة بعد آخر إسقاط له"
+
+#: os-blocklists
+msgid "%s is not held"
+msgstr "%s غير محتجز"
+
+#: os-blocklists
+msgid "%s is taken out at the next reading, within a minute"
+msgstr "يُخرَج %s عند القراءة التالية، خلال دقيقة"
+
+#: os-blocklists
+msgid "%s taken out"
+msgstr "أُخرج %s"
+
+#: os-blocklists
+msgid "Drops"
+msgstr "مرات الإسقاط"
+
+#: os-blocklists
+msgid "First dropped"
+msgstr "أول إسقاط"
+
+#: os-blocklists
+msgid "Held until"
+msgstr "محتجز حتى"
+
+#: os-blocklists
+msgid "IPS drops"
+msgstr "ما يُسقطه IPS"
+
+#: os-blocklists
+msgid "Last dropped"
+msgstr "آخر إسقاط"
+
+#: os-blocklists
+msgid "Signature"
+msgstr "التوقيع"
+
+#: os-blocklists
+msgid "Take it out now"
+msgstr "إخراجه الآن"
+
+#: os-blocklists
+msgid "The sources of what the Intrusion Detection IPS policy dropped on connections it saw established over TCP, each blocked by this page until the time after its last drop is over; its open connections are cut where Cut open connections is on, and on the coprocessor of a Sophos XGS where os-xgs-npu Cut in hardware is on and Direction is Both ways. Never the firewall itself, what it depends on or who manages it, nor Never block. Set in Settings: Block what the IPS drops, Keep an address, Outside addresses only and Never block. The list starts empty after a reboot where /var is kept in memory."
+msgstr "مصادر ما أسقطته سياسة IPS في كشف التسلل على اتصالات TCP رآها مُنشأة، تحظر هذه الصفحة كلًّا منها حتى تنقضي المدة التي تلي آخر إسقاط له؛ وتُقطع اتصالاته المفتوحة حيث يكون «قطع الاتصالات المفتوحة» مفعّلًا، وفي المعالج المساعد على Sophos XGS حيث يكون «القطع في العتاد» في os-xgs-npu مفعّلًا و«الاتجاه» «في الاتجاهين». ولا يدخلها أبدًا جدار الحماية نفسه، ولا ما يعتمد عليه أو من يديره، ولا ما في «لا يُحظر أبدًا». تُضبط في «الإعدادات»: «حظر ما يُسقطه IPS» و«إبقاء العنوان» و«العناوين الخارجية فقط» و«لا يُحظر أبدًا». وتبدأ القائمة فارغة بعد إعادة التشغيل حيث يُحفظ /var في الذاكرة."
+
+#: os-blocklists
+msgid "a connection not seen established: no application protocol recognised"
+msgstr "اتصال لم يُرَ مُنشأً: لم يُتعرَّف على بروتوكول تطبيق فيه"
+
+#: os-blocklists
+msgid "a connection not seen established: no packets both ways past the handshake"
+msgstr "اتصال لم يُرَ مُنشأً: لا حزم في الاتجاهين بعد المصافحة"
+
+#: os-blocklists
+msgid "a gateway, a DNS server or a VPN peer of the firewall, or an address managing it"
+msgstr "بوابة أو خادم DNS أو نظير VPN لجدار الحماية، أو عنوان يديره"
+
+#: os-blocklists
+msgid "an address no host has, or every host has"
+msgstr "عنوان لا يملكه أي مضيف، أو يملكه كل مضيف"
+
+#: os-blocklists
+msgid "an event rule of Suricata, which drops one frame"
+msgstr "قاعدة أحداث من Suricata، تُسقط إطارًا واحدًا"
+
+#: os-blocklists
+msgid "config.xml could not be read"
+msgstr "تعذّرت قراءة config.xml"
+
+#: os-blocklists
+msgid "in Never block"
+msgstr "في «لا يُحظر أبدًا»"
+
+#: os-blocklists
+msgid "inside the networks of the firewall (Outside addresses only)"
+msgstr "داخل شبكات جدار الحماية («العناوين الخارجية فقط»)"
+
+#: os-blocklists
+msgid "its alias is not there yet, or not as Apply makes it: Apply makes it"
+msgstr "اسمها المستعار غير موجود بعد، أو ليس كما ينشئه «تطبيق»: «تطبيق» ينشئه"
+
+#: os-blocklists
+msgid "no Suricata log at %s"
+msgstr "لا سجل لـ Suricata في %s"
+
+#: os-blocklists
+msgid "not TCP"
+msgstr "ليس TCP"
+
+#: os-blocklists
+msgid "not an address"
+msgstr "ليس عنوانًا"
+
+#: os-blocklists
+msgid "off: nothing the IPS drops is entered"
+msgstr "مُطفأ: لا يُدخَل شيء مما يُسقطه IPS"
+
+#: os-blocklists
+msgid "pfctl could not be run"
+msgstr "تعذّر تشغيل pfctl"
+
+#: os-blocklists
+msgid "pfctl did not fill the table: %s"
+msgstr "لم يملأ pfctl الجدول: %s"
+
+#: os-blocklists
+msgid "the Intrusion Detection is in IDS mode, which drops nothing: nothing is entered"
+msgstr "كشف التسلل في وضع IDS، الذي لا يُسقط شيئًا: لا يُدخَل شيء"
+
+#: os-blocklists
+msgid "the Intrusion Detection is off: nothing is dropped, so nothing is entered"
+msgstr "كشف التسلل مُطفأ: لا يُسقَط شيء، فلا يُدخَل شيء"
+
+#: os-blocklists
+msgid "the firewall addresses could not be read"
+msgstr "تعذّرت قراءة عناوين جدار الحماية"
+
+#: os-blocklists
+msgid "Block what the IPS drops"
+msgstr "حظر ما يُسقطه IPS"
+
+#: os-blocklists
+msgid "Block for a while the source of what the Intrusion Detection's IPS policy drops: each alert it logs as blocked over a connection it saw established puts the address that sent the dropped traffic into a list of the plugin's own, IPS drops (blocklists_ids), blocked like the other lists in the Direction set here. Its open connections are cut where Cut open connections is on - on a Sophos XGS with os-xgs-npu's Cut in hardware on, and Direction Both ways, on the coprocessor too. Only in IPS mode (Netmap or Divert): IDS mode logs nothing as blocked. An alert's source can be forged, so only an alert over TCP, on a connection whose application protocol Suricata recognised (it does so only once the connection is established with the real address) and with packets both ways past the handshake, enters: a lone SYN, a scan's or one forged with another's address, never does; nor one of Suricata's own decoder, stream and application-layer event rules (signature ids 2200000-2299999), which drop one packet, not a connection. Never entered: an address of the firewall's own (every interface's, its virtual IPs and the external addresses of its 1:1 and outbound NAT), loopback, multicast, unspecified or link-local; its gateways and their monitor addresses; its DNS servers; its VPN peers (IPsec remote gateways, WireGuard endpoints, OpenVPN remotes); an address with a connection open to its web GUI or SSH; and what Never block holds. Taken from the moment it is turned on: nothing logged before. At most 200 addresses enter at a reading of the log, every three seconds, and 10,000 are held: past them, those dropped longest ago leave first. Turned off, every address leaves at once. Where /var is kept in memory, a reboot starts the list empty."
+msgstr "حظر مصدر ما تُسقطه سياسة IPS في كشف التسلل لفترة من الوقت: كل تنبيه يسجّله محظورًا على اتصال رآه مُنشأً يُدخل العنوان الذي أرسل الحركة المُسقطة إلى قائمة خاصة بالمكوّن الإضافي، «ما يُسقطه IPS» (blocklists_ids)، تُحظر كغيرها من القوائم في «الاتجاه» المضبوط هنا. وتُقطع اتصالاته المفتوحة حيث يكون «قطع الاتصالات المفتوحة» مفعّلًا - وعلى Sophos XGS، مع تفعيل «القطع في العتاد» في os-xgs-npu و«الاتجاه» «في الاتجاهين»، في المعالج المساعد أيضًا. في وضع IPS فقط (Netmap أو Divert): وضع IDS لا يسجّل شيئًا محظورًا. ويمكن تزوير مصدر التنبيه، لذا لا يدخل إلا تنبيه على TCP، على اتصال تعرّف Suricata على بروتوكول تطبيقه (ولا يفعل ذلك إلا بعد أن يُنشأ الاتصال بالعنوان الحقيقي) وفيه حزم في الاتجاهين بعد المصافحة: أما حزمة SYN منفردة، من فحص أو مزوّرة بعنوان غير مرسلها، فلا تدخل أبدًا؛ ولا قاعدة من قواعد الأحداث الخاصة بـ Suricata للمفكّك والتيار وطبقة التطبيقات (أرقام التوقيع 2200000-2299999)، التي تُسقط حزمة واحدة لا اتصالًا. ولا يدخل أبدًا: عنوان لجدار الحماية نفسه (عنوان كل واجهة، وعناوين IP الافتراضية لديه، والعناوين الخارجية في NAT من نوع 1:1 وNAT الصادر)، وعناوين الاسترجاع (loopback) والبث المتعدد (multicast) وغير المحددة والمحلية للارتباط (link-local)؛ وبواباته وعناوين مراقبتها؛ وخوادم DNS لديه؛ ونظراء VPN لديه (البوابات البعيدة في IPsec، ونقاط نهاية WireGuard، والأطراف البعيدة في OpenVPN)؛ وأي عنوان له اتصال مفتوح بواجهة الويب أو SSH؛ وما يحويه «لا يُحظر أبدًا». يُؤخذ من لحظة تفعيله: لا شيء مما سُجّل قبلها. يدخل 200 عنوان على الأكثر في كل قراءة للسجل، كل ثلاث ثوانٍ، ويُحتجز 10,000 على الأكثر: وبعد بلوغها يخرج أولًا ما أُسقط منذ أطول مدة. وعند إطفائه تخرج كل العناوين فورًا. وحيث يُحفظ /var في الذاكرة، تبدأ القائمة فارغة بعد إعادة التشغيل."
+
+#: os-blocklists
+msgid "Keep an address (minutes)"
+msgstr "إبقاء العنوان (بالدقائق)"
+
+#: os-blocklists
+msgid "How long an address stays in IPS drops after the last alert that put it there: 60 minutes by default, 5 to 10080 (a week). Each new drop of it starts the time again, and a change here applies to the addresses already held too."
+msgstr "المدة التي يبقاها العنوان في «ما يُسقطه IPS» بعد آخر تنبيه أدخله إليها: 60 دقيقة افتراضيًا، من 5 إلى 10080 (أسبوع). كل إسقاط جديد له يبدأ المدة من جديد، والتغيير هنا يسري أيضًا على العناوين المحتجزة من قبل."
+
+#: os-blocklists
+msgid "Outside addresses only"
+msgstr "العناوين الخارجية فقط"
+
+#: os-blocklists
+msgid "Leave out every address inside the firewall's own networks, so a false alarm never cuts a device of yours off for the time above: every network connected to the firewall (each interface's address and prefix, IPv4 and IPv6, WAN's too), its delegated IPv6 prefixes, its VPN tunnel and remote networks, its static routes' networks, and the private ones - 10/8, 172.16/12, 192.168/16, the shared 100.64/10 (where VPN overlays live too) and IPv6's unique local fc00::/7. An address held that is now inside them leaves. Off, a device inside is blocked as well when the IPS drops what it sends."
+msgstr "استبعاد كل عنوان داخل شبكات جدار الحماية نفسه، كي لا يقطع إنذار كاذب أبدًا جهازًا من أجهزتك طوال المدة أعلاه: كل شبكة متصلة بجدار الحماية (عنوان كل واجهة وبادئتها، IPv4 وIPv6، ومنها WAN)، وبادئات IPv6 المفوَّضة إليه، وشبكات أنفاق VPN والشبكات البعيدة لديه، وشبكات مساراته الثابتة، والشبكات الخاصة - 10/8 و172.16/12 و192.168/16 والشبكة المشتركة 100.64/10 (حيث تعمل شبكات VPN التراكبية أيضًا) والعناوين المحلية الفريدة في IPv6 fc00::/7. والعنوان المحتجز الذي صار داخلها يخرج. وعند إطفائه يُحظر الجهاز الداخلي أيضًا حين يُسقط IPS ما يرسله."
+
+#: os-blocklists
+msgid "Never block"
+msgstr "لا يُحظر أبدًا"
+
+#: os-blocklists
+msgid "Addresses and networks never put into IPS drops, whatever the IPS drops from them - your own exceptions, such as a partner's or a monitoring service's: each entered on its own, as 198.51.100.7, 198.51.100.0/24 or 2001:db8::/48. An address held that is in them leaves at the next reading."
+msgstr "عناوين وشبكات لا تُدخَل أبدًا إلى «ما يُسقطه IPS»، أيًّا كان ما يُسقطه IPS منها - استثناءاتك أنت، كعناوين شريك أو خدمة مراقبة: يُدخَل كلٌّ منها وحده، مثل 198.51.100.7 أو 198.51.100.0/24 أو 2001:db8::/48. والعنوان المحتجز الذي يقع فيها يخرج عند القراءة التالية."
+
+#: os-blocklists
+msgid "Each is an address or a network, such as 198.51.100.7, 198.51.100.0/24 or 2001:db8::/48."
+msgstr "كلٌّ منها عنوان أو شبكة، مثل 198.51.100.7 أو 198.51.100.0/24 أو 2001:db8::/48."
+
+#: os-blocklists
+msgid "Keep an address from 5 minutes to 10080 (a week)."
+msgstr "أبقِ العنوان من 5 دقائق إلى 10080 (أسبوع)."
