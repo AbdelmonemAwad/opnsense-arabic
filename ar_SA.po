@@ -68599,3 +68599,67 @@ msgstr "حتى"
 #: os-quota
 msgid "volume"
 msgstr "الحجم"
+
+#: os-appcontrol
+msgid "Blocked:"
+msgstr "محظور:"
+
+#: os-appcontrol
+msgid "Blocked: chosen in Blocked applications. Connections cut: those nDPI named as the application, their pf states killed. Packets stopped: dropped by its block rules on their way to a server in its table, since the firewall's rules were last loaded."
+msgstr "محظور: مختار في «التطبيقات المحظورة». الاتصالات المقطوعة: ما سمّاه nDPI بهذا التطبيق، وقد أُنهيت حالاته في pf. الحزم الموقوفة: ما أسقطته قواعد حظره في طريقه إلى خادم في جدوله، منذ آخر تحميل لقواعد الجدار الناري."
+
+#: os-appcontrol
+msgid "Chosen to be blocked, not applied yet:"
+msgstr "مختار للحظر، ولم يُطبَّق بعد:"
+
+#: os-appcontrol
+msgid "Cut in hardware is off in XGS: Settings: a connection cut leaves hardware once pf has let go of its state."
+msgstr "«القطع في العتاد» مطفأ في XGS: الإعدادات: الاتصال المقطوع يخرج من العتاد بعد أن يترك pf حالته."
+
+#: os-appcontrol
+msgid "Cut in hardware is on in XGS: Settings: a connection cut is dropped on the coprocessor first."
+msgstr "«القطع في العتاد» شغّال في XGS: الإعدادات: الاتصال المقطوع يُسقَط على المعالج المساعد أولًا."
+
+#: os-appcontrol
+msgid "Each table is an External alias in Firewall: Aliases, for a rule's source or destination: servers nDPI named, each kept until unseen for the address expiry. The table of an application chosen in Blocked applications has a block rule of this plugin's as well, and takes a server only when the firewall's own resolver gives that address for the name its connection carried."
+msgstr "كل جدول اسم مستعار من نوع External في «جدار الحماية: الأسماء المستعارة»، يصلح مصدرًا لقاعدة أو وجهة لها: خوادم سمّاها nDPI، يبقى كلٌّ منها حتى يغيب مدة بقاء العنوان. ولجدول التطبيق المختار في «التطبيقات المحظورة» قاعدة حظر من هذه الإضافة أيضًا، ولا يأخذ خادمًا إلا حين يعطي محلّل أسماء الجدار الناري نفسه ذلك العنوان للاسم الذي حمله اتصاله."
+
+#: os-appcontrol
+msgid "The os-xgs-npu installed is too old for Cut in hardware: a connection is cut by pf alone."
+msgstr "إصدار os-xgs-npu المثبّت أقدم من أن يدعم «القطع في العتاد»: يقطع pf الاتصال وحده."
+
+#: os-appcontrol
+msgid "connections cut"
+msgstr "اتصالات مقطوعة"
+
+#: os-appcontrol
+msgid "connections handed back from hardware"
+msgstr "اتصالات أُعيدت من العتاد"
+
+#: os-appcontrol
+msgid "dropped in hardware first"
+msgstr "أُسقطت في العتاد أولًا"
+
+#: os-appcontrol
+msgid "packets stopped"
+msgstr "حزم موقوفة"
+
+#: os-appcontrol
+msgid "packets stopped since the rules were last loaded"
+msgstr "حزم موقوفة منذ آخر تحميل للقواعد"
+
+#: os-appcontrol
+msgid "Blocked applications"
+msgstr "التطبيقات المحظورة"
+
+#: os-appcontrol
+msgid "Each application chosen is blocked: a table of its own, as in Application tables, and a block rule of this plugin's on it, ahead of the rules of Firewall: Rules, so a new connection from any interface to a server in the table is dropped - on every port, so another service on the same address is blocked as well. A connection nDPI names as it from its packets is cut once its window is judged, some 10 to 70 seconds after it began: its pf states killed by its two ends and, with Cut in hardware on in os-xgs-npu's XGS: Settings, dropped on the coprocessor first. Its server goes into the table only when the firewall's own resolver gives that address for the name the connection carried, since a device can write any name to any address, and only when nothing named that address, within the address expiry, as an application not blocked; else that connection alone is cut. Those it named earlier and still remembers are cut at Apply. A guess, a connection whose beginning was not seen, and one to the firewall or to an address not on the internet - private, shared or unique-local - are never cut. Choosing a protocol that carries others - TLS, QUIC, HTTP, DNS - blocks every application it carries. None chosen, or classifying off: nothing is blocked."
+msgstr "يُحظر كل تطبيق مختار: له جدول خاص به، كما في «جداول التطبيقات»، وعليه قاعدة حظر من هذه الإضافة تسبق قواعد «جدار الحماية: القواعد»، فيُسقَط كل اتصال جديد من أي واجهة إلى خادم في الجدول - على كل منفذ، فتُحظر أيضًا أي خدمة أخرى على العنوان نفسه. والاتصال الذي يسمّيه nDPI بهذا التطبيق من حزمه يُقطع حين يُحكم على نافذته، بعد نحو 10 إلى 70 ثانية من بدايته: تُنهى حالاته في pf بطرفيه، ومع تشغيل «القطع في العتاد» في XGS: الإعدادات الخاصة بـ os-xgs-npu يُسقَط على المعالج المساعد أولًا. ولا يدخل خادمه الجدول إلا حين يعطي محلّل أسماء الجدار الناري نفسه ذلك العنوان للاسم الذي حمله الاتصال، لأن أي جهاز يستطيع أن يكتب أي اسم لأي عنوان، وبشرط ألا يكون شيء قد سمّى ذلك العنوان، خلال مدة بقاء العنوان، تطبيقًا غير محظور؛ وإلا قُطع ذلك الاتصال وحده. وما سمّاه من قبل وما زال يتذكره يُقطع عند «تطبيق». ولا يُقطع أبدًا تخمين، ولا اتصال لم تُرَ بدايته، ولا اتصال إلى الجدار الناري أو إلى عنوان ليس على الإنترنت - خاص أو مشترك أو محلي فريد. واختيار بروتوكول يحمل غيره - TLS أو QUIC أو HTTP أو DNS - يحظر كل تطبيق يحمله. وإن لم يُختر شيء، أو كان التصنيف مطفأً، فلا يُحظر شيء."
+
+#: os-appcontrol
+msgid "Log what is blocked"
+msgstr "تسجيل ما يُحظر"
+
+#: os-appcontrol
+msgid "Log each packet the block rules drop, in Firewall: Log Files: Live View, under the rule's description: Application Control: block and the application's name. Off, they are counted on the Applications tab, not logged."
+msgstr "تسجيل كل حزمة تُسقطها قواعد الحظر في «جدار الحماية: ملفات السجل: العرض الحي»، تحت وصف القاعدة: Application Control: block واسم التطبيق. وعند الإطفاء تُعدّ في تبويب «التطبيقات» ولا تُسجَّل."
