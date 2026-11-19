@@ -67075,3 +67075,723 @@ msgstr "تذكرة بلا مصادقة مسبقة"
 #: os-useridentity
 msgid "uid_ and letters, digits or _, 31 characters at most."
 msgstr "uid_ ثم حروف أو أرقام أو _، بحد أقصى 31 حرفاً."
+
+#: os-blocklists
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#: os-blocklists
+msgid "%s (%s): about %s names, %s"
+msgstr "%s (%s): نحو %s اسم، %s"
+
+#: os-blocklists
+msgid "%s (not in the catalogue now)"
+msgstr "%s (ليست في الفهرس الآن)"
+
+#: os-blocklists
+msgid "%s GiB"
+msgstr "%s GiB"
+
+#: os-blocklists
+msgid "%s MiB"
+msgstr "%s MiB"
+
+#: os-blocklists
+msgid "%s could not be read: %s"
+msgstr "تعذّرت قراءة %s: %s"
+
+#: os-blocklists
+msgid "%s names, fetched %s"
+msgstr "%s اسم، جُلبت في %s"
+
+#: os-blocklists
+msgid "%s not taken: %s"
+msgstr "لم تُؤخذ الفئة %s: %s"
+
+#: os-blocklists
+msgid "%s of %s categories chosen applied, %s names"
+msgstr "طُبّقت %s من %s فئة مختارة، %s اسم"
+
+#: os-blocklists
+msgid "%s: pfctl could not be run"
+msgstr "%s: تعذّر تشغيل pfctl"
+
+#: os-blocklists
+msgid "A name is looked up in the web categories applied and in the blocklist data of Unbound DNS, with the names above it. The pf tables hold addresses: a name is not looked up there, and not resolved."
+msgstr "يُبحث عن الاسم في فئات الويب المطبّقة وفي بيانات قائمة الحظر في Unbound DNS، ومعه الأسماء التي تعلوه. أما جداول pf فتحوي عناوين: فلا يُبحث فيها عن الاسم، ولا يُحَلّ إلى عنوان."
+
+#: os-blocklists
+msgid "ARJEL gambling (French)"
+msgstr "القمار المعتمد من ARJEL (فرنسي)"
+
+#: os-blocklists
+msgid "Adult"
+msgstr "محتوى البالغين"
+
+#: os-blocklists
+msgid "Advertising"
+msgstr "الإعلانات"
+
+#: os-blocklists
+msgid "An address is looked up in the pf tables of the lists of this page. The web categories and Unbound DNS hold names."
+msgstr "يُبحث عن العنوان في جداول pf لقوائم هذه الصفحة. أما فئات الويب وUnbound DNS فتحوي أسماء."
+
+#: os-blocklists
+msgid "Antivirus and cleanup"
+msgstr "مكافحة الفيروسات والتنظيف"
+
+#: os-blocklists
+msgid "Astrology"
+msgstr "التنجيم"
+
+#: os-blocklists
+msgid "Audio and video"
+msgstr "الصوت والفيديو"
+
+#: os-blocklists
+msgid "Banks"
+msgstr "المصارف"
+
+#: os-blocklists
+msgid "Bitcoin mining"
+msgstr "تعدين Bitcoin"
+
+#: os-blocklists
+msgid "Block Lists is off"
+msgstr "قوائم الحظر مُطفأة"
+
+#: os-blocklists
+msgid "Block Lists is off: no category applied"
+msgstr "قوائم الحظر مُطفأة: لم تُطبَّق أي فئة"
+
+#: os-blocklists
+msgid "Blogs"
+msgstr "المدونات"
+
+#: os-blocklists
+msgid "Casinos, betting and other gambling."
+msgstr "الكازينوهات والمراهنات وسائر أنواع القمار."
+
+#: os-blocklists
+msgid "Celebrities"
+msgstr "المشاهير"
+
+#: os-blocklists
+msgid "Cheating in the French PIX exam, for France only."
+msgstr "الغش في اختبار PIX الفرنسي، لفرنسا فقط."
+
+#: os-blocklists
+msgid "Cooking"
+msgstr "الطبخ"
+
+#: os-blocklists
+msgid "Cryptojacking"
+msgstr "التعدين الخفي للعملات المشفرة"
+
+#: os-blocklists
+msgid "DDoS and stresser services."
+msgstr "خدمات DDoS وخدمات الإغراق المأجورة (stresser)."
+
+#: os-blocklists
+msgid "DDoS services"
+msgstr "خدمات DDoS"
+
+#: os-blocklists
+msgid "DNS over HTTPS"
+msgstr "DNS عبر HTTPS"
+
+#: os-blocklists
+msgid "Dangerous material"
+msgstr "المواد الخطرة"
+
+#: os-blocklists
+msgid "Dialers"
+msgstr "برامج الطلب الهاتفي"
+
+#: os-blocklists
+msgid "Domains that have changed hands."
+msgstr "نطاقات انتقلت إلى مالكين آخرين."
+
+#: os-blocklists
+msgid "Educational games"
+msgstr "الألعاب التعليمية"
+
+#: os-blocklists
+msgid "Enter a name, such as example.com, or an address."
+msgstr "أدخِل اسمًا، مثل example.com، أو عنوانًا."
+
+#: os-blocklists
+msgid "Erotic and pornographic sites."
+msgstr "المواقع الجنسية والإباحية."
+
+#: os-blocklists
+msgid "Exam cheating"
+msgstr "الغش في الامتحانات"
+
+#: os-blocklists
+msgid "Fake news"
+msgstr "الأخبار الكاذبة"
+
+#: os-blocklists
+msgid "Famous people and the magazines about them."
+msgstr "الأشخاص المشهورون والمجلات التي تتناولهم."
+
+#: os-blocklists
+msgid "File hosting"
+msgstr "استضافة الملفات"
+
+#: os-blocklists
+msgid "Financial"
+msgstr "الشؤون المالية"
+
+#: os-blocklists
+msgid "Financial information."
+msgstr "المعلومات المالية."
+
+#: os-blocklists
+msgid "For DNS, the same names as Proxies."
+msgstr "في DNS، هي أسماء «الوكلاء» نفسها."
+
+#: os-blocklists
+msgid "For French students taking the PIX exam only."
+msgstr "للطلاب الفرنسيين الذين يؤدون اختبار PIX فقط."
+
+#: os-blocklists
+msgid "For children"
+msgstr "للأطفال"
+
+#: os-blocklists
+msgid "Forums"
+msgstr "المنتديات"
+
+#: os-blocklists
+msgid "French educational sites, for libraries in France."
+msgstr "مواقع تعليمية فرنسية، للمكتبات في فرنسا."
+
+#: os-blocklists
+msgid "French libraries"
+msgstr "المكتبات الفرنسية"
+
+#: os-blocklists
+msgid "Gambling sites certified by a French authority."
+msgstr "مواقع قمار معتمدة من هيئة فرنسية."
+
+#: os-blocklists
+msgid "Games"
+msgstr "الألعاب"
+
+#: os-blocklists
+msgid "Hacking"
+msgstr "الاختراق"
+
+#: os-blocklists
+msgid "Hosts of pictures, videos and other files."
+msgstr "مواقع استضافة الصور والفيديو وغيرها من الملفات."
+
+#: os-blocklists
+msgid "How to make explosives, poisons and the like."
+msgstr "طرق صنع المتفجرات والسموم وما شابهها."
+
+#: os-blocklists
+msgid "Internet radio"
+msgstr "الإذاعة عبر الإنترنت"
+
+#: os-blocklists
+msgid "Job search"
+msgstr "البحث عن عمل"
+
+#: os-blocklists
+msgid "Lingerie"
+msgstr "الملابس الداخلية"
+
+#: os-blocklists
+msgid "Link shorteners"
+msgstr "اختصار الروابط"
+
+#: os-blocklists
+msgid "Look up"
+msgstr "بحث"
+
+#: os-blocklists
+msgid "Lookup"
+msgstr "البحث"
+
+#: os-blocklists
+msgid "Made as"
+msgstr "النوع الأصلي"
+
+#: os-blocklists
+msgid "Manga"
+msgstr "المانغا"
+
+#: os-blocklists
+msgid "Manga and cartoons."
+msgstr "المانغا والرسوم المتحركة."
+
+#: os-blocklists
+msgid "Marketing sites UT1 lists apart."
+msgstr "مواقع تسويق يُدرجها UT1 على حدة."
+
+#: os-blocklists
+msgid "Marketingware"
+msgstr "البرمجيات التسويقية"
+
+#: os-blocklists
+msgid "Mixed adult"
+msgstr "محتوى البالغين المختلط"
+
+#: os-blocklists
+msgid "Mobile phones"
+msgstr "الهواتف المحمولة"
+
+#: os-blocklists
+msgid "Names"
+msgstr "الأسماء"
+
+#: os-blocklists
+msgid "Names: those of the copy fetched, or, marked ~, the count of the catalogue. Memory: what they would take in Unbound, an estimate at about 820 bytes a name, as measured on a firewall, and more for a moment while Unbound reloads them. Made as: allow list marks a category UT1 made to let names through; chosen here, it is blocked like the others. UT1 asks that its categories be chosen, not all blocked at once."
+msgstr "الأسماء: عدد أسماء النسخة المجلوبة، أو عددها في الفهرس إذا عُلِّم بـ ~. الذاكرة: ما ستأخذه في Unbound، تقديرًا بنحو 820 بايت للاسم كما قيس على جدار حماية، وأكثر من ذلك لحظةَ يعيد Unbound تحميلها. النوع الأصلي: «قائمة سماح» تدل على فئة أعدّها UT1 لتمرير الأسماء؛ وإذا اختيرت هنا تُحظر كغيرها. ويطلب UT1 أن تُنتقى فئاته انتقاءً، لا أن تُحظر كلها دفعة واحدة."
+
+#: os-blocklists
+msgid "News and the press."
+msgstr "الأخبار والصحافة."
+
+#: os-blocklists
+msgid "Online banks."
+msgstr "المصارف عبر الإنترنت."
+
+#: os-blocklists
+msgid "Online games."
+msgstr "الألعاب عبر الإنترنت."
+
+#: os-blocklists
+msgid "PIX exam (French)"
+msgstr "اختبار PIX (فرنسي)"
+
+#: os-blocklists
+msgid "PIX exam cheating (French)"
+msgstr "الغش في اختبار PIX (فرنسي)"
+
+#: os-blocklists
+msgid "Phishing sites, in one archive with Malware."
+msgstr "مواقع التصيّد الاحتيالي، في أرشيف واحد مع «برمجيات خبيثة»."
+
+#: os-blocklists
+msgid "Pirated software."
+msgstr "البرمجيات المقرصنة."
+
+#: os-blocklists
+msgid "Press"
+msgstr "الصحافة"
+
+#: os-blocklists
+msgid "Proxies and redirectors used to get around filtering."
+msgstr "الوكلاء ومواقع إعادة التوجيه المستعملة للالتفاف على التصفية."
+
+#: os-blocklists
+msgid "Proxies, strict"
+msgstr "الوكلاء، الصيغة الصارمة"
+
+#: os-blocklists
+msgid "Proxies, strong"
+msgstr "الوكلاء، الصيغة القوية"
+
+#: os-blocklists
+msgid "Public DNS-over-HTTPS services, which get around the firewall's resolver."
+msgstr "خدمات DNS عبر HTTPS العامة، التي تلتفّ على محلّل جدار الحماية."
+
+#: os-blocklists
+msgid "Reassigned domains"
+msgstr "النطاقات المُعاد تخصيصها"
+
+#: os-blocklists
+msgid "Religious associations"
+msgstr "الجمعيات الدينية"
+
+#: os-blocklists
+msgid "Remote control"
+msgstr "التحكم عن بُعد"
+
+#: os-blocklists
+msgid "Residential proxies"
+msgstr "الوكلاء السكنيون"
+
+#: os-blocklists
+msgid "Ringtones and other mobile phone content."
+msgstr "نغمات الرنين وغيرها من محتوى الهواتف المحمولة."
+
+#: os-blocklists
+msgid "Saved. The web categories are fetched and applied to Unbound DNS in the background; Unbound reads them within a minute."
+msgstr "تم الحفظ. تُجلب فئات الويب وتُطبَّق على Unbound DNS في الخلفية؛ ويقرؤها Unbound خلال دقيقة."
+
+#: os-blocklists
+msgid "Sects"
+msgstr "الطوائف"
+
+#: os-blocklists
+msgid "Sellers of software to spy on people."
+msgstr "بائعو برمجيات التجسس على الأشخاص."
+
+#: os-blocklists
+msgid "Services that control a computer from afar."
+msgstr "خدمات للتحكم في الحاسوب عن بُعد."
+
+#: os-blocklists
+msgid "Sexual education"
+msgstr "التربية الجنسية"
+
+#: os-blocklists
+msgid "Sexual education, which can be taken for adult sites."
+msgstr "التربية الجنسية، وقد تُحسب خطأً من مواقع البالغين."
+
+#: os-blocklists
+msgid "Shops and selling sites."
+msgstr "المتاجر ومواقع البيع."
+
+#: os-blocklists
+msgid "Sites fit for children under ten."
+msgstr "مواقع مناسبة للأطفال دون العاشرة."
+
+#: os-blocklists
+msgid "Sites inciting hatred or violence."
+msgstr "مواقع تحرّض على الكراهية أو العنف."
+
+#: os-blocklists
+msgid "Sites that deliver malware, in one archive with Phishing."
+msgstr "مواقع تنشر البرمجيات الخبيثة، في أرشيف واحد مع «التصيّد الاحتيالي»."
+
+#: os-blocklists
+msgid "Sites that explain how to cheat in exams."
+msgstr "مواقع تشرح طرق الغش في الامتحانات."
+
+#: os-blocklists
+msgid "Sites that mine cryptocurrency on their visitors' computers."
+msgstr "مواقع تعدّن العملات المشفرة على حواسيب زوّارها."
+
+#: os-blocklists
+msgid "Sites to disinfect, update and protect computers."
+msgstr "مواقع لتطهير الحواسيب وتحديثها وحمايتها."
+
+#: os-blocklists
+msgid "Sites to download software from."
+msgstr "مواقع لتنزيل البرمجيات."
+
+#: os-blocklists
+msgid "Sites with adult sections among the rest."
+msgstr "مواقع فيها أقسام للبالغين بين أقسامها الأخرى."
+
+#: os-blocklists
+msgid "Social networks"
+msgstr "الشبكات الاجتماعية"
+
+#: os-blocklists
+msgid "Software downloads"
+msgstr "تنزيل البرمجيات"
+
+#: os-blocklists
+msgid "Sports"
+msgstr "الرياضة"
+
+#: os-blocklists
+msgid "Stalkerware"
+msgstr "برمجيات الملاحقة"
+
+#: os-blocklists
+msgid "The settings could not be applied."
+msgstr "تعذّر تطبيق الإعدادات."
+
+#: os-blocklists
+msgid "UT1 answered HTTP %s"
+msgstr "أجاب UT1 بـ HTTP %s"
+
+#: os-blocklists
+msgid "UT1 not reached: %s"
+msgstr "تعذّر الوصول إلى UT1: %s"
+
+#: os-blocklists
+msgid "UT1 redirected to %s: refused"
+msgstr "أعاد UT1 التوجيه إلى %s: رُفض"
+
+#: os-blocklists
+msgid "Unbound DNS blocklist"
+msgstr "قائمة حظر Unbound DNS"
+
+#: os-blocklists
+msgid "Unbound DNS is off: the categories have no effect until it is the resolver"
+msgstr "Unbound DNS مُطفأ: لا أثر للفئات حتى يصبح هو المحلّل"
+
+#: os-blocklists
+msgid "Unbound DNS is off: the web categories have no effect until it is the resolver the clients use."
+msgstr "Unbound DNS مُطفأ: لا أثر لفئات الويب حتى يصبح المحلّل الذي يستعمله العملاء."
+
+#: os-blocklists
+msgid "Update sites of software and systems."
+msgstr "مواقع تحديث البرمجيات والأنظمة."
+
+#: os-blocklists
+msgid "Warez"
+msgstr "القرصنة"
+
+#: os-blocklists
+msgid "Web categories"
+msgstr "فئات الويب"
+
+#: os-blocklists
+msgid "Web categories block names by DNS, through the Unbound blocklist of OPNsense itself, in a policy of their own for every client, beside the policies of Unbound DNS: Blocklists, which are left as they are. The categories are those of UT1, Universite Toulouse 1 Capitole, under the licence CC BY-SA 4.0; the firewall fetches them itself."
+msgstr "تحظر فئات الويب الأسماء عبر DNS، من خلال قائمة حظر Unbound في OPNsense نفسه، في سياسة خاصة بها لجميع العملاء، بجانب سياسات Unbound DNS: قوائم الحظر، التي تُترك على حالها. والفئات هي فئات UT1، Universite Toulouse 1 Capitole، بموجب الرخصة CC BY-SA 4.0؛ ويجلبها جدار الحماية بنفسه."
+
+#: os-blocklists
+msgid "Web category"
+msgstr "فئة الويب"
+
+#: os-blocklists
+msgid "Web hosting"
+msgstr "استضافة المواقع"
+
+#: os-blocklists
+msgid "Webmail"
+msgstr "البريد عبر الويب"
+
+#: os-blocklists
+msgid "Where a name or an address is held: the pf tables of the lists of this page, the web categories applied, and the blocklist data of Unbound DNS - its own policies and the web categories. Nothing is changed."
+msgstr "أين يوجد اسم أو عنوان: في جداول pf لقوائم هذه الصفحة، وفي فئات الويب المطبّقة، وفي بيانات قائمة الحظر في Unbound DNS - سياساته هو وفئات الويب. لا يُغيَّر شيء."
+
+#: os-blocklists
+msgid "a damaged archive (%s)"
+msgstr "أرشيف تالف (%s)"
+
+#: os-blocklists
+msgid "a policy of Unbound DNS: Blocklists"
+msgstr "سياسة من Unbound DNS: قوائم الحظر"
+
+#: os-blocklists
+msgid "about 4.6 million names, about 3.5 GiB held by Unbound's blocklist module: too much for a firewall"
+msgstr "نحو 4.6 مليون اسم، ونحو 3.5 GiB في وحدة قوائم الحظر في Unbound: أكثر مما يحتمله جدار حماية"
+
+#: os-blocklists
+msgid "allow list"
+msgstr "قائمة سماح"
+
+#: os-blocklists
+msgid "applied"
+msgstr "مطبّقة"
+
+#: os-blocklists
+msgid ", as a name under %s"
+msgstr "، بوصفه اسمًا تحت %s"
+
+#: os-blocklists
+msgid "being fetched now"
+msgstr "يجري الجلب الآن"
+
+#: os-blocklists
+msgid "block list"
+msgstr "قائمة حظر"
+
+#: os-blocklists
+msgid "cannot be chosen"
+msgstr "لا يمكن اختيارها"
+
+#: os-blocklists
+msgid "cannot be chosen: %s"
+msgstr "لا يمكن اختيارها: %s"
+
+#: os-blocklists
+msgid "config.xml could not be read: nothing changed"
+msgstr "تعذّرت قراءة config.xml: لم يتغير شيء"
+
+#: os-blocklists
+msgid "configctl could not be run: %s"
+msgstr "تعذّر تشغيل configctl: %s"
+
+#: os-blocklists
+msgid "configctl unbound dnsbl failed: %s"
+msgstr "فشل configctl unbound dnsbl: %s"
+
+#: os-blocklists
+msgid "countries"
+msgstr "الدول"
+
+#: os-blocklists
+msgid "fetched by the firewall itself, not republished by this project"
+msgstr "يجلبها جدار الحماية بنفسه، ولا يعيد هذا المشروع نشرها"
+
+#: os-blocklists
+msgid "held in these places"
+msgstr "موجود في هذه المواضع"
+
+#: os-blocklists
+msgid "held nowhere in these block lists"
+msgstr "غير موجود في أي من قوائم الحظر هذه"
+
+#: os-blocklists
+msgid "in Unbound, an estimate"
+msgstr "في Unbound، تقديرًا"
+
+#: os-blocklists
+msgid "its %s is larger than %s MB"
+msgstr "العنصر %s في الأرشيف أكبر من %s MB"
+
+#: os-blocklists
+msgid "its %s is not a plain file"
+msgstr "العنصر %s في الأرشيف ليس ملفًا عاديًا"
+
+#: os-blocklists
+msgid "larger than %s MB"
+msgstr "أكبر من %s MB"
+
+#: os-blocklists
+msgid "let through by an exception"
+msgstr "يمرّره استثناء"
+
+#: os-blocklists
+msgid "let through by the exception"
+msgstr "يمرّره الاستثناء"
+
+#: os-blocklists
+msgid "more than %s members in the archive"
+msgstr "أكثر من %s عنصر في الأرشيف"
+
+#: os-blocklists
+msgid "more than %s names: larger than any category offered"
+msgstr "أكثر من %s اسم: أكبر من أي فئة معروضة"
+
+#: os-blocklists
+msgid "names at the most"
+msgstr "اسم على الأكثر"
+
+#: os-blocklists
+msgid "names in Unbound DNS"
+msgstr "اسم في Unbound DNS"
+
+#: os-blocklists
+msgid "no %s in the archive"
+msgstr "لا يوجد %s في الأرشيف"
+
+#: os-blocklists
+msgid "no answer within %s s"
+msgstr "لا إجابة خلال %s ث"
+
+#: os-blocklists
+msgid "no blocklist data: %s is not there"
+msgstr "لا بيانات لقائمة الحظر: %s غير موجود"
+
+#: os-blocklists
+msgid "no category applied yet"
+msgstr "لم تُطبَّق أي فئة بعد"
+
+#: os-blocklists
+msgid "no category chosen"
+msgstr "لم تُختر أي فئة"
+
+#: os-blocklists
+msgid "none chosen"
+msgstr "لم يُختر شيء"
+
+#: os-blocklists
+msgid "not a category archive (%s)"
+msgstr "ليس أرشيف فئة (%s)"
+
+#: os-blocklists
+msgid "not a category name"
+msgstr "ليس اسم فئة"
+
+#: os-blocklists
+msgid "not a name or an address"
+msgstr "ليس اسمًا ولا عنوانًا"
+
+#: os-blocklists
+msgid "not applied"
+msgstr "غير مطبّقة"
+
+#: os-blocklists
+msgid "not chosen"
+msgstr "غير مختارة"
+
+#: os-blocklists
+msgid "not done within %s s"
+msgstr "لم يكتمل خلال %s ث"
+
+#: os-blocklists
+msgid "not fetched at %s: %s"
+msgstr "لم تُجلب في %s: %s"
+
+#: os-blocklists
+msgid "not fetched at %s: %s - the last copy is kept"
+msgstr "لم تُجلب في %s: %s - أُبقيت النسخة الأخيرة"
+
+#: os-blocklists
+msgid "not fetched yet"
+msgstr "لم تُجلب بعد"
+
+#: os-blocklists
+msgid "not in the catalogue of UT1"
+msgstr "ليست في فهرس UT1"
+
+#: os-blocklists
+msgid "not read within %s s"
+msgstr "لم تكتمل القراءة خلال %s ث"
+
+#: os-blocklists
+msgid "not the catalogue of UT1: %s categories in it"
+msgstr "ليس فهرس UT1: فيه %s فئة"
+
+#: os-blocklists
+msgid "not written here: %s"
+msgstr "تعذّرت الكتابة هنا: %s"
+
+#: os-blocklists
+msgid "pf table"
+msgstr "جدول pf"
+
+#: os-blocklists
+msgid "stopped: %s"
+msgstr "توقّف: %s"
+
+#: os-blocklists
+msgid "the Unbound blocklist does not hold what is applied yet: rebuilt again at the next run"
+msgstr "لا تحوي قائمة حظر Unbound ما طُبّق بعد: يُعاد بناؤها في التشغيل التالي"
+
+#: os-blocklists
+msgid "the Unbound blocklist is still being rebuilt after %s s: looked at again at the next run"
+msgstr "ما زالت قائمة حظر Unbound قيد إعادة البناء بعد %s ث: يُعاد النظر فيها في التشغيل التالي"
+
+#: os-blocklists
+msgid "the Unbound handler of the plugin is missing: install the plugin again"
+msgstr "معالج Unbound الخاص بالمكوّن الإضافي مفقود: ثبّت المكوّن الإضافي من جديد"
+
+#: os-blocklists
+msgid "the copy of UT1 of %s"
+msgstr "نسخة UT1 بتاريخ %s"
+
+#: os-blocklists
+msgid "the download broke off: %s"
+msgstr "انقطع التنزيل: %s"
+
+#: os-blocklists
+msgid "the pf tables could not be read"
+msgstr "تعذّرت قراءة جداول pf"
+
+#: os-blocklists
+msgid "the policy of the web categories"
+msgstr "سياسة فئات الويب"
+
+#: os-blocklists
+msgid "two %s files in the archive"
+msgstr "ملفان باسم %s في الأرشيف"
+
+#: os-blocklists
+msgid "unchanged at %s"
+msgstr "دون تغيير في %s"
+
+#: os-blocklists
+msgid "under 1 MiB"
+msgstr "أقل من 1 MiB"
+
+#: os-blocklists
+msgid "UT1's categories of web sites, blocked by DNS through OPNsense's own Unbound blocklist, in a policy of this plugin's for every client: a name of a category chosen, and every name under it, is answered 0.0.0.0 as Unbound DNS: Blocklists answers by default. Each category says its size: its names, and the memory they would take in Unbound - an estimate, at about 820 bytes a name, as measured on a firewall. Adult cannot be chosen: about 4.6 million names, about 3.5 GiB in Unbound, too much for a firewall. The firewall fetches each category chosen from UT1 and checks it again as often as Fetch the lists says, in the Settings tab; the table below says what each one holds. It works only where Unbound DNS is the resolver the clients use, and while Block Lists is on."
+msgstr "فئات مواقع الويب من UT1، تُحظر عبر DNS بقائمة حظر Unbound في OPNsense نفسه، في سياسة خاصة بهذه الإضافة لكل العملاء: يُجاب عن كل اسم من فئة مختارة، وعن كل اسم تحته، بالعنوان 0.0.0.0 كما تجيب Unbound DNS: قوائم الحظر افتراضيًا. وتذكر كل فئة حجمها: عدد أسمائها، والذاكرة التي ستأخذها في Unbound - تقديرًا بنحو 820 بايت للاسم كما قيس على جدار حماية. ولا يمكن اختيار فئة البالغين: نحو 4.6 مليون اسم، ونحو 3.5 GiB في Unbound، أكثر مما يحتمله جدار حماية. ويجلب جدار الحماية كل فئة مختارة من UT1 ويعيد فحصها بالوتيرة التي يحددها «جلب القوائم» في تبويب الإعدادات؛ والجدول أدناه يبيّن ما تحويه كل فئة. ولا تعمل إلا حين يكون Unbound DNS هو المحلِّل الذي يستعمله العملاء، وما دامت قوائم الحظر مفعّلة."
+
+#: os-blocklists
+msgid "Names the web categories let through, each with every name under it: example.com lets www.example.com through, and not example.com.evil.net. They apply to the web categories' policy only, as an allowlist in Unbound DNS: Blocklists applies to its own policy only; to let a name through a blocklist of Unbound DNS, allow it there. This field is the way to let a name of a category through: the Allow and Block buttons of Reporting: Unbound DNS do not work on the web categories' names."
+msgstr "أسماء تمرّرها فئات الويب، كلٌّ منها مع كل اسم تحته: example.com يمرّر www.example.com، ولا يمرّر example.com.evil.net. وتسري على سياسة فئات الويب وحدها، كما تسري قائمة السماح في Unbound DNS: قوائم الحظر على سياستها وحدها؛ ولتمرير اسم من قائمة حظر في Unbound DNS، اسمح به هناك. وهذا الحقل هو طريق تمرير اسم من فئة: زرّا «سماح» و«حظر» في التقارير: Unbound DNS لا يعملان على أسماء فئات الويب."
