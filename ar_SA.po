@@ -62764,6 +62764,62 @@ msgstr "تعذّر إنشاء الملف."
 msgid "Each schedule sends one report. Use the eye button to preview it, the arrow button to download it as HTML, PDF or CSV, and the plane button to send it now."
 msgstr "كل جدول يرسل تقريرًا واحدًا. استخدم زر العين لمعاينته، وزر السهم لتنزيله بصيغة HTML أو PDF أو CSV، وزر الطائرة الورقية لإرساله الآن."
 
+#: os-netreport
+msgid "Privacy"
+msgstr "الخصوصية"
+
+#: os-netreport
+msgid "Mask addresses"
+msgstr "إخفاء العناوين"
+
+#: os-netreport
+msgid "Show every address, MAC address and device name in reports, alerts and downloaded files as a masked value instead: the same device keeps the same value from one report to the next, and the value cannot be undone without a key kept on this firewall alone. Reports kept before it was turned on stay as they were sent."
+msgstr "عرض كل عنوان وعنوان MAC واسم جهاز في التقارير والتنبيهات والملفات المنزَّلة بقيمة مموَّهة بدلًا منه: يحتفظ الجهاز نفسه بالقيمة نفسها من تقرير إلى آخر، ولا يمكن الرجوع من القيمة إلى أصلها دون مفتاح محفوظ على جدار الحماية هذا وحده. وتبقى التقارير المحفوظة قبل تفعيله كما أُرسلت."
+
+#: os-netreport
+msgid "Weekly configuration backup"
+msgstr "نسخة احتياطية أسبوعية من الإعدادات"
+
+#: os-netreport
+msgid "Send a weekly backup"
+msgstr "إرسال نسخة احتياطية أسبوعية"
+
+#: os-netreport
+msgid "Mail this firewall's configuration once a week, encrypted with the password below, the way System: Configuration: Backups encrypts a download: restore it there, with the same password. Nothing is sent without a password. It counts as a backup for the backup age warning."
+msgstr "إرسال إعدادات جدار الحماية هذا بالبريد مرة في الأسبوع، مشفَّرة بكلمة المرور أدناه كما تشفّر صفحة النظام: الإعدادات: النسخ الاحتياطية ملفًا منزَّلًا، فاستعدها من هناك بكلمة المرور نفسها. لا يُرسل شيء دون كلمة مرور. وتُحتسب نسخةً احتياطية في التحذير من عمر النسخة الاحتياطية."
+
+#: os-netreport
+msgid "Backup day"
+msgstr "يوم النسخ الاحتياطي"
+
+#: os-netreport
+msgid "Backup time"
+msgstr "وقت النسخ الاحتياطي"
+
+#: os-netreport
+msgid "24-hour clock, firewall time zone."
+msgstr "بنظام 24 ساعة، وبتوقيت جدار الحماية."
+
+#: os-netreport
+msgid "Backup recipients"
+msgstr "مستلمو النسخة الاحتياطية"
+
+#: os-netreport
+msgid "Who receives the backup. Empty: the default recipients above."
+msgstr "من يستلم النسخة الاحتياطية. فارغ: المستلمون الافتراضيون أعلاه."
+
+#: os-netreport
+msgid "Backup password"
+msgstr "كلمة مرور النسخة الاحتياطية"
+
+#: os-netreport
+msgid "The password the backup is encrypted with; keep it somewhere else too, as without it the backup cannot be opened. Stored on this firewall only. Leave empty to keep the current password."
+msgstr "كلمة المرور التي تُشفَّر بها النسخة الاحتياطية؛ احفظها في مكان آخر أيضًا، فلا تُفتح النسخة دونها. تُحفظ على جدار الحماية هذا فقط. اتركها فارغة للإبقاء على كلمة المرور الحالية."
+
+#: os-netreport
+msgid "Warn when the last remote configuration backup, or the last weekly backup by mail, is older than this. 0 disables the check."
+msgstr "التحذير عندما تكون آخر نسخة احتياطية بعيدة للإعدادات، أو آخر نسخة أسبوعية بالبريد، أقدم من هذه المدة. القيمة 0 تعطّل الفحص."
+
 # ---- os-frontpanel: the keys card says whether the buttons beside the screen are being read.
 # Its own two strings, because "read" and "not read" mean "was read" and "has not been read"
 # elsewhere (os-xgs-npu, os-fanctl), and one msgid has one Arabic.
