@@ -67955,3 +67955,283 @@ msgstr "كلٌّ منها عنوان أو شبكة، مثل 198.51.100.7 أو 19
 #: os-blocklists
 msgid "Keep an address from 5 minutes to 10080 (a week)."
 msgstr "أبقِ العنوان من 5 دقائق إلى 10080 (أسبوع)."
+
+#: os-trafficpriority
+msgid "%s of 2"
+msgstr "%s من 2"
+
+#: os-trafficpriority
+msgid "%s: egress limit %s"
+msgstr "%s: حد الخروج %s"
+
+#: os-trafficpriority
+msgid "(the switch's step below the pipe's %s)"
+msgstr "(خطوة المبدّل التي دون %s المضبوطة للقناة)"
+
+#: os-trafficpriority
+msgid "A minimum cannot be kept beside a strict class: give each class with a switch queue a minimum, or none."
+msgstr "لا يمكن الإبقاء على حد أدنى بجانب فئة صارمة: أعطِ كل فئة لها طابور في المبدّل حدًّا أدنى، أو لا تعطِ أيًّا منها."
+
+#: os-trafficpriority
+msgid "A minimum is held by the switch queues, which take the first two DSCPs in the order of the list - classes that mark IPv4 above Best Effort and make a rule. The DSCP of this class is not one of them."
+msgstr "لا يضمن الحدَّ الأدنى إلا طوابيرُ المبدّل، وهي تأخذ أول قيمتين من قيم DSCP بترتيب القائمة - من الفئات التي تَسِم IPv4 فوق «أفضل جهد» وتصنع قاعدة. وليست قيمة DSCP لهذه الفئة إحداهما."
+
+#: os-trafficpriority
+msgid "A percent from 1 to 100."
+msgstr "نسبة مئوية من 1 إلى 100."
+
+#: os-trafficpriority
+msgid "Apply is setting the switch"
+msgstr "«تطبيق» يضبط المبدّل"
+
+#: os-trafficpriority
+msgid "Best Effort is the switch's queue 0, with everything else"
+msgstr "«أفضل جهد» هو الطابور 0 في المبدّل، مع كل ما سواه"
+
+#: os-trafficpriority
+msgid "DSCP %s in queue %s"
+msgstr "قيمة DSCP %s في الطابور %s"
+
+#: os-trafficpriority
+msgid "DSCP %s is marked by pf only: the switch takes two DSCPs"
+msgstr "قيمة DSCP %s يَسِم بها pf وحده: يأخذ المبدّل قيمتين من قيم DSCP"
+
+#: os-trafficpriority
+msgid "DSCP %s: %s percent of every port at least, queue %s"
+msgstr "قيمة DSCP %s: %s بالمئة من كل منفذ على الأقل، الطابور %s"
+
+#: os-trafficpriority
+msgid "DSCPs with a queue of their own"
+msgstr "قيم DSCP التي لها طابور خاص بها"
+
+#: os-trafficpriority
+msgid "Firewall: Shaper is read here and never written, and it still shapes on the host: os-xgs-npu keeps every connection an enabled rule of it names with the host, off the hardware. With Follow Firewall: Shaper on (General), what the switch can do of a rule is done in its queues too, at Apply: a queue's weight, against the other queues of its pipe, as a part of every port for a DSCP a class here marks and has a queue for, from a rule on a front port behind the switch - where neither the queue nor its pipe has a mask, the pipe's scheduler shares by weight, no class has a minimum of its own, every switch queue gets a part, and the parts add up to 100 percent at most - and a pipe's bandwidth as a front port's egress limit, where a rule sends everything leaving that port into the pipe and no rule before it on that interface takes part of it first, in the switch's steps of 1 Mbit/s up to 100 Mbit/s and 10 Mbit/s up to 1 Gbit/s. Not measured yet: a part or a limit from a rule here."
+msgstr "يُقرأ «جدار الحماية: مُشكّل حركة المرور» هنا ولا يُكتب فيه أبدًا، ويبقى يُشكّل الحركة على المضيف: يُبقي os-xgs-npu لدى المضيف، خارج العتاد، كل اتصال تذكره قاعدة مفعّلة منه. ومع تفعيل «اتباع جدار الحماية: مُشكّل حركة المرور» (في تبويب «عام») يُنفَّذ ما يستطيعه المبدّل من القاعدة في طوابيره أيضًا، عند «تطبيق»: وزن الطابور، مقابل طوابير قناته الأخرى، حصةً من كل منفذ لقيمة DSCP تَسِم بها فئةٌ هنا ولها طابور، من قاعدة على منفذ أمامي خلف المبدّل - حيث لا يكون للطابور ولا لقناته قناع، ويوزّع مجدول القناة بالوزن، ولا يكون لأي فئة حد أدنى خاص بها، وينال كل طابور في المبدّل حصة، ولا يزيد مجموع الحصص على 100 بالمئة - وعرض نطاق القناة بوصفه حدَّ الخروج لمنفذ أمامي، حيث ترسل قاعدةٌ كل ما يخرج من ذلك المنفذ إلى القناة ولا تأخذ قاعدةٌ قبلها على تلك الواجهة جزءًا منه أولًا، بخطوات المبدّل: 1 Mbit/s حتى 100 Mbit/s، و10 Mbit/s حتى 1 Gbit/s. لم يُقس بعد: حصة أو حد يأتيان من قاعدة هنا."
+
+#: os-trafficpriority
+msgid "Follow Firewall: Shaper"
+msgstr "اتباع جدار الحماية: مُشكّل حركة المرور"
+
+#: os-trafficpriority
+msgid "Follow Firewall: Shaper is off (General)"
+msgstr "«اتباع جدار الحماية: مُشكّل حركة المرور» مطفأ (في تبويب «عام»)"
+
+#: os-trafficpriority
+msgid "In the switch"
+msgstr "في المبدّل"
+
+#: os-trafficpriority
+msgid "Mark connections of classes switched on with their DSCP, and - on an XGS 3300 whose switch os-xgs-npu sets - give the first two DSCPs their own switch queue. While a class has a queue in the switch, every IPv4 connection no class marks has its DSCP set to 0, both ways: the switch queues every frame by its DSCP. Off, Traffic Priority's rules are gone at the next filter reload and connections opened after it keep the DSCP they come with, and Apply puts the switch back as it found it; classes stay. Apply puts a change into the firewall and the switch."
+msgstr "وسم اتصالات الفئات المفعّلة بقيمة DSCP الخاصة بها، وكذلك - على XGS 3300 يضبط os-xgs-npu مبدّله - إعطاء أول قيمتين من قيم DSCP طابورًا خاصًا بكلٍّ منهما في المبدّل. وما دام لفئةٍ طابورٌ في المبدّل، تُضبط قيمة DSCP على 0 في كل اتصال IPv4 لا تَسِمه أي فئة، في الاتجاهين: فالمبدّل يضع كل إطار في طابور قيمته. عند إطفائه تزول قواعد «أولوية حركة المرور» عند إعادة تحميل الجدار الناري التالية، وتحتفظ الاتصالات المفتوحة بعدها بقيمة DSCP التي جاءت بها، ويعيد «تطبيق» المبدّل كما وجده؛ وتبقى الفئات. و«تطبيق» يضع التغيير في جدار الحماية والمبدّل."
+
+#: os-trafficpriority
+msgid "On an XGS 3300 whose switch os-xgs-npu sets: the part of a full port, in percent, this class's switch queue gets at least. Without minimums the classes in the switch are strict, served before everything else, and can take a whole port; with them their queues are weighted and the rest of the port keeps what is left. To keep the parts, os-xgs-npu turns off flow control (pause) on the coprocessor's uplink while the switch has them, and puts it back as it found it when it has none: the switch then drops what the coprocessor sends beyond what a port takes, instead of holding the coprocessor back. Measured on an XGS 3300: minimums of 30 and 20 shared a full port 59 to 41, where with the pause on the first took 98 percent; it cost 1 to 4 percent of the port's rate, and more retransmissions. Strict classes leave the pause as it was. Strict and weighted are not mixed: every class with a switch queue has a minimum, or none has. Only the first two DSCPs in the list's order have a queue of their own, and the minimums of the classes switched on add up to 100 at most. The switch has one set of weights for every port in weighted mode, the coprocessor's own uplink among them, so the part is the same on each; queues 1 to 6, which no class takes, get one turn each in it - frames your clients mark themselves (DSCP 8 to 55) wait in those queues on their way into the coprocessor, and when that link is full each queue gets about one turn in a hundred. Not measured yet: whether the switch shares a port by frames or by bytes."
+msgstr "على XGS 3300 يضبط os-xgs-npu مبدّله: الحصة الدنيا، بالنسبة المئوية، التي ينالها طابور هذه الفئة في المبدّل من منفذ ممتلئ. دون حدود دنيا تكون الفئات التي في المبدّل صارمة، تُخدَم قبل كل ما سواها، ويمكنها أن تأخذ المنفذ كله؛ ومعها تكون طوابيرها موزونة ويحتفظ باقي المنفذ بما يتبقّى. ولحفظ الحصص يطفئ os-xgs-npu التحكم بالتدفق (الإيقاف) على الوصلة الصاعدة الخاصة بالمعالج المساعد ما دامت في المبدّل، ويعيده كما وجده حين لا تبقى: فيُسقط المبدّل ما يرسله المعالج المساعد فوق ما يأخذه المنفذ، بدل أن يوقف المعالج المساعد. قيس على XGS 3300: حدّان أدنيان 30 و20 تقاسما منفذًا ممتلئًا 59 إلى 41، بينما أخذت الأولى 98 بالمئة والإيقاف شغّال؛ وكلّف ذلك من 1 إلى 4 بالمئة من سرعة المنفذ، وإعادات إرسال أكثر. والفئات الصارمة تترك الإيقاف كما كان. لا يُخلط الصارم بالموزون: إما أن يكون لكل فئة لها طابور في المبدّل حد أدنى، وإما ألا يكون لأي منها. ولا يكون طابور خاص إلا لأول قيمتين من قيم DSCP بترتيب القائمة، ولا يزيد مجموع الحدود الدنيا للفئات المفعّلة على 100. وللمبدّل مجموعة أوزان واحدة لكل منفذ في الوضع الموزون، ومنها الوصلة الصاعدة الخاصة بالمعالج المساعد، فالحصة هي نفسها على كلٍّ منها؛ والطوابير من 1 إلى 6، التي لا تأخذها أي فئة، ينال كلٌّ منها فيها دورًا واحدًا - فالإطارات التي يَسِمها عملاؤك بأنفسهم (DSCP من 8 إلى 55) تنتظر في تلك الطوابير في طريقها إلى المعالج المساعد، وحين تمتلئ تلك الوصلة ينال كل طابور نحو دور واحد من كل مئة. لم يُقس بعد: هل يوزّع المبدّل المنفذ بالإطارات أم بالبايتات."
+
+#: os-trafficpriority
+msgid "On an XGS 3300 whose switch os-xgs-npu sets: what the switch can do of Firewall: Shaper's rules, done in its queues too - a queue's weight as a part of every port for a DSCP a class here marks and has a queue for, where the queue and its pipe have no mask and the pipe's scheduler shares by weight; and a pipe's bandwidth as a front port's egress limit, in the switch's steps, where a rule sends everything leaving that port into it and no rule before it on that interface takes part of it first. Firewall: Shaper is read, never written, and still shapes on the host. The Firewall: Shaper tab says for each rule what the switch takes and what stays with the host."
+msgstr "على XGS 3300 يضبط os-xgs-npu مبدّله: ما يستطيعه المبدّل من قواعد «جدار الحماية: مُشكّل حركة المرور» يُنفَّذ في طوابيره أيضًا - وزن الطابور حصةً من كل منفذ لقيمة DSCP تَسِم بها فئةٌ هنا ولها طابور، حيث لا يكون للطابور ولا لقناته قناع ويوزّع مجدول القناة بالوزن؛ وعرض نطاق القناة بوصفه حدَّ الخروج لمنفذ أمامي، بخطوات المبدّل، حيث ترسل قاعدةٌ إليها كل ما يخرج من ذلك المنفذ ولا تأخذ قاعدةٌ قبلها على تلك الواجهة جزءًا منه أولًا. يُقرأ «جدار الحماية: مُشكّل حركة المرور» ولا يُكتب فيه أبدًا، ويبقى يُشكّل الحركة على المضيف. ويبيّن تبويب «جدار الحماية: مُشكّل حركة المرور» لكل قاعدة ما يأخذه المبدّل وما يبقى لدى المضيف."
+
+#: os-trafficpriority
+msgid "Pipe or queue"
+msgstr "القناة أو الطابور"
+
+#: os-trafficpriority
+msgid "Switch queue: on an XGS 3300, every frame the coprocessor sends into its switch waits in queue 0, marked or not; os-xgs-npu picks out two DSCPs there and gives each a queue of its own, on every front port behind the switch at once - the first two in this list's order of the classes that make a rule, IPv4, above Best Effort. While a class has a queue in the switch, every IPv4 connection no class marks has its DSCP set to 0, both ways: the switch queues every frame by its DSCP, whoever marked it. Classes without a minimum are strict: they go before everything else, and can take a whole port. With minimums they are weighted: each keeps at least its part of a full port, and the rest keeps what is left - os-xgs-npu turns off flow control (pause) on the coprocessor's uplink meanwhile, so the switch drops what the coprocessor sends beyond what a port takes instead of holding it back; strict classes leave it as it was. Strict and weighted are not mixed. The front ports on the coprocessor's own MACs - F1 and F2 - are not behind the switch. Measured on an XGS 3300 with these classes: their DSCPs picked out into queues 7 and 6, and minimums of 30 and 20 sharing a full port 59 to 41 with the pause off, for 1 to 4 percent of its rate and more retransmissions."
+msgstr "طابور المبدّل: على XGS 3300 ينتظر كل إطار يرسله المعالج المساعد إلى مبدّله في الطابور 0، موسومًا كان أم لا؛ ويلتقط os-xgs-npu هناك قيمتين من قيم DSCP ويعطي كلًّا منهما طابورًا خاصًا بها، على كل المنافذ الأمامية خلف المبدّل دفعة واحدة - أول قيمتين بترتيب هذه القائمة من الفئات التي تصنع قاعدة، IPv4، فوق «أفضل جهد». وما دام لفئةٍ طابورٌ في المبدّل، تُضبط قيمة DSCP على 0 في كل اتصال IPv4 لا تَسِمه أي فئة، في الاتجاهين: فالمبدّل يضع كل إطار في طابور قيمته، أيًّا كان من وسمه. والفئات التي بلا حد أدنى صارمة: تتقدّم على كل ما سواها، ويمكنها أن تأخذ المنفذ كله. ومع الحدود الدنيا تكون موزونة: تحتفظ كلٌّ منها بحصتها من منفذ ممتلئ على الأقل، ويحتفظ الباقي بما يتبقّى - ويطفئ os-xgs-npu في أثناء ذلك التحكم بالتدفق (الإيقاف) على الوصلة الصاعدة الخاصة بالمعالج المساعد، فيُسقط المبدّل ما يرسله المعالج المساعد فوق ما يأخذه المنفذ بدل أن يوقفه؛ والفئات الصارمة تتركه كما كان. ولا يُخلط الصارم بالموزون. والمنافذ الأمامية التي على وحدات MAC الخاصة بالمعالج المساعد - F1 وF2 - ليست خلف المبدّل. قيس على XGS 3300 مع هذه الفئات: التقاط قيمتيهما إلى الطابورين 7 و6، وحدّان أدنيان 30 و20 تقاسما منفذًا ممتلئًا 59 إلى 41 والإيقاف مطفأ، مقابل 1 إلى 4 بالمئة من سرعته وإعادات إرسال أكثر."
+
+#: os-trafficpriority
+msgid "The minimums of the classes switched on would add up to more than 100 percent."
+msgstr "سيزيد مجموع الحدود الدنيا للفئات المفعّلة على 100 بالمئة."
+
+#: os-trafficpriority
+msgid "Traffic Priority is off"
+msgstr "أولوية حركة المرور مطفأة"
+
+#: os-trafficpriority
+msgid "With the host"
+msgstr "لدى المضيف"
+
+#: os-trafficpriority
+msgid "a DSCP this page does not know"
+msgstr "قيمة DSCP لا تعرفها هذه الصفحة"
+
+#: os-trafficpriority
+msgid "a class's own minimum for DSCP %s is held instead"
+msgstr "يُضمن بدلًا من ذلك حد أدنى خاص بفئةٍ لقيمة DSCP %s"
+
+#: os-trafficpriority
+msgid "a limit for each address, by its pipe's mask: the switch limits a port"
+msgstr "حد لكل عنوان، بحسب قناع قناتها: يحدّ المبدّل المنفذ كله"
+
+#: os-trafficpriority
+msgid "a rate the switch cannot set: 64 kbit/s to 10 Gbit/s"
+msgstr "معدل لا يستطيع المبدّل ضبطه: من 64 kbit/s إلى 10 Gbit/s"
+
+#: os-trafficpriority
+msgid "a weight for each address, by its queue's mask: the switch shares a port among its queues"
+msgstr "وزن لكل عنوان، بحسب قناع طابورها: يوزّع المبدّل المنفذ على طوابيره"
+
+#: os-trafficpriority
+msgid "an earlier rule gave DSCP %s its part: %s"
+msgstr "أعطت قاعدة سابقة قيمة DSCP %s حصتها: %s"
+
+#: os-trafficpriority
+msgid "an earlier rule limits this port: %s"
+msgstr "قاعدة سابقة تحدّ هذا المنفذ: %s"
+
+#: os-trafficpriority
+msgid "an earlier rule on this interface takes part of its traffic first: %s"
+msgstr "قاعدة سابقة على هذه الواجهة تأخذ جزءًا من حركتها أولًا: %s"
+
+#: os-trafficpriority
+msgid "being set"
+msgstr "قيد الضبط"
+
+#: os-trafficpriority
+msgid "both ways"
+msgstr "في الاتجاهين"
+
+#: os-trafficpriority
+msgid "changed"
+msgstr "تغيّرت"
+
+#: os-trafficpriority
+msgid "changed since the last Apply"
+msgstr "تغيّر منذ آخر «تطبيق»"
+
+#: os-trafficpriority
+msgid "it matches no DSCP: the switch tells traffic apart by a DSCP alone"
+msgstr "لا تطابق أي قيمة DSCP: لا يميّز المبدّل الحركة إلا بقيمة DSCP"
+
+#: os-trafficpriority
+msgid "its interface is not a front port behind the switch"
+msgstr "واجهتها ليست منفذًا أماميًا خلف المبدّل"
+
+#: os-trafficpriority
+msgid "its minimum is not held: no queue of its own"
+msgstr "حدها الأدنى غير مضمون: لا طابور خاص بها"
+
+#: os-trafficpriority
+msgid "its other conditions are not the switch's: it picks out the DSCP alone"
+msgstr "شروطها الأخرى ليست مما يأخذه المبدّل: فهو لا يلتقط إلا قيمة DSCP"
+
+#: os-trafficpriority
+msgid "its part is not kept: the other switch queue would be strict and go first"
+msgstr "لا تُضمن حصتها: طابور المبدّل الآخر سيكون صارمًا ويتقدّم عليها"
+
+#: os-trafficpriority
+msgid "its part, %s percent, would take the parts past 100 percent"
+msgstr "حصتها، %s بالمئة، ستجعل مجموع الحصص يتجاوز 100 بالمئة"
+
+#: os-trafficpriority
+msgid "its pipe or queue is off or gone"
+msgstr "قناتها أو طابورها مطفأ أو محذوف"
+
+#: os-trafficpriority
+msgid "its pipe's %s for this traffic alone: the switch limits a port, not a class"
+msgstr "عرض نطاق قناتها، %s، لهذه الحركة وحدها: يحدّ المبدّل المنفذ كله، لا فئة من الحركة"
+
+#: os-trafficpriority
+msgid "its pipe's scheduler, %s, does not share by weight"
+msgstr "مجدول قناتها، %s، لا يوزّع بالوزن"
+
+#: os-trafficpriority
+msgid "last Apply:"
+msgstr "آخر «تطبيق»:"
+
+#: os-trafficpriority
+msgid "more than one DSCP: each has a queue of its own in the switch"
+msgstr "أكثر من قيمة DSCP: لكلٍّ منها طابور خاص بها في المبدّل"
+
+#: os-trafficpriority
+msgid "no class here marks DSCP %s"
+msgstr "لا تَسِم أي فئة هنا بقيمة DSCP %s"
+
+#: os-trafficpriority
+msgid "no queue at the last filter reload: Apply puts it in"
+msgstr "لا طابور لها عند إعادة تحميل الجدار الناري الأخيرة: يضعها «تطبيق» فيه"
+
+#: os-trafficpriority
+msgid "no queue: pf was given no rule for it"
+msgstr "لا طابور: لم يُعطَ pf قاعدة لها"
+
+#: os-trafficpriority
+msgid "no switch here: pf alone marks"
+msgstr "لا مبدّل هنا: pf وحده يَسِم"
+
+#: os-trafficpriority
+msgid "no switch os-xgs-npu knows on this model"
+msgstr "لا مبدّل يعرفه os-xgs-npu في هذا الطراز"
+
+#: os-trafficpriority
+msgid "none: strict"
+msgstr "بلا حد: صارمة"
+
+#: os-trafficpriority
+msgid "not applied on this model yet: measured on the XGS 3300 alone"
+msgstr "لا يُطبَّق على هذا الطراز بعد: قيس على XGS 3300 وحده"
+
+#: os-trafficpriority
+msgid "not applied on this model yet: os-xgs-npu only reads its switch"
+msgstr "لا يُطبَّق على هذا الطراز بعد: os-xgs-npu يقرأ مبدّله فقط"
+
+#: os-trafficpriority
+msgid "not known"
+msgstr "غير معروف"
+
+#: os-trafficpriority
+msgid "nothing given to the switch:"
+msgstr "لم يُعطَ المبدّل شيئًا:"
+
+#: os-trafficpriority
+msgid "pf only: the switch takes two DSCPs, and two come before it"
+msgstr "pf وحده: يأخذ المبدّل قيمتين من قيم DSCP، وقيمتان تسبقانها"
+
+#: os-trafficpriority
+msgid "pf refused the rule set of the last filter reload: the switch is left as it is."
+msgstr "رفض pf مجموعة القواعد في إعادة تحميل الجدار الناري الأخيرة: يُترك المبدّل على حاله."
+
+#: os-trafficpriority
+msgid "queue %s, strict"
+msgstr "الطابور %s، صارم"
+
+#: os-trafficpriority
+msgid "queue %s, weighted: %s percent of a full port at least"
+msgstr "الطابور %s، موزون: %s بالمئة من منفذ ممتلئ على الأقل"
+
+#: os-trafficpriority
+msgid "queue 0, with everything else"
+msgstr "الطابور 0، مع كل ما سواه"
+
+#: os-trafficpriority
+msgid "queue 0: a DSCP below Best Effort takes no queue of its own"
+msgstr "الطابور 0: قيمة DSCP التي دون «أفضل جهد» لا تأخذ طابورًا خاصًا بها"
+
+#: os-trafficpriority
+msgid "queue 0: the switch picks out IPv4 alone"
+msgstr "الطابور 0: لا يلتقط المبدّل إلا IPv4"
+
+#: os-trafficpriority
+msgid "set by Apply"
+msgstr "ضبطها «تطبيق»"
+
+#: os-trafficpriority
+msgid "switched off in Firewall: Shaper"
+msgstr "مطفأة في «جدار الحماية: مُشكّل حركة المرور»"
+
+#: os-trafficpriority
+msgid "the only queue of its pipe: its weight shares nothing"
+msgstr "الطابور الوحيد في قناته: وزنه لا يوزّع شيئًا"
+
+#: os-trafficpriority
+msgid "the switch no longer holds what Apply set: Apply again"
+msgstr "لم يعد المبدّل يحمل ما ضبطه «تطبيق»: طبّق مرة أخرى"
+
+#: os-trafficpriority
+msgid "the way in: the switch limits what leaves a port"
+msgstr "الاتجاه الوارد: يحدّ المبدّل ما يخرج من المنفذ"
+
+#: os-trafficpriority
+msgid "this os-xgs-npu sets no switch queue yet: update it"
+msgstr "إصدار os-xgs-npu هذا لا يضبط طوابير المبدّل بعد: حدّثه"
