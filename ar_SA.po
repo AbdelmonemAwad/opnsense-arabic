@@ -62696,6 +62696,34 @@ msgstr "تنبيه تجريبي"
 msgid "Send a test alert"
 msgstr "إرسال تنبيه تجريبي"
 
+#: os-netreport
+msgid "Web activity by device"
+msgstr "نشاط الويب لكل جهاز"
+
+#: os-netreport
+msgid "Report sources"
+msgstr "مصادر التقرير"
+
+#: os-netreport
+msgid "ntopng address"
+msgstr "عنوان ntopng"
+
+#: os-netreport
+msgid "For the Applications section: the address of ntopng's web interface (os-ntopng). Empty: http://127.0.0.1:3000, ntopng on this firewall."
+msgstr "لقسم التطبيقات: عنوان واجهة ntopng على الويب (os-ntopng). فارغ: http://127.0.0.1:3000، أي ntopng على جدار الحماية هذا."
+
+#: os-netreport
+msgid "ntopng API token"
+msgstr "رمز واجهة ntopng البرمجية (API)"
+
+#: os-netreport
+msgid "Optional: a token made in ntopng for its REST API. With it, the Applications section shows ntopng's applications by traffic; without it, what Suricata recorded. Stored on this firewall only. Leave empty to keep the current token."
+msgstr "اختياري: رمز يُنشأ في ntopng لواجهته البرمجية REST. به يعرض قسم التطبيقات تطبيقات ntopng بحسب الحركة، ودونه ما سجّلته Suricata. يُحفظ على جدار الحماية هذا فقط. اتركه فارغًا للإبقاء على الرمز الحالي."
+
+#: os-netreport
+msgid "Enter the token as ntopng shows it."
+msgstr "اكتب الرمز كما يعرضه ntopng."
+
 # ---- os-frontpanel: the keys card says whether the buttons beside the screen are being read.
 # Its own two strings, because "read" and "not read" mean "was read" and "has not been read"
 # elsewhere (os-xgs-npu, os-fanctl), and one msgid has one Arabic.
