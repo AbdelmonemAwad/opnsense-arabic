@@ -68991,3 +68991,455 @@ msgstr "%s هو الجدار الناري نفسه، لا جهاز يتصل عب
 #: os-appcontrol
 msgid "Inverted, any is no device: choose the devices to leave out."
 msgstr "عكس «أي» لا يترك أي جهاز: اختر الأجهزة المراد استثناؤها."
+
+#: os-modsecurity
+msgid "%s and %s of another site would take the same requests: a host name belongs to one site."
+msgstr "%s و%s من موقع آخر سيستقبلان الطلبات نفسها: اسم المضيف ينتمي إلى موقع واحد."
+
+#: os-modsecurity
+msgid "%s blocking"
+msgstr "%s في وضع الحظر"
+
+#: os-modsecurity
+msgid "%s detection only"
+msgstr "%s في وضع الكشف فقط"
+
+#: os-modsecurity
+msgid "%s is a host name of another site."
+msgstr "%s اسم مضيف لموقع آخر."
+
+#: os-modsecurity
+msgid "A URL of the site's server, http:// or https://, such as http://192.0.2.10:8080 or https://intranet.example.com."
+msgstr "عنوان URL لخادم الموقع، http:// أو https://، مثل http://192.0.2.10:8080 أو https://intranet.example.com."
+
+#: os-modsecurity
+msgid "A new site is in Detection only: what the rules find is logged and the request passes. Blocking refuses an attack with 403. Changes here are put into use with Apply."
+msgstr "الموقع الجديد في وضع «الكشف فقط»: يُسجَّل ما تجده القواعد ويمرّ الطلب. و«الحظر» يرفض الهجوم بالرمز 403. وتُوضع التغييرات هنا قيد الاستخدام بـ«تطبيق»."
+
+#: os-modsecurity
+msgid "A port, from 1 to 65535, or empty for none."
+msgstr "منفذ، من 1 إلى 65535، أو فارغ لعدم وجود منفذ."
+
+#: os-modsecurity
+msgid "A signed release, its signature checked with %s."
+msgstr "إصدار موقَّع، جرى التحقق من توقيعه بـ %s."
+
+#: os-modsecurity
+msgid "A site behind this firewall runs on its host processor, never in hardware: measured on an XGS 3300 (vendor version 22), 148 requests a second one at a time through Apache and the Core Rule Set at paranoia level 1, plain HTTP - about 75 a second for each host core, derived from its processor time. On an XGS 136: not measured yet."
+msgstr "يعمل الموقع خلف جدار الحماية هذا على معالج المضيف، لا في العتاد أبدًا: قيس على XGS 3300 (الإصدار 22 من برنامج المورّد) 148 طلبًا في الثانية، طلبًا بعد طلب، عبر Apache وCore Rule Set بمستوى الحذر 1، بـ HTTP العادي - أي نحو 75 في الثانية لكل نواة من أنوية المضيف، مستنتجةً من زمن المعالج الذي استهلكه. وعلى XGS 136: لم يُقس بعد."
+
+#: os-modsecurity
+msgid "A site has %d host names at most."
+msgstr "للموقع %d من أسماء المضيفين على الأكثر."
+
+#: os-modsecurity
+msgid "A site reached from another network needs a rule on that interface passing its port to This Firewall (Firewall: Rules): none is made here."
+msgstr "الموقع الذي يُوصل إليه من شبكة أخرى يحتاج قاعدة على تلك الواجهة تمرّر منفذه إلى «جدار الحماية هذا» (جدار الحماية: القواعد): ولا تُنشأ هنا أي قاعدة."
+
+#: os-modsecurity
+msgid "A site's certificate is not in System: Trust with its private key:"
+msgstr "شهادة موقع ليست في «النظام: الثقة» مع مفتاحها الخاص:"
+
+#: os-modsecurity
+msgid "Add one in Sites, then Apply"
+msgstr "أضف موقعًا في «المواقع»، ثم «تطبيق»"
+
+#: os-modsecurity
+msgid "Allow access to the Web Application Firewall: the sites it publishes, how each is inspected, and its settings"
+msgstr "السماح بالوصول إلى جدار حماية تطبيقات الويب (WAF): المواقع التي ينشرها، وكيفية فحص كلٍّ منها، وإعداداته"
+
+#: os-modsecurity
+msgid "Another Apply or a Core Rule Set install is running: try again once it ends."
+msgstr "يجري «تطبيق» آخر أو تثبيت لـ Core Rule Set: حاول مرة أخرى حين ينتهي."
+
+#: os-modsecurity
+msgid "Apache could not run the new configuration, and runs the one before again:"
+msgstr "تعذّر على Apache تشغيل الإعدادات الجديدة، فعاد يشغّل الإعدادات السابقة:"
+
+#: os-modsecurity
+msgid "Apache did not run:"
+msgstr "لم يعمل Apache:"
+
+#: os-modsecurity
+msgid "Apache has no module the configuration needs:"
+msgstr "ليس لدى Apache وحدة تحتاجها الإعدادات:"
+
+#: os-modsecurity
+msgid "Apache refused the configuration with this Core Rule Set, so the one before stays in use:"
+msgstr "رفض Apache الإعدادات مع Core Rule Set هذه، فتبقى السابقة قيد الاستخدام:"
+
+#: os-modsecurity
+msgid "Apache refused the configuration, and runs the one before:"
+msgstr "رفض Apache الإعدادات، ويشغّل السابقة:"
+
+#: os-modsecurity
+msgid "Applied. Sites published: %s."
+msgstr "طُبِّق. المواقع المنشورة: %s."
+
+#: os-modsecurity
+msgid "Applied: no site can be published, so Apache is stopped."
+msgstr "طُبِّق: لا يمكن نشر أي موقع، فأُوقف Apache."
+
+#: os-modsecurity
+msgid "Applied: the Web Application Firewall is off."
+msgstr "طُبِّق: جدار حماية تطبيقات الويب (WAF) مُطفأ."
+
+#: os-modsecurity
+msgid "Apply starts it"
+msgstr "يشغّله «تطبيق»"
+
+#: os-modsecurity
+msgid "Blocking"
+msgstr "الحظر"
+
+#: os-modsecurity
+msgid "Check the backend's certificate"
+msgstr "التحقق من شهادة الخلفية"
+
+#: os-modsecurity
+msgid "Core Rule Set"
+msgstr "Core Rule Set"
+
+#: os-modsecurity
+msgid "Detection only"
+msgstr "الكشف فقط"
+
+#: os-modsecurity
+msgid "Detection only: every request is inspected and what the rules find is logged, and the request passes - the first mode of a new site, to see what the rules would refuse before they refuse it. Blocking: a request the rules judge an attack is refused with 403. So is, at every level, a method other than GET, HEAD, POST and OPTIONS - a WebDAV or REST backend's PUT, DELETE or PROPFIND - or a content type the Core Rule Set does not list: keep such a site in Detection only. And in Blocking a request body larger than 12.5 MiB with files, or 128 KiB without, is refused with 413."
+msgstr "الكشف فقط: يُفحص كل طلب ويُسجَّل ما تجده القواعد، ويمرّ الطلب - وهو أول وضع للموقع الجديد، لترى ما سترفضه القواعد قبل أن ترفضه. الحظر: يُرفض بالرمز 403 الطلب الذي تحكم القواعد بأنه هجوم. وكذلك، في كل مستوى، الطريقة غير GET وHEAD وPOST وOPTIONS - مثل PUT أو DELETE أو PROPFIND لخلفية WebDAV أو REST - أو نوع المحتوى الذي لا تذكره Core Rule Set: فأبقِ موقعًا كهذا في «الكشف فقط». وفي «الحظر» يُرفض بالرمز 413 متن الطلب الأكبر من 12.5 MiB مع ملفات، أو من 128 KiB دونها."
+
+#: os-modsecurity
+msgid "Each site is published here: its requests end on this firewall, ModSecurity inspects them with the OWASP Core Rule Set, and Apache passes them on to the site's backend. A site reached through a port forward instead never meets these rules."
+msgstr "يُنشر كل موقع هنا: تنتهي طلباته عند جدار الحماية هذا، ويفحصها ModSecurity بـ OWASP Core Rule Set، ويمرّرها Apache إلى خلفية الموقع. أما الموقع الذي يُوصل إليه عبر إعادة توجيه منفذ بدلًا من ذلك فلا يمرّ بهذه القواعد أبدًا."
+
+#: os-modsecurity
+msgid "Edit site"
+msgstr "تعديل الموقع"
+
+#: os-modsecurity
+msgid "Enabled sites with a certificate are served over HTTPS: give an HTTPS port, or take their certificates away."
+msgstr "المواقع المفعّلة التي لها شهادة تُخدَم عبر HTTPS: حدّد منفذ HTTPS، أو أزل شهاداتها."
+
+#: os-modsecurity
+msgid "Enabled sites without a certificate are served over plain HTTP: give an HTTP port, or each of them a certificate."
+msgstr "المواقع المفعّلة التي ليس لها شهادة تُخدَم عبر HTTP العادي: حدّد منفذ HTTP، أو أعطِ كلًّا منها شهادة."
+
+#: os-modsecurity
+msgid "For an https:// backend: its certificate must be signed by an authority of this firewall's trust store and be valid for the site's host names, not for the name or address written in Backend - the name the browser asked for is passed on, and asked of the backend (SNI). A backend whose certificate names only itself: turn this off. Off: any certificate is taken - only for a server on a network you trust."
+msgstr "لخلفية https://: يجب أن تكون شهادتها موقَّعة من مرجع مصدق في مخزن الثقة في جدار الحماية هذا، وصالحة لأسماء المضيفين الخاصة بالموقع، لا للاسم أو العنوان المكتوب في «الخلفية (Backend)» - إذ يُمرَّر الاسم الذي طلبه المتصفح، ويُطلب من الخلفية (SNI). والخلفية التي لا تسمّي شهادتُها إلا نفسها: أطفئ هذا. عند إطفائه: تُقبل أي شهادة - ولا يكون ذلك إلا لخادم على شبكة تثق بها."
+
+#: os-modsecurity
+msgid "GitHub could not be reached:"
+msgstr "تعذّر الوصول إلى GitHub:"
+
+#: os-modsecurity
+msgid "Give a port for HTTP, for HTTPS or both, or turn the Web Application Firewall off."
+msgstr "حدّد منفذًا لـ HTTP، أو لـ HTTPS، أو لكليهما، أو أطفئ جدار حماية تطبيقات الويب (WAF)."
+
+#: os-modsecurity
+msgid "HTTP and HTTPS need a port each."
+msgstr "يحتاج كلٌّ من HTTP وHTTPS منفذًا خاصًا به."
+
+#: os-modsecurity
+msgid "HTTP port"
+msgstr "منفذ HTTP"
+
+#: os-modsecurity
+msgid "HTTPS port"
+msgstr "منفذ HTTPS"
+
+#: os-modsecurity
+msgid "Host names"
+msgstr "أسماء المضيفين"
+
+#: os-modsecurity
+msgid "Host names, such as www.example.com, or a wildcard such as *.example.com."
+msgstr "أسماء مضيفين، مثل www.example.com، أو اسم عام (wildcard) مثل *.example.com."
+
+#: os-modsecurity
+msgid "How many of the Core Rule Set's rules run: 1 has the fewest false positives and suits most sites; each level up adds rules that find more attacks, and refuse more ordinary requests. Raise it after the site has run in Detection only at it."
+msgstr "كم من قواعد Core Rule Set يعمل: المستوى 1 أقلّها إنذارات كاذبة ويناسب معظم المواقع؛ وكل مستوى أعلى يضيف قواعد تجد هجمات أكثر، وترفض طلبات عادية أكثر. ارفعه بعد أن يعمل الموقع في «الكشف فقط» عند ذلك المستوى."
+
+#: os-modsecurity
+msgid "Install again"
+msgstr "إعادة التثبيت"
+
+#: os-modsecurity
+msgid "Install it in Settings"
+msgstr "ثبّتها في «الإعدادات»"
+
+#: os-modsecurity
+msgid "Install the Core Rule Set in Settings"
+msgstr "ثبّت Core Rule Set في «الإعدادات»"
+
+#: os-modsecurity
+msgid "Installed by hand from an archive: its signature was checked where it was fetched, not here."
+msgstr "ثُبِّتت يدويًا من أرشيف: جرى التحقق من توقيعه حيث جُلب، لا هنا."
+
+#: os-modsecurity
+msgid "Its status could not be read."
+msgstr "تعذّرت قراءة الحالة."
+
+#: os-modsecurity
+msgid "Level 1: fewest false positives"
+msgstr "المستوى 1: أقل الإنذارات الكاذبة"
+
+#: os-modsecurity
+msgid "Level 4: most rules"
+msgstr "المستوى 4: أكثر القواعد"
+
+#: os-modsecurity
+msgid "Listen interfaces"
+msgstr "واجهات الاستماع"
+
+#: os-modsecurity
+msgid "Listening"
+msgstr "الاستماع"
+
+#: os-modsecurity
+msgid "No release of the Core Rule Set's %s line is published for this plugin yet."
+msgstr "لم يُنشر بعد لهذا المكوّن الإضافي أي إصدار من سلسلة %s من Core Rule Set."
+
+#: os-modsecurity
+msgid "None: plain HTTP"
+msgstr "لا شيء: HTTP العادي"
+
+#: os-modsecurity
+msgid "Not installed. Install takes the newest release of the 4.25 line, as this project republished it signed once its own signature was checked."
+msgstr "غير مثبّتة. يأخذ «تثبيت» أحدث إصدار من سلسلة 4.25، كما أعاد هذا المشروع نشره موقَّعًا بعد التحقق من توقيعه الأصلي."
+
+#: os-modsecurity
+msgid "Not published:"
+msgstr "غير منشورة:"
+
+#: os-modsecurity
+msgid "Paranoia level"
+msgstr "مستوى الحذر"
+
+#: os-modsecurity
+msgid "Publish the sites of the Sites tab through this firewall: each request is received here, inspected by ModSecurity with the OWASP Core Rule Set, and passed to the site's backend. Off by default. A new site only logs what the rules find, until its Mode is Blocking."
+msgstr "نشر مواقع تبويب «المواقع» عبر جدار الحماية هذا: يُستقبل كل طلب هنا، ويفحصه ModSecurity بـ OWASP Core Rule Set، ويُمرَّر إلى خلفية الموقع. مُطفأ افتراضيًا. والموقع الجديد لا يفعل إلا تسجيل ما تجده القواعد، حتى يصبح «الوضع» فيه «الحظر»."
+
+#: os-modsecurity
+msgid "Services: Web Application Firewall"
+msgstr "الخدمات: جدار حماية تطبيقات الويب (WAF)"
+
+#: os-modsecurity
+msgid "Settings has no HTTP port: give one there, or a certificate here."
+msgstr "لا منفذ HTTP في «الإعدادات»: حدّد منفذًا هناك، أو شهادة هنا."
+
+#: os-modsecurity
+msgid "Settings has no HTTPS port: give one there, or no certificate here."
+msgstr "لا منفذ HTTPS في «الإعدادات»: حدّد منفذًا هناك، أو لا تحدّد شهادة هنا."
+
+#: os-modsecurity
+msgid "Sites"
+msgstr "المواقع"
+
+#: os-modsecurity
+msgid "The Core Rule Set %s is installed."
+msgstr "Core Rule Set %s مثبّتة."
+
+#: os-modsecurity
+msgid "The Core Rule Set %s is the newest of its line, and installed."
+msgstr "Core Rule Set %s أحدث سلسلتها، وهي مثبّتة."
+
+#: os-modsecurity
+msgid "The Core Rule Set could not be written:"
+msgstr "تعذّرت كتابة Core Rule Set:"
+
+#: os-modsecurity
+msgid "The Core Rule Set is not installed: Install it in Settings."
+msgstr "Core Rule Set غير مثبّتة: ثبّتها في «الإعدادات»."
+
+#: os-modsecurity
+msgid "The Core Rule Set was not installed:"
+msgstr "لم تُثبَّت Core Rule Set:"
+
+#: os-modsecurity
+msgid "The Listen interfaces have no address now:"
+msgstr "ليس لواجهات الاستماع عنوان الآن:"
+
+#: os-modsecurity
+msgid "The archive is not one this firewall installs:"
+msgstr "الأرشيف ليس مما يثبّته جدار الحماية هذا:"
+
+#: os-modsecurity
+msgid "The archive is not the one signed:"
+msgstr "الأرشيف ليس الأرشيف الموقَّع:"
+
+#: os-modsecurity
+msgid "The configuration could not be written, and Apache was left as it was:"
+msgstr "تعذّرت كتابة الإعدادات، وتُرك Apache كما كان:"
+
+#: os-modsecurity
+msgid "The interfaces whose addresses the sites are received on. None chosen: every address of this firewall. A site reached from another network also needs a rule on that interface passing its port to This Firewall (Firewall: Rules): none is made here."
+msgstr "الواجهات التي تُستقبل المواقع على عناوينها. إن لم تُختر أي واجهة: كل عنوان لجدار الحماية هذا. والموقع الذي يُوصل إليه من شبكة أخرى يحتاج أيضًا قاعدة على تلك الواجهة تمرّر منفذه إلى «جدار الحماية هذا» (جدار الحماية: القواعد): ولا تُنشأ هنا أي قاعدة."
+
+#: os-modsecurity
+msgid "The list of this plugin's releases could not be read:"
+msgstr "تعذّرت قراءة قائمة إصدارات هذا المكوّن الإضافي:"
+
+#: os-modsecurity
+msgid "The names this site is reached by, as a browser asks for them: www.example.com, or a wildcard for every name under a domain, *.example.com. The first is the site's own name. A host name belongs to one site: none may be another site's, or under another site's wildcard. A request for a name no site has is refused, and not inspected."
+msgstr "الأسماء التي يُوصل بها إلى هذا الموقع، كما يطلبها المتصفح: www.example.com، أو اسم عام (wildcard) لكل اسم تحت نطاق، *.example.com. الأول هو اسم الموقع نفسه. واسم المضيف ينتمي إلى موقع واحد: فلا يجوز أن يكون أيٌّ منها لموقع آخر، أو تحت الاسم العام لموقع آخر. والطلب لاسم ليس لأي موقع يُرفض، ولا يُفحص."
+
+#: os-modsecurity
+msgid "The newest release is not signed yet:"
+msgstr "أحدث إصدار لم يُوقَّع بعد:"
+
+#: os-modsecurity
+msgid "The port of the sites with a certificate: 443 by default. Empty: no HTTPS. The web GUI listens on 443 of every interface until it is moved, as for the HTTP port."
+msgstr "منفذ المواقع التي لها شهادة: 443 افتراضيًا. فارغ: لا HTTPS. وتستمع واجهة الويب على المنفذ 443 في كل واجهة حتى تُنقل، كما في منفذ HTTP."
+
+#: os-modsecurity
+msgid "The port of the sites without a certificate, and of the redirect to HTTPS of those with one: 80 by default. Empty: no plain HTTP. A port the web GUI listens on where the sites would be received is refused: move the GUI in System: Settings: Administration - another TCP port, or Listen interfaces other than the ones chosen here."
+msgstr "منفذ المواقع التي ليس لها شهادة، ومنفذ إعادة توجيه المواقع التي لها شهادة إلى HTTPS: 80 افتراضيًا. فارغ: لا HTTP عادي. ويُرفض المنفذ الذي تستمع عليه واجهة الويب حيث ستُستقبل المواقع: انقل واجهة الويب في «النظام: الإعدادات: الإدارة» - إلى منفذ TCP آخر، أو إلى واجهات استماع غير المختارة هنا."
+
+#: os-modsecurity
+msgid "The release's signature does not verify with a release key of this firewall:"
+msgstr "لا يتحقق توقيع الإصدار بأي مفتاح إصدارات في جدار الحماية هذا:"
+
+#: os-modsecurity
+msgid "The release's signed manifest is not one this firewall takes:"
+msgstr "البيان الموقَّع للإصدار ليس مما يقبله جدار الحماية هذا:"
+
+#: os-modsecurity
+msgid "The settings could not be applied:"
+msgstr "تعذّر تطبيق الإعدادات:"
+
+#: os-modsecurity
+msgid "The site's certificate of System: Trust, with its private key: the site is then served over HTTPS, and its plain HTTP requests are sent there. None: the site is served over plain HTTP. Renewed in System: Trust - by an ACME client, say - it is served from the next Apply, or within a day without one."
+msgstr "شهادة الموقع من «النظام: الثقة»، مع مفتاحها الخاص: عندها يُخدَم الموقع عبر HTTPS، وتُرسَل طلبات HTTP العادية إليه. لا شيء: يُخدَم الموقع عبر HTTP العادي. وإذا جُدّدت في «النظام: الثقة» - بعميل ACME مثلًا - خُدم بها الموقع من «تطبيق» التالي، أو خلال يوم إن لم يكن «تطبيق»."
+
+#: os-modsecurity
+msgid "The site's own server, which its inspected requests are passed to: http:// or https://, an address or a name, a port, and a path where the site is not at the server's root - http://192.0.2.10:8080 or https://intranet.example.com/app. The host name a browser asked for is passed on as it is: an https:// backend is asked for that name too, and its certificate is checked against it."
+msgstr "خادم الموقع نفسه، الذي تُمرَّر إليه طلباته بعد فحصها: http:// أو https://، وعنوان أو اسم، ومنفذ، ومسار حيث لا يكون الموقع في جذر الخادم - http://192.0.2.10:8080 أو https://intranet.example.com/app. ويُمرَّر اسم المضيف الذي طلبه المتصفح كما هو: فتُطلب خلفية https:// بذلك الاسم أيضًا، وتُفحص شهادتها مقابله."
+
+#: os-modsecurity
+msgid "The web GUI listens on a port chosen here - move it in System: Settings: Administration (another TCP port, or Listen interfaces without the ones chosen here), or choose another port in Settings:"
+msgstr "تستمع واجهة الويب على منفذ مختار هنا - انقلها في «النظام: الإعدادات: الإدارة» (إلى منفذ TCP آخر، أو إلى واجهات استماع ليس فيها الواجهات المختارة هنا)، أو اختر منفذًا آخر في «الإعدادات»:"
+
+#: os-modsecurity
+msgid "The web GUI listens on a port chosen here:"
+msgstr "تستمع واجهة الويب على منفذ مختار هنا:"
+
+#: os-modsecurity
+msgid "The web GUI listens on port %s on %s. Move it in System: Settings: Administration - another TCP port, or Listen interfaces without the ones chosen here - or choose another port here."
+msgstr "تستمع واجهة الويب على المنفذ %s على %s. انقلها في «النظام: الإعدادات: الإدارة» - إلى منفذ TCP آخر، أو إلى واجهات استماع ليس فيها الواجهات المختارة هنا - أو اختر منفذًا آخر هنا."
+
+#: os-modsecurity
+msgid "The web GUI listens on port %s on every interface. Move it in System: Settings: Administration - another TCP port, or Listen interfaces without the ones chosen here - or choose another port here."
+msgstr "تستمع واجهة الويب على المنفذ %s على كل واجهة. انقلها في «النظام: الإعدادات: الإدارة» - إلى منفذ TCP آخر، أو إلى واجهات استماع ليس فيها الواجهات المختارة هنا - أو اختر منفذًا آخر هنا."
+
+#: os-modsecurity
+msgid "This certificate has no private key in System: Trust: a site cannot be served with it."
+msgstr "ليس لهذه الشهادة مفتاح خاص في «النظام: الثقة»: لا يمكن خدمة موقع بها."
+
+#: os-modsecurity
+msgid "This firewall holds no release key to check a release with:"
+msgstr "لا يحمل جدار الحماية هذا مفتاح إصدارات يُتحقق به من إصدار:"
+
+#: os-modsecurity
+msgid "This site cannot be enabled"
+msgstr "لا يمكن تفعيل هذا الموقع"
+
+#: os-modsecurity
+msgid "Version %s, %s rule files, installed %s."
+msgstr "الإصدار %s، و%s من ملفات القواعد، ثُبِّت في %s."
+
+#: os-modsecurity
+msgid "a backend that is not a URL to pass requests to"
+msgstr "خلفية ليست عنوان URL تُمرَّر إليه الطلبات"
+
+#: os-modsecurity
+msgid "a certificate, and no HTTPS port in Settings"
+msgstr "شهادة، ولا منفذ HTTPS في «الإعدادات»"
+
+#: os-modsecurity
+msgid "a host name a site before it takes too"
+msgstr "اسم مضيف يأخذه أيضًا موقع قبله"
+
+#: os-modsecurity
+msgid "a host name of a site before it"
+msgstr "اسم مضيف لموقع قبله"
+
+#: os-modsecurity
+msgid "a host name that is not one"
+msgstr "اسم مضيف غير صالح"
+
+#: os-modsecurity
+msgid "apache24 and ap24-mod_security are not installed: pkg install apache24 ap24-mod_security"
+msgstr "الحزمتان apache24 وap24-mod_security غير مثبّتتين: pkg install apache24 ap24-mod_security"
+
+#: os-modsecurity
+msgid "config.xml could not be read, and Apache was left as it was:"
+msgstr "تعذّرت قراءة config.xml، وتُرك Apache كما كان:"
+
+#: os-modsecurity
+msgid "every address"
+msgstr "كل عنوان"
+
+#: os-modsecurity
+msgid "every interface"
+msgstr "كل واجهة"
+
+#: os-modsecurity
+msgid "host processor"
+msgstr "معالج المضيف"
+
+#: os-modsecurity
+msgid "installed by hand"
+msgstr "مثبّتة يدويًا"
+
+#: os-modsecurity
+msgid "its certificate is not in System: Trust with its private key"
+msgstr "شهادته ليست في «النظام: الثقة» مع مفتاحها الخاص"
+
+#: os-modsecurity
+msgid "more sites than one Apache is given"
+msgstr "مواقع أكثر من الحد المعطى لـ Apache واحد"
+
+#: os-modsecurity
+msgid "no certificate, and no HTTP port in Settings"
+msgstr "لا شهادة، ولا منفذ HTTP في «الإعدادات»"
+
+#: os-modsecurity
+msgid "no rules"
+msgstr "لا قواعد"
+
+#: os-modsecurity
+msgid "no site"
+msgstr "لا موقع"
+
+#: os-modsecurity
+msgid "no site is published"
+msgstr "لا يُنشر أي موقع"
+
+#: os-modsecurity
+msgid "none can be published"
+msgstr "لا يمكن نشر أيٍّ منها"
+
+#: os-modsecurity
+msgid "none enabled"
+msgstr "لا موقع مفعّل"
+
+#: os-modsecurity
+msgid "not running"
+msgstr "لا يعمل"
+
+#: os-modsecurity
+msgid "pid %s"
+msgstr "pid %s"
+
+#: os-modsecurity
+msgid "pkg install apache24 ap24-mod_security"
+msgstr "pkg install apache24 ap24-mod_security"
+
+#: os-modsecurity
+msgid "plain HTTP"
+msgstr "HTTP العادي"
+
+#: os-modsecurity
+msgid "signed release, %s"
+msgstr "إصدار موقَّع، %s"
