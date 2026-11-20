@@ -68235,3 +68235,123 @@ msgstr "الاتجاه الوارد: يحدّ المبدّل ما يخرج من 
 #: os-trafficpriority
 msgid "this os-xgs-npu sets no switch queue yet: update it"
 msgstr "إصدار os-xgs-npu هذا لا يضبط طوابير المبدّل بعد: حدّثه"
+
+#: os-useridentity
+msgid "Active Directory"
+msgstr "Active Directory"
+
+#: os-useridentity
+msgid "Addresses of RADIUS clients, one each."
+msgstr "عناوين عملاء RADIUS، كلٌّ منها على حدة."
+
+#: os-useridentity
+msgid "Allow access to user identity: the addresses mapped to users from domain logons, RADIUS accounting and the captive portal, the aliases it fills, and its settings"
+msgstr "السماح بالوصول إلى هوية المستخدم: العناوين المربوطة بالمستخدمين من دخولهم إلى النطاق ومن محاسبة RADIUS ومن بوابة الدخول، والأسماء المستعارة التي تملؤها، وإعداداتها"
+
+#: os-useridentity
+msgid "Each address with the user a source last saw on it: a domain controller, RADIUS accounting or the captive portal. The latest logon wins: an address another user was seen on within the lifetime is shown as shared - a terminal server, or a runas on a client while someone sits at its screen - and as a clash when two sources gave it to two users. A RADIUS or portal session that lost its address to a later logon does not take it back; a clash that lasts - one account that many share on one source, each user's own on the other - ends with that account in Ignore users. A RADIUS Stop and the end of a portal session end a mapping at once, unless another session of the same user holds the address or it was renewed since; a domain controller says nothing at a logoff: its mappings end at the end of their lifetime, when another device takes the address, or when forgotten here."
+msgstr "كل عنوان مع آخر مستخدم رآه عليه مصدرٌ: متحكم نطاق، أو محاسبة RADIUS، أو بوابة الدخول. والدخول الأحدث هو الغالب: العنوان الذي رُئي عليه مستخدم آخر خلال مدة البقاء يظهر مشتركاً - كخادم طرفيات، أو أمر runas على جهاز يجلس أمام شاشته شخص آخر - ويظهر تعارضاً حين يعطيه مصدران لمستخدمَين. وجلسة RADIUS أو البوابة التي خسرت عنوانها لدخول أحدث لا تستعيده؛ والتعارض الذي يدوم - حساب واحد يتشاركه كثيرون في مصدر، ولكل مستخدم حسابه في المصدر الآخر - ينتهي بوضع ذلك الحساب في «تجاهل المستخدمين». وتنهي رسالة Stop من RADIUS ونهاية جلسة البوابة الربطَ فوراً، إلا إن كان العنوان في جلسة أخرى للمستخدم نفسه أو جُدّد بعدها؛ أما متحكم النطاق فلا يقول شيئاً عند الخروج: تنتهي روابطه بانتهاء مدة بقائها، أو حين يأخذ جهاز آخر العنوان، أو حين تُنسى هنا."
+
+#: os-useridentity
+msgid "Ended"
+msgstr "منتهية"
+
+#: os-useridentity
+msgid "Every address is taken out of the map and of the tables now. The next logon or network logon of each user maps it again; a captive portal session still open within half a minute, a RADIUS session at its next Interim-Update."
+msgstr "يخرج كل عنوان الآن من الخريطة ومن الجداول، ثم يربطه من جديد الدخول التالي لكل مستخدم أو دخوله الشبكي التالي؛ وجلسة البوابة التي ما زالت مفتوحة خلال نصف دقيقة، وجلسة RADIUS عند رسالة Interim-Update التالية."
+
+#: os-useridentity
+msgid "Last heard"
+msgstr "آخر ما سُمع"
+
+#: os-useridentity
+msgid "MAC authentication"
+msgstr "المصادقة بعنوان MAC"
+
+#: os-useridentity
+msgid "RADIUS"
+msgstr "RADIUS"
+
+#: os-useridentity
+msgid "RADIUS: each client named in Settings, and any other of os-freeradius whose accounting was read and refused - its records, the addresses a Start or an Interim-Update mapped or renewed, those a Stop ended, those older than the mapping lifetime when read (stale), those refused and why; Accounting-On and Accounting-Off among the others, each ending the sessions of the NAS it names - os-freeradius names the one that sent it when the request names none. Captive Portal: each zone switched on - the sessions it held, the addresses they mapped and those their end took out, and those refused and why."
+msgstr "RADIUS: كل عميل مسمّى في «الإعدادات»، وكل عميل آخر لـ os-freeradius قُرئت محاسبته ورُفضت - سجلاته، والعناوين التي ربطتها أو جدّدتها رسالة Start أو Interim-Update، والتي أنهتها رسالة Stop، والتي كانت أقدم من مدة بقاء الربط حين قُرئت (قديمة)، والمرفوضة وسببها؛ وتُعدّ Accounting-On وAccounting-Off مع غيرها، وكلٌّ منهما ينهي جلسات جهاز NAS الذي تسمّيه - ويسمّي os-freeradius مرسلَها حين لا يسمّي الطلب أحداً. بوابة الدخول: كل منطقة مشغّلة - الجلسات التي حملتها، والعناوين التي ربطتها والتي أخرجتها نهايتها، والمرفوضة وسببها."
+
+#: os-useridentity
+msgid "Sources heard"
+msgstr "المصادر المسموعة"
+
+#: os-useridentity
+msgid "a user of another directory"
+msgstr "مستخدم من دليل آخر"
+
+#: os-useridentity
+msgid "a voucher"
+msgstr "قسيمة"
+
+#: os-useridentity
+msgid "clash with"
+msgstr "يتعارض مع"
+
+#: os-useridentity
+msgid "clashes between sources"
+msgstr "تعارضات بين المصادر"
+
+#: os-useridentity
+msgid "names no user"
+msgstr "لا يسمّي مستخدماً"
+
+#: os-useridentity
+msgid "no RADIUS accounting to read"
+msgstr "لا محاسبة RADIUS لقراءتها"
+
+#: os-useridentity
+msgid "no RADIUS client named"
+msgstr "لم يُسمَّ عميل RADIUS"
+
+#: os-useridentity
+msgid "no captive portal session yet"
+msgstr "لا جلسة لبوابة الدخول بعد"
+
+#: os-useridentity
+msgid "no captive portal zone switched on"
+msgstr "لا منطقة مشغّلة لبوابة الدخول"
+
+#: os-useridentity
+msgid "no source chosen"
+msgstr "لم يُختر مصدر"
+
+#: os-useridentity
+msgid "not a RADIUS client named"
+msgstr "ليس عميل RADIUS مسمّى"
+
+#: os-useridentity
+msgid "the portal's sessions cannot be read"
+msgstr "تتعذر قراءة جلسات البوابة"
+
+#: os-useridentity
+msgid "Captive portal sessions"
+msgstr "جلسات بوابة الدخول"
+
+#: os-useridentity
+msgid "Map each address to its user - from the domain controllers' logon events, RADIUS accounting and the captive portal's sessions, as chosen here - and fill the tables of the group and user rows. Off by default: nothing is mapped until a source is chosen and groups or users are named. Off, every mapping is forgotten and the plugin's aliases leave Firewall: Aliases - switched off instead where a rule or a setting still names one."
+msgstr "ربط كل عنوان بمستخدمه - من أحداث الدخول في متحكمات النطاق، ومحاسبة RADIUS، وجلسات بوابة الدخول، كما يُختار هنا - وملء جداول صفوف المجموعات والمستخدمين. مطفأ افتراضياً: لا يُربط شيء حتى يُختار مصدر وتُسمّى مجموعات أو مستخدمون. وعند الإطفاء يُنسى كل ربط، وتخرج الأسماء المستعارة للإضافة من «جدار الحماية: الأسماء المستعارة» - أو تُطفأ بدل ذلك حيث ما زالت قاعدة أو إعداد يسمّي أحدها."
+
+#: os-useridentity
+msgid "Map the address of each RADIUS session to its user, from the accounting os-freeradius writes as each request comes, for the RADIUS clients named below alone: a Start maps its Framed-IP-Address, an Interim-Update renews it, a Stop takes it out. A NAS - or another RADIUS server that forwards its accounting - must be a client of Services: FreeRADIUS. A NAS that sends no Interim-Update leaves the mapping to the end of its lifetime, even while the session goes on. With a directory chosen in Groups from, a name written with a realm or a domain that is not the directory's maps nothing: its groups would be another user's."
+msgstr "ربط عنوان كل جلسة RADIUS بمستخدمها، من المحاسبة التي يكتبها os-freeradius عند وصول كل طلب، لعملاء RADIUS المسمّين أدناه وحدهم: رسالة Start تربط عنوانها Framed-IP-Address، ورسالة Interim-Update تجدّده، ورسالة Stop تخرجه. ويجب أن يكون جهاز NAS - أو خادم RADIUS آخر يمرّر محاسبته - عميلاً في «الخدمات: FreeRADIUS». والجهاز الذي لا يرسل Interim-Update يترك الربط حتى نهاية مدة بقائه، ولو استمرت الجلسة. ومع دليل مختار في «المجموعات من»، لا يربط شيئاً اسمٌ مكتوب بنطاق (realm) أو مجال ليس للدليل: فمجموعاته ستكون لمستخدم آخر."
+
+#: os-useridentity
+msgid "Map the address of each session of the captive portal to the user that logged on, from the logon to the logout or the portal's own timeout - read every two seconds from the portal's database. The sessions of allowed addresses, of vouchers and of zones with no login map nothing; with a directory chosen in Groups from, neither do those another server let in - the Local Database among them: their users' groups would be those of a user of the same name in the directory."
+msgstr "ربط عنوان كل جلسة لبوابة الدخول بالمستخدم الذي دخل، من الدخول حتى الخروج أو انتهاء مهلة البوابة نفسها - تُقرأ كل ثانيتين من قاعدة بيانات البوابة. ولا تربط شيئاً جلساتُ العناوين المسموح بها، ولا القسائم، ولا المناطق التي بلا دخول؛ ومع دليل مختار في «المجموعات من»، لا تربط كذلك الجلساتُ التي أدخلها خادم آخر - ومنها «قاعدة البيانات المحلية»: فمجموعات مستخدميها ستكون مجموعات مستخدم بالاسم نفسه في الدليل."
+
+#: os-useridentity
+msgid "RADIUS accounting"
+msgstr "محاسبة RADIUS"
+
+#: os-useridentity
+msgid "RADIUS clients"
+msgstr "عملاء RADIUS"
+
+#: os-useridentity
+msgid "The RADIUS clients whose accounting may map, each by its address as Services: FreeRADIUS sees it - a NAS, or a RADIUS server that forwards its accounting. A record from any other is refused; none named, none maps. Name only a client whose User-Name is the name FreeRADIUS authenticated: with EAP - PEAP, TTLS or TLS, most 802.1X - a NAS reports the outer name the device itself gives, which its user may set to anyone's, unless FreeRADIUS checks it against the name it authenticated or returns that one to the NAS in the Access-Accept; os-freeradius as installed does neither. A client taken out of this list: what it mapped ends at the next minute."
+msgstr "عملاء RADIUS الذين يجوز أن تربط محاسبتهم، كلٌّ بعنوانه كما يراه «الخدمات: FreeRADIUS» - جهاز NAS، أو خادم RADIUS يمرّر محاسبته. ويُرفض السجل من أي عميل غيرهم؛ وإن لم يُسمَّ أحد فلا يربط أحد. ولا تسمِّ إلا عميلاً يكون User-Name عنده هو الاسم الذي صادق عليه FreeRADIUS: فمع EAP - أي PEAP أو TTLS أو TLS، وهي أغلب 802.1X - ينقل جهاز NAS الاسم الخارجي الذي يعطيه الجهاز نفسه، ويستطيع مستخدمه أن يجعله اسم أي أحد، ما لم يتحقق FreeRADIUS منه مقابل الاسم الذي صادق عليه أو يُعِد ذلك الاسم إلى NAS في Access-Accept؛ وos-freeradius كما يُثبَّت لا يفعل هذا ولا ذاك. والعميل الذي يُخرج من هذه القائمة ينتهي ما ربطه في الدقيقة التالية."
