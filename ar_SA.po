@@ -68397,8 +68397,8 @@ msgid "Daily, from 00:00"
 msgstr "يومية، من الساعة 00:00"
 
 #: os-quota
-msgid "Each host is counted from pf's states once a minute: every byte of its connections, to and from the firewall itself too, and what the coprocessor forwards where os-xgs-npu gives pf its counts. A host goes past its limit by what it moves before it is blocked and its open connections are cut: not measured yet - up to about a minute of its traffic, about two minutes where XGS: Settings cuts them. Over its quota it is blocked until its cycle starts again or its count is reset here; DNS and the web GUI on the firewall stay as the anti-lockout rule and the owner's own rules make them, and what a port forward with a Pass filter rule lets in is not blocked."
-msgstr "يُعدّ كل مضيف من حالات pf مرة كل دقيقة: كل بايت من اتصالاته، ومنها ما يذهب إلى جدار الحماية نفسه أو يأتي منه، وما يمرّره المعالج المساعد حيث ينقل os-xgs-npu إلى pf ما يعدّه المعالج المساعد. ويتجاوز المضيف حدّه بقدر ما ينقله قبل أن يُحظر وتُقطع اتصالاته المفتوحة: لم يُقس ذلك بعد - حتى نحو دقيقة من حركته، ونحو دقيقتين حيث تقطعها XGS: الإعدادات. وإذا تجاوز حصته حُظر حتى تبدأ دورته من جديد أو يُعاد تعيين عدّه هنا؛ ويبقى DNS وواجهة الويب على جدار الحماية كما تجعلهما قاعدة منع الإقفال وقواعد المالك نفسه، ولا يُحظر ما تُدخله إعادة توجيه منفذ قاعدةُ التصفية فيها مضبوطة على «سماح»."
+msgid "Each host is counted from pf's states once a minute: every byte of its connections, to and from the firewall itself too, and what the coprocessor forwards where os-xgs-npu gives pf its counts. A host goes past its limit by what it moves before the read that blocks it and cuts its open connections: up to a minute of its traffic - measured, 11.3 GB past a 500 MB quota at 4 Gbit/s on an XGS 3300, the read 22 s after the limit. Over its quota it is blocked until its cycle starts again or its count is reset here; DNS and the web GUI on the firewall stay as the anti-lockout rule and the owner's own rules make them, and what a port forward with a Pass filter rule lets in is not blocked."
+msgstr "يُعدّ كل مضيف من حالات pf مرة كل دقيقة: كل بايت من اتصالاته، ومنها ما يذهب إلى جدار الحماية نفسه أو يأتي منه، وما يمرّره المعالج المساعد حيث ينقل os-xgs-npu إلى pf ما يعدّه المعالج المساعد. ويتجاوز المضيف حدّه بقدر ما ينقله قبل القراءة التي تحظره وتقطع اتصالاته المفتوحة: حتى دقيقة من حركته - وقد قيس ذلك: 11.3 GB فوق حصة 500 MB بسرعة 4 Gbit/s على XGS 3300، وجاءت القراءة بعد 22 ثانية من بلوغ الحد. وإذا تجاوز حصته حُظر حتى تبدأ دورته من جديد أو يُعاد تعيين عدّه هنا؛ ويبقى DNS وواجهة الويب على جدار الحماية كما تجعلهما قاعدة منع الإقفال وقواعد المالك نفسه، ولا يُحظر ما تُدخله إعادة توجيه منفذ قاعدةُ التصفية فيها مضبوطة على «سماح»."
 
 #: os-quota
 msgid "Edit quota"
@@ -68557,20 +68557,20 @@ msgid "or more of a quota"
 msgstr "أو أكثر من حصة"
 
 #: os-quota
-msgid "os-xgs-npu is installed: a connection in hardware is counted through its pf states, and a host that goes over its quota has its open connections cut by XGS: Settings within a minute, in hardware first."
-msgstr "os-xgs-npu مثبّت: يُعدّ الاتصال الذي في العتاد عبر حالات pf الخاصة به، والمضيف الذي يتجاوز حصته تقطع XGS: الإعدادات اتصالاته المفتوحة خلال دقيقة، في العتاد أولًا."
+msgid "os-xgs-npu is installed: a connection in hardware is counted through its pf states, and a host that goes over its quota has its open connections cut at the read that blocks it, in hardware first."
+msgstr "os-xgs-npu مثبّت: يُعدّ الاتصال الذي في العتاد عبر حالات pf الخاصة به، والمضيف الذي يتجاوز حصته تُقطع اتصالاته المفتوحة عند القراءة التي تحظره، في العتاد أولًا."
 
 #: os-quota
-msgid "os-xgs-npu is installed: a connection in hardware is counted through its pf states, and a host that goes over its quota has its open connections cut by XGS: Settings within a minute."
-msgstr "os-xgs-npu مثبّت: يُعدّ الاتصال الذي في العتاد عبر حالات pf الخاصة به، والمضيف الذي يتجاوز حصته تقطع XGS: الإعدادات اتصالاته المفتوحة خلال دقيقة."
+msgid "os-xgs-npu is installed: a connection in hardware is counted through its pf states, and a host that goes over its quota has its open connections cut at the read that blocks it."
+msgstr "os-xgs-npu مثبّت: يُعدّ الاتصال الذي في العتاد عبر حالات pf الخاصة به، والمضيف الذي يتجاوز حصته تُقطع اتصالاته المفتوحة عند القراءة التي تحظره."
 
 #: os-quota
 msgid "over its quota"
 msgstr "تجاوز حصته"
 
 #: os-quota
-msgid "quota_over is not in the cut list of XGS: Settings yet - Apply puts it there. Until then this plugin cuts the open connections of a host that goes over its quota itself, at once."
-msgstr "quota_over ليس بعدُ في قائمة القطع في XGS: الإعدادات - «تطبيق» يضعه فيها. وحتى ذلك الحين يقطع هذا المكوّن الإضافي بنفسه الاتصالات المفتوحة للمضيف الذي يتجاوز حصته، فورًا."
+msgid "quota_over is not in the cut list of XGS: Settings yet - Apply puts it there. A host that goes over its quota has its open connections cut all the same, at the read that blocks it."
+msgstr "quota_over ليس بعدُ في قائمة القطع في XGS: الإعدادات - «تطبيق» يضعه فيها. ومع ذلك تُقطع الاتصالات المفتوحة للمضيف الذي يتجاوز حصته، عند القراءة التي تحظره."
 
 #: os-quota
 msgid "quota_over is not in the cut list of XGS: Settings: a host that goes over its quota keeps the connections it has open."
