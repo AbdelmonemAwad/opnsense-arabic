@@ -68663,3 +68663,191 @@ msgstr "تسجيل ما يُحظر"
 #: os-appcontrol
 msgid "Log each packet the block rules drop, in Firewall: Log Files: Live View, under the rule's description: Application Control: block and the application's name. Off, they are counted on the Applications tab, not logged."
 msgstr "تسجيل كل حزمة تُسقطها قواعد الحظر في «جدار الحماية: ملفات السجل: العرض الحي»، تحت وصف القاعدة: Application Control: block واسم التطبيق. وعند الإطفاء تُعدّ في تبويب «التطبيقات» ولا تُسجَّل."
+
+#: os-trafficpriority
+msgid "%s (a category)"
+msgstr "%s (فئة تطبيقات)"
+
+#: os-trafficpriority
+msgid "%s (a group)"
+msgstr "%s (مجموعة)"
+
+#: os-trafficpriority
+msgid "%s (a user)"
+msgstr "%s (مستخدم)"
+
+#: os-trafficpriority
+msgid "%s (addresses in it now: %s)"
+msgstr "%s (العناوين فيه الآن: %s)"
+
+#: os-trafficpriority
+msgid "%s (an application)"
+msgstr "%s (تطبيق)"
+
+#: os-trafficpriority
+msgid "Application Control (os-appcontrol) is not installed: Applications and Application categories offer nothing, and a class that names some makes no rule."
+msgstr "التحكم في التطبيقات (os-appcontrol) غير مثبّت: لا يعرض حقلا «التطبيقات» و«فئات التطبيقات» شيئًا، والفئة التي تسمّي شيئًا منها لا تصنع قاعدة."
+
+#: os-trafficpriority
+msgid "Application Control (os-appcontrol) keeps no table now - it is not classifying, or not applied there yet: Applications and Application categories offer nothing until it does, and a class that names some makes no rule."
+msgstr "التحكم في التطبيقات (os-appcontrol) لا يحفظ أي جدول الآن - فهو لا يصنّف، أو لم يُطبَّق فيه بعد: لا يعرض حقلا «التطبيقات» و«فئات التطبيقات» شيئًا حتى يحفظ جداول، والفئة التي تسمّي شيئًا منها لا تصنع قاعدة."
+
+#: os-trafficpriority
+msgid "Application Control is not classifying"
+msgstr "التحكم في التطبيقات لا يصنّف"
+
+#: os-trafficpriority
+msgid "Application Control is not installed"
+msgstr "التحكم في التطبيقات غير مثبّت"
+
+#: os-trafficpriority
+msgid "Their tables"
+msgstr "جداولها"
+
+#: os-trafficpriority
+msgid "Their tables: the pf tables a class takes from User Identity and Application Control, each with how many addresses pf holds in it now - a group's or a user's are the addresses User Identity mapped to them, an application's or a category's the servers nDPI named as it - or why it has none. Neither plugin is written to here: each makes and fills its own tables, at its own Apply, and every filter reload, theirs among them, writes the classes' rules again from the tables there. A class whose groups and users have no table, or whose applications and categories have none, makes no rule - on an XGS 3300 it keeps its switch queue all the same, and with it the rule setting the DSCP of every IPv4 connection no class marks to 0 and, with minimums, port 0's pause off - and marks again once its tables are there, with no Apply here. A connection keeps the mark it opened with, for its whole life: one opened before its device joined a user's table, or its server an application's, is not marked - the first call to a server new to an application's table among them, since nDPI names a connection 10 to 70 seconds after it begins. A class by the call's own ports marks it from its first packet."
+msgstr "جداولها: جداول pf التي تأخذها الفئة من هوية المستخدم والتحكم في التطبيقات، كلٌّ منها مع عدد العناوين التي يحملها pf فيه الآن - ففي جدول المجموعة أو المستخدم العناوينُ التي ربطتها بهم هوية المستخدم، وفي جدول التطبيق أو فئة التطبيقات الخوادمُ التي سمّاها nDPI به - أو سبب غياب الجدول. ولا يُكتب هنا شيء في أيٍّ من المكوّنين الإضافيين: فكلٌّ منهما يصنع جداوله ويملؤها، عند «تطبيق» الخاص به، وكل إعادة تحميل للجدار الناري، ومنها ما يُجريانه، تكتب قواعد الفئات من جديد من الجداول الموجودة حينها. والفئة التي لا جدول لمجموعاتها ومستخدميها، أو لا جدول لتطبيقاتها وفئات تطبيقاتها، لا تصنع قاعدة - وعلى XGS 3300 تحتفظ مع ذلك بطابورها في المبدّل، ومعه بالقاعدة التي تضبط قيمة DSCP على 0 في كل اتصال IPv4 لا تَسِمه أي فئة، ومع الحدود الدنيا بإطفاء الإيقاف على المنفذ 0 - وتعود إلى الوسم حين تحضر جداولها، دون «تطبيق» هنا. ويبقى للاتصال الوسم الذي فُتح به، طوال عمره: فالاتصال الذي فُتح قبل أن يدخل جهازه جدولَ مستخدم، أو خادمه جدولَ تطبيق، لا يُوسم - ومن ذلك أول مكالمة إلى خادم جديد على جدول تطبيق، لأن nDPI يسمّي الاتصال بعد 10 إلى 70 ثانية من بدايته. والفئة القائمة على منافذ المكالمة نفسها تَسِمها من أول حزمة فيها."
+
+#: os-trafficpriority
+msgid "User Identity (os-useridentity) is not installed: Groups and users offers nothing, and a class that names some makes no rule."
+msgstr "هوية المستخدم (os-useridentity) غير مثبّتة: لا يعرض حقل «المجموعات والمستخدمون» شيئًا، والفئة التي تسمّي شيئًا منها لا تصنع قاعدة."
+
+#: os-trafficpriority
+msgid "User Identity is not installed"
+msgstr "هوية المستخدم غير مثبّتة"
+
+#: os-trafficpriority
+msgid "User Identity is off"
+msgstr "هوية المستخدم مُطفأة"
+
+#: os-trafficpriority
+msgid "an alias of its name is not User Identity's own"
+msgstr "اسم مستعار باسمه ليس لهوية المستخدم"
+
+#: os-trafficpriority
+msgid "application or category field not readable"
+msgstr "حقل التطبيقات أو فئاتها غير مقروء"
+
+#: os-trafficpriority
+msgid "applications or categories beside a destination"
+msgstr "تطبيقات أو فئات تطبيقات بجانب وجهة"
+
+#: os-trafficpriority
+msgid "groups and users beside a source"
+msgstr "مجموعات ومستخدمون بجانب مصدر"
+
+#: os-trafficpriority
+msgid "groups and users field not readable"
+msgstr "حقل المجموعات والمستخدمين غير مقروء"
+
+#: os-trafficpriority
+msgid "its table is switched off"
+msgstr "جدوله مُطفأ"
+
+#: os-trafficpriority
+msgid "kept while it has no table: it marks nothing meanwhile"
+msgstr "يُبقى عليه والفئة بلا جدول: لا تَسِم شيئًا في أثناء ذلك"
+
+#: os-trafficpriority
+msgid "no longer in User Identity"
+msgstr "لم يعد في هوية المستخدم"
+
+#: os-trafficpriority
+msgid "no table: not applied in its plugin yet - or, an application, not chosen there for a table"
+msgstr "لا جدول: لم يُطبَّق في مكوّنه الإضافي بعد - أو، إن كان تطبيقًا، لم يُختر هناك ليكون له جدول"
+
+#: os-trafficpriority
+msgid "none of its applications and categories has a table now"
+msgstr "لا جدول الآن لأيٍّ من تطبيقاتها وفئات تطبيقاتها"
+
+#: os-trafficpriority
+msgid "none of its groups and users has a table now"
+msgstr "لا جدول الآن لأيٍّ من مجموعاتها ومستخدميها"
+
+#: os-trafficpriority
+msgid "switched off in User Identity"
+msgstr "مُطفأ في هوية المستخدم"
+
+#: os-trafficpriority
+msgid "the next filter reload writes none:"
+msgstr "لن تكتب إعادة تحميل الجدار الناري التالية أيًّا منها:"
+
+#: os-trafficpriority
+msgid "Application categories"
+msgstr "فئات التطبيقات"
+
+#: os-trafficpriority
+msgid "Applications Application Control (os-appcontrol) keeps a table for - those chosen there in Application tables or Blocked applications, or in its Rules tab where it has one, and applied: the connections to the servers nDPI named as one of them are this class's. They take the place of Destination, which stays any. A connection is marked only when its server is in the table as it opens, and keeps that for its whole life. nDPI names a connection 10 to 70 seconds after it begins, and its server then stays in the table for Application Control's Expire (an hour by default) after the last new connection named to it. So the first connection to a server new to the table is not marked - a call's media among them, which begins with the call - nor is one opened after an Expire without such a connection; a call going on does not keep its server in the table. To mark a call from its first packet, add beside this class one with the same DSCP by the call's own ports, or by an alias of the servers its service publishes; a longer Expire in Application Control keeps a server in the table longer between calls. A blocked application's new connections are blocked, so a class marks only those its block lets through. A server two applications share is in both tables. And a device names its own connections: one that writes an application's name to a server of its own has its connections to that server marked too - a class without a minimum can then take a whole port, so give such a class a minimum, or narrow it by Groups and users or Source. While none of them has a table, the class makes no rule at all."
+msgstr "التطبيقات التي يحفظ لها التحكم في التطبيقات (os-appcontrol) جدولًا - وهي التي اختيرت فيه وطُبِّقت، في «جداول التطبيقات» أو «التطبيقات المحظورة»، أو في تبويب «القواعد» حيث يوجد فيه: الاتصالات إلى الخوادم التي سمّاها nDPI بأحدها هي من اتصالات هذه الفئة. وتحلّ التطبيقات محلّ «الوجهة»، التي تبقى على «أي». ولا يُوسم الاتصال إلا إذا كان خادمه في الجدول حين يُفتح، ويبقى على ذلك طوال عمره. ويسمّي nDPI الاتصال بعد 10 إلى 70 ثانية من بدايته، ثم يبقى خادمه في الجدول طوال «مدة بقاء العنوان» في التحكم في التطبيقات (ساعة افتراضيًا) بعد آخر اتصال جديد إليه سمّاه nDPI. ولذلك لا يُوسم أول اتصال إلى خادم جديد على الجدول - ومن ذلك وسائط المكالمة، التي تبدأ مع المكالمة - ولا الاتصال الذي يُفتح بعد أن تمضي مدة البقاء دون اتصال كهذا؛ والمكالمة الجارية لا تُبقي خادمها في الجدول. ولوسم المكالمة من أول حزمة فيها، أضف بجانب هذه الفئة فئةً بقيمة DSCP نفسها تقوم على منافذ المكالمة نفسها، أو على اسم مستعار للخوادم التي تنشرها خدمتها؛ و«مدة بقاء العنوان» الأطول في التحكم في التطبيقات تُبقي الخادم في الجدول مدةً أطول بين المكالمات. والاتصالات الجديدة للتطبيق المحظور تُحظر، فلا تَسِم الفئة منها إلا ما يسمح حظره بمروره. والخادم الذي يشترك فيه تطبيقان يكون في جدوليهما كليهما. ثم إن الجهاز يسمّي اتصالاته بنفسه: فالجهاز الذي يكتب اسم تطبيق لخادم خاص به تُوسم اتصالاته إلى ذلك الخادم أيضًا - وعندئذ يمكن لفئة بلا حد أدنى أن تأخذ المنفذ كله، فأعطِ مثل هذه الفئة حدًّا أدنى، أو قيّدها عبر «المجموعات والمستخدمون» أو «المصدر». وما دام لا جدول لأيٍّ منها، لا تصنع الفئة أي قاعدة على الإطلاق."
+
+#: os-trafficpriority
+msgid "Categories of nDPI's, each a table Application Control (os-appcontrol) keeps of the servers of every application it named in the category - one for every category, while it classifies. Beside Applications, a connection to either is this class's. What Applications says of when a connection is marked, of servers shared, and of names a device writes itself, holds here too."
+msgstr "فئات التطبيقات لدى nDPI، ولكلٍّ منها جدول يحفظ فيه التحكم في التطبيقات (os-appcontrol) خوادمَ كل تطبيق من تلك الفئة سمّاه - جدول لكل فئة تطبيقات، ما دام يصنّف. وإلى جانب «التطبيقات»، يكون الاتصال إلى أيٍّ منهما من اتصالات هذه الفئة. وما يُقال في «التطبيقات» عن وقت وسم الاتصال، وعن الخوادم المشتركة، وعن الأسماء التي يكتبها الجهاز بنفسه، يسري هنا أيضًا."
+
+#: os-trafficpriority
+msgid "Groups and users"
+msgstr "المجموعات والمستخدمون"
+
+#: os-trafficpriority
+msgid "Groups and users of User Identity (os-useridentity): the connections that come from the addresses it maps to them now are this class's, by User Identity's tables - not those opened to such an address. A table holds the addresses User Identity mapped, each from an event that named it - a domain controller's logon names one, usually IPv4 - so a device's connections from its other addresses, temporary IPv6 ones among them, are not the class's. They take the place of Source, which stays any. A connection keeps the mark it opened with: one a device opened before its address was mapped is not marked, the ones after it are - and where os-xgs-npu's cut list holds User Identity's tables, such a connection is cut when the address is mapped, and opens again marked. A group or a user with no table now - User Identity off or not installed, the row switched off, or not applied there yet - adds nothing; while none of them has one, the class makes no rule at all, and the Applied tab says why."
+msgstr "مجموعات هوية المستخدم (os-useridentity) ومستخدموها: الاتصالات التي تأتي من العناوين التي تربطها بهم الآن هي من اتصالات هذه الفئة، عبر جداول هوية المستخدم - لا الاتصالات المفتوحة إلى عنوان كهذا. ويحوي الجدول العناوين التي ربطتها هوية المستخدم، كلٌّ منها من حدث ذكره - فحدث الدخول في متحكم النطاق يذكر عنوانًا واحدًا، IPv4 في العادة - ولذلك لا تكون اتصالات الجهاز من عناوينه الأخرى، ومنها عناوين IPv6 المؤقتة، من اتصالات الفئة. وتحلّ المجموعات والمستخدمون محلّ «المصدر»، الذي يبقى على «أي». ويبقى للاتصال الوسم الذي فُتح به: فالاتصال الذي فتحه الجهاز قبل أن يُربط عنوانه لا يُوسم، أما التي تُفتح بعد ربطه فتُوسم - وحيث تحوي قائمة القطع في os-xgs-npu جداول هوية المستخدم، يُقطع مثل هذا الاتصال حين يُربط العنوان، ثم يُفتح من جديد موسومًا. والمجموعة أو المستخدم الذي لا جدول له الآن - هوية المستخدم مُطفأة أو غير مثبّتة، أو الصف مُطفأ، أو لم يُطبَّق هناك بعد - لا يضيف شيئًا؛ وما دام لا جدول لأيٍّ منها، لا تصنع الفئة أي قاعدة على الإطلاق، ويذكر تبويب «المطبَّق» السبب."
+
+#: os-trafficpriority
+msgid "%s (a group, %s)"
+msgstr "%s (مجموعة، %s)"
+
+#: os-trafficpriority
+msgid "%s (a user, %s)"
+msgstr "%s (مستخدم، %s)"
+
+#: os-trafficpriority
+msgid "%s (no table in Application Control now)"
+msgstr "%s (لا جدول له في التحكم في التطبيقات الآن)"
+
+#: os-trafficpriority
+msgid "%s (not in User Identity now)"
+msgstr "%s (ليس في هوية المستخدم الآن)"
+
+#: os-trafficpriority
+msgid "%s - Application Control is not installed"
+msgstr "%s - التحكم في التطبيقات غير مثبّت"
+
+#: os-trafficpriority
+msgid "%s - User Identity is not installed"
+msgstr "%s - هوية المستخدم غير مثبّتة"
+
+#: os-trafficpriority
+msgid "%s - switched off in Application Control"
+msgstr "%s - مُطفأ في التحكم في التطبيقات"
+
+#: os-trafficpriority
+msgid "%s - switched off in User Identity"
+msgstr "%s - مُطفأ في هوية المستخدم"
+
+#: os-trafficpriority
+msgid "Applications and categories take the place of Destination: leave Destination at any, or choose none of them."
+msgstr "تحلّ التطبيقات وفئاتها محلّ «الوجهة»: اترك «الوجهة» على «أي»، أو لا تختر شيئًا منها."
+
+#: os-trafficpriority
+msgid "Choose applications Application Control keeps a table for, or none."
+msgstr "اختر تطبيقات يحفظ لها التحكم في التطبيقات جدولًا، أو لا تختر شيئًا."
+
+#: os-trafficpriority
+msgid "Choose at least one of Interfaces, Source, Groups and users, Destination, Applications, Application categories, a port or Arriving with DSCP: a class without any of them would mark every connection."
+msgstr "اختر واحداً على الأقل من: الواجهات، أو المصدر، أو «المجموعات والمستخدمون»، أو الوجهة، أو التطبيقات، أو «فئات التطبيقات»، أو منفذ، أو «الواصل بقيمة DSCP»: الفئة الخالية منها كلها تَسِم كل اتصال."
+
+#: os-trafficpriority
+msgid "Choose categories Application Control keeps a table for, or none."
+msgstr "اختر فئات تطبيقات يحفظ لها التحكم في التطبيقات جدولًا، أو لا تختر شيئًا."
+
+#: os-trafficpriority
+msgid "Choose groups and users of User Identity, or none."
+msgstr "اختر مجموعات هوية المستخدم ومستخدميها، أو لا تختر شيئًا."
+
+#: os-trafficpriority
+msgid "Groups and users take the place of Source: leave Source at any, or choose no group or user."
+msgstr "تحلّ «المجموعات والمستخدمون» محلّ «المصدر»: اترك «المصدر» على «أي»، أو لا تختر أي مجموعة أو مستخدم."
+
+#: os-trafficpriority
+msgid "Allow access to traffic priority: its classes, the DSCP each marks, and firewall rules it registers - a class may name the groups and users of User Identity, and the page shows how many addresses each one's table holds now, so whether its users are logged on"
+msgstr "السماح بالوصول إلى أولوية حركة المرور: فئاتها، وقيمة DSCP التي تَسِم بها كل فئة، وقواعد جدار الحماية التي تسجّلها - ويجوز للفئة أن تسمّي مجموعات هوية المستخدم ومستخدميها، وتُظهر الصفحة كم عنوانًا يحويه جدول كلٍّ منها الآن، ومن ثَمّ هل مستخدموه مسجَّلو الدخول"
