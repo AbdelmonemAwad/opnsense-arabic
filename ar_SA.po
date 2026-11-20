@@ -68355,3 +68355,247 @@ msgstr "عملاء RADIUS"
 #: os-useridentity
 msgid "The RADIUS clients whose accounting may map, each by its address as Services: FreeRADIUS sees it - a NAS, or a RADIUS server that forwards its accounting. A record from any other is refused; none named, none maps. Name only a client whose User-Name is the name FreeRADIUS authenticated: with EAP - PEAP, TTLS or TLS, most 802.1X - a NAS reports the outer name the device itself gives, which its user may set to anyone's, unless FreeRADIUS checks it against the name it authenticated or returns that one to the NAS in the Access-Accept; os-freeradius as installed does neither. A client taken out of this list: what it mapped ends at the next minute."
 msgstr "عملاء RADIUS الذين يجوز أن تربط محاسبتهم، كلٌّ بعنوانه كما يراه «الخدمات: FreeRADIUS» - جهاز NAS، أو خادم RADIUS يمرّر محاسبته. ويُرفض السجل من أي عميل غيرهم؛ وإن لم يُسمَّ أحد فلا يربط أحد. ولا تسمِّ إلا عميلاً يكون User-Name عنده هو الاسم الذي صادق عليه FreeRADIUS: فمع EAP - أي PEAP أو TTLS أو TLS، وهي أغلب 802.1X - ينقل جهاز NAS الاسم الخارجي الذي يعطيه الجهاز نفسه، ويستطيع مستخدمه أن يجعله اسم أي أحد، ما لم يتحقق FreeRADIUS منه مقابل الاسم الذي صادق عليه أو يُعِد ذلك الاسم إلى NAS في Access-Accept؛ وos-freeradius كما يُثبَّت لا يفعل هذا ولا ذاك. والعميل الذي يُخرج من هذه القائمة ينتهي ما ربطه في الدقيقة التالية."
+
+#: os-quota
+msgid "A cycle of this length holds %d minutes at most."
+msgstr "لا تتسع دورة بهذا الطول لأكثر من %d دقيقة."
+
+#: os-quota
+msgid "A time quota counts minutes of use: a minute of the clock in which the host moved more than this many kilobytes, both ways together (1 KB = 1,000 bytes), so a device that only keeps itself connected in the background uses none. 0: any byte makes a minute of use. Empty: the plugin's own value, 100 KB in this release - a first value, until a measurement of idle devices sets it; left empty, a later release's value applies."
+msgstr "حصة الوقت تعدّ دقائق الاستخدام: الدقيقة من دقائق الساعة التي نقل فيها المضيف أكثر من هذا العدد من الكيلوبايتات، في الاتجاهين معًا (1 KB = 1,000 بايت)، فالجهاز الذي لا يفعل إلا أن يبقى متصلًا في الخلفية لا يستهلك منها شيئًا. 0: أي بايت يجعل الدقيقة دقيقة استخدام. فارغ: قيمة المكوّن الإضافي نفسه، 100 KB في هذا الإصدار - قيمة أولى، إلى أن يحدّدها قياس للأجهزة الخاملة؛ وإن بقي فارغًا سرت قيمة الإصدار اللاحق."
+
+#: os-quota
+msgid "Allow access to quotas: the volume and time each host used this cycle, the reset of its count, the quotas and their settings"
+msgstr "السماح بالوصول إلى الحصص: الحجم والوقت اللذان استهلكهما كل مضيف في هذه الدورة، وإعادة تعيين عدّه، والحصص وإعداداتها"
+
+#: os-quota
+msgid "An IPv4 or IPv6 address, or a MAC address."
+msgstr "عنوان IPv4 أو IPv6، أو عنوان MAC."
+
+#: os-quota
+msgid "An alias named quota_over that is not this plugin's is in Firewall: Aliases: no host is blocked until it is renamed."
+msgstr "اسم مستعار باسم quota_over لا يعود لهذا المكوّن الإضافي موجود في جدار الحماية: الأسماء المستعارة: لا يُحظر أي مضيف حتى تُغيَّر تسميته."
+
+#: os-quota
+msgid "Changes here are counted from the next minute's read, or at once with Apply."
+msgstr "تدخل التغييرات هنا في العدّ من قراءة الدقيقة التالية، أو فورًا مع «تطبيق»."
+
+#: os-quota
+msgid "Count each quota's host from pf's states once a minute, and block a host over its quota until its cycle starts again. Off by default. Off, nothing is counted, no host is blocked, and the alias quota_over leaves Firewall: Aliases - switched off instead where a rule or a setting still names it. The counts of the cycle are kept."
+msgstr "عدّ مضيف كل حصة من حالات pf مرة كل دقيقة، وحظر المضيف الذي تجاوز حصته حتى تبدأ دورته من جديد. مُطفأ افتراضيًا. وعند إطفائه لا يُعدّ شيء ولا يُحظر أي مضيف، ويخرج الاسم المستعار quota_over من جدار الحماية: الأسماء المستعارة - ويُطفأ بدلًا من ذلك حيث ما زالت قاعدة أو إعداد يذكره. ويُحتفظ بما عُدّ في الدورة."
+
+#: os-quota
+msgid "Counted this cycle"
+msgstr "المعدود في هذه الدورة"
+
+#: os-quota
+msgid "Cycle"
+msgstr "الدورة"
+
+#: os-quota
+msgid "Daily, from 00:00"
+msgstr "يومية، من الساعة 00:00"
+
+#: os-quota
+msgid "Each host is counted from pf's states once a minute: every byte of its connections, to and from the firewall itself too, and what the coprocessor forwards where os-xgs-npu gives pf its counts. A host goes past its limit by what it moves before the read that blocks it and cuts its open connections: up to a minute of its traffic - measured, 11.3 GB past a 500 MB quota at 4 Gbit/s on an XGS 3300, the read 22 s after the limit. Over its quota it is blocked until its cycle starts again or its count is reset here; DNS and the web GUI on the firewall stay as the anti-lockout rule and the owner's own rules make them, and what a port forward with a Pass filter rule lets in is not blocked."
+msgstr "يُعدّ كل مضيف من حالات pf مرة كل دقيقة: كل بايت من اتصالاته، ومنها ما يذهب إلى جدار الحماية نفسه أو يأتي منه، وما يمرّره المعالج المساعد حيث ينقل os-xgs-npu إلى pf ما يعدّه المعالج المساعد. ويتجاوز المضيف حدّه بقدر ما ينقله قبل القراءة التي تحظره وتقطع اتصالاته المفتوحة: حتى دقيقة من حركته - وقد قيس ذلك: 11.3 GB فوق حصة 500 MB بسرعة 4 Gbit/s على XGS 3300، وجاءت القراءة بعد 22 ثانية من بلوغ الحد. وإذا تجاوز حصته حُظر حتى تبدأ دورته من جديد أو يُعاد تعيين عدّه هنا؛ ويبقى DNS وواجهة الويب على جدار الحماية كما تجعلهما قاعدة منع الإقفال وقواعد المالك نفسه، ولا يُحظر ما تُدخله إعادة توجيه منفذ قاعدةُ التصفية فيها مضبوطة على «سماح»."
+
+#: os-quota
+msgid "Edit quota"
+msgstr "تعديل الحصة"
+
+#: os-quota
+msgid "Firewall: Quotas"
+msgstr "جدار الحماية: الحصص"
+
+#: os-quota
+msgid "Give a volume, minutes of use, or both."
+msgstr "حدّد حجمًا، أو دقائق استخدام، أو كليهما."
+
+#: os-quota
+msgid "Hardware traffic"
+msgstr "حركة العتاد"
+
+#: os-quota
+msgid "Kilobytes, from 0 to 1000000, or empty for the plugin's own value."
+msgstr "كيلوبايتات، من 0 إلى 1000000، أو فارغًا لقيمة المكوّن الإضافي نفسه."
+
+#: os-quota
+msgid "Megabytes the host may move in a cycle, both ways together and to the firewall itself too (1 MB = 1,000,000 bytes; 1000 is 1 GB). Empty: no volume limit."
+msgstr "الميغابايتات التي يجوز للمضيف أن ينقلها في الدورة، في الاتجاهين معًا، ويشمل ذلك ما يذهب إلى جدار الحماية نفسه (1 MB = 1,000,000 بايت؛ و1000 تعني 1 GB). فارغ: لا حد للحجم."
+
+#: os-quota
+msgid "Megabytes, from 1 to 1000000000, or empty for no volume limit."
+msgstr "ميغابايتات، من 1 إلى 1000000000، أو فارغًا بلا حد للحجم."
+
+#: os-quota
+msgid "Minute of use above (KB)"
+msgstr "عتبة دقيقة الاستخدام (KB)"
+
+#: os-quota
+msgid "Minutes of use the host may have in a cycle: minutes in which it moved more than Settings' Minute of use above. Empty: no time limit."
+msgstr "دقائق الاستخدام التي يجوز للمضيف أن يستهلكها في الدورة: الدقائق التي نقل فيها أكثر من «عتبة دقيقة الاستخدام» في الإعدادات. فارغ: لا حد للوقت."
+
+#: os-quota
+msgid "Minutes, from 1 to 44640, or empty for no time limit."
+msgstr "دقائق، من 1 إلى 44640، أو فارغًا بلا حد للوقت."
+
+#: os-quota
+msgid "Monthly, from the 1st 00:00"
+msgstr "شهرية، من اليوم 1 الساعة 00:00"
+
+#: os-quota
+msgid "Near the limit"
+msgstr "قرب الحد"
+
+#: os-quota
+msgid "No such quota."
+msgstr "لا توجد حصة كهذه."
+
+#: os-quota
+msgid "Nothing to change in the alias."
+msgstr "لا شيء يتغير في الاسم المستعار."
+
+#: os-quota
+msgid "One IPv4 or IPv6 address, or a MAC address. A MAC's addresses are taken from the firewall's host discovery at each read, so a device keeps one quota for IPv4 and IPv6 while its IPv6 addresses change; behind a router the firewall sees the router's MAC, so name such a host by its address. The firewall's own addresses are never counted or blocked."
+msgstr "عنوان IPv4 أو IPv6 واحد، أو عنوان MAC. تؤخذ العناوين التي لعنوان MAC من اكتشاف المضيفين في جدار الحماية عند كل قراءة، فيحتفظ الجهاز بحصة واحدة لـ IPv4 وIPv6 بينما تتغير عناوين IPv6 الخاصة به؛ وخلف موجّه يرى جدار الحماية عنوان MAC للموجّه، فسمِّ مثل هذا المضيف بعنوانه. ولا تُعدّ عناوين جدار الحماية نفسه ولا تُحظر أبدًا."
+
+#: os-quota
+msgid "Over quota"
+msgstr "تجاوز الحصة"
+
+#: os-quota
+msgid "Quotas"
+msgstr "الحصص"
+
+#: os-quota
+msgid "Quotas is off: nothing is counted and no host is blocked."
+msgstr "الحصص مُطفأة: لا يُعدّ شيء ولا يُحظر أي مضيف."
+
+#: os-quota
+msgid "Reset the count"
+msgstr "إعادة تعيين العدّ"
+
+#: os-quota
+msgid "The alias quota_over is not made yet: Apply makes it. Until then no host is blocked."
+msgstr "الاسم المستعار quota_over لم يُنشأ بعد: «تطبيق» ينشئه. وحتى ذلك الحين لا يُحظر أي مضيف."
+
+#: os-quota
+msgid "This cycle"
+msgstr "هذه الدورة"
+
+#: os-quota
+msgid "This firewall is a CARP backup: the master counts and blocks, and nothing is counted here."
+msgstr "جدار الحماية هذا جهاز احتياطي في CARP: الجهاز الرئيسي هو الذي يعدّ ويحظر، ولا يُعدّ شيء هنا."
+
+#: os-quota
+msgid "This quota's count of this cycle goes back to nothing now, and its host passes again if it was blocked."
+msgstr "يعود عدّ هذه الحصة في هذه الدورة إلى الصفر الآن، ويمرّ مضيفها من جديد إن كان محظورًا."
+
+#: os-quota
+msgid "Time (minutes of use)"
+msgstr "الوقت (دقائق الاستخدام)"
+
+#: os-quota
+msgid "Volume"
+msgstr "الحجم"
+
+#: os-quota
+msgid "Volume (MB)"
+msgstr "الحجم (MB)"
+
+#: os-quota
+msgid "Weekly, from Monday 00:00"
+msgstr "أسبوعية، من الاثنين الساعة 00:00"
+
+#: os-quota
+msgid "When the count starts again from nothing, in the firewall's time zone: a host blocked by this quota passes again then."
+msgstr "متى يبدأ العدّ من الصفر من جديد، بالمنطقة الزمنية لجدار الحماية: المضيف الذي حظرته هذه الحصة يمرّ من جديد حينئذ."
+
+#: os-quota
+msgid "Without os-xgs-npu pf alone carries the traffic: a host that goes over its quota has its open connections cut at once."
+msgstr "دون os-xgs-npu يحمل pf وحده الحركة: المضيف الذي يتجاوز حصته تُقطع اتصالاته المفتوحة فورًا."
+
+#: os-quota
+msgid "XGS: Settings, Count hardware traffic in pf, is off: a connection in hardware is counted for its first packets only - 0.001 % of a 4.1 GB transfer in the lab."
+msgstr "«عدّ حركة العتاد في pf» في XGS: الإعدادات مُطفأ: الاتصال الذي في العتاد لا تُعدّ منه إلا حزمه الأولى - 0.001 % من نقل 4.1 GB في المختبر."
+
+#: os-quota
+msgid "an address of the firewall: never counted"
+msgstr "عنوان لجدار الحماية: لا يُعدّ أبدًا"
+
+#: os-quota
+msgid "blocked until their cycle starts again"
+msgstr "محظورة حتى تبدأ دورتها من جديد"
+
+#: os-quota
+msgid "counted from the next read"
+msgstr "يُعدّ من القراءة التالية"
+
+#: os-quota
+msgid "last read"
+msgstr "آخر قراءة"
+
+#: os-quota
+msgid "near the limit"
+msgstr "قريب من الحد"
+
+#: os-quota
+msgid "no address seen"
+msgstr "لم يُرَ أي عنوان"
+
+#: os-quota
+msgid "not counted"
+msgstr "غير معدودة"
+
+#: os-quota
+msgid "nothing is counted or blocked"
+msgstr "لا يُعدّ شيء ولا يُحظر"
+
+#: os-quota
+msgid "or more of a quota"
+msgstr "أو أكثر من حصة"
+
+#: os-quota
+msgid "os-xgs-npu is installed: a connection in hardware is counted through its pf states, and a host that goes over its quota has its open connections cut at the read that blocks it, in hardware first."
+msgstr "os-xgs-npu مثبّت: يُعدّ الاتصال الذي في العتاد عبر حالات pf الخاصة به، والمضيف الذي يتجاوز حصته تُقطع اتصالاته المفتوحة عند القراءة التي تحظره، في العتاد أولًا."
+
+#: os-quota
+msgid "os-xgs-npu is installed: a connection in hardware is counted through its pf states, and a host that goes over its quota has its open connections cut at the read that blocks it."
+msgstr "os-xgs-npu مثبّت: يُعدّ الاتصال الذي في العتاد عبر حالات pf الخاصة به، والمضيف الذي يتجاوز حصته تُقطع اتصالاته المفتوحة عند القراءة التي تحظره."
+
+#: os-quota
+msgid "over its quota"
+msgstr "تجاوز حصته"
+
+#: os-quota
+msgid "quota_over is not in the cut list of XGS: Settings yet - Apply puts it there. A host that goes over its quota has its open connections cut all the same, at the read that blocks it."
+msgstr "quota_over ليس بعدُ في قائمة القطع في XGS: الإعدادات - «تطبيق» يضعه فيها. ومع ذلك تُقطع الاتصالات المفتوحة للمضيف الذي يتجاوز حصته، عند القراءة التي تحظره."
+
+#: os-quota
+msgid "quota_over is not in the cut list of XGS: Settings: a host that goes over its quota keeps the connections it has open."
+msgstr "quota_over ليس في قائمة القطع في XGS: الإعدادات: المضيف الذي يتجاوز حصته يحتفظ باتصالاته المفتوحة."
+
+#: os-quota
+msgid "quotas counted"
+msgstr "حصص تُعدّ"
+
+#: os-quota
+msgid "the host cannot be read"
+msgstr "تتعذّر قراءة المضيف"
+
+#: os-quota
+msgid "time"
+msgstr "الوقت"
+
+#: os-quota
+msgid "under the limit"
+msgstr "دون الحد"
+
+#: os-quota
+msgid "until"
+msgstr "حتى"
+
+#: os-quota
+msgid "volume"
+msgstr "الحجم"
