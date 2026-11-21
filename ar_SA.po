@@ -62059,6 +62059,14 @@ msgid "The name the kernel gives the port the throughput screen measures, as sho
 msgstr "الاسم الذي تعطيه النواة للمنفذ الذي تقيسه شاشة معدّل النقل، كما يظهر ضمن الواجهات. اتركه فارغًا لقياس WAN، وهو ما يعنيه عادةً من يراقب اللوحة الأمامية لجدار حماية."
 
 #: os-frontpanel
+msgid "Throughput interfaces"
+msgstr "واجهات معدّل النقل"
+
+#: os-frontpanel
+msgid "The interfaces the throughput screen measures. The panel shows the screen once for each, in the order chosen here - drag them into the order you want - and names each by its description under Interfaces. Leave it empty to measure the WAN, which is what somebody watching a firewall's front panel usually means."
+msgstr "الواجهات التي تقيسها شاشة معدّل النقل. تعرض اللوحة الشاشة مرة لكل واجهة، بالترتيب المختار هنا - اسحبها إلى الترتيب الذي تريده - وتسمّي كلًّا منها بوصفها ضمن الواجهات. اتركه فارغًا لقياس WAN، وهو ما يعنيه عادةً من يراقب اللوحة الأمامية لجدار حماية."
+
+#: os-frontpanel
 msgid "igb0"
 msgstr "igb0"
 
@@ -62219,6 +62227,14 @@ msgid "Text starts at offset 24: an XGS 3100's ruler came up with its G in the t
 msgstr "يبدأ النص عند الإزاحة 24: فقد ظهرت مسطرة XGS 3100 وحرفها G في الزاوية العليا اليسرى (القضية 901 في os-xgs-npu). وإن جاء النص في موضع آخر على جهازك، فإن «محاذاة النص» في تبويب الأزرار تضبطه."
 
 #: os-frontpanel
+msgid "XGS 3100 front panel (board AMDA0202-0003)"
+msgstr "اللوحة الأمامية لجهاز XGS 3100 (اللوحة الأم AMDA0202-0003)"
+
+#: os-frontpanel
+msgid "XGS 3100 (board AMDA0202-0003), 2026-10-30: the display is verified at 9600 - its owner read two lines of text right on the panel at 20x2 and lined them up with Align the text, and the ruler came up with its G in the top left corner, which is where offset 24 starts the text (os-xgs-npu issue 901). The key codes are the XGS 3300's and were not measured on this model."
+msgstr "XGS 3100 (اللوحة الأم AMDA0202-0003)، 2026-10-30: الشاشة مُتحقَّق منها على 9600 - قرأ مالكها سطرين من النص صحيحين على اللوحة بمقاس 20x2 وحاذاهما بـ«محاذاة النص»، وظهرت المسطرة وحرفها G في الزاوية العليا اليسرى، وهو الموضع الذي يبدأ عنده النص مع الإزاحة 24 (القضية 901 في os-xgs-npu). ورموز المفاتيح هي رموز XGS 3300، ولم تُقَس على هذا الطراز."
+
+#: os-frontpanel
 msgid "Front panel (LCDd and the screen client)"
 msgstr "اللوحة الأمامية (LCDd وعميل الشاشة)"
 
@@ -62229,6 +62245,14 @@ msgstr "سطر للوحة"
 #: os-frontpanel
 msgid "Matched entry"
 msgstr "المدخل المطابق"
+
+#: os-frontpanel
+msgid "These saved settings differ from this appliance's entry in the table of known panels. Nothing changes until you put the entry's values in the settings and save them."
+msgstr "تختلف هذه الإعدادات المحفوظة عن مدخل هذا الجهاز في جدول اللوحات المعروفة. لا يتغيّر شيء حتى تضع قيم المدخل في الإعدادات وتحفظها."
+
+#: os-frontpanel
+msgid "saved {saved}, the entry {entry}"
+msgstr "المحفوظ {saved}، والمدخل {entry}"
 
 #: os-frontpanel
 msgid "No key has been reported yet."
