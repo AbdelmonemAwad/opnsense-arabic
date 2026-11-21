@@ -61724,6 +61724,30 @@ msgstr "منافذ متصلة"
 msgid "ports with errors in this window"
 msgstr "منافذ فيها أخطاء في هذه النافذة"
 
+#: os-linkhealth
+msgid "1G copper on the 88E6193X switch"
+msgstr "نحاس 1G على المبدّل 88E6193X"
+
+#: os-linkhealth
+msgid "Named by the npuep driver's port table in os-xgs-npu, which numbers each npup unit by its printed label; link state and media come from the coprocessor's network agent."
+msgstr "أسماؤها من جدول المنافذ لبرنامج التشغيل npuep في os-xgs-npu، الذي يرقّم كل وحدة npup بتسميتها المطبوعة؛ وحالة الارتباط والوسيط تأتيان من وكيل الشبكة في المعالج المساعد."
+
+#: os-linkhealth
+msgid "1G SFP cage on the 88E6193X switch"
+msgstr "قفص SFP بسرعة 1G على المبدّل 88E6193X"
+
+#: os-linkhealth
+msgid "2.5G copper on the AQR412C quad PHY"
+msgstr "نحاس 2.5G على PHY الرباعي AQR412C"
+
+#: os-linkhealth
+msgid "Drawn from photographs of the back of an XGS 87, where all its network sockets are: DC IN, COM with a USB port below it, the F1 cage, the four copper sockets in two lines (1/LAN over 2/WAN, 3/DMZ over 4), and Reset. The cables in 1/LAN and 2/WAN matched the two ports the same appliance reported up. No socket has been watched blink yet."
+msgstr "مرسوم من صور فوتوغرافية للوحة الخلفية لجهاز XGS 87، حيث تقع كل مقابس الشبكة فيه: DC IN، وCOM وتحته منفذ USB، والقفص F1، والمقابس النحاسية الأربعة في صفّين (‎1/LAN فوق ‎2/WAN، و‎3/DMZ فوق 4)، وReset. وطابقت الكابلات في ‎1/LAN و‎2/WAN المنفذين اللذين أبلغ الجهاز نفسه أنهما متصلان. ولم يُشاهَد أي مقبس وهو يومض بعد."
+
+#: os-linkhealth
+msgid "back panel"
+msgstr "اللوحة الخلفية"
+
 # ---- os-frontpanel: its GUI strings, moved here from its own table (2026-10-22)
 
 #: os-frontpanel
