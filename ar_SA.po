@@ -63637,6 +63637,18 @@ msgstr "%s في جسر مع منافذ للمعالج المساعد: %s"
 msgid "%s shares a subnet with ports of the coprocessor: %s"
 msgstr "%s يتشارك نطاقًا مع منافذ للمعالج المساعد: %s"
 
+#: os-xgs-npu
+msgid "The management link to the coprocessor is in a bridge"
+msgstr "وصلة الإدارة إلى المعالج المساعد في جسر"
+
+#: os-xgs-npu
+msgid "NPUMGMT is a link between the host and the coprocessor alone, with addresses of its own. Never put it in a bridge: the bridge carries it into another network. Take it out of the bridge in Interfaces: Devices: Bridge."
+msgstr "وصلة NPUMGMT وصلة بين المضيف والمعالج المساعد وحدهما، ولها عناوين خاصة بها. لا تضعها أبدًا في جسر: فالجسر يحملها إلى شبكة أخرى. أخرجها من الجسر في الواجهات: الأجهزة: الجسر."
+
+#: os-xgs-npu
+msgid "%s is in a bridge: %s"
+msgstr "%s في جسر: %s"
+
 # ---- os-xgs-npu: XGS: Overview says what the Hardware offloading card's Off means - both settings are
 # off after an install, and until both are on no connection runs in hardware.
 
